@@ -1,0 +1,175 @@
+/* ═══════════════════════════════════════════════════════════════════
+   Thunderegg — styles.css
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── Status bar ───────────────────────────────────────────────────── */
+
+.thunderegg-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ── Refinery info bar (injected at top of active leaf) ───────────── */
+
+.thunderegg-refinery-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 14px;
+  margin: 0;
+  background: var(--background-secondary);
+  border-bottom: 1px solid var(--background-modifier-border);
+  font-size: var(--font-ui-small);
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+/* ── Grade badges ─────────────────────────────────────────────────── */
+
+.thunderegg-grade {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 1px 8px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.82em;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
+}
+
+/* The rock ladder (engine authority: promote.py GRADES). Legacy still-ladder values
+   canonicalize in core.ts normalizeGrade, so only these six classes ever render. */
+
+/* Blank — grey, unprocessed */
+.thunderegg-grade-blank {
+  background: rgba(139, 139, 139, 0.14);
+  color: var(--text-muted);
+}
+
+/* Rough — warm brown, first shaping */
+.thunderegg-grade-rough {
+  background: rgba(180, 130, 80, 0.16);
+  color: #a06b3c;
+}
+.theme-dark .thunderegg-grade-rough {
+  color: #c9915e;
+}
+
+/* Polished — blue, reviewed */
+.thunderegg-grade-polished {
+  background: rgba(91, 155, 213, 0.16);
+  color: #5b9bd5;
+}
+.theme-dark .thunderegg-grade-polished {
+  color: #7bb8e8;
+}
+
+/* Crystal — indigo, trusted */
+.thunderegg-grade-crystal {
+  background: rgba(99, 102, 241, 0.15);
+  color: #6366f1;
+}
+.theme-dark .thunderegg-grade-crystal {
+  color: #8b8df5;
+}
+
+/* Gem — purple, evergreen */
+.thunderegg-grade-gem {
+  background: rgba(168, 85, 247, 0.14);
+  color: #9333ea;
+}
+.theme-dark .thunderegg-grade-gem {
+  color: #c084fc;
+}
+
+/* Synthesis — teal, generated map pages (00-Maps) */
+.thunderegg-grade-synthesis {
+  background: rgba(20, 184, 166, 0.14);
+  color: #0d9488;
+}
+.theme-dark .thunderegg-grade-synthesis {
+  color: #2dd4bf;
+}
+
+/* ── Bond count ───────────────────────────────────────────────────── */
+
+.thunderegg-bonds {
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* ── Condenser badge ──────────────────────────────────────────────── */
+
+.thunderegg-condenser-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 1px 8px;
+  border-radius: 10px;
+  background: rgba(245, 158, 11, 0.14);
+  color: #d97706;
+  font-weight: 600;
+  font-size: 0.82em;
+  white-space: nowrap;
+}
+.theme-dark .thunderegg-condenser-badge {
+  color: #fbbf24;
+}
+
+/* ── Condenser back-links ─────────────────────────────────────────── */
+
+.thunderegg-condenser-links {
+  color: var(--text-muted);
+  font-size: 0.92em;
+}
+
+.thunderegg-condenser-links a.internal-link {
+  color: var(--text-accent);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.thunderegg-condenser-links a.internal-link:hover {
+  text-decoration: underline;
+}
+
+/* ── Status-bar Refinery section ──────────────────────────────────── */
+
+.thunderegg-refinery-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.thunderegg-refinery-status .thunderegg-grade {
+  font-size: 0.78em;
+  padding: 0 6px;
+}
+
+.thunderegg-refinery-status .thunderegg-condenser-badge {
+  font-size: 0.78em;
+  padding: 0 6px;
+}
+
+/* ── Settings-tab Refinery description ────────────────────────────── */
+
+.thunderegg-refinery-desc {
+  margin-bottom: 12px;
+}
+
+.thunderegg-refinery-desc ul {
+  margin: 6px 0 0 0;
+  padding-left: 20px;
+}
+
+.thunderegg-refinery-desc li {
+  margin-bottom: 2px;
+}
+
+.thunderegg-publish-preview {
+  max-height: 240px;
+  overflow: auto;
+}

@@ -1,0 +1,512 @@
+/* obsidian-dsh-native — 原生聊天客户端样式 */
+
+.dsh-native-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: var(--background-primary);
+}
+
+/* 头部 */
+.dsh-native-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    border-bottom: 1px solid var(--background-modifier-border);
+    flex: 0 0 auto;
+}
+.dsh-native-title {
+    font-weight: 600;
+    font-size: var(--font-ui-small);
+    color: var(--text-normal);
+}
+.dsh-status-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--text-faint);
+    flex: 0 0 auto;
+}
+.dsh-status-dot.online { background: var(--interactive-success, #3fb950); }
+.dsh-status-dot.connecting { background: var(--text-warning, #d29922); }
+.dsh-status-dot.offline { background: var(--text-error, #f44336); }
+.dsh-session-select {
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: 100%;
+}
+.dsh-btn {
+    cursor: pointer;
+    border: 1px solid var(--background-modifier-border);
+    background: var(--background-secondary);
+    color: var(--text-normal);
+    border-radius: var(--radius-s);
+    padding: 2px 8px;
+    font-size: var(--font-ui-small);
+}
+.dsh-btn:hover { background: var(--background-modifier-hover); }
+.dsh-btn.mod-cta {
+    background: var(--interactive-accent);
+    color: var(--text-on-accent);
+    border-color: var(--interactive-accent);
+}
+
+/* 消息区 */
+.dsh-native-messages {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.dsh-msg {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-width: 100%;
+}
+.dsh-msg-role {
+    font-size: var(--font-ui-smaller);
+    color: var(--text-faint);
+}
+.dsh-msg-content {
+    padding: 8px 10px;
+    border-radius: var(--radius-m);
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+.dsh-msg-user .dsh-msg-content {
+    background: var(--background-secondary);
+    border: 1px solid var(--background-modifier-border);
+}
+.dsh-msg-assistant .dsh-msg-content {
+    background: var(--background-primary-alt);
+    border: 1px solid var(--background-modifier-border);
+}
+.dsh-msg-content p:first-child { margin-top: 0; }
+.dsh-msg-content p:last-child { margin-bottom: 0; }
+.dsh-msg-content pre {
+    background: var(--code-background);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+    padding: 8px;
+    overflow-x: auto;
+}
+.dsh-msg-content code {
+    background: var(--code-background);
+    border-radius: var(--radius-s);
+    padding: 1px 4px;
+}
+
+/* 待处理（审批/提问）卡片 */
+.dsh-pending {
+    border: 1px solid var(--interactive-accent);
+    background: var(--background-primary-alt);
+    border-radius: var(--radius-m);
+    padding: 8px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.dsh-pending-title { font-weight: 600; font-size: var(--font-ui-small); }
+.dsh-pending-reason { font-size: var(--font-ui-smaller); color: var(--text-muted); }
+.dsh-pending-actions { display: flex; gap: 8px; }
+
+/* 状态行 */
+/* 诊断状态行：调试期展示 ws/frames 等诊断信息，正常工作后隐藏（版本号改在设置页展示） */
+.dsh-native-statusline {
+    display: none !important;
+}
+
+/* 控制条：移到面板最底部，单行紧凑展示（对齐 VSCode DSH 底部状态栏） */
+.dsh-native-controls {
+    order: 4;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-top: 1px solid var(--background-modifier-border);
+    background: var(--background-secondary);
+    font-size: var(--font-ui-smaller);
+    color: var(--text-muted);
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.dsh-native-header { order: 0; }
+.dsh-native-messages { order: 1; }
+.dsh-native-statusline { order: 2; }
+.dsh-native-inputbar { order: 3; }
+.dsh-ctl-label {
+    font-weight: 600;
+    color: var(--text-faint);
+    margin-right: 2px;
+}
+.dsh-mode-toggle {
+    display: inline-flex;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+    overflow: hidden;
+    margin-right: 4px;
+}
+.dsh-mode-btn {
+    border: none;
+    background: var(--background-primary);
+    color: var(--text-muted);
+    padding: 2px 10px;
+    font-size: var(--font-ui-smaller);
+    cursor: pointer;
+    border-right: 1px solid var(--background-modifier-border);
+}
+.dsh-mode-btn:last-child { border-right: none; }
+.dsh-mode-btn.is-active {
+    background: var(--interactive-accent);
+    color: var(--text-on-accent);
+    font-weight: 600;
+}
+.dsh-model-select {
+    background: var(--background-primary);
+    color: var(--text-normal);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+    padding: 2px 6px;
+    font-size: var(--font-ui-smaller);
+    max-width: 220px;
+}
+.dsh-model-select:disabled { opacity: 0.55; cursor: not-allowed; }
+.dsh-perm-select {
+    background: var(--background-primary);
+    color: var(--text-normal);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+    padding: 2px 6px;
+    font-size: var(--font-ui-smaller);
+    max-width: 160px;
+}
+.dsh-perm-select:disabled { opacity: 0.55; cursor: not-allowed; }
+.dsh-perm-value {
+    color: var(--text-normal);
+    font-family: var(--font-monospace, monospace);
+    background: var(--background-primary);
+    padding: 2px 6px;
+    border-radius: var(--radius-s);
+    border: 1px solid var(--background-modifier-border);
+}
+
+/* 输入栏 */
+.dsh-native-inputbar {
+    flex: 0 0 auto;
+    display: flex;
+    gap: 6px;
+    padding: 8px 10px;
+    border-top: 1px solid var(--background-modifier-border);
+    align-items: flex-end;
+}
+.dsh-native-input {
+    flex: 1 1 auto;
+    resize: none;
+    min-height: 38px;
+    max-height: 180px;
+    /* 用表单字段背景 + 边框，明确“这是一个可输入的框”（之前用 background-secondary 偏灰、看不出可输入） */
+    background: var(--background-modifier-form-field);
+    color: var(--text-normal);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+    padding: 9px 10px;
+    font-family: var(--font-text);
+    font-size: var(--font-ui-small);
+    line-height: 1.4;
+    transition: border-color 120ms ease, box-shadow 120ms ease;
+}
+.dsh-native-input::placeholder { color: var(--text-faint); }
+.dsh-native-input:focus {
+    border-color: var(--interactive-accent);
+    /* 聚焦高亮环：明确可输入 + 当前焦点 */
+    box-shadow: 0 0 0 2px var(--background-modifier-border);
+    outline: none;
+}
+
+/* overlay —— 默认隐藏，仅加 .is-visible 才显示，避免空 overlay 永久盖住界面 */
+.dsh-native-overlay {
+    position: absolute;
+    inset: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 24px;
+    text-align: center;
+    background: var(--background-primary);
+    color: var(--text-muted);
+    z-index: 10;
+}
+.dsh-native-overlay.is-visible {
+    display: flex;
+}
+.dsh-native-msg { font-size: var(--font-ui-small); line-height: 1.5; max-width: 90%; }
+
+/* ===== v0.1.5：多标签会话栏 + 历史弹窗 + dsh-ui 卡片 + 思考折叠 + hover 操作 ===== */
+
+/* 头部改为：顶部条（状态/标题/新建/历史）+ 多标签栏 */
+.dsh-native-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+}
+.dsh-native-header-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 0 0 auto;
+}
+.dsh-icon-btn {
+    padding: 2px 8px;
+    font-size: var(--font-ui-small);
+    line-height: 1.4;
+}
+.dsh-tabbar {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: wrap;
+    flex: 0 0 auto;
+    overflow-x: auto;
+}
+.dsh-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    max-width: 160px;
+    padding: 2px 8px;
+    border: 1px solid var(--background-modifier-border);
+    background: var(--background-secondary);
+    border-radius: var(--radius-s);
+    font-size: var(--font-ui-smaller);
+    color: var(--text-muted);
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.dsh-tab:hover { background: var(--background-modifier-hover); }
+.dsh-tab.is-active {
+    background: var(--background-primary-alt);
+    border-color: var(--interactive-accent);
+    color: var(--text-normal);
+    font-weight: 600;
+}
+.dsh-tab-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.dsh-tab-close {
+    color: var(--text-faint);
+    font-size: 13px;
+    line-height: 1;
+    padding: 0 2px;
+    border-radius: 4px;
+}
+.dsh-tab-close:hover { color: var(--text-error); background: rgba(244,67,54,0.12); }
+
+/* 思考折叠（<details>） */
+.dsh-thinking {
+    border: 1px solid var(--background-modifier-border);
+    background: var(--background-secondary);
+    border-radius: var(--radius-s);
+    padding: 4px 8px;
+    margin-bottom: 6px;
+}
+.dsh-thinking > summary {
+    cursor: pointer;
+    font-size: var(--font-ui-smaller);
+    color: var(--text-muted);
+    font-weight: 600;
+}
+.dsh-thinking-body { margin-top: 4px; }
+
+/* 助手消息 hover 操作条（默认隐藏，hover 显示） */
+.dsh-msg-assistant { position: relative; }
+.dsh-msg-actions {
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    display: none;
+    gap: 4px;
+    background: var(--background-primary);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+    padding: 2px;
+}
+.dsh-msg-assistant:hover .dsh-msg-actions { display: flex; }
+.dsh-mini-btn {
+    cursor: pointer;
+    border: 1px solid var(--background-modifier-border);
+    background: var(--background-secondary);
+    color: var(--text-muted);
+    border-radius: var(--radius-s);
+    padding: 1px 6px;
+    font-size: var(--font-ui-smaller);
+}
+.dsh-mini-btn:hover { background: var(--background-modifier-hover); color: var(--text-normal); }
+
+/* steer 模式：输入框青色边（计划待确认信号，对齐 Claudian） */
+.dsh-native-input.is-steer {
+    border-color: #1d9e75;
+    box-shadow: 0 0 0 1px rgba(29,158,117,0.35);
+}
+
+/* 审批卡 extra 字段 */
+.dsh-pending-extra {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    border-top: 1px dashed var(--background-modifier-border);
+    padding-top: 6px;
+    margin-top: 2px;
+}
+.dsh-pending-kv { display: flex; gap: 6px; font-size: var(--font-ui-smaller); }
+.dsh-pending-k { color: var(--text-faint); min-width: 64px; flex: 0 0 auto; }
+.dsh-pending-v {
+    color: var(--text-normal);
+    font-family: var(--font-monospace, monospace);
+    overflow-wrap: anywhere;
+}
+
+/* 历史会话弹窗 */
+.dsh-history-modal { display: flex; flex-direction: column; gap: 10px; }
+.dsh-history-head { font-weight: 600; font-size: var(--font-ui-large); }
+.dsh-history-search {
+    width: 100%;
+    background: var(--background-secondary);
+    color: var(--text-normal);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+    padding: 6px 8px;
+    font-size: var(--font-ui-small);
+}
+.dsh-history-list {
+    max-height: 60vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.dsh-history-row {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 6px 8px;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+    cursor: pointer;
+}
+.dsh-history-row:hover { background: var(--background-modifier-hover); }
+.dsh-history-row.is-current { border-color: var(--interactive-accent); background: var(--background-primary-alt); }
+.dsh-history-name { font-size: var(--font-ui-small); color: var(--text-normal); }
+.dsh-history-meta { font-size: var(--font-ui-smaller); color: var(--text-faint); font-family: var(--font-monospace, monospace); }
+.dsh-history-empty { color: var(--text-muted); font-size: var(--font-ui-smaller); padding: 8px; }
+
+/* ===== dsh-ui 富卡片（类名沿用 dsh-ui-inject.js，配色改 Obsidian 变量） ===== */
+.dui-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 8px 0;
+    padding: 12px;
+    background: var(--background-secondary);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-m);
+    font-size: var(--font-ui-small);
+    line-height: 1.55;
+    color: var(--text-normal);
+    max-width: 100%;
+    overflow-x: auto;
+}
+.dui-title { font-size: var(--font-ui-small); font-weight: 700; color: var(--text-normal); padding-bottom: 6px; border-bottom: 1px solid var(--background-modifier-border); }
+.dui-t-h1 { font-size: 1.25em; font-weight: 700; }
+.dui-t-h2 { font-size: 1.12em; font-weight: 600; }
+.dui-t-h3 { font-size: 1em; font-weight: 600; }
+.dui-t-body { font-size: var(--font-ui-small); }
+.dui-t-muted { font-size: var(--font-ui-smaller); color: var(--text-muted); }
+.dui-t-caption { font-size: var(--font-ui-smaller); color: var(--text-faint); }
+.dui-center { text-align: center; }
+.dui-callout { padding: 10px 12px; border-radius: var(--radius-s); border-left: 4px solid; background: var(--background-primary-alt); }
+.dui-co-info { border-color: #378add; background: rgba(55,138,221,0.08); }
+.dui-co-success { border-color: #3fb950; background: rgba(63,185,80,0.08); }
+.dui-co-warning { border-color: #d29922; background: rgba(210,153,34,0.08); }
+.dui-co-error { border-color: #f44336; background: rgba(244,67,54,0.08); }
+.dui-callout-title { font-weight: 600; margin-bottom: 4px; }
+.dui-callout-content { white-space: pre-wrap; }
+.dui-badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: var(--font-ui-smaller); background: var(--background-modifier-border); color: var(--text-normal); border: 1px solid var(--background-modifier-border); }
+.dui-bd-success { background: rgba(63,185,80,0.15); color: #2ea043; border-color: rgba(63,185,80,0.4); }
+.dui-bd-warn { background: rgba(210,153,34,0.15); color: #b8860b; border-color: rgba(210,153,34,0.4); }
+.dui-bd-danger { background: rgba(244,67,54,0.15); color: #e5484d; border-color: rgba(244,67,54,0.4); }
+.dui-bd-accent { background: rgba(55,138,221,0.15); color: #378add; border-color: rgba(55,138,221,0.4); }
+.dui-table { width: 100%; border-collapse: collapse; font-size: var(--font-ui-smaller); }
+.dui-table th { background: var(--background-modifier-border); color: var(--text-normal); font-weight: 600; text-align: left; padding: 6px 8px; border: 1px solid var(--background-modifier-border); }
+.dui-table td { padding: 5px 8px; border: 1px solid var(--background-modifier-border); color: var(--text-normal); vertical-align: top; }
+.dui-list { margin: 2px 0; padding-left: 18px; }
+.dui-list li { margin: 3px 0; }
+.dui-list-item-title { font-weight: 600; }
+.dui-list-item-desc { color: var(--text-muted); font-size: var(--font-ui-smaller); }
+.dui-kv { width: 100%; border-collapse: collapse; font-size: var(--font-ui-smaller); }
+.dui-kv td { padding: 4px 8px; border: 1px solid var(--background-modifier-border); vertical-align: top; }
+.dui-kv td:first-child { color: var(--text-muted); white-space: nowrap; width: 1%; }
+.dui-stat { display: flex; flex-direction: column; gap: 2px; padding: 10px; background: var(--background-primary-alt); border: 1px solid var(--background-modifier-border); border-radius: var(--radius-s); }
+.dui-stat-label { font-size: var(--font-ui-smaller); color: var(--text-muted); }
+.dui-stat-value { font-size: 1.4em; font-weight: 700; }
+.dui-stat-delta { font-size: var(--font-ui-smaller); }
+.dui-delta-up { color: #2ea043; }
+.dui-delta-down { color: #e5484d; }
+.dui-progress { margin: 4px 0; }
+.dui-progress-label { font-size: var(--font-ui-smaller); display: flex; justify-content: space-between; margin-bottom: 3px; }
+.dui-progress-bar { height: 8px; background: var(--background-modifier-border); border-radius: 4px; overflow: hidden; }
+.dui-progress-fill { height: 100%; background: var(--interactive-accent); border-radius: 4px; }
+.dui-steps { display: flex; flex-direction: column; gap: 0; }
+.dui-step { display: flex; gap: 10px; position: relative; padding-bottom: 12px; }
+.dui-step:not(:last-child)::before { content: ""; position: absolute; left: 11px; top: 24px; bottom: 0; width: 2px; background: var(--background-modifier-border); }
+.dui-step-num { width: 22px; height: 22px; border-radius: 50%; background: var(--background-modifier-border); color: var(--text-muted); font-size: var(--font-ui-smaller); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.dui-step.current .dui-step-num { background: var(--interactive-accent); color: var(--text-on-accent); }
+.dui-step-title { font-weight: 600; }
+.dui-step-desc { font-size: var(--font-ui-smaller); color: var(--text-muted); }
+.dui-grid { display: grid; gap: 8px; }
+.dui-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.dui-col { display: flex; flex-direction: column; gap: 8px; }
+.dui-card { padding: 10px 12px; background: var(--background-primary-alt); border: 1px solid var(--background-modifier-border); border-radius: var(--radius-s); display: flex; flex-direction: column; gap: 6px; }
+.dui-card-title { font-weight: 600; font-size: var(--font-ui-small); }
+.dui-link { color: var(--text-accent); text-decoration: none; }
+.dui-link:hover { text-decoration: underline; }
+.dui-codeblock { background: var(--code-background); border: 1px solid var(--background-modifier-border); border-radius: var(--radius-s); padding: 8px 10px; overflow-x: auto; font-family: var(--font-monospace, monospace); font-size: var(--font-ui-smaller); color: var(--text-normal); white-space: pre; }
+.dui-json { background: var(--code-background); border: 1px solid var(--background-modifier-border); border-radius: var(--radius-s); padding: 8px 10px; overflow-x: auto; font-family: var(--font-monospace, monospace); font-size: var(--font-ui-smaller); color: var(--text-normal); white-space: pre-wrap; }
+.dui-copy { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; background: var(--background-secondary); border: 1px solid var(--background-modifier-border); border-radius: var(--radius-s); color: var(--text-normal); font-size: var(--font-ui-smaller); cursor: pointer; }
+.dui-copy:hover { background: var(--background-modifier-hover); }
+.dui-tabs { display: flex; flex-direction: column; gap: 6px; }
+.dui-tab-head { display: flex; gap: 4px; flex-wrap: wrap; }
+.dui-tab { font-size: var(--font-ui-smaller); color: var(--text-muted); background: var(--background-primary-alt); border: 1px solid var(--background-modifier-border); border-radius: var(--radius-s); padding: 3px 10px; cursor: pointer; user-select: none; }
+.dui-tab.active { color: var(--text-normal); background: var(--background-secondary); border-color: var(--interactive-accent); }
+.dui-acc { display: flex; flex-direction: column; gap: 4px; }
+.dui-acc details { background: var(--background-primary-alt); border: 1px solid var(--background-modifier-border); border-radius: var(--radius-s); padding: 6px 10px; }
+.dui-acc summary { cursor: pointer; font-weight: 600; font-size: var(--font-ui-smaller); }
+.dui-acc-body { margin-top: 6px; }
+.dui-timeline { display: flex; flex-direction: column; gap: 8px; }
+.dui-tl-item { display: flex; gap: 10px; }
+.dui-tl-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--interactive-accent); margin-top: 6px; flex-shrink: 0; }
+.dui-tl-title { font-weight: 600; }
+.dui-tl-time { font-size: var(--font-ui-smaller); color: var(--text-faint); margin-left: 8px; }
+.dui-tl-desc { font-size: var(--font-ui-smaller); color: var(--text-muted); }
+.dui-chart { display: flex; flex-direction: column; gap: 6px; }
+.dui-bar-row { display: flex; align-items: center; gap: 8px; font-size: var(--font-ui-smaller); }
+.dui-bar-label { color: var(--text-muted); min-width: 60px; text-align: right; }
+.dui-bar-track { flex: 1; background: var(--background-modifier-border); border-radius: 3px; height: 14px; overflow: hidden; }
+.dui-bar-fill { height: 100%; background: var(--interactive-accent); border-radius: 3px; }
+.dui-bar-val { color: var(--text-normal); min-width: 40px; font-size: var(--font-ui-smaller); }
+.dui-ro-input { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; background: var(--background-secondary); border: 1px solid var(--background-modifier-border); border-radius: var(--radius-s); color: var(--text-normal); font-size: var(--font-ui-smaller); }
+.dui-note { font-size: var(--font-ui-smaller); color: var(--text-faint); font-style: italic; }
+.dui-divider { border: none; border-top: 1px solid var(--background-modifier-border); margin: 4px 0; }
+.dui-spacer { flex: 0 0 auto; }
+

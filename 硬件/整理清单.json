@@ -1,0 +1,856 @@
+{
+ "generated_at": "2026-09-16T12:56:51.551896+00:00",
+ "tool_version": 1,
+ "errors": 0,
+ "items": [
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\01_提高篇全集-高速信号的设计.md",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\01_提高篇全集-高速信号的设计.md",
+   "kind": "md",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 129211,
+   "sha256": "587b0c62867a7002199b80f18f17371d997f3b865f671499ac7ab52c57f8727e"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\02_2小时，入门高速PCB设计！.md",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\02_2小时，入门高速PCB设计！.md",
+   "kind": "md",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 12991,
+   "sha256": "0b810487271060d350b5e6dd5e27d3d2bf387dd2275a64a3707cc847b1b75ff8"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\03_无痛入门！6层高速PCB设计！.md",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\03_无痛入门！6层高速PCB设计！.md",
+   "kind": "md",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 204067,
+   "sha256": "6e6947921a6c3271d96ba097bd7d1c59a90c9c348c92994af211113cbf73e10c"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\04_90分钟，入门6层板设计.md",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\04_90分钟，入门6层板设计.md",
+   "kind": "md",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 11893,
+   "sha256": "ac286fc3a547b25f1b6a0807b401883ffa0de8eafedb589f5e2dedfcfdd99710"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\05_模拟电子技术基础（适合零基础考研初试复试模电想拿满分.md",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\05_模拟电子技术基础（适合零基础考研初试复试模电想拿满分.md",
+   "kind": "md",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 417669,
+   "sha256": "1da5ca1813b748d0e6dc60d7cde7a17372c568d9a736fba96ba4dee0e2af77b0"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\06_【数电】数电知识点复习与习题讲解.md",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\06_【数电】数电知识点复习与习题讲解.md",
+   "kind": "md",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 241626,
+   "sha256": "b03c151d72993104ff3485d97dd15a2154fbd1b49ab341c4dbad87fd8eadb369"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\07_【EEVblog】电源设计  2025  实战电源设.md",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\07_【EEVblog】电源设计  2025  实战电源设.md",
+   "kind": "md",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 118760,
+   "sha256": "5ea02cb17cef740f7fb512755e26d9edd5095fc2a69d62995b32f153909002f1",
+   "note": "2026-09-10 迁移至原始备份并重新登记哈希"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\08_【Altium Academy】电源完整性【全26讲.md",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\08_【Altium Academy】电源完整性【全26讲.md",
+   "kind": "md",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 154700,
+   "sha256": "30ce2efda41eea9aefbbfb1c2eceedd3e5d347443072947ca768fd8bd0c584e8",
+   "note": "2026-09-10 迁移至原始备份并重新登记哈希"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\09_【Altium Academy】PCB 设计中的数学.md",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\09_【Altium Academy】PCB 设计中的数学.md",
+   "kind": "md",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 56096,
+   "sha256": "a30ce1177de32f68d1c39b785841a1d5d05bb00cbe20cf0762c54df27109d2b3"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\10_高速PCB设计多层板叠层与阻抗设计视频教程全集.md",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\10_高速PCB设计多层板叠层与阻抗设计视频教程全集.md",
+   "kind": "md",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 21989,
+   "sha256": "e04c8418a3561615f99e7ef77d95a9173040eabfe5de0e2af37059f004f9eecd"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\【Altium Academy】信号完整性 _ 2025 _ 吃透 SI 设计，搞定高速电路板｜全集总结 2026-08-06.md",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\【Altium Academy】信号完整性 _ 2025 _ 吃透 SI 设计，搞定高速电路板｜全集总结 2026-08-06.md",
+   "kind": "md",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 93473,
+   "sha256": "c50c040c6483b7eccbdda6d3b34ae40b5656e376672eafb341e7ae37de0ca0aa"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\硬件工程师入门教程_电子工程师_零基础_全免费_2024全新课程_中文字幕_B站 点赞 收藏NO.1｜全集总结 2026-08-06.md",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\硬件工程师入门教程_电子工程师_零基础_全免费_2024全新课程_中文字幕_B站 点赞 收藏NO.1｜全集总结 2026-08-06.md",
+   "kind": "md",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 286926,
+   "sha256": "fcdb9ce3b168852e37c0b3f724bb65213f2438d287bfaebe88e79a827cd8bb67"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\1N5819WS的数据手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\1N5819WS的数据手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 1157833,
+   "sha256": "609a5bc2fcd5bbb36f47f802b11102f1e140eae519c74b067cb615b4d52d0a4f"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\1N5819W数据手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\1N5819W数据手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 610701,
+   "sha256": "e96a1ca665e65bedfc64c9803b8c6c9f072c8f664d4a4e9359b0696b2edc6aa0"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\TC264数据手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\TC264数据手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 4548928,
+   "sha256": "e45bd26ae585ea30f0534dcd3bcbd9b557ef57b28e55c7ca023a31c77e66e7ed"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\TP5108芯片手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\TP5108芯片手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 2400338,
+   "sha256": "e3e6ad56b3892709db4678a7214e5ed3f137287b80e525c34fbe3a6c80540937"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\原理\\模电.md",
+   "relative_path": "原理\\模电.md",
+   "kind": "md",
+   "role": "curated-source",
+   "status": "validated",
+   "bytes": 62816,
+   "sha256": "73a4311f0ea96ed7134db58c285d142f294ecdebd58a2a3f8aa728c8790597b8"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\原理\\数电.md",
+   "relative_path": "原理\\数电.md",
+   "kind": "md",
+   "role": "curated-source",
+   "status": "validated",
+   "bytes": 52360,
+   "sha256": "b2b1cf07a9d753e6935bdb8a9fb65eebfeebf3bd22d671459f7ab4e60025b124"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\原理\\电源设计.md",
+   "relative_path": "原理\\电源设计.md",
+   "kind": "md",
+   "role": "curated-source",
+   "status": "validated",
+   "bytes": 53385,
+   "sha256": "2677b63d71a043b899a2681ce423221de9ff6075fe32866b848c71ce0fd3fa0b"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\原理\\PI.md",
+   "relative_path": "原理\\PI.md",
+   "kind": "md",
+   "role": "curated-source",
+   "status": "validated",
+   "bytes": 55081,
+   "sha256": "d25659a8a459fa178ede1175b4b4d9a10fabe7ee523569419daaa5d8fd2adbec"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\原理\\SI.md",
+   "relative_path": "原理\\SI.md",
+   "kind": "md",
+   "role": "curated-source",
+   "status": "validated",
+   "bytes": 58359,
+   "sha256": "d0bf66451163554a75bd4e0f6b0c51d97417f2396e4c478ff339b887544c96a8"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\原理\\叠层与阻抗.md",
+   "relative_path": "原理\\叠层与阻抗.md",
+   "kind": "md",
+   "role": "curated-source",
+   "status": "validated",
+   "bytes": 55273,
+   "sha256": "a953aa29c054a0f4869ff69a053e035c3ad5b04c3a26f7e1bcb0ca3876badb16"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\原理\\EMC.md",
+   "relative_path": "原理\\EMC.md",
+   "kind": "md",
+   "role": "curated-source",
+   "status": "validated",
+   "bytes": 60902,
+   "sha256": "9e67af7c8adced72a1be04ecd986f33b1d6dc216606e73a358823904e801d640"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\原理\\芯片手册\\二极管与保护器件.md",
+   "relative_path": "原理\\芯片手册\\二极管与保护器件.md",
+   "kind": "md",
+   "role": "curated-source",
+   "status": "validated",
+   "bytes": 5871,
+   "sha256": "fe4840a134c84a003cdbb6f78d7cf2496baa97b29295a18174309d7209b0ed9a"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\原理\\芯片手册\\电源管理.md",
+   "relative_path": "原理\\芯片手册\\电源管理.md",
+   "kind": "md",
+   "role": "curated-source",
+   "status": "validated",
+   "bytes": 17001,
+   "sha256": "68ab5d3f31af5a7a4d2700d795ddaddf8cddd5dc01cebef0cc2b6c01d11b7ddb"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\原理\\芯片手册\\主控MCU.md",
+   "relative_path": "原理\\芯片手册\\主控MCU.md",
+   "kind": "md",
+   "role": "curated-source",
+   "status": "validated",
+   "bytes": 13979,
+   "sha256": "2cac67eed39bf68314ff814d08d22a045e37747c9828a466e950038760e6cda1"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\PCB\\电源模块.md",
+   "relative_path": "PCB\\电源模块.md",
+   "kind": "md",
+   "role": "curated-source",
+   "status": "validated",
+   "bytes": 60011,
+   "sha256": "35777466cec7ef7eda27561236d903fb08e380f7b8eaee8251bab324086dc069"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\PCB\\主控与数字逻辑模块.md",
+   "relative_path": "PCB\\主控与数字逻辑模块.md",
+   "kind": "md",
+   "role": "curated-source",
+   "status": "validated",
+   "bytes": 56130,
+   "sha256": "d99119e2a3a4cf5014cf62d4a08b745e8cfb1cdc72884ab51ba75d291bcc25a8"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\PCB\\模拟与采集模块.md",
+   "relative_path": "PCB\\模拟与采集模块.md",
+   "kind": "md",
+   "role": "curated-source",
+   "status": "validated",
+   "bytes": 58789,
+   "sha256": "7db610e107f66b620f2584fda5674ca1b44a556d04ccae4e06f5be3fa35788c6"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\PCB\\高速接口模块.md",
+   "relative_path": "PCB\\高速接口模块.md",
+   "kind": "md",
+   "role": "curated-source",
+   "status": "validated",
+   "bytes": 56567,
+   "sha256": "5e1081237f7102c423d5948287121d6cca1fe86a4403ae16115e6421feb2bcf6"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\PCB\\时钟复位与启动模块.md",
+   "relative_path": "PCB\\时钟复位与启动模块.md",
+   "kind": "md",
+   "role": "curated-source",
+   "status": "validated",
+   "bytes": 58156,
+   "sha256": "2f921903ba2b2311256c463b8ab5dedced513af2652f75e3e45c61c5b1d8320a"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\PCB\\连接器保护与EMC模块.md",
+   "relative_path": "PCB\\连接器保护与EMC模块.md",
+   "kind": "md",
+   "role": "curated-source",
+   "status": "validated",
+   "bytes": 56082,
+   "sha256": "a42a001e73ef7e20f790e8d81b5915d79ee9ab506a2ea705866fcec87e28c2d3"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\PCB\\PCB通用工程方法.md",
+   "relative_path": "PCB\\PCB通用工程方法.md",
+   "kind": "md",
+   "role": "curated-source",
+   "status": "validated",
+   "bytes": 58335,
+   "sha256": "44a619d7bac06582059032ca71586513c5536f5de798c4280118ba019644791d"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\InvenSense-ICM-20948.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\InvenSense-ICM-20948.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 1142045,
+   "sha256": "5a6c1b7b71633986bec05439335844a91769e46f9d90c2602d0f7c1a559ae016"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\MicrOne-ME6211_C30.0.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\MicrOne-ME6211_C30.0.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 895692,
+   "sha256": "c8967146e91bee4041fce218384c3e3e5b0fb5a6975f7e68ecffac43bdde64df"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\PROTEC-PSM712-12V.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\PROTEC-PSM712-12V.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 710737,
+   "sha256": "edb78f42be54b139943d77440de54dee4441b0dff74222fc55a4fe76ffa69a92"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\Richtek-DS9193-18.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\Richtek-DS9193-18.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 182703,
+   "sha256": "bbab3a6dcb12085e8b2988d10d25f34a9fad4b3a5e1cdbcdb7b4314efc55f43f"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\RUNIC-RS0102.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\RUNIC-RS0102.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 875138,
+   "sha256": "17f1acb252f3bc3bc03c0c363cafd98a9cc36a97dc886c91e83b5eac6f502e26"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\ST-STM32F405RG.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\ST-STM32F405RG.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 3045302,
+   "sha256": "23db03cb96fa5594d2adebe27c08b932433cbda4f25f7f513d4c88faba923cdc"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\TI-TPS565201.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\TI-TPS565201.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 3281643,
+   "sha256": "44d5da4ecd34287ee592709a87de37c8ea7e945e672dd34cfcb627bf50d07bed"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\WCH-CH9102DS1.PDF",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\WCH-CH9102DS1.PDF",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 228679,
+   "sha256": "53d9e98927eb124f198b24a98c122069cfed960ca35b04c1b4f7f2a7757e4090"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\原理\\芯片手册\\接口转换.md",
+   "relative_path": "原理\\芯片手册\\接口转换.md",
+   "kind": "md",
+   "role": "curated-source",
+   "status": "validated",
+   "bytes": 3111,
+   "sha256": "18227ac751ad77670c682f769f98bd10babd51c578a04088be84f844077c22e4"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\原理\\芯片手册\\传感器.md",
+   "relative_path": "原理\\芯片手册\\传感器.md",
+   "kind": "md",
+   "role": "curated-source",
+   "status": "validated",
+   "bytes": 20775,
+   "sha256": "ed95757af40b393a4dc28b9bf361a2695aa67827063db34a86a38e866f48019f"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\原理\\芯片手册\\电平转换.md",
+   "relative_path": "原理\\芯片手册\\电平转换.md",
+   "kind": "md",
+   "role": "curated-source",
+   "status": "validated",
+   "bytes": 3268,
+   "sha256": "4c6735ba0f1b22877eaa17e9e6495395b6a82b3a6fcea9a1b06de0d5cc415aef"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\KT6368A蓝牙芯片用户手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\KT6368A蓝牙芯片用户手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 1041980,
+   "sha256": "33d2bd2331c453b721b2d7cd516fe311303f8ad7e8b8a9cae34eae35b258a924"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\原理\\芯片手册\\蓝牙与无线.md",
+   "kind": "md",
+   "status": "validated",
+   "role": "curated-source",
+   "bytes": 2056,
+   "sha256": "4b1ec77593872e207922d501c1703dac431b4d255469f1486553c016171fdb42",
+   "relative_path": "原理\\芯片手册\\蓝牙与无线.md"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\PCB\\高速接口新增资料.md",
+   "kind": "md",
+   "status": "validated",
+   "role": "curated-source",
+   "bytes": 2065,
+   "sha256": "c9e08c590e450b67efdf6b8215408bc56d1ad22c452fef57967861b90124ea80",
+   "relative_path": "PCB\\高速接口新增资料.md"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\AT32F421K8U7数据手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\AT32F421K8U7数据手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 2472576,
+   "sha256": "f486f88aa3135140a28e79c44064b32213cdea533fb66c646911c941bb431543"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\FD6288Q数据手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\FD6288Q数据手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 617202,
+   "sha256": "e9881dff94811241e10031af9c4efed45aeb15e857bb0ddedac24d394fa323a1"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\NTMFS5C430NL数据手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\NTMFS5C430NL数据手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 209158,
+   "sha256": "672054e79b7fa0927e587dc5155f7eeb0e51159c7e7c1d9633a523cbb058cdeb"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\SMDJ40CA数据手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\SMDJ40CA数据手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 1246079,
+   "sha256": "d543a85605d4040f0481f8d58ea0ace3427078849d17e39c6c8eb287b69fa6a8"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\SY8303数据手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\SY8303数据手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 1052257,
+   "sha256": "337629d344cdcb835c77fe904b8314c875be0f93f7aa3a6019e4832745834373"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\CJA1117B-3.3数据手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\CJA1117B-3.3数据手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 1021845,
+   "sha256": "90023201ba5e1fff23f39d0b6bd7283d9cda69a88b864c119bb89bc1f442e0c5"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\INA199数据手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\INA199数据手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 1724475,
+   "sha256": "5a8d96e58e1260b7c3ae98cae404647186715af9ee3fd0c2eeda1a3db150a89b"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\SMF18A数据手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\SMF18A数据手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 807823,
+   "sha256": "f219a8efe2d679935742ed69fe194d632afe5a5ea7e59af6f9d901e24781adac"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\原理\\芯片手册\\功率开关与驱动.md",
+   "kind": "md",
+   "status": "validated",
+   "role": "curated-source",
+   "bytes": 1621,
+   "sha256": "ebaece828d953ecf1e355b6447e0488b38d790f0e5a17525b09c47d0256840fb",
+   "relative_path": "原理\\芯片手册\\功率开关与驱动.md"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\原理\\芯片手册\\电流检测.md",
+   "kind": "md",
+   "status": "validated",
+   "role": "curated-source",
+   "bytes": 1208,
+   "sha256": "0f0c219fa509d5d016099e0b188ff7b6841c07c0ecde5ae3b095a7c545f2cd5a",
+   "relative_path": "原理\\芯片手册\\电流检测.md"
+  },
+  {
+   "source_path": "D:\\无人机\\打板文件\\无刷四驱.zip",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\无刷四驱\\无刷四驱.zip",
+   "kind": "zip",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 880915,
+   "sha256": "e9e39e9b066dd8cf76d6d8cbef1b9b5af55d51dc5ba0fad8ffab68691c1c6344"
+  },
+  {
+   "source_path": "D:\\无人机\\工程\\无刷四驱.epro2",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\无刷四驱\\无刷四驱.epro2",
+   "kind": "epro2",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 8080278,
+   "sha256": "32b78797b9d2358bf12030afb2febae7c947f9298ba0a6feac6c2d790f4fce90"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\PCB\\轮趣无刷四驱PCB设计审查.md",
+   "relative_path": "PCB\\轮趣无刷四驱PCB设计审查.md",
+   "kind": "md",
+   "role": "curated-source",
+   "status": "needs-review",
+   "bytes": 6649,
+   "sha256": "5b8b1f3674e56c473ab095d117f6a0e2d73782c8fe67731b6c7910f48316a3a5"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\ai8051芯片手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\ai8051芯片手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 45443910,
+   "sha256": "dd149405673130db1e0fc0570149ef405058a08591290701bf2704544459b06e"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\CARD芯片手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\CARD芯片手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 102353,
+   "sha256": "049e49dfc57332fa7c465893f63a06c472828b741c0014519037a9374e447b7f"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\GD32F303xB芯片手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\GD32F303xB芯片手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 2156733,
+   "sha256": "dd25179f22fddcda24540b774de743781800f99606d3b04ae7e96398affc6678"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\hip4082数据手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\hip4082数据手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 704468,
+   "sha256": "4f34134c5841155f73e698be0b3ac7265caa663e589f1e4bd3ea4af32ca9667e"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\INA199芯片手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\INA199芯片手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 1724475,
+   "sha256": "5a8d96e58e1260b7c3ae98cae404647186715af9ee3fd0c2eeda1a3db150a89b"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\LSM6DSR芯片手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\LSM6DSR芯片手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 2591933,
+   "sha256": "3b62a8c2f38a4dd5d35cf0f21cf9c47a1832f2edaf2da4d2e5d1d51ade60d0ec"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\MT41J128M16JT-125芯片手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\MT41J128M16JT-125芯片手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 3238403,
+   "sha256": "20122f81d3e37edff622af6592ea3ce2f32ebd11549ab4b2937d868440aeb895"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\RClamp0524P芯片手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\RClamp0524P芯片手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 385717,
+   "sha256": "a3c0989b529752d1950dfac64a51d7905372d69a23ff37c517793dfa5ba13043"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\SN74HC125芯片手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\SN74HC125芯片手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 2028618,
+   "sha256": "c86e66655135feab143b91e58d6283fccb07d265626cae34709d61c8e404c6eb"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\SPX1117芯片手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\SPX1117芯片手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 665610,
+   "sha256": "5a6ac33385a39522111d0390b7901baa52640098bd6660182c4ca34999da7e62"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\SY8113BADC芯片手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\SY8113BADC芯片手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 3796526,
+   "sha256": "675dd1832ea9a8f4205387e6ae5b3be8752e90704f315e2d18f56b4f1852e5f0"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\TPS51200芯片手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\TPS51200芯片手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 1661968,
+   "sha256": "28f1fb2ee63a2b012ec742c6dbd6d305effa48e3cfd492cdd3d2683950b5d264"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\W25Q64JV芯片手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\W25Q64JV芯片手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 3220429,
+   "sha256": "166a0495a73fba63e728641c9b823c892412fb6cf26c6ccd3591f15005e05105"
+  },
+  {
+   "path": "D:\\ai知识库\\嵌入式\\硬件\\原理\\芯片手册\\2026-09-04新增芯片手册.md",
+   "relative_path": "原理\\芯片手册\\2026-09-04新增芯片手册.md",
+   "kind": "md",
+   "role": "curated-source",
+   "status": "needs-review",
+   "bytes": 3801,
+   "sha256": "d569763787ef6b15d313d57c4a2cdb0eb087d8adb6a8c2f930aa16deab8c19d1"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\【Altium Academy】信号完整性 _ 2025 _ 吃透 SI 设计，搞定高速电路板｜全集总结（详解版）2026-09-08.md",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\【Altium Academy】信号完整性 _ 2025 _ 吃透 SI 设计，搞定高速电路板｜全集总结（详解版）2026-09-08.md",
+   "kind": "md",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 102658,
+   "sha256": "e78afcb3ded48779dc54993f0f4bb19243ebec03e76d9dd222793a07984d1902",
+   "note": "2026-09-10 迁移至原始备份并重新登记哈希"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\Altium Academy EMI-EMC 电磁干扰与电磁兼容 2024 全6讲总结.md",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\Altium Academy EMI-EMC 电磁干扰与电磁兼容 2024 全6讲总结.md",
+   "kind": "md",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 103599,
+   "sha256": "13eb820f7dbc62daee5e1d21cbd1888d5e022bc3e816f56288764bc8e88d7243"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\JHP11-PCB模块化设计要点解析教案.md（单独Markdown文件）.md",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\JHP11-PCB模块化设计要点解析教案.md（单独Markdown文件）.md",
+   "kind": "md",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 45051,
+   "sha256": "4628f4f596972c3a44d00a77f206a8bda10c0836bca1365f6a706e17fd15798c"
+  },
+  {
+   "source_path": "D:/ai知识库/嵌入式/硬件/芯片数据手册\\VCNL4040数据手册.pdf",
+   "backup_path": "D:/ai知识库/嵌入式/硬件/原始备份/芯片数据手册\\VCNL4040数据手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 454636,
+   "sha256": "63727cb9194970b1913f3cc8ee180cd773707fcccddfff082cc2ead39ecbcb5f"
+  },
+  {
+   "source_path": "D:/ai知识库/嵌入式/硬件/芯片数据手册\\TX7550-M数据手册.pdf",
+   "backup_path": "D:/ai知识库/嵌入式/硬件/原始备份/芯片数据手册\\TX7550-M数据手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 838824,
+   "sha256": "aa797b48af0b4c39dc2d90b8cba22751acb1290843a9b3aa9b5ceb13feb18157"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\LT3045数据手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\LT3045数据手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 4667103,
+   "sha256": "9132e595759a58a0920e7c63997872df02ca9ce598ead76c6f7a31051405eba6"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\TI-TPS7A4701数据手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\TI-TPS7A4701数据手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 2149422,
+   "sha256": "7d0839129259ff4a2d73fff535febeeed8885176025598f45254049a250a193c"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\tps7a47数据手册.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\tps7a47数据手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 2619636,
+   "sha256": "8abb7994a91c0d4ee8f4069e9d27481c0b727069527f6796e2693ea56c9151ed"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\高速ADCPCB设计.pdf",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\高速ADCPCB设计.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 2447540,
+   "sha256": "e790bb361d34be8136491c38dc7604da3cae0c81d94ec3c3031d4e2f495d29d0"
+  },
+  {
+   "source_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\接地、分割与叠层——模数混合PCB设计五套视频整合详解总结 2026-09-09.md",
+   "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\接地、分割与叠层——模数混合PCB设计五套视频整合详解总结 2026-09-09.md",
+   "kind": "md",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 105411,
+   "sha256": "d7c80ae8bdebf0ae8097c8049f57616a5eaf5b47133659e8dc04fec30f697f90"
+  },
+  {
+   "source_path": "D:/ai知识库/嵌入式\\硬件\\芯片数据手册\\MPU-6500数据手册.pdf",
+   "backup_path": "D:/ai知识库/嵌入式\\硬件\\原始备份\\芯片数据手册\\MPU-6500数据手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 814603,
+   "sha256": "6afb495474de03a1fa4ac16cb591ae0189e25b4f8cbf3fe644a42bb9405f7151"
+  },
+  {
+   "source_path": "D:/ai知识库/嵌入式\\硬件\\芯片数据手册\\ICM-42688数据手册.pdf",
+   "backup_path": "D:/ai知识库/嵌入式\\硬件\\原始备份\\芯片数据手册\\ICM-42688数据手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 1801780,
+   "sha256": "55ec8597ef1561310a0bf8013e2f6ab7d0b6fdd899b23a10801bacd02b84e2fd"
+  },
+  {
+   "source_path": "D:/ai知识库/嵌入式\\硬件\\芯片数据手册\\AT7456E数据手册.pdf",
+   "backup_path": "D:/ai知识库/嵌入式\\硬件\\原始备份\\芯片数据手册\\AT7456E数据手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 2991018,
+   "sha256": "446b9fa3190ebdeac20843ce81b36a2abb9d06f366daf30a4b5fe91b34ef1054"
+  },
+  {
+   "source_path": "D:/ai知识库/嵌入式\\硬件\\芯片数据手册\\BMP280数据手册.pdf",
+   "backup_path": "D:/ai知识库/嵌入式\\硬件\\原始备份\\芯片数据手册\\BMP280数据手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 1257075,
+   "sha256": "95344fbb631ec7d4cd87d2a6eff46bf048bb37ff83e2116c5c6dc74028f8f4e6"
+  },
+  {
+   "source_path": "D:/ai知识库/嵌入式\\硬件\\芯片数据手册\\W25Q256JV数据手册 .pdf",
+   "backup_path": "D:/ai知识库/嵌入式\\硬件\\原始备份\\芯片数据手册\\W25Q256JV数据手册 .pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 2845078,
+   "sha256": "212e47abc832059716f824f5160617e03273312ef88e7c1bdf366ed9c98ec483"
+  },
+  {
+   "source_path": "D:/ai知识库/嵌入式\\硬件\\芯片数据手册\\1N4001W芯片手册.pdf",
+   "backup_path": "D:/ai知识库/嵌入式\\硬件\\原始备份\\芯片数据手册\\1N4001W芯片手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 206388,
+   "sha256": "4072953e6fe0a90fba61f7068704719f075b0da1fdc9aaee4536c47ea43be694"
+  },
+  {
+   "source_path": "D:/ai知识库/嵌入式\\硬件\\芯片数据手册\\CH549DS1芯片手册.PDF",
+   "backup_path": "D:/ai知识库/嵌入式\\硬件\\原始备份\\芯片数据手册\\CH549DS1芯片手册.PDF",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 728364,
+   "sha256": "26f9a3585488ca440e4b565956fa6fa45bdb1e006389f788f795963a7567cf69"
+  },
+  {
+   "source_path": "D:/ai知识库/嵌入式\\硬件\\芯片数据手册\\CJ2301芯片手册.pdf",
+   "backup_path": "D:/ai知识库/嵌入式\\硬件\\原始备份\\芯片数据手册\\CJ2301芯片手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 613744,
+   "sha256": "b28b0b535eff5edc9c0cbc107afb0965385e2debda5429e7e55233c02fac1ad7"
+  },
+  {
+   "source_path": "D:/ai知识库/嵌入式\\硬件\\芯片数据手册\\WS2812数据手册.pdf",
+   "backup_path": "D:/ai知识库/嵌入式\\硬件\\原始备份\\芯片数据手册\\WS2812数据手册.pdf",
+   "kind": "pdf",
+   "status": "backed-up",
+   "role": "backup-source",
+   "bytes": 840007,
+   "sha256": "d8d00bc9d951ce4095d2fbe04b6b8b983b5914d3efc6da915d464d50c574c91d"
+  },
+  {
+   "path": "D:/ai知识库/嵌入式\\硬件\\原理\\芯片手册\\显示与指示.md",
+   "relative_path": "原理\\芯片手册\\显示与指示.md",
+   "kind": "md",
+   "role": "curated-source",
+   "status": "validated",
+   "bytes": 9650,
+   "sha256": "8c3dbb3111d498ae200d556ddaf2381bcc0ff31e52c881074cba154bc341774e"
+  }
+ ]
+}

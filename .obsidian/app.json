@@ -1,0 +1,12 @@
+{
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "/wiki",
+  "showLineNumber": true,
+  "spellcheck": true,
+  "strictLineBreaking": false,
+  "autoConvertHtml": true,
+  "latexCompiler": "katex",
+  "latexDelimiter": "$$",
+  "showUnsupportedFiles": true
+}
