@@ -1,6 +1,7 @@
 # 嵌入式知识库索引
 
 > 查询入口：先根据本页定位页面，再按需读取；不要遍历整个知识库。
+> 最近更新：2026-09-26，新增 4 个 GitHub 外来项目资源，并完成知识库体检。
 
 ## 运行入口
 
@@ -11,6 +12,15 @@
 - [[分类与来源摘要|分类与来源摘要]]：原始资料、分类稿与主题归属。
 - [[思维模型库/README|思维模型库索引]]：通用思维方法论（第一性原理、5W2H、MECE 等），与硬件 Wiki 平行的元方法层。
 - [[external/index|外来资源索引]]：AI 主动获取的补充资料及其来源、可靠性和核验状态。
+- [[external/GitHub-SimpleFOC-Arduino-FOC|SimpleFOC]]、[[external/GitHub-PX4-Autopilot|PX4]]、[[external/GitHub-raspberrypi-pico-sdk|pico-sdk]]、[[external/GitHub-STM32CubeF4|STM32CubeF4]]：按电机控制、无人机、RP2350、STM32F4 四条主线登记的 GitHub 外来资源，均待核验。
+- [[journal/health-check-2026-09-22|2026-09-22 知识库健康检查]]：新增 IP5306、AW32001B、USBLC6-2 后的备份、清单、来源与 Wiki 链路检查。
+- [[journal/health-check-2026-09-26|2026-09-26 知识库健康检查]]：4 个 GitHub 外来项目登记后的 Wiki、外来资源、导航和原始资料边界检查。
+
+### 2026-09-25 新增器件（待复核）
+
+- [[wiki/原理/芯片手册/主控MCU/STM32F407VG|STM32F407VG]]：ST Cortex-M4 MCU，最高 168 MHz、最高 1 MB Flash，含 Ethernet/USB/Camera/FSMC 系列能力；完整订货后缀待确认。
+- [[wiki/原理/芯片手册/无线通信/SE5004L|SE5004L]]：Skyworks 5 GHz WLAN 功率放大器，文件名为 `Se2525PA.pdf`，26 dBm/5 V，型号对应关系待确认。
+- [[wiki/原理/芯片手册/无线通信/RTC6705|RTC6705]]：RichWave 5.8 GHz FM 发射器，3.3 V、外部匹配参考 +13 dBm，旧版保密手册待复核。
 
 ### AI 访问路径
 
@@ -18,20 +28,70 @@
 
 ## 原理与器件
 
+### 2026-09-22 新增器件（待复核）
+
+- [[wiki/原理/芯片手册/电源管理/IP5306|IP5306]]：英集芯移动电源 SoC，单节锂电充电 + 5 V 同步升压 + 电量指示。
+- [[wiki/原理/芯片手册/电源管理/AW32001B|AW32001B]]：艾为带完整电源路径的 I2C 单节锂电充电器，WLCSP 9B，手册标注 Confidential。
+- [[wiki/原理/芯片手册/二极管与保护器件/USBLC6-2|USBLC6-2]]：ST USB2.0 双数据线 ESD 保护器件，I/O 电容最大 3.5 pF。
+
+### 2026-09-19 新增器件（待复核）
+
+- [[wiki/原理/芯片手册/电源管理/BQ24074|BQ24074]]：TI **带电源路径（DPPM）的单芯 1.5 A 线性锂电充电器**（OVP 10.5 V、可编程终止电流、无电池可开机）；中文版以英文原版 SLUS810 为准。
+- [[wiki/原理/芯片手册/电源管理/TPS63070|TPS63070]]：TI **升降压 Buck-Boost**（2~16 V 输入、2.5~9 V 输出、2 A，2.4 MHz）；电池跨压供电首选；英文原版 SLVSC58。
+- [[wiki/原理/芯片手册/电源管理/DW01A|DW01A]]：富满电子 **单节锂电保护 IC**（过充 4.30 V/过放 2.40 V/短路响应 5 µs）；与 [[wiki/原理/芯片手册/功率开关与驱动/SC8205|SC8205]] 构成经典保护配对。
+- [[wiki/原理/芯片手册/功率开关与驱动/SC8205|SC8205]]：富满 **双 N-MOS 共漏极** 20 V/6 A；**文件名 8205A 与手册型号不符**（8205A=TSSOP-8、8205S=SOT-23-6）。
+- [[wiki/原理/芯片手册/显示与指示/WS2812B|WS2812B]]：Worldsemi 可寻址 RGB LED（V5）；**与 WS2812 的位时序数值完全相同**，差异在 VIH 门限、波长/亮度与外围电容。
+
+### 2026-09-18 新增器件（待复核）
+
+- [[wiki/原理/芯片手册/主控MCU/K230|K230]]：嘉楠 **RISC-V 双核 AIoC SoC**（C908 @1.6 GHz 带 RVV 1.0 + KPU 视觉加速）；LPDDR4 双通道 @3200 Mbps；3× MIPI CSI；引脚表在外部文档。
+- [[wiki/原理/芯片手册/主控MCU/RP2350|RP2350]]：Raspberry Pi **双核 M33 或 Hazard3 RISC-V 可切换 MCU**（150 MHz、520 kB SRAM、12× PIO）；片上 buck+LDO；Secure Boot；**订货须指定 A4 步进**。
+- [[wiki/原理/芯片手册/存储器/W25Q16JV|W25Q16JV]]：Winbond **16 M-bit SPI NOR Flash**（Dual/Quad SPI，66 MB/s，XIP）；RP2354 叠封即此型号。
+- [[wiki/原理/芯片手册/存储器/MKDV16GCL-STP|MKDV16GCL-STP]]：宏旺 **SD NAND**（LGA-8 贴片 SD 卡，SDIO/SPI，内置 FTL 与掉电保护）；**"16G"=16 Gbit≈1850 MB**。
+- [[wiki/原理/芯片手册/存储器/K4F8E304HB-MGCJ|K4F8E304HB-MGCJ]]：三星 **8 Gbit x32 LPDDR4**（3733 Mbps，200-FBGA，三电源 1.8/1.1/1.1 V）；K230 配套运行内存。
+- [[wiki/原理/芯片手册/电源管理/SGM2028|SGM2028]]：SG Micro **500 mA RF LDO**（PSRR 73 dB@1 kHz、噪声 30 µVrms）；BP 引脚降噪。
+- [[wiki/原理/芯片手册/电源管理/XC6206|XC6206]]：Torex **3 端子超低 IQ LDO**（IQ 1 µA，无 CE 脚）；1.2~5.0 V/0.1 V 步进系列编码订货。
+- [[wiki/原理/芯片手册/电源管理/TLV62569|TLV62569]]：TI **2.5~5.5 V/2 A 同步 Buck**（1.5 MHz、内部补偿、PSM 轻载）；单节锂电档。
+- [[wiki/原理/芯片手册/电源管理/TPS54302|TPS54302]]：TI **4.5~28 V/3 A 同步 Buck**（400 kHz、展频 EMI、Eco-mode）；**中文版手册以英文原版 SLVSDG6 为准**。
+- [[wiki/原理/芯片手册/电源管理/MT9201|MT9201]]：芯龙 **3~24 V 升压白光 LED 驱动**（1.2 MHz、VFB=200 mV 恒流、三方式调光）。
+- [[wiki/原理/芯片手册/二极管与保护器件/BST236A054U|BST236A054U]]：BORN **超低电容 ESD 二极管**（Cj 0.25 pF，USB2.0/以太网高速口）；引脚/方向待视觉签核。
+- [[wiki/原理/芯片手册/二极管与保护器件/ESD5451N|ESD5451N]]：韦尔 **±5 V 双向 TVS**（**±30 kV** 接触/空气、CJ 17.5 pF 限低速线路）；DFN1006-2L。
+- [[wiki/原理/芯片手册/逻辑器件/SN74LVC1G14|SN74LVC1G14]]：TI **单路施密特触发反相器**（VCC 1.65~5.5 V、tpd 1.5 ns、滞回 0.56~0.87 V@3.3 V）——新建「逻辑器件」分类首件。
+- [[wiki/原理/芯片手册/功率开关与驱动/MT9700|MT9700]]：芯龙 **80 mΩ 限流配电开关**（0.4~2 A RSET 编程、短路响应 <2 µs）；MT9700/L 的 EN 极性相反。
+- [[wiki/原理/芯片手册/无线通信/TL8189FQA|TL8189FQA]]：创凌智联 **SDIO WiFi 模块**（主控 RTL8189FTV，802.11n 1T1R，3.3 V/600 mA）；工作温度 -10~+70 ℃。
+- [[wiki/原理/芯片手册/无线通信/BWIPX-1-001E|BWIPX-1-001E]]：蝙蝠无线 **IPEX 一代板端天线座子**（无源连接器，回流峰值 260 ℃/1 次）。
+
+> 本轮新建分类：**存储器**（3 款新件 + W25Q256JV 自主控MCU 迁入）、**逻辑器件**（SN74LVC1G14）。2026-09-17"暂不建存储分类"的决定被本轮 3 款新存储器件推翻（宋工 2026-09-18 确认）。
+
+### 2026-09-17 新增器件（待复核）
+
+- [[wiki/原理/芯片手册/传感器/PMW3901MB|PMW3901MB]]：PixArt **光流跟踪芯片**（28-pin COB 带镜头）；SPI 2 MHz，工作温度仅 0~40 °C，NC 引脚要求悬空。
+- [[wiki/原理/芯片手册/传感器/VL53L0X|VL53L0X]]：ST **ToF 激光测距**（LGA12）；2 m 内单点测距，Class 1 激光，盖板 crosstalk 校准必做，禁气相焊接。
+- [[wiki/原理/芯片手册/电源管理/XC6204|XC6204]]：Torex **高速 LDO** 带 CE 使能（XC6204=300 mA / XC6205=150 mA）；压差须按输出电压查表，B 型 CE 悬空不稳。
+- [[wiki/原理/芯片手册/二极管与保护器件/SS14|SS14]]：onsemi **40 V/1 A SMA 肖特基整流器**（SS12–S100 系列的 40 V 档）；1 A 续流/防反接。
+- [[wiki/原理/芯片手册/功率开关与驱动/SI2302|SI2302]]：MCC **20 V/3 A N-MOSFET**（SOT-23）；VGS 上限仅 ±8 V，逻辑电平负载开关。
+- [[wiki/原理/芯片手册/功率开关与驱动/SS8550|SS8550]]：onsemi **PNP 三极管**（-25 V/-1.5 A，TO-92）；与 SS8050 互补，hFE 按 C/D 分组，BOM 必须写后缀。
+
 ### 2026-09-16 新增器件（待复核）
 
 - [[wiki/原理/芯片手册/传感器/MPU-6500|MPU-6500]]：InvenSense 六轴 IMU（24-pin QFN 3×3 mm）；I2C 0x68/0x69，无磁力计，可经辅助 I2C 外接。
 - [[wiki/原理/芯片手册/传感器/ICM-42688|ICM-42688]]：InvenSense 六轴 IMU（14-pin LGA）；**pre-production 文档，不得进量产 BOM**；上电默认 SPI 模式。
 - [[wiki/原理/芯片手册/传感器/BMP280|BMP280]]：Bosch 绝压气压传感器（8-pin LGA metal-lid）；全精度仅 0~65 °C；禁气相焊接。
 - [[wiki/原理/芯片手册/显示与指示/AT7456E|AT7456E]]：中科微单色 OSD 发生器，兼容 MAX7456；NTSC/PAL，512 字符，SPI ≤10 MHz。
-- [[wiki/原理/芯片手册/主控MCU/W25Q256JV|W25Q256JV]]：Winbond 256 M-bit（32 MB）SPI NOR Flash；Quad I/O 532 MHz，≥100K 擦写。
+- [[wiki/原理/芯片手册/存储器/W25Q256JV|W25Q256JV]]：Winbond 256 M-bit（32 MB）SPI NOR Flash；Quad I/O 532 MHz，≥100K 擦写。
+- [[wiki/原理/芯片手册/功率开关与驱动/AP2003|AP2003]]：铨力 SOT-23-6L **N+P 互补对管**（各 20 V/3 A）；图片型 PDF 经视觉识别，20 V 耐压限低压系统。
+- [[wiki/原理/芯片手册/功率开关与驱动/SL27517|SL27517]]：萨科微 4 A 单通道**低侧**栅极驱动器；传播延迟 16 ns，输入耐 -5 V；UVLO 4.2 V 不能 3.3 V 供电。
+- [[wiki/原理/芯片手册/功率开关与驱动/DRV8701|DRV8701]]：TI 有刷电机 **H 桥栅极驱动**（4 颗外部 N-MOSFET）；集成电荷泵/双 LDO/分流放大器；PH/EN 与 PWM 两版本。
+- [[wiki/原理/芯片手册/电源管理/SCT2450Q|SCT2450Q]]：芯洲 3.8~36 V/5 A 同步 Buck，**AEC-Q100 车规 G1**；外部补偿；文件名 STC245Q 与实际型号不符。
+- [[wiki/原理/芯片手册/电源管理/TPS5450-Q1|TPS5450-Q1]]：TI 5.5~36 V/5 A **非同步**车规 Buck（须外置续流二极管）；中文版仅供参考，以英文版 SLVS834 为准。
+- [[wiki/原理/芯片手册/电源管理/LMR51450|LMR51450]]：TI 4~36 V/5 A 同步 Buck，IQ 25 µA，内部补偿；PFM（带展频）/FPWM 两变体，仅 WSON-12。
 
 ### 2026-09-13 登记（待复核）
 
 - [[wiki/原理/芯片手册/二极管与保护器件/1N4001W|1N4001W]]：整流二极管用户手册，待复核。
 - [[wiki/原理/芯片手册/功率开关与驱动/CJ2301|CJ2301]]：MOSFET 用户手册，待复核。
 - [[wiki/原理/芯片手册/主控MCU/CH549DS1|CH549DS1]]：USB MCU 用户手册，待复核。
-- [[wiki/原理/芯片手册/显示与指示/WS2812|WS2812]]：可寻址 RGB LED；**手册事实尚未逐页提取**，参数引用前需先读原文。
+- [[wiki/原理/芯片手册/显示与指示/WS2812|WS2812]]：可寻址 RGB LED；2026-09-16 已回填手册事实（**非 WS2812B，时序勿套用 B 版**；VDD 3.7~5.3 V）。
 
 ## 外来高速 PCB 资料
 
@@ -54,6 +114,7 @@
 - [[wiki/原理/芯片手册/电源管理/TP5108E|TP5108E]]：固定输出 LDO 的手册事实、热和应用边界。
 - [[wiki/原理/芯片手册/主控MCU/TC264|TC264]]：AURIX 系列 MCU 的型号、供电、引脚与首板验证。
 - [[wiki/原理/芯片手册/主控MCU/STM32F405RG|STM32F405RG]]：LQFP64 Cortex-M4 MCU 的型号边界、最小系统和验证入口。
+- [[wiki/原理/芯片手册/主控MCU/STM32F407VG|STM32F407VG]]：LQFP100 Cortex-M4 MCU，最高 168 MHz、最高 1 MB Flash，完整后缀待确认。
 - [[wiki/原理/芯片手册/接口转换/CH9102|CH9102]]：USB-UART 型号差异、电平、布线和 RS-485 控制。
 - [[wiki/原理/芯片手册/传感器/ICM-20948|ICM-20948]]：九轴 IMU 的电源、接口、布局和校准边界。
 - [[wiki/原理/芯片手册/传感器/VCNL4040|VCNL4040]]：集成接近 + 环境光传感器（含 IRED），I2C 地址 0x60、量程与遮光标定边界（needs-review）。
@@ -79,7 +140,13 @@
 - [[wiki/原理/芯片手册/传感器/ICM-42688|ICM-42688]]：六轴 IMU，LGA 2.5×3 mm，I3C/I2C/SPI，2 kB FIFO；文档为 pre-production（needs-review）。
 - [[wiki/原理/芯片手册/传感器/BMP280|BMP280]]：绝压气压传感器，300~1100 hPa，±0.12 hPa 相对精度；VDDIO 下限 1.2 V（needs-review）。
 - [[wiki/原理/芯片手册/显示与指示/AT7456E|AT7456E]]：单色 OSD 发生器 + 视频驱动 + EEPROM；HTSSOP28/LGA16 双封装（needs-review）。
-- [[wiki/原理/芯片手册/主控MCU/W25Q256JV|W25Q256JV]]：32 MB SPI NOR Flash；Dual/Quad SPI，支持 64-bit Unique ID（needs-review）。
+- [[wiki/原理/芯片手册/存储器/W25Q256JV|W25Q256JV]]：32 MB SPI NOR Flash；Dual/Quad SPI，支持 64-bit Unique ID（needs-review）。
+
+- [[wiki/原理/芯片手册/电源管理/BQ24074|BQ24074]]：带电源路径的单芯 1.5 A 锂电充电器，DPPM/VIN-DPM 与 TS 温度保护（needs-review）。
+- [[wiki/原理/芯片手册/电源管理/TPS63070|TPS63070]]：2~16 V/2 A 升降压 Buck-Boost，电池跨压供电（needs-review）。
+- [[wiki/原理/芯片手册/电源管理/DW01A|DW01A]]：单节锂电保护 IC（过充/过放/过流/短路），配 SC8205 双 MOS（needs-review）。
+- [[wiki/原理/芯片手册/功率开关与驱动/SC8205|SC8205]]：双 N-MOS 共漏极（20 V/6 A），锂电保护配对管（needs-review）。
+- [[wiki/原理/芯片手册/显示与指示/WS2812B|WS2812B]]：可寻址 RGB LED（V5），GRB/800 Kbps/MSL 5a（needs-review）。
 
 ## PCB 设计
 
@@ -109,8 +176,10 @@
 - `硬件/原始备份/`：35 项用户原始资料，只读（含无刷四驱 ZIP 与 EPro2）。
 - `硬件/原始备份/`：新增 SI 详解版、EMI/EMC 总结和 JHP11 模块化设计详解资料，均只用于追溯。
 - `硬件/原理/`、`硬件/PCB/`：现有分类有效来源持续吸收 SI、EMC 和模块化布局增补，Wiki 正文的默认来源。
-- `external/`：外来资料层；当前含 3 条官方指南 + 毕设题录清单 + 毕设文献存放区 + 检索原始数据，未作为硬件 Wiki 正文依据。
+- `external/`：外来资料层；当前含 3 条官方指南、4 个 GitHub 项目、毕设题录清单、毕设文献存放区和检索原始数据，均未作为硬件 Wiki 正文依据。
 - `external/index.md`：外来资源登记入口；资源默认只读，参与硬件结论时需 `needs-review`。
-- `硬件/整理清单.json`：原始备份和分类稿的哈希、字节数与状态；当前 **94 项**（67 备份源 + 27 分类稿）。
+- `硬件/整理清单.json`：原始备份和分类稿的哈希、字节数与状态；当前 **135 项**（106 备份源 + 29 分类稿，2026-09-25 更新）。
 - `硬件/PCB/轮趣无刷四驱PCB设计审查.md`：本轮工程分析整理稿，状态 `needs-review`。
 - `journal/daily/2026-09-05.md`：无刷四驱工程审查、知识库更新与验证记录。
+- `journal/health-check-2026-09-19.md`：**全库健康检查报告**（依据 AGENTS.md §5/§6）；通过 12 项核心指标，修复 3 处（概览遗漏 2 页、2 个续页交叉链接不足、清单 INA199 路径失效），7 项待确认。
+- `journal/health-check-2026-09-26.md`：GitHub 外来项目登记后的本轮健康检查；新增条目字段和导航通过，历史遗留问题保持待确认。

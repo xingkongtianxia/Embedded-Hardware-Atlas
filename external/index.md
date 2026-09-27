@@ -2,7 +2,7 @@
 title: 外来资源索引
 type: source-map
 status: seed
-updated: 2026-09-13
+updated: 2026-09-26
 sources: []
 tags: [外来资料, 导航, 待核验, 毕设]
 ---
@@ -20,6 +20,10 @@ tags: [外来资料, 导航, 待核验, 毕设]
 | 毕设文献 PDF 存放区 | 从知网下载的全文存放位置（只读，命名与题录编号对应） | —（空目录） | 否（尚无全文） | [[毕设文献/README|毕设文献]] |
 | 检索原始数据 | 知网检索的未加工原始返回，用于复核题录著录 | 高（机器抓取原文） | 否（仅作证据，不支撑结论） | [[检索原始数据/README|检索原始数据]] |
 | 第一批优先下载文献直链 | 6 篇优先文献的知网详情页直链与命名建议 | 中（链接有时效） | 否（仅作下载导航） | [[第一批优先下载文献-详情页直链]] |
+| GitHub SimpleFOC Arduino-FOC | BLDC/PMSM/步进电机 FOC 原型与控制接口 | 中高（活跃开源项目） | 否，待核验 | [[GitHub-SimpleFOC-Arduino-FOC]] |
+| GitHub PX4 Autopilot | 无人机飞控架构、传感器融合、仿真与板级支持 | 高（成熟开源项目） | 否，待核验 | [[GitHub-PX4-Autopilot]] |
+| GitHub Raspberry Pi pico-sdk | RP2040/RP2350 SDK、PIO、构建系统与示例 | 高（芯片厂商官方） | 否，待核验 | [[GitHub-raspberrypi-pico-sdk]] |
+| GitHub STMicroelectronics STM32CubeF4 | STM32F4 HAL/LL、CMSIS、中间件和官方示例 | 高（芯片厂商官方） | 否，待核验 | [[GitHub-STM32CubeF4]] |
 
 ## 使用规则
 

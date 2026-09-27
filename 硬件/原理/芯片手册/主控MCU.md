@@ -2,9 +2,9 @@
 title: 主控 MCU
 type: datasheet-source
 status: curated
-updated: 2026-09-16
-sources: [原始备份/芯片数据手册/TC264数据手册.pdf, 原始备份/芯片数据手册/ST-STM32F405RG.pdf, 原始备份/芯片数据手册/AT32F421K8U7数据手册.pdf, 原始备份/芯片数据手册/W25Q256JV数据手册 .pdf]
-tags: [芯片手册, MCU, TC264, STM32F405RG, AT32F421K8U7, Cortex-M4, AURIX, W25Q256JV, SPI Flash, NOR Flash]
+updated: 2026-09-18
+sources: [原始备份/芯片数据手册/TC264数据手册.pdf, 原始备份/芯片数据手册/ST-STM32F405RG.pdf, 原始备份/芯片数据手册/AT32F421K8U7数据手册.pdf, 原始备份/芯片数据手册/W25Q256JV数据手册 .pdf, 原始备份/芯片数据手册/K230.pdf, 原始备份/芯片数据手册/rp2350数据手册.pdf]
+tags: [芯片手册, MCU, TC264, STM32F405RG, AT32F421K8U7, Cortex-M4, AURIX, W25Q256JV, SPI Flash, NOR Flash, K230, RP2350, RISC-V, AIoC]
 ---
 
 # 主控 MCU
@@ -27,7 +27,7 @@ tags: [芯片手册, MCU, TC264, STM32F405RG, AT32F421K8U7, Cortex-M4, AURIX, W2
 | ST STM32F405RG | `STM32F405xx, STM32F407xx`，DS8626 Rev 10，2024-11 | 只采用 RG/LQFP64 能力，不混入 F407 或大封装专属外设 |
 | Winbond W25Q256JV | `W25Q256JV` Datasheet，Rev R，2026-05-04 | **主控配套串行 Flash**，非 MCU 本体；见下节 |
 
-> **归类说明**：W25Q256JV 是 MCU 外挂的程序/数据存储，本页按"主控及其配套存储"收纳。若后续器件增多，建议独立出 `存储` 分类并把本节迁出。
+> **归类说明**：W25Q256JV 是 MCU 外挂的程序/数据存储，本页按"主控及其配套存储"收纳。**2026-09-17 宋工确认不独立建 `存储` 分类**，本节长期保留在本页。
 
 Data Sheet 不能替代 Reference Manual、User's Manual、Errata 和封装/应用笔记。首板结论必须绑定 BOM 完整订货号与硅步进。
 
@@ -210,6 +210,35 @@ F407 的 Ethernet、camera interface，以及 LQFP100 以上封装的 FSMC 能�
 - 完整订货型号（封装代码 + 温度等级）未在本设计冻结。
 - 文档显示 Rev R / 2026-05-04，需确认该版本是否为最新且供货版本一致。
 
+## Canaan K230（RISC-V 双核 AIoC SoC）
+
+嘉楠科技 `K230`（Kendryte 系列）：**RISC-V 64 位双核 AIoT SoC**，文档《K230 Product Full Datasheet》V1.0（2023-7-6），共 41 页（p.1/p.3）。
+
+- **架构**（p.4）：CPU0 小核 C908 @800 MHz（RV64GCB、FPU、L1 32 KB×2、L2 128 KB）；CPU1 大核 @1.6 GHz 带 **RVV 1.0 向量扩展**（128 bit 向量单元、L2 256 KB）；CPU1 与 KPU 支持 DVFS（p.9）。PLIC 208 中断源。
+- **AI**：KPU 支持 INT8/INT16 与权重稀疏压缩；典型性能 ResNet50 ≥85 fps、MobileNet_v2 ≥670 fps、YOLOv5s ≥38 fps@INT8（p.5）。**全文未给 TOPS 算力数值**，框图仅标 INT8/INT16（p.25，视觉识别）。DPU 3D 结构光引擎 1920×1080 最大输入、典型 1280×800@30 fps（p.6-7）。
+- **多媒体**（p.14-16）：编码最大 8MP@20 fps（H.265 Main/Main10、H.264、JPEG/MJPEG）；解码最大 8MP@40 fps；ISP 8MP@30 fps、3 sensor MCM（p.12）；**框图标注 4K@20/60 fps 与正文 8MP 数值不一致，照录**（p.25）。Fastboot 3A 首图 ≤400 ms（p.24）。
+- **存储**（p.7-9）：SRAM 2 MB 共享 + 2 MB（默认给 KPU）；DDR 双通道 16 bit LPDDR4 @3200 Mbps（32 bit LPDDR3 @2133 Mbps），容量最大 2 GB、2 rank；SPI NOR/NAND 支持 Dual/Quad/Octal、XIP。**K230D 为 SiP，内封 1 Gb LPDDR4**（p.25）。
+- **外设**（p.19-22）：USB2.0 OTG ×2；2× SDxC（SD3.01/eMMC 5.0，UHS-I SDR104、HS400）；SPI ×3（1 OSPI+2 QSPI）；UART ×5；I2C ×5（3.4 Mb/s）；PWM ×6；GPIO 64+8 PMU；3× MIPI CSI（最多 3×2 lane 或 1×4+1×2 lane，8/10/12/16 bit Bayer，HDR）；1× MIPI DSI（4/2 lane，2MP@60 fps，13 层合成）；内置 Codec（2 DAC+2 ADC 8~192 kHz）+8× PDM DMIC。**无以太网、无 PCIe**。
+- **电气**（p.27-29）：0.8 V 域（CORE/CPU/KPU/DDR_CORE，max 0.88 V）；VDD1P1_DDR_IO 典型 1.1/1.2/1.35 V；1.8 V/3.3 V IO 域（3.3 V max 3.63 V）；IO 驱动 DS[2:0] 可选至 IOL 34.9 mA（p.30，视觉识别）。工作环境 -40~85 ℃（p.24）。
+- **时钟**（p.9/p.23）：外部 24 MHz OSC + 4 内部 PLL；RTC 需外部 32.768 kHz。
+- **封装**：BGA-13×13-390（0.65 mm 球距、球径 0.3 mm）（p.26，视觉识别）；引脚定义依赖外部文档《K230_PINOUT_V1.0_20230524》（p.27）——**手册本体无引脚表，设计前必须另取 pinout 文档**。
+- 典型应用：智能门锁、安防摄像头、词典笔、支付识别、3D 结构光、无人机、机器人（p.4）。
+- 免责（p.2）：内容可随时更新不另行通知、不承诺正确性/完整性；无 preliminary 字样（已全文检索）。
+
+## Raspberry Pi RP2350（双架构双核 MCU）
+
+Raspberry Pi Ltd `RP2350`：**双核 Cortex-M33 或双核 Hazard3 RISC-V 可切换 MCU**，150 MHz，数据手册 build 2025-07-29（d126e9e-clean），共 1380 页（含 IO 寄存器映射）。封面为图片型，**参数经视觉识别**（p.1-2）。印刷页码 = PDF 页 - 1。
+
+- **架构**（p.14-16）：双核 Arm Cortex-M33 **或** 双核 Hazard3 RISC-V（RV32IMAC+，动态切换架构）；150 MHz；**520 kB SRAM**（10 个独立 bank 单周期访问）；32 kB mask ROM Bootrom；8 kB OTP；专用 QSPI 总线支持最高 16 MB 外部 Flash/PSRAM + 第二片选再扩 16 MB；片上 buck + 低功耗 LDO 双模式；2× PLL。
+- **封装**（p.14/p.1330-1331）：RP2350A = QFN-60 7×7 mm、30 GPIO/4 ADC；RP2350B = QFN-80 10×10 mm、48 GPIO/8 ADC；RP2354A/B = 叠封 2 MB Flash（Winbond W25Q16JV**WI**）。命名：RP2350+封装代号(A/B)+版本"0"+die stepping（A2/A3/A4）。QFN-60 MSL1，**QFN-80 MSL 待定**（p.1331）。环境 -40~+85 ℃（p.1340）。
+- **电源域**（p.1343-1344）：IOVDD 1.62~3.63 V（典型 1.8/3.3 V）；QSPI_IOVDD 同 IOVDD（RP2354 必须 3.3 V）；DVDD 内核 1.05~1.16 V 由内部稳压器自 VREG_VIN（2.7~5.5 V）生成——**buck 模式最大 200 mA、LDO 睡眠模式 1 mA、开关频率 3 MHz**（p.16/p.1344-1345）；USB_OTP_VDD 3.3 V；ADC_AVDD <2.97 V 性能下降。
+- **绝对最大**（p.1339-1340）：DVDD -0.5~1.21 V；IOVDD -0.5~3.63 V；FT 引脚 IOVDD=3.3 V 时耐 **5.5 V**（1.8 V 时 3.63 V）；结温 -40~+125 ℃；ESD：FT 引脚 HBM 4 kV。
+- **外设**（p.14-15/p.1096/p.1341）：2× UART、2× SPI、2× I2C、24× PWM 通道、USB 1.1 FS/LS Host/Device（含 PHY）、**12× PIO 状态机（3 个 PIO 块）**、1× HSTX、DMA 16 通道；ADC 12 bit（ENOB 9~9.5 bit），4 通道（A）/8 通道（B），输入 0~ADC_AVDD。
+- **启动与安全**（p.354/p.817-819）：Bootrom 支持 Flash/OTP/USB/UART 串行启动、分区表、A/B 升级、反回滚；BOOTSEL=复位时拉低 QSPI_SS 进 USB BOOTSEL；Secure Boot SHA-256 + secp256k1 ECDSA 签名、公钥指纹存 OTP；TrustZone（Armv8-M Security extension）；含 glitch detector 抗故障注入。
+- **引脚**（p.588/p.1358）：最多 54 GPIO（A=30/B=48 + Bank1 QSPI 6 + USB）；每 GPIO 12 个复用功能槽 F0~F11；QFN-60 经 IO remap 稀疏引出；FT 引脚默认驱动 4 mA、四档 2/4/8/12 mA。
+- **时钟**（p.556-557）：XOSC 1~50 MHz（参考 12 MHz，推荐 Abracon ABM8-272-T3，±30 ppm、CL 10 pF）；PLL 需晶振 ≥5 MHz；ROSC 标称 11 MHz；LPOSC 32 kHz。
+- **风险与 Errata**（p.24/p.1358 起）：A2 首发→A3 样品/限量→**A4 为量产版**（参考 PCN 28）；Errata E3/E10/E13/E14/E15/E18 主要影响 A2/A3，A3/A4 修复；QFN-80 MSL 仍在表征；标 "Simulated" 数据不保证。**订货必须指定 A4 步进**。
+
 ## 同类选型维度
 
 - CPU 架构、实时性能、FPU/DSP、存储容量和安全需求。
@@ -224,9 +253,21 @@ F407 的 Ethernet、camera interface，以及 LQFP100 以上封装的 FSMC 能�
 - W25Q256JV 的完整订货型号、`/WP` 与 `/HOLD` 未用处理、去耦取值均待确认。
 - 所有器件都必须在真实 PCB、固件版本和温度范围下完成最小系统验证。
 
+## STM32F407VG（STM32F407xx 系列）
+
+- **器件定位**：ST STM32F407VG 属于 STM32F405/F407 系列，Arm Cortex-M4 + FPU，最高 168 MHz；本手册为 DS8626 Rev 10（2024-11，205 页，production data）。
+- **资源与接口**：最高 1 MB Flash、192 KB SRAM（含 64 KB CCM）+ 4 KB backup SRAM；3×12-bit ADC、2×12-bit DAC；USB OTG FS/HS、10/100 Ethernet MAC（带 DMA/IEEE 1588）、Camera 接口和 FSMC 是 F407 系列能力，具体可用资源仍受封装影响。
+- **电源与环境**：应用电源和 I/O 为 1.8~3.6 V；系列工作温度覆盖 -40~+85 °C 或 -40~+105 °C 档，实际后缀必须核对。LQFP100 封装尺寸 14×14 mm；VDD/VDDA、VBAT、VCAP、VREF+ 与 VSSA 的去耦和上电顺序按手册连接图复核。
+- **工程边界**：STM32F407VG 文件名不足以确认完整订货后缀、温度档和封装选项；不能把系列级“up to”资源直接写入 BOM。Ethernet/USB HS/FSMC/Camera 的引脚复用、外部 PHY/ULPI 和时钟方案需按实际封装逐项核对。
+
 ## 来源定位
 
 - `硬件/原始备份/芯片数据手册/TC264数据手册.pdf`
 - `硬件/原始备份/芯片数据手册/ST-STM32F405RG.pdf`
 - `硬件/原始备份/芯片数据手册/AT32F421K8U7数据手册.pdf`
 - `硬件/原始备份/芯片数据手册/W25Q256JV数据手册 .pdf`（注意：文件名 `.pdf` 前有一个空格）
+- `硬件/原始备份/芯片数据手册/K230.pdf`（嘉楠 K230 Product Full Datasheet V1.0，2023-7-6；引脚表在外部 pinout 文档）
+- `硬件/原始备份/芯片数据手册/rp2350数据手册.pdf`（Raspberry Pi RP2350 Datasheet，build 2025-07-29；封面图片型经视觉识别；页码为 PDF 物理页）
+- `硬件/原始备份/芯片数据手册/STM32F407VG数据手册.pdf`（ST DS8626 Rev 10，2024-11；STM32F405xx/STM32F407xx 系列手册）
+
+> **分类变更（2026-09-18）**：新建 `存储器` 分类后，W25Q256JV 的 Wiki 器件页已迁至 `wiki/原理/芯片手册/存储器/`；本分类稿保留其"主控配套串行 Flash"章节作为来源整理（历史条目不变），新入库存储器件（W25Q16JV、MKDV16GCL-STP、K4F8E304HB-MGCJ）见 `硬件/原理/芯片手册/存储器.md`。

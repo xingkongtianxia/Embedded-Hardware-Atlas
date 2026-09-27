@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/PCB/模拟与采集模块/08-高速ADC-PCB布局-AN-1142.md",
+                "file": "硬件/原始备份/硬件工程师入门教程_电子工程师_零基础_全免费_2024全新课程_中文字幕_B站 点赞 收藏NO.1｜全集总结 2026-08-06.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "08-高速ADC-PCB布局-AN-1142"
+              "title": "硬件工程师入门教程_电子工程师_零基础_全免费_2024全新课程_中文字幕_B站 点赞 收藏NO.1｜全集总结 2026-08-06"
+            }
+          },
+          {
+            "id": "15ff6ab0c9c0285b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -191,16 +216,27 @@
               "icon": "lucide-archive",
               "title": "添加笔记属性"
             }
+          },
+          {
+            "id": "9fe09c105fdbb3c3",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -219,8 +255,31 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "17a5ab5bd5122ae6",
+  "active": "15ff6ab0c9c0285b",
   "lastOpenFiles": [
+    "log.md",
+    "rules.md",
+    "schema.md",
+    "Pasted image 20260821102057.png",
+    "Pasted image 20260821102047.png",
+    "Pasted image 20260821100751.png",
+    "硬件/原理/电源设计.md",
+    "硬件/PCB/轮趣无刷四驱PCB设计审查.md",
+    "硬件/PCB/模拟与采集模块.md",
+    "硬件/PCB/主控与数字逻辑模块.md",
+    "硬件/PCB/连接器保护与EMC模块.md",
+    "硬件/PCB/高速接口模块.md",
+    "硬件/原理/叠层与阻抗.md",
+    "Excalidraw/Drawing 2026-09-27 14.36.51.excalidraw.md",
+    "硬件/原始备份/硬件工程师入门教程_电子工程师_零基础_全免费_2024全新课程_中文字幕_B站 点赞 收藏NO.1｜全集总结 2026-08-06.md",
+    "Excalidraw",
+    "wiki/原理/芯片手册/电源管理/LMR51450.md",
+    "wiki/原理/芯片手册/电源管理/TPS5450-Q1.md",
+    "wiki/原理/芯片手册/电源管理/SCT2450Q.md",
+    "wiki/原理/芯片手册/功率开关与驱动/DRV8701.md",
+    "wiki/原理/芯片手册/功率开关与驱动/SL27517.md",
+    "wiki/原理/芯片手册/功率开关与驱动/AP2003.md",
+    "wiki/PCB/模拟与采集模块/08-高速ADC-PCB布局-AN-1142.md",
     "硬件/原始备份/芯片数据手册/tps5450-q1.pdf",
     "硬件/原始备份/芯片数据手册/drv8701.pdf",
     "硬件/原始备份/芯片数据手册/TI-LMR51450.pdf",
@@ -234,39 +293,16 @@
     "wiki/PCB/电源模块/09-测量与故障定位/17-电源模块进阶知识条目-12.md",
     "wiki/PCB/电源模块/09-测量与故障定位/15-电源模块进阶知识条目-10.md",
     "wiki/PCB/电源模块/09-测量与故障定位/10-电源模块进阶知识条目-5.md",
-    "wiki/PCB/电源模块/09-测量与故障定位/14-电源模块进阶知识条目-9.md",
-    "wiki/PCB/电源模块/09-测量与故障定位/11-电源模块进阶知识条目-6.md",
-    "wiki/PCB/电源模块/09-测量与故障定位/07-电源模块进阶知识条目-2.md",
-    "wiki/PCB/电源模块/09-测量与故障定位/03-电源模块知识条目-4.md",
-    "wiki/综合/硬件设计审查框架.md",
     "Pasted image 20260821100334.png",
-    "external/index.md",
-    "external/README.md",
-    "external/知网毕设文献题录清单-电机控制方向.md",
-    "external/高速PCB设计指南-Intel.md",
-    "external/毕设文献/README.md",
-    "external/资源条目模板.md",
-    "external/高速PCB设计指南-TI.md",
-    "wiki/PCB/电源模块/09-测量与故障定位/01-电源模块知识条目-2.md",
-    "journal/planning/current_plan.md",
-    "Imported/KT6368A蓝牙芯片用户手册.md",
-    "journal/daily/2026-08-10.md",
-    "AGENTS.md",
-    "硬件/原始备份/10_高速PCB设计多层板叠层与阻抗设计视频教程全集.md",
     "硬件/原始备份/高速ADCPCB设计.pdf",
     "硬件/原始备份/芯片数据手册/ai8051芯片手册.pdf",
     "硬件/原始备份/芯片数据手册/AT32F421K8U7数据手册.pdf",
-    "硬件/原始备份/芯片数据手册/FD6288Q数据手册.pdf",
-    "硬件/芯片数据手册/tps7a47数据手册.pdf",
     "Pasted image 20260821100438.png",
     "Pasted image 20260821100948.png",
     "Pasted image 20260821101040.png",
     "Pasted image 20260821101211.png",
     "Pasted image 20260821101423.png",
     "Pasted image 20260821101658.png",
-    "Pasted image 20260821101733.png",
-    "Pasted image 20260821101850.png",
-    "Pasted image 20260821101908.png",
     "未命名 3.canvas",
     "未命名 2.canvas",
     "未命名 1.canvas",
