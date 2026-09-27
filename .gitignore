@@ -1,0 +1,33 @@
+# ===== Obsidian 本地状态（每次开关都会变，不需要版本控制）=====
+.obsidian/workspace.json
+.obsidian/workspace_backup.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+.obsidian/cache
+.obsidian/.trash/
+
+# 插件写入的运行时状态
+.obsidian/plugins/*/last_loaded.txt
+.obsidian/plugins/*/cache/
+.obsidian/plugins/*/*.log
+
+# ===== 插件二进制（体积大、随插件更新频繁变更）=====
+.obsidian/plugins/*/main.js
+.obsidian/plugins/*/styles.css
+.obsidian/plugins/*/manifest.json
+
+# ===== 系统与编辑器临时文件 =====
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.swp
+*~
+
+# ===== 大附件可选排除（如需同步图片，请注释掉下面两行）=====
+# *.pdf
+# *.zip
+
+# ===== Git 自身的临时文件 =====
+*.orig
+*.rej
