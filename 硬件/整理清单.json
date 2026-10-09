@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T00:26:30.5214198Z",
+  "generated_at": "2026-10-09T07:57:21.076714+00:00",
   "tool_version": 1,
   "errors": 0,
   "items": [
@@ -397,8 +397,8 @@
       "kind": "md",
       "role": "curated-source",
       "status": "validated",
-      "bytes": 26341,
-      "sha256": "336658556b6180ab4a6e453fd40547a416eb60d16517b107720b16bab8a01097"
+      "bytes": 33511,
+      "sha256": "f9edc59df4e5b85f547769e3c4cf379761c3839150f926d8632dcf4588d0648c"
     },
     {
       "path": "D:\\ai知识库\\嵌入式\\硬件\\原理\\芯片手册\\电平转换.md",
@@ -1594,6 +1594,45 @@
       "role": "backup-source",
       "bytes": 777445,
       "sha256": "206d060de341a58ed49ce53e6590d8b315a98cd07f69a8892d2589d01159fef7"
+    },
+    {
+      "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\CJMCU-3901 芯片手册.pdf",
+      "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\CJMCU-3901 芯片手册.pdf",
+      "kind": "pdf",
+      "status": "backed-up",
+      "role": "backup-source",
+      "bytes": 1514647,
+      "sha256": "80a9a362beb61dd2bdc052ed2fd94e55bed95b7979ab7e21feff72e0975ed408",
+      "note": "2026-10-09 原样备份；器件/文档版本见传感器分类稿"
+    },
+    {
+      "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\vl53l1x芯片手册.pdf",
+      "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\vl53l1x芯片手册.pdf",
+      "kind": "pdf",
+      "status": "backed-up",
+      "role": "backup-source",
+      "bytes": 1039959,
+      "sha256": "38617522c0dece772c1ee422d5f24739283fe45632ff792778806c24e6e810c8",
+      "note": "2026-10-09 原样备份；器件/文档版本见传感器分类稿"
+    },
+    {
+      "source_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\射频PCB设计知识全集-三套课程合并笔记.md",
+      "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\射频PCB设计知识全集-三套课程合并笔记.md",
+      "kind": "md",
+      "status": "backed-up",
+      "role": "backup-source",
+      "bytes": 84149,
+      "sha256": "0224a47436c5b149b8796fcde8a6f9e3dd51eb64c3e2716c8abf65c73f0e8459",
+      "note": "用户直接放入原始备份；保持原件，只在分类层整理与纠错"
+    },
+    {
+      "path": "D:\\ai知识库\\嵌入式\\硬件\\PCB\\射频设计.md",
+      "relative_path": "PCB\\射频设计.md",
+      "kind": "md",
+      "role": "curated-source",
+      "status": "validated",
+      "bytes": 8253,
+      "sha256": "2a5fb82c8400f42a61b42c7f630f3fb97da6902ba522fa8198a7a6f47b3199c2"
     }
   ]
 }

@@ -2,7 +2,7 @@
 title: VL53L0X
 type: datasheet
 status: needs-review
-updated: 2026-09-17
+updated: 2026-10-09
 sources: [硬件/原理/芯片手册/传感器.md]
 tags: [芯片手册, ToF, 激光测距, VL53L0X, ST, 飞行时间, I2C, LGA12]
 ---
@@ -67,3 +67,7 @@ ST `VL53L0X`：**飞行时间（ToF）激光测距模块**，FlightSense 技术�
 - [[wiki/原理/芯片手册/传感器/BMP280|BMP280]]
 - [[wiki/原理/芯片手册/传感器/VCNL4040|VCNL4040]]
 - [[wiki/PCB/模拟与采集模块|模拟与采集模块]]
+
+## 2026-10-09 对照入口
+
+新增 [[wiki/原理/芯片手册/传感器/VL53L1X|VL53L1X]] 支持可调 ROI，旧手册为 2018 Rev 3；两件引脚兼容但尺寸/驱动/校准/量程条件不同。VL53L1X 的 4 m 与 50 Hz 不能同时保证，不能以宣传最大值直接替换本件方案。与 [[wiki/原理/芯片手册/传感器/PMW3901MB|PMW3901MB]] 做光流高度补偿时须验证实际目标、照度、视场与有效状态。

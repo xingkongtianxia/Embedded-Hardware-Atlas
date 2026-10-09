@@ -2,7 +2,7 @@
 title: PMW3901MB
 type: datasheet
 status: needs-review
-updated: 2026-09-17
+updated: 2026-10-09
 sources: [硬件/原理/芯片手册/传感器.md]
 tags: [芯片手册, 光流, 光学导航, PMW3901MB, PixArt, 飞控, SPI, COB]
 ---
@@ -55,3 +55,16 @@ PixArt Imaging（原相科技）`PMW3901MB-TXQT`：**光学流动跟踪芯片（
 - [[wiki/原理/芯片手册/传感器/BMP280|BMP280]]
 - [[wiki/原理/芯片手册/传感器/VL53L0X|VL53L0X]]
 - [[wiki/原理/芯片手册/主控MCU/STM32F405RG|STM32F405RG]]
+
+## 2026-10-09 补充：CJMCU 文件身份与版本差异
+
+`CJMCU-3901 芯片手册.pdf` 实际为 **PMW3901MB-TXQT Version 1.00，20 Mar 2017** 的 11 页节选；物理页 1–11 的印刷页码为 1、7–15、29，不是连续完整版。与已有 Version 1.10（20 June 2017）哈希不同，不属于同一文件改名。
+
+| 项目 | Version 1.00，新文件 | Version 1.10，已有文件 |
+|---|---|---|
+| 引脚 20 | NC，要求悬空（物理 p.2 / 印刷 p.7） | LED_N（p.2） |
+| 推荐最低照度 | 110 lux；荧光照明、指定地表测试（物理 p.3 / 印刷 p.8） | 60 lux（p.3） |
+
+旧文件确认 VDD 1.8–2.1 V、VDDIO 1.8–3.6 V 且 VDDIO≥VDD、SPI≤2 MHz、0–40 °C（物理 p.3）。**不能把旧版 NC 和新版 LED_N 合成统一引脚定义，也不能仅凭文件名推断 CJMCU 模块的 VIN、稳压、电平转换或排针顺序。** 本页前文参数仍按 Version 1.10；模块应用须索取对应板卡原理图、版本和初始化资料。保留 `needs-review`，两版差异由供应商确认。
+
+高度补偿的新候选器件见 [[wiki/原理/芯片手册/传感器/VL53L1X|VL53L1X]]；与 [[wiki/原理/芯片手册/传感器/VL53L0X|VL53L0X]] 比较时必须绑定各自测距条件。

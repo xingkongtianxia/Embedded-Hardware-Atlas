@@ -248,3 +248,41 @@
 - 更新分类稿：`硬件/原理/芯片手册/主控MCU.md`、`蓝牙与无线.md`；新建 Wiki：`wiki/原理/芯片手册/主控MCU/STM32F407VG.md`、`无线通信/SE5004L.md`、`无线通信/RTC6705.md`。
 - 同步更新 `index.md`、`wiki/概览.md`、`wiki/来源映射.md`、`分类与来源摘要.md`。
 - 待核验：`Se2525PA.pdf` 文件名与封面 `SE5004L` 型号不一致；STM32F407VG 完整订货后缀；RTC6705 为 2007 年 Confidential 手册，射频法规与匹配网络需项目复核。
+
+## [2026-10-09] ingest | 两份传感器资料与射频设计知识接入
+- 2 份 PDF 原样备份、1 份用户原始笔记登记，清单增加 3 项原始来源与 1 项分类稿，共 179 项。
+- 新建 Wiki：`wiki/原理/芯片手册/传感器/VL53L1X.md`、`wiki/PCB/射频传输线与匹配.md`、`wiki/综合/射频收发链预算.md`、`wiki/PCB/射频布局与屏蔽.md`、`wiki/PCB/射频测试与放行.md`；全部 `needs-review`。
+- 更新 PMW3901MB/VL53L0X、SI/EMC/高速接口总览、三入口与日志；CJMCU 文件不当作模块规格，PMW 两版实质差异并列。
+- 射频笔记按知识主题清洗，纠正 S11/RL、阻焊补偿、Friis/IM3 和去嵌入等错误/歧义；原件保持不变。
+- 本次创建或更新文件：
+- `硬件\芯片数据手册\CJMCU-3901 芯片手册.pdf`
+- `硬件\原始备份\芯片数据手册\CJMCU-3901 芯片手册.pdf`
+- `硬件\芯片数据手册\vl53l1x芯片手册.pdf`
+- `硬件\原始备份\芯片数据手册\vl53l1x芯片手册.pdf`
+- `硬件\原始备份\射频PCB设计知识全集-三套课程合并笔记.md`
+- `wiki/原理/芯片手册/传感器/VL53L1X.md`
+- `硬件/PCB/射频设计.md`
+- `wiki/PCB/射频传输线与匹配.md`
+- `wiki/综合/射频收发链预算.md`
+- `wiki/PCB/射频布局与屏蔽.md`
+- `wiki/PCB/射频测试与放行.md`
+- `硬件/原理/芯片手册/传感器.md`
+- `wiki/原理/芯片手册/传感器/PMW3901MB.md`
+- `wiki/原理/芯片手册/传感器/VL53L0X.md`
+- `wiki/PCB/高速接口模块.md`
+- `wiki/原理/SI.md`
+- `wiki/原理/EMC.md`
+- `index.md`
+- `wiki/概览.md`
+- `wiki/来源映射.md`
+- `分类与来源摘要.md`
+- `硬件/整理清单.json`
+- `journal/planning/current_plan.md`
+- `journal/daily/2026-10-09.md`
+
+## [2026-10-09] health-check | 新资料无新增完整性错误
+- 536 个 Wiki 页的 frontmatter/来源/链接 0 错误；5 新页均接入索引/概览/来源映射且有 Wiki 入链；128/128 PDF 哈希备份覆盖；150 份旧原件哈希保持不变。
+- 本轮新来源和改动分类稿 bytes/SHA-256 一致；清单 179 项。旧验证脚本 50→48 项历史错误，新增 0；逐字段清单差异 97→96，与旧脚本计数口径不同。
+- 新建 `journal/health-check-2026-10-09.md`，更新 `index.md`、`wiki/概览.md`、`journal/planning/current_plan.md`、`journal/daily/2026-10-09.md` 和 `log.md`。历史原件与错误不自动修补。
+- 按用户授权将本次入库与维护记录提交并推送 `origin/main`；远端结果以 Git 记录为准。暂不纳入无关的 `journal/health-check-2026-09-22.md` 工作区格式变化。
+- 更新 .gitattributes，仅对本次射频原始 Markdown 禁用 Git 换行转换，保证未来检出与原件 SHA-256 一致。
