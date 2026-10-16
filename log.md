@@ -286,3 +286,12 @@
 - 新建 `journal/health-check-2026-10-09.md`，更新 `index.md`、`wiki/概览.md`、`journal/planning/current_plan.md`、`journal/daily/2026-10-09.md` 和 `log.md`。历史原件与错误不自动修补。
 - 按用户授权将本次入库与维护记录提交并推送 `origin/main`；远端结果以 Git 记录为准。暂不纳入无关的 `journal/health-check-2026-09-22.md` 工作区格式变化。
 - 更新 .gitattributes，仅对本次射频原始 Markdown 禁用 Git 换行转换，保证未来检出与原件 SHA-256 一致。
+
+## [2026-10-16] ingest | 公开新资料进入知识网络，隔离私人备份
+
+- 用户授权恢复index/log/rules/schema/分类摘要，保留唯一根目录。私人备份不读取/不公开，.gitignore与AGENTS/rules/schema记录发布边界。
+- 6份PDF：SX1280、2450FM07D0034、AT2401C、ESP8285、DS9013（RT9013）、MD7218，复制新备份并登记哈希；2份PCB原始笔记只读登记。ESD5451N同哈希改名，沿用原备份。
+- 更新分类稿：硬件/原理/芯片手册/蓝牙与无线.md、电源管理.md；新建硬件/PCB/隔离开关电源设计.md、PCB约束与放行.md。
+- 新建Wiki：无线通信下SX1280/2450FM07D0034/AT2401C/ESP8285；电源管理下RT9013/MD7218；PCB下隔离电源布局与验证/PCB约束到放行检查；综合下2.4GHz无线链路器件协同。
+- 更新Wiki：概览、来源映射、射频收发链预算、射频传输线与匹配、电源模块、PCB通用工程方法；更新index/分类摘要/清单/current_plan/当日日志/健康检查。根导航补登记本地已有单电调无人机原理图检查报告与10-11/10-13日志，未重新执行工程修改。
+- 版本/参数/公式冲突与单一笔记经验均明确标注，新页全部needs-review。检查结果见journal/health-check-2026-10-16.md。

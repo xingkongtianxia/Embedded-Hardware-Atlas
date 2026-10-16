@@ -1,9 +1,9 @@
-﻿---
+---
 title: PCB 通用工程方法
 type: pcb-method
 status: reviewed
-updated: 2026-08-21
-sources: [硬件/PCB/PCB通用工程方法.md]
+updated: 2026-10-16
+sources: [硬件/PCB/PCB通用工程方法.md, 硬件/PCB/PCB约束与放行.md]
 tags: [嵌入式硬件, PCB]
 ---
 
@@ -31,3 +31,7 @@ tags: [嵌入式硬件, PCB]
 - [[wiki/PCB/模块化布局|PCB 模块化布局]]
 - [[wiki/PCB/高速接口模块|高速接口模块]]
 - [[AGENTS|规则手册]]
+
+## 2026-10-16 约束与放行闭环
+
+[[wiki/PCB/PCB约束到放行检查|PCB约束到放行检查]]将SI/PI、存储接口、绝缘与制造要求映射到证据；原始二次笔记中的临界长度公式、3W、固定等长及温升值见[[硬件/PCB/PCB约束与放行|分类稿纠错]]。隔离项目另走[[wiki/PCB/隔离电源布局与验证|隔离电源布局与验证]]，不能用零DRC代替功能/安规/热验证。

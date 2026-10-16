@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T07:57:21.076714+00:00",
+  "generated_at": "2026-10-16T13:21:24.070016+00:00",
   "tool_version": 1,
   "errors": 0,
   "items": [
@@ -227,8 +227,8 @@
       "kind": "md",
       "role": "curated-source",
       "status": "validated",
-      "bytes": 48874,
-      "sha256": "7b1cca3fab9ddf5750605d4440a5379bac7f7a94e62267e103136ec12c11c604"
+      "bytes": 51279,
+      "sha256": "ee9a57226fb54bd359e995addc1736487aec767356048356c73adbec53af5771"
     },
     {
       "path": "D:\\ai知识库\\嵌入式\\硬件\\原理\\芯片手册\\主控MCU.md",
@@ -423,8 +423,8 @@
       "kind": "md",
       "status": "validated",
       "role": "curated-source",
-      "bytes": 8423,
-      "sha256": "3aa749fe866d0819db66dc86cb54bb05371440d1ac8a27656c1fdb113110065d",
+      "bytes": 12165,
+      "sha256": "6ac3280b6798427a2c085cbc1a2004cc18367b61847794f82743673a4e7f776f",
       "relative_path": "原理\\芯片手册\\蓝牙与无线.md"
     },
     {
@@ -1020,13 +1020,14 @@
       "sha256": "836f2d739b17755f97e6c022dabef3485bb60f36fc239c427e14ad090818ae61"
     },
     {
-      "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\OMNIVISION-ESD5451N数据手册.pdf",
+      "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\ESD5451N芯片手册.pdf",
       "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\OMNIVISION-ESD5451N数据手册.pdf",
       "kind": "pdf",
       "status": "backed-up",
       "role": "backup-source",
       "bytes": 912189,
-      "sha256": "426cd33fd4a62be7598ff6035a03992476b1da5d34d5046e77d0fa76bdc310ed"
+      "sha256": "426cd33fd4a62be7598ff6035a03992476b1da5d34d5046e77d0fa76bdc310ed",
+      "note": "；2026-10-16 活动源改名为ESD5451N芯片手册.pdf，同哈希，备份保持原名"
     },
     {
       "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\SGM2028数据手册.pdf",
@@ -1633,6 +1634,104 @@
       "status": "validated",
       "bytes": 8253,
       "sha256": "2a5fb82c8400f42a61b42c7f630f3fb97da6902ba522fa8198a7a6f47b3199c2"
+    },
+    {
+      "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\2450FM07D0034芯片手册.pdf",
+      "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\2450FM07D0034芯片手册.pdf",
+      "kind": "pdf",
+      "status": "backed-up",
+      "role": "backup-source",
+      "bytes": 467506,
+      "sha256": "5f6f8d16413813684ffaaa542ccfd0170d9a8ab65e39d74dad1b1af6307b0efd",
+      "note": "2026-10-16 公开来源增量摄入；私人备份不纳入公开清单"
+    },
+    {
+      "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\AT2401C芯片手册.pdf",
+      "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\AT2401C芯片手册.pdf",
+      "kind": "pdf",
+      "status": "backed-up",
+      "role": "backup-source",
+      "bytes": 950013,
+      "sha256": "4ffb23687905ae63c20009b5929589bf71802ca7b962e4e87733468bb2b7422f",
+      "note": "2026-10-16 公开来源增量摄入；私人备份不纳入公开清单"
+    },
+    {
+      "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\DS9013芯片手册.pdf",
+      "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\DS9013芯片手册.pdf",
+      "kind": "pdf",
+      "status": "backed-up",
+      "role": "backup-source",
+      "bytes": 299618,
+      "sha256": "b14a1c44445d69accbaabda7f3ce442964ca52f05d6664e3d49572ff20fb4b13",
+      "note": "2026-10-16 公开来源增量摄入；私人备份不纳入公开清单"
+    },
+    {
+      "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\ESP8285芯片手册.pdf",
+      "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\ESP8285芯片手册.pdf",
+      "kind": "pdf",
+      "status": "backed-up",
+      "role": "backup-source",
+      "bytes": 1295379,
+      "sha256": "96b7ceafcbb15fa918eec9cae4eac4ca372dda7d2974b5578d82b74bbda04ee7",
+      "note": "2026-10-16 公开来源增量摄入；私人备份不纳入公开清单"
+    },
+    {
+      "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\MD7218芯片手册.pdf",
+      "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\MD7218芯片手册.pdf",
+      "kind": "pdf",
+      "status": "backed-up",
+      "role": "backup-source",
+      "bytes": 1540734,
+      "sha256": "7426d585763de883daef4e8b6cf17b80a51e88ca3b041c1eea971d7ef49caa40",
+      "note": "2026-10-16 公开来源增量摄入；私人备份不纳入公开清单"
+    },
+    {
+      "source_path": "D:\\ai知识库\\嵌入式\\硬件\\芯片数据手册\\SX1280芯片手册.pdf",
+      "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\芯片数据手册\\SX1280芯片手册.pdf",
+      "kind": "pdf",
+      "status": "backed-up",
+      "role": "backup-source",
+      "bytes": 2510778,
+      "sha256": "3e1f495a4fd5f54a0c2724f366b917d2d53ca9ebab09b3d50582b6aab1ba91f5",
+      "note": "2026-10-16 公开来源增量摄入；私人备份不纳入公开清单"
+    },
+    {
+      "source_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\Altium-Designer实战教程-高质量PCB设计进阶-全6讲知识笔记.md",
+      "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\Altium-Designer实战教程-高质量PCB设计进阶-全6讲知识笔记.md",
+      "kind": "md",
+      "status": "backed-up",
+      "role": "backup-source",
+      "bytes": 74026,
+      "sha256": "700ed4e09bc3d29f9b3a3d32abc781094217d8d9b20cf82e8202756a313d503c",
+      "note": "2026-10-16 公开来源增量摄入；私人备份不纳入公开清单"
+    },
+    {
+      "source_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\高质量开关电源PCB设计-全六课.md",
+      "backup_path": "D:\\ai知识库\\嵌入式\\硬件\\原始备份\\高质量开关电源PCB设计-全六课.md",
+      "kind": "md",
+      "status": "backed-up",
+      "role": "backup-source",
+      "bytes": 89280,
+      "sha256": "f42d6bf9ac420179a140e292c72b58912a79830b7120c3a1749a04bc0236ca10",
+      "note": "2026-10-16 公开来源增量摄入；私人备份不纳入公开清单"
+    },
+    {
+      "path": "D:\\ai知识库\\嵌入式\\硬件\\PCB\\隔离开关电源设计.md",
+      "kind": "md",
+      "status": "curated",
+      "role": "curated-source",
+      "bytes": 3180,
+      "sha256": "0dcf5deb5642931f51032daa664c5b09d2a6dc9b20e89bbe47432091a891751a",
+      "review_status": "needs-review"
+    },
+    {
+      "path": "D:\\ai知识库\\嵌入式\\硬件\\PCB\\PCB约束与放行.md",
+      "kind": "md",
+      "status": "curated",
+      "role": "curated-source",
+      "bytes": 2950,
+      "sha256": "9f4bd167fbe60752a77a12f25e6c8474ffbca8edb6ed05d50edf8d7f9c533700",
+      "review_status": "needs-review"
     }
   ]
 }
