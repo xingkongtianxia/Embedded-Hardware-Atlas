@@ -302,3 +302,10 @@
 - 更新 external/index.md 资源表（新增一行，updated 2026-10-21）。
 - 更新 README.md：新增"常用工具与资源"章节（半导小芯 semiee.com、GitHub 个人主页），并给出查器件三步顺序（本库器件页 → 本地原厂 PDF → 聚合站补查）。
 - 未新增本地文件，未改动任何 Wiki 正文，不涉及器件结论，故无需回标 needs-review 的目标页。
+
+## [2026-10-21] ingest | 新增 ME6211C33M5G-N 数据手册（原理图自动检索下载）
+
+- 来源：立创商城详情页 PDF（atta.szlcsc.com OSS），商品标题含 MICRONE(南京微盟) ME6211 系列；校验级别 exact（全文含完整型号），23 页，916083 字节。
+- 落点：硬件/芯片数据手册/ME6211C33M5G-N.pdf；SHA-256 a805a4df88c79199e94f0f07a7a37b9348582a9d077ff4e7a8b9a8c73ba9d23a。
+- 触发场景：飞控原理图（SCH_Schematic2_2026-10-11.pdf）器件清单自动比对，8 个型号中 7 个库内已有，仅 ME6211 缺失并补齐。
+- 待办：分类稿（硬件/原理/芯片手册/电源管理.md）与 Wiki 器件页尚未建立，需走 obsidian-kb-datasheet-ingest 完成备份+哈希登记、分类整理与器件页。
