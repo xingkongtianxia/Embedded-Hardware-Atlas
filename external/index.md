@@ -2,7 +2,7 @@
 title: 外来资源索引
 type: source-map
 status: seed
-updated: 2026-09-26
+updated: 2026-10-21
 sources: []
 tags: [外来资料, 导航, 待核验, 毕设]
 ---
@@ -24,6 +24,7 @@ tags: [外来资料, 导航, 待核验, 毕设]
 | GitHub PX4 Autopilot | 无人机飞控架构、传感器融合、仿真与板级支持 | 高（成熟开源项目） | 否，待核验 | [[GitHub-PX4-Autopilot]] |
 | GitHub Raspberry Pi pico-sdk | RP2040/RP2350 SDK、PIO、构建系统与示例 | 高（芯片厂商官方） | 否，待核验 | [[GitHub-raspberrypi-pico-sdk]] |
 | GitHub STMicroelectronics STM32CubeF4 | STM32F4 HAL/LL、CMSIS、中间件和官方示例 | 高（芯片厂商官方） | 否，待核验 | [[GitHub-STM32CubeF4]] |
+| 半导小芯芯片查询工具（semiee.com） | 数据手册/规格书检索、国产替代型号、BOM 批量核对、丝印反查 | 中高（商业聚合平台，手册版本可能滞后原厂） | 否，仅作检索入口 | [[半导小芯-芯片查询工具]] |
 
 ## 使用规则
 
