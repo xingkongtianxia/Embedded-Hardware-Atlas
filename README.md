@@ -115,7 +115,7 @@ tags: [嵌入式, 电源管理, 锂电充电]                # 检索标签
 
 ## 内容更新与维护规范
 
-本库采用「用户供料 + AI 整理」的协作模式，所有变更遵循 `AGENTS.md` / [rules.md](rules.md) / [schema.md](schema.md)：
+本库由用户与 AI 协作维护：用户负责提供原始资料与工程经验，AI 负责整理内化；所有变更遵循 `AGENTS.md` / [rules.md](rules.md) / [schema.md](schema.md)：
 
 | 动作 | 规范 |
 |---|---|
