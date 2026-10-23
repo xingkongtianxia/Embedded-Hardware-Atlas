@@ -1,0 +1,3 @@
+#!/bin/sh
+# Validate the actual index, including the private-file exclusion policy.
+exec python scripts/check_kb.py --staged

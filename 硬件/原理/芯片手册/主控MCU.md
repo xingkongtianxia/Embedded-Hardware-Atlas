@@ -2,8 +2,8 @@
 title: 主控 MCU
 type: datasheet-source
 status: curated
-updated: 2026-09-18
-sources: [原始备份/芯片数据手册/TC264数据手册.pdf, 原始备份/芯片数据手册/ST-STM32F405RG.pdf, 原始备份/芯片数据手册/AT32F421K8U7数据手册.pdf, 原始备份/芯片数据手册/W25Q256JV数据手册 .pdf, 原始备份/芯片数据手册/K230.pdf, 原始备份/芯片数据手册/rp2350数据手册.pdf]
+updated: 2026-10-23
+sources: [硬件/芯片数据手册/TC264芯片手册.pdf, 硬件/芯片数据手册/STM32F405RG芯片手册.pdf, 硬件/芯片数据手册/AT32F421K8U7芯片手册.pdf, 硬件/芯片数据手册/W25Q256JV芯片手册 .pdf, 硬件/芯片数据手册/K230芯片手册.pdf, 硬件/芯片数据手册/rp2350芯片手册.pdf]
 tags: [芯片手册, MCU, TC264, STM32F405RG, AT32F421K8U7, Cortex-M4, AURIX, W25Q256JV, SPI Flash, NOR Flash, K230, RP2350, RISC-V, AIoC]
 ---
 
@@ -262,13 +262,13 @@ Raspberry Pi Ltd `RP2350`：**双核 Cortex-M33 或双核 Hazard3 RISC-V 可切�
 
 ## 来源定位
 
-- `硬件/原始备份/芯片数据手册/TC264数据手册.pdf`
-- `硬件/原始备份/芯片数据手册/ST-STM32F405RG.pdf`
-- `硬件/原始备份/芯片数据手册/AT32F421K8U7数据手册.pdf`
-- `硬件/原始备份/芯片数据手册/W25Q256JV数据手册 .pdf`（注意：文件名 `.pdf` 前有一个空格）
-- `硬件/原始备份/芯片数据手册/K230.pdf`（嘉楠 K230 Product Full Datasheet V1.0，2023-7-6；引脚表在外部 pinout 文档）
-- `硬件/原始备份/芯片数据手册/rp2350数据手册.pdf`（Raspberry Pi RP2350 Datasheet，build 2025-07-29；封面图片型经视觉识别；页码为 PDF 物理页）
-- `硬件/原始备份/芯片数据手册/STM32F407VG数据手册.pdf`（ST DS8626 Rev 10，2024-11；STM32F405xx/STM32F407xx 系列手册）
+- `硬件/芯片数据手册/TC264芯片手册.pdf`
+- `硬件/芯片数据手册/STM32F405RG芯片手册.pdf`
+- `硬件/芯片数据手册/AT32F421K8U7芯片手册.pdf`
+- `硬件/芯片数据手册/W25Q256JV芯片手册 .pdf`（注意：文件名 `.pdf` 前有一个空格）
+- `硬件/芯片数据手册/K230芯片手册.pdf`（嘉楠 K230 Product Full Datasheet V1.0，2023-7-6；引脚表在外部 pinout 文档）
+- `硬件/芯片数据手册/rp2350芯片手册.pdf`（Raspberry Pi RP2350 Datasheet，build 2025-07-29；封面图片型经视觉识别；页码为 PDF 物理页）
+- `硬件/芯片数据手册/STM32F405RG芯片手册.pdf`（ST DS8626 Rev 10，2024-11；STM32F405xx/STM32F407xx 系列手册）
 
 > **分类变更（2026-09-18）**：新建 `存储器` 分类后，W25Q256JV 的 Wiki 器件页已迁至 `wiki/原理/芯片手册/存储器/`；本分类稿保留其"主控配套串行 Flash"章节作为来源整理（历史条目不变），新入库存储器件（W25Q16JV、MKDV16GCL-STP、K4F8E304HB-MGCJ）见 `硬件/原理/芯片手册/存储器.md`。
 
@@ -277,3 +277,8 @@ Raspberry Pi Ltd `RP2350`：**双核 Cortex-M33 或双核 Hazard3 RISC-V 可切�
 - `GD32F130芯片手册.pdf`：GD32F130 主控 MCU，具体子型号、封装和 Errata 待逐页核对。
 - `rp2040芯片手册.pdf`：RP2040 主控 MCU，步进、封装和电源域待核对。
 - `RP2354芯片手册.pdf`：RP2354 主控 MCU，完整订货号和步进待核对。
+
+
+## 知识网络落点
+
+[[wiki/导航/其他器件]]、[[wiki/来源映射]]。本稿是分类有效来源；从Wiki按问题阅读，回到本稿核对证据条件。

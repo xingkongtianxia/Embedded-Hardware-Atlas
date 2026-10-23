@@ -1,8 +1,8 @@
 ---
 title: 轮趣无刷四驱 PCB 设计审查整理稿
-type: pcb-module
+type: pcb-source
 status: needs-review
-updated: 2026-09-05
+updated: 2026-10-23
 sources: [硬件/原始备份/无刷四驱/无刷四驱.zip, 硬件/原始备份/无刷四驱/无刷四驱.epro2]
 tags: [嵌入式硬件, PCB, 无刷电机, 3S电池, 设计审查]
 ---

@@ -1,8 +1,8 @@
 ---
 title: PCB 通用工程方法
 type: pcb-method
-status: reviewed
-updated: 2026-10-16
+status: needs-review
+updated: 2026-10-23
 sources: [硬件/PCB/PCB通用工程方法.md, 硬件/PCB/PCB约束与放行.md]
 tags: [嵌入式硬件, PCB]
 ---
@@ -35,3 +35,8 @@ tags: [嵌入式硬件, PCB]
 ## 2026-10-16 约束与放行闭环
 
 [[wiki/PCB/PCB约束到放行检查|PCB约束到放行检查]]将SI/PI、存储接口、绝缘与制造要求映射到证据；原始二次笔记中的临界长度公式、3W、固定等长及温升值见[[硬件/PCB/PCB约束与放行|分类稿纠错]]。隔离项目另走[[wiki/PCB/隔离电源布局与验证|隔离电源布局与验证]]，不能用零DRC代替功能/安规/热验证。
+
+
+## 来源复核提醒（2026-10-23）
+
+本页来源链涉及历史原件哈希不一致。正文知识保留，但来源链尚未完成内容复核，暂标`needs-review`；本轮未改写原件。详见[[journal/health-check-2026-10-23|体检报告]]的历史哈希差异，不因重新登记当前哈希而自动恢复`reviewed`。

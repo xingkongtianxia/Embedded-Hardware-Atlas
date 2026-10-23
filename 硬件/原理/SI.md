@@ -1,9 +1,9 @@
 ---
 title: SI（信号完整性）
 type: principle-source
-status: curated
-updated: 2026-08-10
-sources: [原始备份/01_提高篇全集-高速信号的设计.md, 原始备份/02_2小时，入门高速PCB设计！.md, 原始备份/09_【Altium Academy】PCB 设计中的数学.md, 原始备份/【Altium Academy】信号完整性 _ 2025 _ 吃透 SI 设计，搞定高速电路板｜全集总结 2026-08-06.md, 原始备份/【Altium Academy】信号完整性 _ 2025 _ 吃透 SI 设计，搞定高速电路板｜全集总结（详解版）2026-09-08.md]
+status: needs-review
+updated: 2026-10-23
+sources: [原始备份/01_提高篇全集-高速信号的设计.md, 原始备份/02_2小时，入门高速PCB设计！.md, 原始备份/09_【Altium Academy】PCB 设计中的数学.md, 原始备份/【Altium Academy】信号完整性 _ 2025 _ 吃透 SI 设计，搞定高速电路板｜全集总结（详解版）2026-09-08.md]
 tags: [SI, 传输线, 反射, 串扰, 回流]
 ---
 
@@ -1045,3 +1045,20 @@ $$\alpha_{total}=\alpha_{conductor}(\propto\sqrt{f})+\alpha_{dielectric}(\propto
 - `原始备份/09_【Altium Academy】PCB 设计中的数学...md`：传输线和阻抗计算。
 - `原始备份/【Altium Academy】信号完整性...md`：高速互连、差分、回流和验证方法。
 - `原始备份/【Altium Academy】信号完整性...（详解版）2026-09-08.md`：回流、阻抗计算误差、S 参数/VNA、端接、过孔与 PDN 的扩展复核材料。
+
+
+## 已撤下来源的证据边界（2026-10-23）
+
+以下是历史引用，当前缺少对应原件，不计为可用来源；相关历史结论需重新取得原件或交叉核验，不以近似型号补位：
+
+- `原始备份/【Altium Academy】信号完整性 _ 2025 _ 吃透 SI 设计，搞定高速电路板｜全集总结 2026-08-06.md`
+
+
+## 知识网络落点
+
+[[wiki/原理/SI]]、[[wiki/来源映射]]。本稿是分类有效来源；从Wiki按问题阅读，回到本稿核对证据条件。
+
+
+## 来源复核提醒（2026-10-23）
+
+本页来源链涉及历史原件哈希不一致。正文知识保留，但来源链尚未完成内容复核，暂标`needs-review`；本轮未改写原件。详见[[journal/health-check-2026-10-23|体检报告]]的历史哈希差异，不因重新登记当前哈希而自动恢复`reviewed`。

@@ -7,3 +7,9 @@
 
 # Immutable source archives must retain their original bytes and whitespace.
 "硬件/原始备份/**" -text -whitespace
+
+# Keep curated-source checksums portable across Windows/Linux checkouts.
+"硬件/原理/**" text eol=lf
+"硬件/PCB/**" text eol=lf
+/.githooks/* text eol=lf
+/scripts/*.py text eol=lf

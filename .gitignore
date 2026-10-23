@@ -34,3 +34,15 @@ desktop.ini
 
 # 用户私人资料：仅保留本机，禁止提交及公开派生内容
 /硬件/私人备份/
+
+# 私人工作日志、规划库及维护时间线：仅本地保存
+/journal/daily/
+/journal/planning/
+/log.md
+/工作日志/
+/规划库/
+/.planning/
+
+# Python检查脚本运行缓存
+__pycache__/
+*.py[cod]

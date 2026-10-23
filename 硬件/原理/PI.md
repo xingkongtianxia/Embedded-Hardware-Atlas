@@ -2,7 +2,7 @@
 title: PI（电源完整性）
 type: principle-source
 status: curated
-updated: 2026-08-10
+updated: 2026-10-23
 sources: [原始备份/07_【EEVblog】电源设计  2025  实战电源设.md, 原始备份/08_【Altium Academy】电源完整性【全26讲.md, 原始备份/09_【Altium Academy】PCB 设计中的数学.md]
 tags: [PI, PDN, 去耦, 电源噪声]
 ---
@@ -1054,3 +1054,8 @@ flowchart TD
 - `原始备份/08_【Altium Academy】电源完整性...md`：PDN、去耦、自谐振、反谐振、平面和电源噪声。
 - `原始备份/07_【EEVblog】电源设计...md`：稳压器输出、负载瞬态和电源测试。
 - `原始备份/09_【Altium Academy】PCB 设计中的数学.md`：阻抗、寄生参数和计算基础。
+
+
+## 知识网络落点
+
+[[wiki/原理/PI]]、[[wiki/来源映射]]。本稿是分类有效来源；从Wiki按问题阅读，回到本稿核对证据条件。

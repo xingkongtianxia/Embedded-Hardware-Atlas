@@ -2,7 +2,7 @@
 title: PCB约束到放行检查
 type: pcb-method
 status: needs-review
-updated: 2026-10-16
+updated: 2026-10-23
 sources: [硬件/PCB/PCB约束与放行.md, 硬件/PCB/PCB通用工程方法.md]
 tags: [PCB, 工程流程, SI, PI, DFM, DFT]
 ---
@@ -34,3 +34,8 @@ tags: [PCB, 工程流程, SI, PI, DFM, DFT]
 ## 失效边界与关联
 
 经验传输线比例k采用 `Lcrit=k×tr/tpd`；1/6与1/2不能混用，更不能替代完整波形判断。参考面桥接不得绕过 [[wiki/PCB/隔离电源布局与验证|安全隔离]]。按 [[wiki/综合/硬件设计审查框架|设计审查框架]] 组织最终结论。
+
+
+## 来源复核提醒（2026-10-23）
+
+本页来源链涉及历史原件哈希不一致。正文知识保留，但来源链尚未完成内容复核，暂标`needs-review`；本轮未改写原件。详见[[journal/health-check-2026-10-23|体检报告]]的历史哈希差异，不因重新登记当前哈希而自动恢复`reviewed`。

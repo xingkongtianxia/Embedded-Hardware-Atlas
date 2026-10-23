@@ -1,8 +1,8 @@
 ---
 title: SI
 type: principle
-status: reviewed
-updated: 2026-10-09
+status: needs-review
+updated: 2026-10-23
 sources: [硬件/原理/SI.md]
 tags: [嵌入式硬件, 原理]
 ---
@@ -32,3 +32,8 @@ tags: [嵌入式硬件, 原理]
 ## 射频延伸
 
 [[wiki/PCB/射频传输线与匹配|射频传输线与匹配]] 将反射/回流/S 参数用于 RF 网络；[[wiki/PCB/射频测试与放行|射频测试与放行]] 补充 VNA 参考面、校准和去嵌入边界。S11_dB 与正值回波损耗符号相反，测量条件必须一致。
+
+
+## 来源复核提醒（2026-10-23）
+
+本页来源链涉及历史原件哈希不一致。正文知识保留，但来源链尚未完成内容复核，暂标`needs-review`；本轮未改写原件。详见[[journal/health-check-2026-10-23|体检报告]]的历史哈希差异，不因重新登记当前哈希而自动恢复`reviewed`。
