@@ -2,7 +2,7 @@
 title: 轮趣无刷四驱 PCB 设计审查
 type: synthesis
 status: needs-review
-updated: 2026-09-05
+updated: 2026-11-07
 sources: [硬件/PCB/轮趣无刷四驱PCB设计审查.md]
 tags: [嵌入式硬件, PCB, 无刷电机, 3S电池, 设计审查]
 ---
@@ -43,3 +43,7 @@ tags: [嵌入式硬件, PCB, 无刷电机, 3S电池, 设计审查]
 - [[wiki/PCB/连接器保护与EMC模块|连接器、保护与 EMC 模块]]
 - [[wiki/原理/芯片手册/功率开关与驱动/FD6288Q|FD6288Q]]
 - [[wiki/原理/芯片手册/二极管与保护器件/SMF18A|SMF18A]]
+
+## 通用方法补充
+
+后续修改可按[[wiki/PCB/电机驱动回流与功率布局|功率回路]]和[[wiki/PCB/电机驱动散热与Kelvin采样|散热/Kelvin]]组织证据。这里只新增方法链接，没有重新检查或修改实际工程，原有风险与放行条件仍有效。

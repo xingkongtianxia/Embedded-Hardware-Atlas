@@ -31,3 +31,7 @@
 - 整理清单 v2 的 `items` 只登记现存来源（`raw-source` / `backup-source`）及分类稿（`curated-source`），路径相对唯一根目录；`retired_items` 保留完全缺失来源的旧路径与旧哈希，不能计入当前可用来源。
 - 来源发生内容漂移时保留 `previous_sha256` 与 `needs-review`，登记当前哈希只证明当前字节一致，不代表事实内容通过核验。分类稿和受影响 Wiki 必须显式标记待复核。
 - 分类稿可使用 `principle-source`、`datasheet-source`、`pcb-source` 与 `curated` 状态；这些取值不用于 Wiki。Wiki 使用既有类型与 `seed / reviewed / needs-review`。标签按主题和检索用途使用，不将器件型号误报为未知标签。
+
+## 2026-11-07 外来笔记
+
+扬声器声学频响使用现有 `external/` 和 `wiki/综合/`，唯一根目录不变。来源条目用 `external-resource`；外来派生笔记可用 `concept` / `synthesis`，保留标准字段、来源条目路径、逐节出处、两个有效双链和 `needs-review`。派生笔记可维护，原始附件与历史获取记录只读；更新日期、分类索引和日志同步。不将用户新原件改记为AI外来资料。

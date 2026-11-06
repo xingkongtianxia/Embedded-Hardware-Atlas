@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23",
+  "generated_at": "2026-11-07",
   "tool_version": 2,
   "root_policy": "paths are relative to this sole knowledge-base root",
   "errors": 0,
@@ -50,6 +50,14 @@
       "kind": "md",
       "bytes": 59305,
       "sha256": "bc703b03f64d527bea6d6ecdea5406a658387a335abb85689a56bbdbe0b03050",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/PCB/电机驱动布局与热设计.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 4702,
+      "sha256": "302a0a61845eb5df4fa3ec218ad6e016729799b2588c181b7a2e0c8d56c5b845",
       "status": "needs-review"
     },
     {
@@ -267,6 +275,14 @@
       "status": "available"
     },
     {
+      "path": "硬件/原始备份/开关电源工程师训练营_知识点总结.md",
+      "role": "backup-source",
+      "kind": "md",
+      "bytes": 96002,
+      "sha256": "ca04a6bad2cd15563597cbb0296e8439145491119a6bb821bf27aa99eca7b4e7",
+      "status": "needs-review"
+    },
+    {
       "path": "硬件/原始备份/接地、分割与叠层——模数混合PCB设计五套视频整合详解总结 2026-09-09.md",
       "role": "backup-source",
       "kind": "md",
@@ -291,6 +307,22 @@
       "bytes": 880915,
       "sha256": "e9e39e9b066dd8cf76d6d8cbef1b9b5af55d51dc5ba0fad8ffab68691c1c6344",
       "status": "available"
+    },
+    {
+      "path": "硬件/原始备份/电机驱动PCB布局指南_知识库总结.md",
+      "role": "backup-source",
+      "kind": "md",
+      "bytes": 11616,
+      "sha256": "1b548be79652b6b02667dcf27e9aab7ebb48029bc89f91b6a226ef346940fe3b",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/原始备份/电机驱动电路板布局最佳实践.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "bytes": 3180526,
+      "sha256": "a032b4f6da43d7c9b366c767264b76f7edba90b501ab5389548cac8bade24ced",
+      "status": "needs-review"
     },
     {
       "path": "硬件/原始备份/硬件工程师入门教程_电子工程师_零基础_全免费_2024全新课程_中文字幕_B站 点赞 收藏NO.1｜全集总结 2026-08-06.md",
@@ -352,8 +384,17 @@
       "path": "硬件/原理/叠层与阻抗.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 55783,
-      "sha256": "3f42b52955b3a150f68f0968793bdfbc414955bb11f2368f5538581c24adb616",
+      "bytes": 55878,
+      "sha256": "f38dccb7611cc28f0d9a63984b3cdd96bc00344f991d5f40fdcff5f1ed037a5c",
+      "status": "needs-review",
+      "note": "2026-11-07：用户既有表格空白排版调整，经Git差分核对未改知识内容；更新当前哈希。"
+    },
+    {
+      "path": "硬件/原理/开关电源拓扑与验证.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 7125,
+      "sha256": "3f46e0b103a60587341fce2ceaad79f6cd57109ef8e90da1c4ee05273148e1d8",
       "status": "needs-review"
     },
     {
@@ -464,8 +505,8 @@
       "path": "硬件/原理/芯片手册/电源管理.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 71314,
-      "sha256": "0a609d010bbc61d56327997b7b5bfe83d8648088d0f5e35f4128b46a87bf9dbe",
+      "bytes": 73435,
+      "sha256": "a8e6dc4ffc465e20f59313bb32d9e97c80ba7239b774212d99c53bcb8213d9c1",
       "status": "needs-review"
     },
     {
@@ -603,6 +644,14 @@
       "bytes": 2457438,
       "sha256": "b3a76ee1bbc20a5b984129da210fa09e10c90c30dac53c1b4e5dde2897b6d1a1",
       "status": "available"
+    },
+    {
+      "path": "硬件/芯片数据手册/AW32001ECSR芯片手册.pdf",
+      "role": "raw-source",
+      "kind": "pdf",
+      "bytes": 2431488,
+      "sha256": "720cb58bb65ee7b54dcf4348857019e2ac248ce4ce4f9c2d6ca05a9ce4536865",
+      "status": "needs-review"
     },
     {
       "path": "硬件/芯片数据手册/AXP2101芯片手册.pdf",
@@ -924,6 +973,14 @@
       "bytes": 303961,
       "sha256": "c885d440e42c4e2c81cbdf6429f64932c5c7db9bcb6f7cb24d0e9a99d17e8103",
       "status": "available"
+    },
+    {
+      "path": "硬件/芯片数据手册/HR1117V芯片手册.pdf",
+      "role": "raw-source",
+      "kind": "pdf",
+      "bytes": 252667,
+      "sha256": "06ec67820318bfcd1399620857d8c80b37c48897c106ab65011f50f418d6adb2",
+      "status": "needs-review"
     },
     {
       "path": "硬件/芯片数据手册/HT75XX芯片手册.pdf",
