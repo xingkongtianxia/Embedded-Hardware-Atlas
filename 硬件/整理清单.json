@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07",
+  "generated_at": "2026-11-08",
   "tool_version": 2,
   "root_policy": "paths are relative to this sole knowledge-base root",
   "errors": 0,
@@ -16,17 +16,17 @@
       "path": "硬件/PCB/PCB通用工程方法.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 58851,
-      "sha256": "91c56eadf5effa42d228bed567086b6b640d88c0708b51b354792be9dd7f4ff4",
+      "bytes": 59086,
+      "sha256": "0737622d61606ac0287cecfe96d3c1a27e5a36fa34d0a5a87b2c3b5dbf7c5751",
       "status": "needs-review"
     },
     {
       "path": "硬件/PCB/主控与数字逻辑模块.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 56311,
-      "sha256": "dfb8e8679e9f636933785f5d1d9333f4d3b457dc8a1340749c151c659bc6e9d3",
-      "status": "curated"
+      "bytes": 56508,
+      "sha256": "4bbe15ac7e88b069a3c632a3e7a2737c6fc6dc4d8164de2e9c562e441a2c7354",
+      "status": "needs-review"
     },
     {
       "path": "硬件/PCB/射频设计.md",
@@ -40,16 +40,16 @@
       "path": "硬件/PCB/时钟复位与启动模块.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 58337,
-      "sha256": "8f85e4d861e566f682f08de7d35fc6507253953e2586c59482853b67f186f28e",
-      "status": "curated"
+      "bytes": 58534,
+      "sha256": "c999083ed904ff7d816ade6448fd51c386921b17cf3cf57e8d156c4d773db8de",
+      "status": "needs-review"
     },
     {
       "path": "硬件/PCB/模拟与采集模块.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 59305,
-      "sha256": "bc703b03f64d527bea6d6ecdea5406a658387a335abb85689a56bbdbe0b03050",
+      "bytes": 59540,
+      "sha256": "6d5570bf43831a95461c7422856bc5a209b016b503fb0c1e43f3a67212846124",
       "status": "needs-review"
     },
     {
@@ -64,8 +64,16 @@
       "path": "硬件/PCB/电源模块.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 60518,
-      "sha256": "934bd2bb1b27f460450368b85c19a6ac036e19f487565ad82f16e4b3e2430d71",
+      "bytes": 60710,
+      "sha256": "375941c7e8f6f6ac2788e3228ed6139c4f18981b1a3495f92ebd1d0fa912cf0e",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/PCB/经验规则与验证边界勘误.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 6469,
+      "sha256": "85b00ea9961908450f76837412ea21dc83e9be0e7c300ca98ce3b589aa0fb4f1",
       "status": "needs-review"
     },
     {
@@ -88,8 +96,8 @@
       "path": "硬件/PCB/连接器保护与EMC模块.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 56821,
-      "sha256": "25f026a9247d3acda4ac9734b8b5d0af7688aa010f25c084dc43cb317d10a93b",
+      "bytes": 57103,
+      "sha256": "46f313791737e4b1aae365ae655893e71d6cfefb1ff9ca39e87af5fdba9f3571",
       "status": "needs-review"
     },
     {
@@ -120,8 +128,8 @@
       "path": "硬件/PCB/高速接口模块.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 57297,
-      "sha256": "416e3a7499ee1dfe628ab2f0dc39c670a421062b949a4addcfbddf667ebda723",
+      "bytes": 57489,
+      "sha256": "8d2198b5175b5385a9ff4a1611c2ef081fb99c08936284e4baf62a590beecbb7",
       "status": "needs-review"
     },
     {
@@ -360,8 +368,8 @@
       "path": "硬件/原理/EMC.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 61460,
-      "sha256": "512730e4d8c99fca1c43fef8cc25f923ba22a8703bcebbdb2aaf1744e0390e4b",
+      "bytes": 61742,
+      "sha256": "7ac8cfe01d1c2d481777e3a5bf87cd1f8a22138306c288453811de56d69e4f95",
       "status": "needs-review"
     },
     {
@@ -376,18 +384,26 @@
       "path": "硬件/原理/SI.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 59076,
-      "sha256": "e0d171e238343cd525b283dfd6cbb9cb74a21cd956a3356669c3a002830de230",
+      "bytes": 59314,
+      "sha256": "7d394e9c59c83c7f5b08dd56b8e48758e96d260fd3aa18a89cedc688f3966c81",
       "status": "needs-review"
     },
     {
       "path": "硬件/原理/叠层与阻抗.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 55878,
-      "sha256": "f38dccb7611cc28f0d9a63984b3cdd96bc00344f991d5f40fdcff5f1ed037a5c",
+      "bytes": 56070,
+      "sha256": "d46d56fa5fd16adeec1accf78c2e4bc6551e4d228170f20551c4ecbffaa11da3",
       "status": "needs-review",
       "note": "2026-11-07：用户既有表格空白排版调整，经Git差分核对未改知识内容；更新当前哈希。"
+    },
+    {
+      "path": "硬件/原理/基础公式与算例勘误.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 8459,
+      "sha256": "fcd209c26dd035a190edb8f79dc6f45e08026d291f0f355051f47f084774d886",
+      "status": "needs-review"
     },
     {
       "path": "硬件/原理/开关电源拓扑与验证.md",
@@ -401,17 +417,17 @@
       "path": "硬件/原理/数电.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 52523,
-      "sha256": "ceb7c30f0cb3fe26bd3a073aa64f32ffbce629dfb7f361d1145668a1bd62f80b",
-      "status": "curated"
+      "bytes": 52738,
+      "sha256": "1715bdd91f6bd07bc4ab3bffeb12a03f86fd7ebb423a83619461a3081a72619f",
+      "status": "needs-review"
     },
     {
       "path": "硬件/原理/模电.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 62979,
-      "sha256": "ee71c800a060d4af5aa3bf4696c29220682c7b213b7545488e72f9238e88cab6",
-      "status": "curated"
+      "bytes": 63241,
+      "sha256": "f1cf4061bf400c85f6f97d3cf359fd364204ae4d2dff57daefb6dd85095b63b9",
+      "status": "needs-review"
     },
     {
       "path": "硬件/原理/电源设计.md",
