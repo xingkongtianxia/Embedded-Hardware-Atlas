@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08",
+  "generated_at": "2026-11-15",
   "tool_version": 2,
   "root_policy": "paths are relative to this sole knowledge-base root",
   "errors": 0,
@@ -50,6 +50,14 @@
       "kind": "md",
       "bytes": 59540,
       "sha256": "6d5570bf43831a95461c7422856bc5a209b016b503fb0c1e43f3a67212846124",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/PCB/烧录链路审查与证据边界.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 3620,
+      "sha256": "5aca9bf9fdbe5856d6e72a3764c275526c60679903eec958b37f36aa600feb00",
       "status": "needs-review"
     },
     {
@@ -241,6 +249,22 @@
       "status": "available"
     },
     {
+      "path": "硬件/原始备份/GreenFET产品选型指南.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "bytes": 2910269,
+      "sha256": "84a8378abaf29cf963fc1e92eb9d04dcccf1d215fbf006837afe56223d877e7b",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/原始备份/GreenFET负载开关产品选型.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "bytes": 2897213,
+      "sha256": "6dc08bc05a9a6051082c7c4dfdb80599ac885b1fa70527ffae0b5dcf601fc435",
+      "status": "needs-review"
+    },
+    {
       "path": "硬件/原始备份/JHP11-PCB模块化设计要点解析教案.md（单独Markdown文件）.md",
       "role": "backup-source",
       "kind": "md",
@@ -267,6 +291,38 @@
       "status": "available"
     },
     {
+      "path": "硬件/原始备份/Protection devices.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "bytes": 761540,
+      "sha256": "0f3831794813b3435a6f4b009a5443865f420245c93632346c561f91010c3b8d",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/原始备份/RL78系列选型.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "bytes": 13299124,
+      "sha256": "fb81a0d7eea6c2ea49e7bade33a3c1e27d587e0745cd7cb9d6d748c3af5f33e4",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/原始备份/Small Signal and 选型.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "bytes": 8477786,
+      "sha256": "210baf88d10cd2c9481bb0b3ce011c830cf988ba27e8012b8623cacef277eebc",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/原始备份/mos选型.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "bytes": 4035467,
+      "sha256": "9b40959ffca14a5b97d2d4575f49372e81b28c1c5f504cca9142400b458f2749",
+      "status": "needs-review"
+    },
+    {
       "path": "硬件/原始备份/【Altium Academy】信号完整性 _ 2025 _ 吃透 SI 设计，搞定高速电路板｜全集总结（详解版）2026-09-08.md",
       "role": "backup-source",
       "kind": "md",
@@ -275,12 +331,60 @@
       "status": "available"
     },
     {
+      "path": "硬件/原始备份/保护器件选型.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "bytes": 1336262,
+      "sha256": "6ec29f380a575120fa5e02dd472be5708c774f649f1e5f4d664756b8491868ec",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/原始备份/光耦合器选型.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "bytes": 5413531,
+      "sha256": "915c176ac2d36eaea35571af73e3ee0bed87507b5af58c633965c312d2b6274f",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/原始备份/功率器件选型.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "bytes": 3570404,
+      "sha256": "69b4aca35e3680a57fb08ffa4654a899ce093feaf54e0a54ef3d0f17fcbe1cf8",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/原始备份/增强型产品选型指南.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "bytes": 1633540,
+      "sha256": "18f366fb1fed57f11bbceaa626a7cd4b8b0e7758f8046e970cf350f93cefbe61",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/原始备份/失调电源校正方法.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "bytes": 1419361,
+      "sha256": "153a009dcac3f62791b76bf35f83bfda2cc84750d62a4a9a353131350996b3b6",
+      "status": "needs-review"
+    },
+    {
       "path": "硬件/原始备份/射频PCB设计知识全集-三套课程合并笔记.md",
       "role": "backup-source",
       "kind": "md",
       "bytes": 84149,
       "sha256": "0224a47436c5b149b8796fcde8a6f9e3dd51eb64c3e2716c8abf65c73f0e8459",
       "status": "available"
+    },
+    {
+      "path": "硬件/原始备份/射频产品选型.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "bytes": 2348804,
+      "sha256": "ffab96524445c1b076ba1338b1d140477a45aac8f53bd608b6a90b1ea77c5324",
+      "status": "needs-review"
     },
     {
       "path": "硬件/原始备份/开关电源工程师训练营_知识点总结.md",
@@ -333,12 +437,60 @@
       "status": "needs-review"
     },
     {
+      "path": "硬件/原始备份/电机驱动选型.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "bytes": 4062576,
+      "sha256": "34e0a8f27cb4d8c5efcb24237c21e69b5ccc9732a84a7e55b4fd59f2a4cdf57a",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/原始备份/电源管理指南.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "bytes": 11347191,
+      "sha256": "138de168890a5d244d9d4d1e857abd48e99ee0cdad170711b7e3b799e573c0fc",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/原始备份/电源设计经验.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "bytes": 5385762,
+      "sha256": "12ed0378a5b1c6b32037c35ad66ee461351ed2dc296784f901ce6b4be5eb4b79",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/原始备份/电磁干扰滤波 接口调理与射频选型.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "bytes": 896012,
+      "sha256": "1238b67ffe2730c8d3558903dedd8440a4a98aca381b6cb1aaed126882c7e604",
+      "status": "needs-review"
+    },
+    {
       "path": "硬件/原始备份/硬件工程师入门教程_电子工程师_零基础_全免费_2024全新课程_中文字幕_B站 点赞 收藏NO.1｜全集总结 2026-08-06.md",
       "role": "backup-source",
       "kind": "md",
       "bytes": 286926,
       "sha256": "fcdb9ce3b168852e37c0b3f724bb65213f2438d287bfaebe88e79a827cd8bb67",
       "status": "available"
+    },
+    {
+      "path": "硬件/原始备份/线性稳压器基础知识.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "bytes": 1667511,
+      "sha256": "6885a1bde2e4173ac49e86e7c87eb650bb780b3095e4df3b0f64f41d4261eba8",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/原始备份/隔离器与固态继电器选型.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "bytes": 8263203,
+      "sha256": "aebb695724b5c467ac6473bac1a12c2c152491bbe18471a0873027c37ae3d020",
+      "status": "needs-review"
     },
     {
       "path": "硬件/原始备份/高质量开关电源PCB设计-全六课.md",
@@ -389,6 +541,22 @@
       "status": "needs-review"
     },
     {
+      "path": "硬件/原理/保护隔离与射频器件选型.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 3798,
+      "sha256": "0e8da2f3db8706644362593d3c9ac8a02bde02128cd44f6eb5ee7ae044db4adb",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/原理/功率与控制器件选型.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 4790,
+      "sha256": "a6faa563edc0841de4a7357c3e10b656dda54c5d5436f9eca336c2e46f9d03ff",
+      "status": "needs-review"
+    },
+    {
       "path": "硬件/原理/叠层与阻抗.md",
       "role": "curated-source",
       "kind": "md",
@@ -411,6 +579,14 @@
       "kind": "md",
       "bytes": 7125,
       "sha256": "3f46e0b103a60587341fce2ceaad79f6cd57109ef8e90da1c4ee05273148e1d8",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/原理/放大器失调校正.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 1818,
+      "sha256": "d6fc212bbe54f87cbfcd69a860509a72d4247b2b4344eaf420898b68d03de586",
       "status": "needs-review"
     },
     {
@@ -438,27 +614,35 @@
       "status": "curated"
     },
     {
+      "path": "硬件/原理/线性稳压与电源测量补充.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 4017,
+      "sha256": "d1f95296f54a7522d5e747d618ffe7a7cfbc0ef65a8f6a208932e3163483b61f",
+      "status": "needs-review"
+    },
+    {
       "path": "硬件/原理/芯片手册/2026-09-04新增芯片手册.md",
       "role": "curated-source",
       "kind": "md",
       "bytes": 3968,
-      "sha256": "e18252b89e086f0038dc60d079fc12f441854e907f1bea4a7a7c932a160fc9a9",
+      "sha256": "938d07a6a80e93859e40fa6c1bcbf476ac7cffed6facdaf4fe0f28897e695dad",
       "status": "needs-review"
     },
     {
       "path": "硬件/原理/芯片手册/主控MCU.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 21862,
-      "sha256": "2831272ccba9b6c0f81efeee1456ee516396623dd96e957ec165f76f73e9384e",
+      "bytes": 22609,
+      "sha256": "24487957680f8bc5f32bc92cacfaf75fe6b52a64a8c20a19c509ae7a38a9239f",
       "status": "curated"
     },
     {
       "path": "硬件/原理/芯片手册/二极管与保护器件.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 12954,
-      "sha256": "df55b588c7b6b4062964a792b21d22bff4bce93c5c84c156ebe22f54169a5461",
+      "bytes": 13835,
+      "sha256": "3dfaa4dda9a3d4b5209f5c1303439528d037c0fc338ec241b7ad982dbb66eb9d",
       "status": "needs-review"
     },
     {
@@ -473,16 +657,16 @@
       "path": "硬件/原理/芯片手册/功率开关与驱动.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 19188,
-      "sha256": "06876c3b683119935b0d389967486d889eaf94ecb08475304c9666a4ca639788",
-      "status": "reviewed"
+      "bytes": 19594,
+      "sha256": "b88af9918fad3a463aa6ee165a0e128c10f9daccaf586944aa360362c007ba45",
+      "status": "needs-review"
     },
     {
       "path": "硬件/原理/芯片手册/存储器.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 10207,
-      "sha256": "b0c3333464bb7e90dd2a28c5189240c6f19db94232549c6f3c012ebdbb85664b",
+      "bytes": 10209,
+      "sha256": "f5bd04d63fe8c53450e58dcd9ed0a7fc7b5b8934a4469218752f8507ef7fa285",
       "status": "curated"
     },
     {
@@ -502,11 +686,19 @@
       "status": "needs-review"
     },
     {
+      "path": "硬件/原理/芯片手册/有线通信与连接器.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 5577,
+      "sha256": "cad8c8d55edd4895be1370a02564674fd4b8d388432f5d3a92772a456739a929",
+      "status": "needs-review"
+    },
+    {
       "path": "硬件/原理/芯片手册/电平转换.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 3557,
-      "sha256": "a797c3784805210021e95f08f23e40965319b5ecbeb440349e8a27fb498ebd42",
+      "bytes": 4825,
+      "sha256": "50264d072777c047b939504947d7a0b18e64df2d2e5ddfbce79aeba7b217f278",
       "status": "curated"
     },
     {
@@ -521,24 +713,24 @@
       "path": "硬件/原理/芯片手册/电源管理.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 73435,
-      "sha256": "a8e6dc4ffc465e20f59313bb32d9e97c80ba7239b774212d99c53bcb8213d9c1",
+      "bytes": 77623,
+      "sha256": "01fab41fd5abed8ced993786c575d6056a271469ddf9bed0abb67a8f17af0a03",
       "status": "needs-review"
     },
     {
       "path": "硬件/原理/芯片手册/蓝牙与无线.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 11880,
-      "sha256": "46ac7e361345d5a148a641dedad103bb54aca9b1fa92090a9e6fe315111dd9f3",
+      "bytes": 12897,
+      "sha256": "92633f007737cda93ab3be88746705a84d54d6cd5cfc74725d2b4595f618ca91",
       "status": "needs-review"
     },
     {
       "path": "硬件/原理/芯片手册/逻辑器件.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 3941,
-      "sha256": "37ba25b130a331c3c9aa66a801b6c33adb88530ad50b03b301523b43c71beec6",
+      "bytes": 4836,
+      "sha256": "e37afca8031b01eb04a85fcf35b890d35e926924ecf477c1b9a7e9603924a84b",
       "status": "curated"
     },
     {
@@ -590,6 +782,14 @@
       "status": "available"
     },
     {
+      "path": "硬件/芯片数据手册/ABS210芯片手册.pdf",
+      "role": "raw-source",
+      "kind": "pdf",
+      "bytes": 190157,
+      "sha256": "a0567e3c9c185b8cacff5578013f57d3163d7861207e61991a8b9dd56a0cfbef",
+      "status": "needs-review"
+    },
+    {
       "path": "硬件/芯片数据手册/ADP2119芯片手册.pdf",
       "role": "raw-source",
       "kind": "pdf",
@@ -603,6 +803,14 @@
       "kind": "pdf",
       "bytes": 1409564,
       "sha256": "8dd7a20a2d83da3919814a87fa6216a28e88c53cd980d85d1b48e570c2d50aed",
+      "status": "available"
+    },
+    {
+      "path": "硬件/芯片数据手册/AI8051芯片手册.pdf",
+      "role": "raw-source",
+      "kind": "pdf",
+      "bytes": 45443910,
+      "sha256": "dd149405673130db1e0fc0570149ef405058a08591290701bf2704544459b06e",
       "status": "available"
     },
     {
@@ -742,6 +950,14 @@
       "status": "available"
     },
     {
+      "path": "硬件/芯片数据手册/CD4069UB芯片手册.pdf",
+      "role": "raw-source",
+      "kind": "pdf",
+      "bytes": 1318064,
+      "sha256": "7c96c0b991b04b9d2087e604d2880c8efec99dac69cc64c4d340cebf8208b110",
+      "status": "needs-review"
+    },
+    {
       "path": "硬件/芯片数据手册/CD74HC4051芯片手册.pdf",
       "role": "raw-source",
       "kind": "pdf",
@@ -766,6 +982,14 @@
       "status": "available"
     },
     {
+      "path": "硬件/芯片数据手册/CH340芯片手册.PDF",
+      "role": "raw-source",
+      "kind": "pdf",
+      "bytes": 233003,
+      "sha256": "d12a053537d3339ba443f3fe895e8f0d97146e105e7f52659cfe4f2c8eb67e7e",
+      "status": "needs-review"
+    },
+    {
       "path": "硬件/芯片数据手册/CH549DS1芯片手册.PDF",
       "role": "raw-source",
       "kind": "pdf",
@@ -780,6 +1004,14 @@
       "bytes": 228679,
       "sha256": "53d9e98927eb124f198b24a98c122069cfed960ca35b04c1b4f7f2a7757e4090",
       "status": "available"
+    },
+    {
+      "path": "硬件/芯片数据手册/CH9434DS1芯片手册.PDF",
+      "role": "raw-source",
+      "kind": "pdf",
+      "bytes": 348534,
+      "sha256": "8c2f3fac0e2bb273eff54e8a8a82354e36c9c46a666d156add422eadff284c85",
+      "status": "needs-review"
     },
     {
       "path": "硬件/芯片数据手册/CJ2301芯片手册.pdf",
@@ -983,11 +1215,11 @@
       "status": "available"
     },
     {
-      "path": "硬件/芯片数据手册/HIP4082.pdf",
+      "path": "硬件/芯片数据手册/HIP4082芯片手册.pdf",
       "role": "raw-source",
       "kind": "pdf",
-      "bytes": 303961,
-      "sha256": "c885d440e42c4e2c81cbdf6429f64932c5c7db9bcb6f7cb24d0e9a99d17e8103",
+      "bytes": 704468,
+      "sha256": "4f34134c5841155f73e698be0b3ac7265caa663e589f1e4bd3ea4af32ca9667e",
       "status": "available"
     },
     {
@@ -996,6 +1228,14 @@
       "kind": "pdf",
       "bytes": 252667,
       "sha256": "06ec67820318bfcd1399620857d8c80b37c48897c106ab65011f50f418d6adb2",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/芯片数据手册/HR601680芯片手册.pdf",
+      "role": "raw-source",
+      "kind": "pdf",
+      "bytes": 122674,
+      "sha256": "2ee4f8cfba42207a867295c427bc56331072f4010efd9003e1803c522a7580f6",
       "status": "needs-review"
     },
     {
@@ -1012,22 +1252,6 @@
       "kind": "pdf",
       "bytes": 1929360,
       "sha256": "bc051852bac016f07fac3934b53bef0be63263b7bf2ec130406dc82711927d92",
-      "status": "available"
-    },
-    {
-      "path": "硬件/芯片数据手册/ICM-20948芯片手册.pdf",
-      "role": "raw-source",
-      "kind": "pdf",
-      "bytes": 1142045,
-      "sha256": "5a6c1b7b71633986bec05439335844a91769e46f9d90c2602d0f7c1a559ae016",
-      "status": "available"
-    },
-    {
-      "path": "硬件/芯片数据手册/ICM-42688芯片手册.pdf",
-      "role": "raw-source",
-      "kind": "pdf",
-      "bytes": 1801780,
-      "sha256": "55ec8597ef1561310a0bf8013e2f6ab7d0b6fdd899b23a10801bacd02b84e2fd",
       "status": "available"
     },
     {
@@ -1129,6 +1353,14 @@
       "status": "available"
     },
     {
+      "path": "硬件/芯片数据手册/LM2940芯片手册.pdf",
+      "role": "raw-source",
+      "kind": "pdf",
+      "bytes": 2335991,
+      "sha256": "54cf633a44bf454569065b4b495c4236c298ea43bbe804adcd0e038fb91b2e29",
+      "status": "needs-review"
+    },
+    {
       "path": "硬件/芯片数据手册/LM5148芯片手册.pdf",
       "role": "raw-source",
       "kind": "pdf",
@@ -1201,6 +1433,14 @@
       "status": "available"
     },
     {
+      "path": "硬件/芯片数据手册/MC7812BDTRKG芯片手册.pdf",
+      "role": "raw-source",
+      "kind": "pdf",
+      "bytes": 426508,
+      "sha256": "a0831a3a6a3010acc3edf7fc9a00edeb98a1bc2cab6bafb360bac88c2d7d21d1",
+      "status": "needs-review"
+    },
+    {
       "path": "硬件/芯片数据手册/MCP4725芯片手册.pdf",
       "role": "raw-source",
       "kind": "pdf",
@@ -1233,15 +1473,6 @@
       "status": "available"
     },
     {
-      "path": "硬件/芯片数据手册/ME6211C33M5G芯片手册.pdf",
-      "role": "raw-source",
-      "kind": "pdf",
-      "bytes": 916083,
-      "sha256": "a805a4df88c79199e94f0f07a7a37b9348582a9d077ff4e7a8b9a8c73ba9d23a",
-      "status": "available",
-      "duplicate_of": "硬件/芯片数据手册/ME6211C33M5G-N.pdf"
-    },
-    {
       "path": "硬件/芯片数据手册/ME6211芯片手册.pdf",
       "role": "raw-source",
       "kind": "pdf",
@@ -1258,14 +1489,6 @@
       "status": "available"
     },
     {
-      "path": "硬件/芯片数据手册/MKDV16GCL-STP芯片手册.pdf",
-      "role": "raw-source",
-      "kind": "pdf",
-      "bytes": 974795,
-      "sha256": "69ac8c29ffd1a986770c0d65a1b7cf946bf704c1ae05d3a030e3e2f59e2df052",
-      "status": "available"
-    },
-    {
       "path": "硬件/芯片数据手册/MKDV16GCL芯片手册.pdf",
       "role": "raw-source",
       "kind": "pdf",
@@ -1273,6 +1496,14 @@
       "sha256": "69ac8c29ffd1a986770c0d65a1b7cf946bf704c1ae05d3a030e3e2f59e2df052",
       "status": "available",
       "duplicate_of": "硬件/芯片数据手册/MKDV16GCL-STP芯片手册.pdf"
+    },
+    {
+      "path": "硬件/芯片数据手册/ML307C-GC芯片手册.pdf",
+      "role": "raw-source",
+      "kind": "pdf",
+      "bytes": 1643354,
+      "sha256": "f63735f41686f78ab7b9144b247e7548c6465fe3476b5b866171d5fa6f22c4d4",
+      "status": "needs-review"
     },
     {
       "path": "硬件/芯片数据手册/MP28167芯片手册.pdf",
@@ -1288,14 +1519,6 @@
       "kind": "pdf",
       "bytes": 414483,
       "sha256": "ce8fe8aa314dd6f80dd3b17274b981bfe9a33e7c023e86a4000c57e47f764643",
-      "status": "available"
-    },
-    {
-      "path": "硬件/芯片数据手册/MPU-6500芯片手册.pdf",
-      "role": "raw-source",
-      "kind": "pdf",
-      "bytes": 814603,
-      "sha256": "6afb495474de03a1fa4ac16cb591ae0189e25b4f8cbf3fe644a42bb9405f7151",
       "status": "available"
     },
     {
@@ -1355,6 +1578,14 @@
       "bytes": 1344074,
       "sha256": "2acc54497a85d5fac9565076fafd1713703a2c0b47f780e58b3c62df59a1087e",
       "status": "available"
+    },
+    {
+      "path": "硬件/芯片数据手册/NANO-SIM-502芯片手册.pdf",
+      "role": "raw-source",
+      "kind": "pdf",
+      "bytes": 155289,
+      "sha256": "72a9d4ea8b5e3429f862019ba0303f36622e792ed3e0604ccf8d6a80541b9552",
+      "status": "needs-review"
     },
     {
       "path": "硬件/芯片数据手册/NDP1360KC芯片手册.pdf",
@@ -1426,6 +1657,30 @@
       "kind": "pdf",
       "bytes": 385717,
       "sha256": "a3c0989b529752d1950dfac64a51d7905372d69a23ff37c517793dfa5ba13043",
+      "status": "available"
+    },
+    {
+      "path": "硬件/芯片数据手册/RJ45-8P8C芯片手册为.pdf",
+      "role": "raw-source",
+      "kind": "pdf",
+      "bytes": 199010,
+      "sha256": "7f678bfa67c19d548e6135cb7dbf7945eea814bfa7b9989953e29f6a324f1b01",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/芯片数据手册/RP2040芯片手册.pdf",
+      "role": "raw-source",
+      "kind": "pdf",
+      "bytes": 5301205,
+      "sha256": "be56fbb75ba0ae9e26558a73c93ac3e75c2ad4e6878d3b6703de2a76d886ea8c",
+      "status": "available"
+    },
+    {
+      "path": "硬件/芯片数据手册/RP2350芯片手册.pdf",
+      "role": "raw-source",
+      "kind": "pdf",
+      "bytes": 7968417,
+      "sha256": "2877d0f270fb6d6a57943bee58aaad536aa027bea1e5b1c4ce2541a3230d4be8",
       "status": "available"
     },
     {
@@ -1615,6 +1870,14 @@
       "status": "available"
     },
     {
+      "path": "硬件/芯片数据手册/SP3485芯片手册.pdf",
+      "role": "raw-source",
+      "kind": "pdf",
+      "bytes": 936182,
+      "sha256": "e3f71227b89ae4ba0a925dec9138f2ea2746c5651ec593b52bce275cb67dbc70",
+      "status": "needs-review"
+    },
+    {
       "path": "硬件/芯片数据手册/SPX1117M3-L-5-0芯片手册.pdf",
       "role": "raw-source",
       "kind": "pdf",
@@ -1754,12 +2017,28 @@
       "status": "available"
     },
     {
+      "path": "硬件/芯片数据手册/TLV62569DBVR芯片手册.pdf",
+      "role": "raw-source",
+      "kind": "pdf",
+      "bytes": 1684743,
+      "sha256": "b7e88a666f860762731dc426172c3ff105408eab2e83145e44f34a0e55b97b36",
+      "status": "needs-review"
+    },
+    {
       "path": "硬件/芯片数据手册/TLV62569芯片手册.pdf",
       "role": "raw-source",
       "kind": "pdf",
       "bytes": 1654492,
       "sha256": "9663d52536092277ea95116d691455c1e71618f9be24d446634478881752a4a1",
       "status": "available"
+    },
+    {
+      "path": "硬件/芯片数据手册/TMI7301芯片手册.pdf",
+      "role": "raw-source",
+      "kind": "pdf",
+      "bytes": 912749,
+      "sha256": "012435df7d7cf50f7c84b18ee7d098e1a2ea1d8175fc20e2996a0ddf0dc831de",
+      "status": "needs-review"
     },
     {
       "path": "硬件/芯片数据手册/TMP102芯片手册.pdf",
@@ -1826,6 +2105,14 @@
       "status": "available"
     },
     {
+      "path": "硬件/芯片数据手册/TPS54360芯片手册.pdf",
+      "role": "raw-source",
+      "kind": "pdf",
+      "bytes": 2761251,
+      "sha256": "00c1af42c9331c726643c68b2d64f9e40890b35d69efed2413515ca854c9663f",
+      "status": "needs-review"
+    },
+    {
       "path": "硬件/芯片数据手册/TPS5450芯片手册.pdf",
       "role": "raw-source",
       "kind": "pdf",
@@ -1866,6 +2153,14 @@
       "status": "available"
     },
     {
+      "path": "硬件/芯片数据手册/TPS7A47芯片手册.pdf",
+      "role": "raw-source",
+      "kind": "pdf",
+      "bytes": 2619636,
+      "sha256": "8abb7994a91c0d4ee8f4069e9d27481c0b727069527f6796e2693ea56c9151ed",
+      "status": "available"
+    },
+    {
       "path": "硬件/芯片数据手册/TPS7A94芯片手册.pdf",
       "role": "raw-source",
       "kind": "pdf",
@@ -1889,6 +2184,22 @@
       "sha256": "aa797b48af0b4c39dc2d90b8cba22751acb1290843a9b3aa9b5ceb13feb18157",
       "status": "available",
       "duplicate_of": "硬件/芯片数据手册/TX7550-M芯片手册.pdf"
+    },
+    {
+      "path": "硬件/芯片数据手册/TXS0102DCUR芯片手册.pdf",
+      "role": "raw-source",
+      "kind": "pdf",
+      "bytes": 2070932,
+      "sha256": "0b7d3254218798753611a98282ee1d991a4e62739af26d0a771b4190ea9a3024",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/芯片数据手册/TXS0102芯片手册.pdf",
+      "role": "raw-source",
+      "kind": "pdf",
+      "bytes": 1803309,
+      "sha256": "f34ce1f47b4e5316d74e072d21515e32a8dcd33fe65097644c4081ab48f7f04c",
+      "status": "needs-review"
     },
     {
       "path": "硬件/芯片数据手册/USBLC6-2芯片手册.pdf",
@@ -1940,15 +2251,6 @@
       "status": "available"
     },
     {
-      "path": "硬件/芯片数据手册/W25Q16JV芯片手册.pdf",
-      "role": "raw-source",
-      "kind": "pdf",
-      "bytes": 3248710,
-      "sha256": "0a7d2859578bdf11ca5519d444c11cdc790fcbe6921989689b9c1ae4599780ef",
-      "status": "available",
-      "duplicate_of": "硬件/芯片数据手册/W25Q16JV 芯片手册.pdf"
-    },
-    {
       "path": "硬件/芯片数据手册/W25Q256JV芯片手册 .pdf",
       "role": "raw-source",
       "kind": "pdf",
@@ -1963,6 +2265,14 @@
       "bytes": 3220429,
       "sha256": "166a0495a73fba63e728641c9b823c892412fb6cf26c6ccd3591f15005e05105",
       "status": "available"
+    },
+    {
+      "path": "硬件/芯片数据手册/W5500芯片手册.pdf",
+      "role": "raw-source",
+      "kind": "pdf",
+      "bytes": 1893745,
+      "sha256": "7b826b808084ccd986bcc22904c00a07a508ef42fb93d079fe7150a4c4f1a63d",
+      "status": "needs-review"
     },
     {
       "path": "硬件/芯片数据手册/WIRELESS-BWIPX芯片手册.pdf",
@@ -2030,51 +2340,11 @@
       "status": "available"
     },
     {
-      "path": "硬件/芯片数据手册/ai8051芯片手册.pdf",
-      "role": "raw-source",
-      "kind": "pdf",
-      "bytes": 45443910,
-      "sha256": "dd149405673130db1e0fc0570149ef405058a08591290701bf2704544459b06e",
-      "status": "available"
-    },
-    {
       "path": "硬件/芯片数据手册/drv8701芯片手册.pdf",
       "role": "raw-source",
       "kind": "pdf",
       "bytes": 2497520,
       "sha256": "82f7b3c6a0d69cb26ced4890e6a96c35e39bc9e5958fbe0d4a25b18b4ca0f0ed",
-      "status": "available"
-    },
-    {
-      "path": "硬件/芯片数据手册/hip4082芯片手册.pdf",
-      "role": "raw-source",
-      "kind": "pdf",
-      "bytes": 704468,
-      "sha256": "4f34134c5841155f73e698be0b3ac7265caa663e589f1e4bd3ea4af32ca9667e",
-      "status": "available"
-    },
-    {
-      "path": "硬件/芯片数据手册/rp2040芯片手册.pdf",
-      "role": "raw-source",
-      "kind": "pdf",
-      "bytes": 5301205,
-      "sha256": "be56fbb75ba0ae9e26558a73c93ac3e75c2ad4e6878d3b6703de2a76d886ea8c",
-      "status": "available"
-    },
-    {
-      "path": "硬件/芯片数据手册/rp2350芯片手册.pdf",
-      "role": "raw-source",
-      "kind": "pdf",
-      "bytes": 7968417,
-      "sha256": "2877d0f270fb6d6a57943bee58aaad536aa027bea1e5b1c4ce2541a3230d4be8",
-      "status": "available"
-    },
-    {
-      "path": "硬件/芯片数据手册/tps7a47芯片手册.pdf",
-      "role": "raw-source",
-      "kind": "pdf",
-      "bytes": 2619636,
-      "sha256": "8abb7994a91c0d4ee8f4069e9d27481c0b727069527f6796e2693ea56c9151ed",
       "status": "available"
     },
     {
@@ -2114,6 +2384,13 @@
       "bytes": 369640,
       "status": "unavailable",
       "reason": "用户删除后无同哈希公开原件；不从私人部分搜索或恢复"
+    },
+    {
+      "former_path": "硬件/芯片数据手册/HIP4082.pdf",
+      "sha256": "c885d440e42c4e2c81cbdf6429f64932c5c7db9bcb6f7cb24d0e9a99d17e8103",
+      "bytes": 303961,
+      "status": "unavailable",
+      "reason": "用户删除；现存公开原件无同SHA-256版本，不以同型号不同内容替代"
     }
   ]
 }

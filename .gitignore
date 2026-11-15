@@ -46,3 +46,8 @@ desktop.ini
 # Python检查脚本运行缓存
 __pycache__/
 *.py[cod]
+
+# 本地工程连接器、视觉路由和工具运行目录
+/.dsh-vision-router/
+/.easyeda/
+/.tools/

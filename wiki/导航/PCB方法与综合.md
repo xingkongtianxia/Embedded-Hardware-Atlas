@@ -2,7 +2,7 @@
 title: PCB方法与综合目录
 type: synthesis
 status: needs-review
-updated: 2026-11-08
+updated: 2026-11-15
 sources: [硬件/PCB/PCB约束与放行.md, 硬件/PCB/PCB通用工程方法.md, 硬件/PCB/主控与数字逻辑模块.md, 硬件/PCB/射频设计.md, 硬件/PCB/电源模块.md, 硬件/PCB/车载双路快充原理图审查-2026-10-21.md, 硬件/PCB/轮趣无刷四驱PCB设计审查.md, 硬件/PCB/隔离开关电源设计.md, 硬件/PCB/高速PCB规范的适用边界.md, 硬件/PCB/高速接口新增资料.md, 硬件/原理/EMC.md, 硬件/原理/PI.md, 硬件/原理/SI.md, 硬件/原理/模电.md, 硬件/原理/电源设计.md, 硬件/原理/芯片手册/主控MCU.md, 硬件/原理/芯片手册/传感器.md, 硬件/原理/芯片手册/功率开关与驱动.md, 硬件/原理/芯片手册/电源管理.md, 硬件/原理/芯片手册/蓝牙与无线.md]
 tags: [嵌入式, 导航]
 ---
@@ -55,6 +55,7 @@ tags: [嵌入式, 导航]
 - [[wiki/PCB/PCB通用工程方法/09-发布前检查清单/31-工程方法进阶知识条目-15|工程方法进阶知识条目 15]] · `needs-review`
 - [[wiki/PCB/PCB通用工程方法/09-发布前检查清单/32-工程方法进阶知识条目-16|工程方法进阶知识条目 16]] · `needs-review`
 - [[wiki/PCB/单电调无人机原理图检查-2026-10-11|单电调无人机原理图检查（2026-10-11）]] · `needs-review`
+- [[wiki/PCB/单电调EFM8BB21烧录与C2通路审查-2026-11-13|单电调 EFM8BB21 烧录与 C2 通路审查（2026-11-13）]] · `needs-review`
 - [[wiki/PCB/射频传输线与匹配|射频传输线与匹配]] · `needs-review`
 - [[wiki/PCB/射频布局与屏蔽|射频布局与屏蔽]] · `needs-review`
 - [[wiki/PCB/射频测试与放行|射频测试与放行]] · `needs-review`
@@ -86,3 +87,12 @@ tags: [嵌入式, 导航]
 - [[wiki/综合/原始资料勘误与使用指南|原始资料勘误与使用指南]] · `needs-review`
 - [[wiki/综合/基础电路与逻辑算例核对|基础电路与逻辑算例核对]] · `needs-review`
 - [[wiki/综合/SI与PI公式及单位核对|SI与PI公式及单位核对]] · `needs-review`
+
+## 2026-11-15 增量入口
+
+- [[wiki/PCB/RP2354B墨水屏驱动断电丢数据审查-2026-11-14|RP2354B墨水屏驱动断电丢数据审查-2026-11-14]] · `needs-review`
+- [[wiki/综合/保护隔离与射频选型边界|保护隔离与射频选型边界]] · `needs-review`
+- [[wiki/综合/功率与控制器件选型导航|功率与控制器件选型导航]] · `needs-review`
+- [[wiki/综合/放大器修整与斩波选型|放大器修整与斩波选型]] · `needs-review`
+- [[wiki/综合/有线联网与PoE接入链|有线联网与PoE接入链]] · `needs-review`
+- [[wiki/综合/输入滤波阻尼与电源纹波测量|输入滤波阻尼与电源纹波测量]] · `needs-review`

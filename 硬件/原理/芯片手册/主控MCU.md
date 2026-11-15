@@ -2,8 +2,8 @@
 title: 主控 MCU
 type: datasheet-source
 status: curated
-updated: 2026-10-23
-sources: [硬件/芯片数据手册/TC264芯片手册.pdf, 硬件/芯片数据手册/STM32F405RG芯片手册.pdf, 硬件/芯片数据手册/AT32F421K8U7芯片手册.pdf, 硬件/芯片数据手册/W25Q256JV芯片手册 .pdf, 硬件/芯片数据手册/K230芯片手册.pdf, 硬件/芯片数据手册/rp2350芯片手册.pdf]
+updated: 2026-11-15
+sources: [硬件/芯片数据手册/TC264芯片手册.pdf, 硬件/芯片数据手册/STM32F405RG芯片手册.pdf, 硬件/芯片数据手册/AT32F421K8U7芯片手册.pdf, 硬件/芯片数据手册/W25Q256JV芯片手册 .pdf, 硬件/芯片数据手册/K230芯片手册.pdf, 硬件/芯片数据手册/RP2350芯片手册.pdf, 硬件/芯片数据手册/RP2354芯片手册.pdf]
 tags: [芯片手册, MCU, TC264, STM32F405RG, AT32F421K8U7, Cortex-M4, AURIX, W25Q256JV, SPI Flash, NOR Flash, K230, RP2350, RISC-V, AIoC]
 ---
 
@@ -267,7 +267,7 @@ Raspberry Pi Ltd `RP2350`：**双核 Cortex-M33 或双核 Hazard3 RISC-V 可切�
 - `硬件/芯片数据手册/AT32F421K8U7芯片手册.pdf`
 - `硬件/芯片数据手册/W25Q256JV芯片手册 .pdf`（注意：文件名 `.pdf` 前有一个空格）
 - `硬件/芯片数据手册/K230芯片手册.pdf`（嘉楠 K230 Product Full Datasheet V1.0，2023-7-6；引脚表在外部 pinout 文档）
-- `硬件/芯片数据手册/rp2350芯片手册.pdf`（Raspberry Pi RP2350 Datasheet，build 2025-07-29；封面图片型经视觉识别；页码为 PDF 物理页）
+- `硬件/芯片数据手册/RP2350芯片手册.pdf`（Raspberry Pi RP2350 Datasheet，build 2025-07-29；封面图片型经视觉识别；页码为 PDF 物理页）
 - `硬件/芯片数据手册/STM32F405RG芯片手册.pdf`（ST DS8626 Rev 10，2024-11；STM32F405xx/STM32F407xx 系列手册）
 
 > **分类变更（2026-09-18）**：新建 `存储器` 分类后，W25Q256JV 的 Wiki 器件页已迁至 `wiki/原理/芯片手册/存储器/`；本分类稿保留其"主控配套串行 Flash"章节作为来源整理（历史条目不变），新入库存储器件（W25Q16JV、MKDV16GCL-STP、K4F8E304HB-MGCJ）见 `硬件/原理/芯片手册/存储器.md`。
@@ -282,3 +282,9 @@ Raspberry Pi Ltd `RP2350`：**双核 Cortex-M33 或双核 Hazard3 RISC-V 可切�
 ## 知识网络落点
 
 [[wiki/导航/其他器件]]、[[wiki/来源映射]]。本稿是分类有效来源；从Wiki按问题阅读，回到本稿核对证据条件。
+
+## 2026-11-15 RP2354启动事实补充
+
+现存RP2354芯片手册PDF物理p.1327 §14.3（印刷p.1326）：RP2354A/B在RP2350裸片上叠封W25Q16JVWI 2MB Flash，QSPI专用焊盘同时连到封装引脚；第二QSPI器件需Bank0 GPIO独立片选。物理p.375 §5.2.8（印刷p.374）说明BOOTSEL采样时CSn输出禁用、内部上拉，并给出4.7kΩ下拉示例。晶体或XIN外部时钟均可满足BOOTSEL时钟前提，频率/OTP另按原文核对。
+
+这些事实不证明任何工程已正确烧写Flash或冷启动；工程排障边界见[[wiki/PCB/RP2354B墨水屏驱动断电丢数据审查-2026-11-14|RP2354审查]]、[[wiki/原理/芯片手册/主控MCU/RP2350|器件入口]]。

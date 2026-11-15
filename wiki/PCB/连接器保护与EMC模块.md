@@ -2,7 +2,7 @@
 title: PCB 连接器、保护与 EMC 模块
 type: pcb-module
 status: needs-review
-updated: 2026-10-23
+updated: 2026-11-15
 sources: [硬件/PCB/连接器保护与EMC模块.md]
 tags: [嵌入式硬件, PCB]
 ---
@@ -43,3 +43,7 @@ tags: [嵌入式硬件, PCB]
 ## 来源复核提醒（2026-10-23）
 
 本页来源链涉及历史原件哈希不一致。正文知识保留，但来源链尚未完成内容复核，暂标`needs-review`；本轮未改写原件。详见[[journal/health-check-2026-10-23|体检报告]]的历史哈希差异，不因重新登记当前哈希而自动恢复`reviewed`。
+
+## 2026-11-15 关联知识
+
+新增[[wiki/综合/保护隔离与射频选型边界|保护/隔离选型]]与[[wiki/综合/有线联网与PoE接入链|以太网/PoE接入链]]，连接器、磁性器件和PD功能分别核验。

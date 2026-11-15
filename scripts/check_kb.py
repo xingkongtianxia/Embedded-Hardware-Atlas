@@ -71,7 +71,8 @@ def main():
         for base, dirs, files in os.walk(ROOT):
             parent = Path(base).relative_to(ROOT).as_posix()
             dirs[:] = [d for d in dirs if d not in {'.git', '.obsidian', '.claude',
-                '.claudian'} and not private(('' if parent == '.' else parent + '/') + d + '/')]
+                '.claudian', '.dsh-vision-router', '.easyeda', '.tools'}
+                and not private(('' if parent == '.' else parent + '/') + d + '/')]
             for name in files:
                 path = (Path(base) / name).relative_to(ROOT).as_posix()
                 if not private(path):
