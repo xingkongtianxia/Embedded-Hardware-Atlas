@@ -2,8 +2,8 @@
 title: 主控 MCU
 type: datasheet-source
 status: curated
-updated: 2026-11-15
-sources: [硬件/芯片数据手册/TC264芯片手册.pdf, 硬件/芯片数据手册/STM32F405RG芯片手册.pdf, 硬件/芯片数据手册/AT32F421K8U7芯片手册.pdf, 硬件/芯片数据手册/W25Q256JV芯片手册 .pdf, 硬件/芯片数据手册/K230芯片手册.pdf, 硬件/芯片数据手册/RP2350芯片手册.pdf, 硬件/芯片数据手册/RP2354芯片手册.pdf]
+updated: 2026-11-18
+sources: [硬件/芯片数据手册/TC264芯片手册.pdf, 硬件/芯片数据手册/STM32F405RG芯片手册.pdf, 硬件/芯片数据手册/AT32F421K8U7芯片手册.pdf, 硬件/芯片数据手册/W25Q256JV芯片手册 .pdf, 硬件/芯片数据手册/K230芯片手册.pdf, 硬件/芯片数据手册/RP2350芯片手册.pdf, 硬件/芯片数据手册/RP2354芯片手册.pdf, 硬件/芯片数据手册/CH32V208芯片手册.pdf]
 tags: [芯片手册, MCU, TC264, STM32F405RG, AT32F421K8U7, Cortex-M4, AURIX, W25Q256JV, SPI Flash, NOR Flash, K230, RP2350, RISC-V, AIoC]
 ---
 
@@ -288,3 +288,13 @@ Raspberry Pi Ltd `RP2350`：**双核 Cortex-M33 或双核 Hazard3 RISC-V 可切�
 现存RP2354芯片手册PDF物理p.1327 §14.3（印刷p.1326）：RP2354A/B在RP2350裸片上叠封W25Q16JVWI 2MB Flash，QSPI专用焊盘同时连到封装引脚；第二QSPI器件需Bank0 GPIO独立片选。物理p.375 §5.2.8（印刷p.374）说明BOOTSEL采样时CSn输出禁用、内部上拉，并给出4.7kΩ下拉示例。晶体或XIN外部时钟均可满足BOOTSEL时钟前提，频率/OTP另按原文核对。
 
 这些事实不证明任何工程已正确烧写Flash或冷启动；工程排障边界见[[wiki/PCB/RP2354B墨水屏驱动断电丢数据审查-2026-11-14|RP2354审查]]、[[wiki/原理/芯片手册/主控MCU/RP2350|器件入口]]。
+
+## CH32V208（2026-11-18）
+
+用户PDF为WCH《CH32V208数据手册》V2.6，41个物理页。p.4表2-1（印刷p.3）与p.9 §2.5.2/2.5.3核对：青稞V4C RISC-V IMAC，最大144MHz；GB/CB/RB/WB分别QFN28/QFN48/LQFP64M/QFN68，GPIO 21/37/49/53。以太网10M只列GB/WB，不能给CB/RB承诺以太网。BLE5.3、CAN、USB为系列功能，具体引脚/并用另查。
+
+表列128KB零等待Flash+64KB SRAM，可配置144KB+48KB或160KB+32KB；非零等待Flash区为480KB减去所配零等待区。480KB不是全部零等待，Flash与SRAM配置不能各自取宣传最大值后相加。首页“一组ADC”与“双ADC模式”表述并存，未据此承诺双独立ADC，需参考手册/厂商澄清。
+
+p.9：VDD/VIO/VDDA范围2.4–3.6V，正常VIO≤VDD，VDDA与VIO关系及掉电条件按原文，VBAT 1.8–3.6V；只有WB有独立VIO。p.8注：32MHz HSE，外晶体负载电容已内置；USB+ETH并用给出CPU120MHz、PLL240MHz及分频特例，不把144MHz当任意外设组合的唯一配置。p.15 §2.5.18为SDI两线接口，虽名SWDIO/SWCLK，不推导可用任意ARM SWD探头。
+
+已提取全页文本，无稀疏页，重点参数表p.4已渲染核对；其余电气/封装/射频及全部复用组合未逐图验证。落点[[wiki/原理/芯片手册/主控MCU/CH32V208|CH32V208]]，关联[[wiki/综合/有线联网与PoE接入链|联网链]]。

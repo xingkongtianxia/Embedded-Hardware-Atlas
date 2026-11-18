@@ -1,9 +1,9 @@
-﻿---
+---
 title: MOSFET
 type: principle
-status: reviewed
-updated: 2026-08-10
-sources: [硬件/原理/模电.md]
+status: needs-review
+updated: 2026-11-18
+sources: [硬件/原理/模电.md, 硬件/原理/半导体工作区与选型勘误.md]
 tags: [嵌入式硬件, Wiki子主题]
 ---
 
@@ -21,3 +21,7 @@ tags: [嵌入式硬件, Wiki子主题]
 - [[wiki/原理/模电|模电]]
 - [[wiki/概览|Wiki 概览]]
 
+
+## 2026-11-18 驱动与摘表勘误
+
+[[wiki/原理/BJT与MOSFET工作区对照|工作区对照]]：VGS(th)不证明充分导通，IDSS区分JFET饱和电流与增强MOS关断漏电；不采用原摘表串位数值。

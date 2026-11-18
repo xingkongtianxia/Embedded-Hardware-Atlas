@@ -1,9 +1,9 @@
-﻿---
+---
 title: BJT
 type: principle
-status: reviewed
-updated: 2026-08-10
-sources: [硬件/原理/模电.md]
+status: needs-review
+updated: 2026-11-18
+sources: [硬件/原理/模电.md, 硬件/原理/半导体工作区与选型勘误.md]
 tags: [嵌入式硬件, Wiki子主题]
 ---
 
@@ -21,3 +21,7 @@ tags: [嵌入式硬件, Wiki子主题]
 - [[wiki/原理/模电|模电]]
 - [[wiki/概览|Wiki 概览]]
 
+
+## 2026-11-18 偏置与模型边界
+
+[[wiki/原理/BJT与MOSFET工作区对照|工作区对照]]：集电结为C-B；单Rb接VCC、发射极接地时Ib≈(VCC−VBE)/Rb，有源区β不能外推到饱和。

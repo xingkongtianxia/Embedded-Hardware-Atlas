@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15",
+  "generated_at": "2026-11-18",
   "tool_version": 2,
   "root_policy": "paths are relative to this sole knowledge-base root",
   "errors": 0,
@@ -331,6 +331,22 @@
       "status": "available"
     },
     {
+      "path": "硬件/原始备份/三极管.md",
+      "role": "backup-source",
+      "kind": "md",
+      "bytes": 66572,
+      "sha256": "aa8c2e3779a1aa91a15fcc041dd78be4a13122d4d82167fd444f013dc701136a",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/原始备份/二极管.md",
+      "role": "backup-source",
+      "kind": "md",
+      "bytes": 37260,
+      "sha256": "956d3eac502b484ec81537e59f97e96ed1d1adf7e2683472b741cb2da5f177e0",
+      "status": "needs-review"
+    },
+    {
       "path": "硬件/原始备份/保护器件选型.pdf",
       "role": "backup-source",
       "kind": "pdf",
@@ -352,6 +368,14 @@
       "kind": "pdf",
       "bytes": 3570404,
       "sha256": "69b4aca35e3680a57fb08ffa4654a899ce093feaf54e0a54ef3d0f17fcbe1cf8",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/原始备份/场效应管.md",
+      "role": "backup-source",
+      "kind": "md",
+      "bytes": 46919,
+      "sha256": "09fe014af648c88db340f49465fd26b7c6ad0048860a50f60c05e2de45335881",
       "status": "needs-review"
     },
     {
@@ -390,9 +414,11 @@
       "path": "硬件/原始备份/开关电源工程师训练营_知识点总结.md",
       "role": "backup-source",
       "kind": "md",
-      "bytes": 96002,
-      "sha256": "ca04a6bad2cd15563597cbb0296e8439145491119a6bb821bf27aa99eca7b4e7",
-      "status": "needs-review"
+      "bytes": 95084,
+      "sha256": "fb94b69176195b348ea0f52543cb3f900d503c90e7f882c7e781909706672688",
+      "status": "needs-review",
+      "previous_sha256": "ca04a6bad2cd15563597cbb0296e8439145491119a6bb821bf27aa99eca7b4e7",
+      "note": "2026-11-18排版变化复核；当前哈希登记不清除历史漂移和事实核验要求"
     },
     {
       "path": "硬件/原始备份/接地、分割与叠层——模数混合PCB设计五套视频整合详解总结 2026-09-09.md",
@@ -421,6 +447,22 @@
       "status": "available"
     },
     {
+      "path": "硬件/原始备份/电容.md",
+      "role": "backup-source",
+      "kind": "md",
+      "bytes": 48260,
+      "sha256": "3998df0c9ca3603b6316d892ba1a88d68e843f933f07da081fad630a7de7df56",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/原始备份/电感.md",
+      "role": "backup-source",
+      "kind": "md",
+      "bytes": 66616,
+      "sha256": "0533f7c8711f9fbdf9edc164b5fff8dcbd3f79f9078ef191bdc9ed09d7e5cca5",
+      "status": "needs-review"
+    },
+    {
       "path": "硬件/原始备份/电机驱动PCB布局指南_知识库总结.md",
       "role": "backup-source",
       "kind": "md",
@@ -445,11 +487,35 @@
       "status": "needs-review"
     },
     {
+      "path": "硬件/原始备份/电源.md",
+      "role": "backup-source",
+      "kind": "md",
+      "bytes": 183988,
+      "sha256": "f05ef6417a289577799be59bfd250542709e2abf92694e4a6b36f38a2d9a9de2",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/原始备份/电源完整性.md",
+      "role": "backup-source",
+      "kind": "md",
+      "bytes": 49601,
+      "sha256": "e296c225ab2b525e52db862dbb214b2e2445fbed15aa1ddd9142d6136b51a188",
+      "status": "needs-review"
+    },
+    {
       "path": "硬件/原始备份/电源管理指南.pdf",
       "role": "backup-source",
       "kind": "pdf",
       "bytes": 11347191,
       "sha256": "138de168890a5d244d9d4d1e857abd48e99ee0cdad170711b7e3b799e573c0fc",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/原始备份/电源设计经验.md",
+      "role": "backup-source",
+      "kind": "md",
+      "bytes": 213167,
+      "sha256": "56cf6d0d0255f8e6306fc6588ef9f8882c2b7a2dd581957aedeccf52b58abad5",
       "status": "needs-review"
     },
     {
@@ -469,6 +535,14 @@
       "status": "needs-review"
     },
     {
+      "path": "硬件/原始备份/电阻.md",
+      "role": "backup-source",
+      "kind": "md",
+      "bytes": 31785,
+      "sha256": "2acf5100ba19188c7e6f91448cffa210042742b82ccc011174301ca4910da242",
+      "status": "needs-review"
+    },
+    {
       "path": "硬件/原始备份/硬件工程师入门教程_电子工程师_零基础_全免费_2024全新课程_中文字幕_B站 点赞 收藏NO.1｜全集总结 2026-08-06.md",
       "role": "backup-source",
       "kind": "md",
@@ -482,6 +556,30 @@
       "kind": "pdf",
       "bytes": 1667511,
       "sha256": "6885a1bde2e4173ac49e86e7c87eb650bb780b3095e4df3b0f64f41d4261eba8",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/原始备份/线性稳压器的基础知识.md",
+      "role": "backup-source",
+      "kind": "md",
+      "bytes": 30462,
+      "sha256": "a1cfe9c8b453cc286675efa44aefce5d8a8372640ee76b75b634a2d5f67b7aee",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/原始备份/运放.md",
+      "role": "backup-source",
+      "kind": "md",
+      "bytes": 42354,
+      "sha256": "6930ed79e4e13a32e0f977c3d15cfb85c4f03770faafe692e2202ed226dfb447",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/原始备份/运算放大器经典应用.md",
+      "role": "backup-source",
+      "kind": "md",
+      "bytes": 31454,
+      "sha256": "d9b932079743ed2d269dacafeb0f29f446ded8ed1fdf7bae0e53a243c39b4547",
       "status": "needs-review"
     },
     {
@@ -525,6 +623,14 @@
       "status": "needs-review"
     },
     {
+      "path": "硬件/原理/PDN预算与去耦勘误.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 3244,
+      "sha256": "7c74791e77c22ba8e5226f66a93a5129551fe14a141b768a7bcb7456d1395497",
+      "status": "needs-review"
+    },
+    {
       "path": "硬件/原理/PI.md",
       "role": "curated-source",
       "kind": "md",
@@ -557,6 +663,14 @@
       "status": "needs-review"
     },
     {
+      "path": "硬件/原理/半导体工作区与选型勘误.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 3885,
+      "sha256": "08a6eb84c9eebaed52f43e08805eb7a36159e16690c9bd4425594e0a733c67de",
+      "status": "needs-review"
+    },
+    {
       "path": "硬件/原理/叠层与阻抗.md",
       "role": "curated-source",
       "kind": "md",
@@ -577,8 +691,8 @@
       "path": "硬件/原理/开关电源拓扑与验证.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 7125,
-      "sha256": "3f46e0b103a60587341fce2ceaad79f6cd57109ef8e90da1c4ee05273148e1d8",
+      "bytes": 8660,
+      "sha256": "9fad0902392e36d9e78e64f5edc951c7ce139978365504ad621a58f8015c5ec9",
       "status": "needs-review"
     },
     {
@@ -595,6 +709,14 @@
       "kind": "md",
       "bytes": 52738,
       "sha256": "1715bdd91f6bd07bc4ab3bffeb12a03f86fd7ebb423a83619461a3081a72619f",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/原理/无源元件选型与勘误.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 4315,
+      "sha256": "e4b8ea8bcb8c6a36c5b115f2cf63c1cb6e0d07a7a343e1e5aade426789ee7ed9",
       "status": "needs-review"
     },
     {
@@ -617,8 +739,8 @@
       "path": "硬件/原理/线性稳压与电源测量补充.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 4017,
-      "sha256": "d1f95296f54a7522d5e747d618ffe7a7cfbc0ef65a8f6a208932e3163483b61f",
+      "bytes": 5803,
+      "sha256": "68456e4c1c30484e0ffec7c009e39a8cdc86473c82f8c61fb9d1fadbecdda071",
       "status": "needs-review"
     },
     {
@@ -633,8 +755,8 @@
       "path": "硬件/原理/芯片手册/主控MCU.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 22609,
-      "sha256": "24487957680f8bc5f32bc92cacfaf75fe6b52a64a8c20a19c509ae7a38a9239f",
+      "bytes": 24036,
+      "sha256": "a1a63012a4ba29069d96f4514a7d9e40fbdc3e777de0ca7fd4d9cdc63c073aad",
       "status": "curated"
     },
     {
@@ -713,8 +835,8 @@
       "path": "硬件/原理/芯片手册/电源管理.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 77623,
-      "sha256": "01fab41fd5abed8ced993786c575d6056a271469ddf9bed0abb67a8f17af0a03",
+      "bytes": 79177,
+      "sha256": "28b632eef8c2a5b5b0fb0799b3d101378fdee24c79268359c664790d3f9f9c00",
       "status": "needs-review"
     },
     {
@@ -732,6 +854,14 @@
       "bytes": 4836,
       "sha256": "e37afca8031b01eb04a85fcf35b890d35e926924ecf477c1b9a7e9603924a84b",
       "status": "curated"
+    },
+    {
+      "path": "硬件/原理/运放应用公式与边界.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 3620,
+      "sha256": "88559e5d74b8ca2f4ad8444dc0d8ed9302988b9f4f26e06871ecddb79828dea5",
+      "status": "needs-review"
     },
     {
       "path": "硬件/芯片数据手册/02FVS3芯片手册.pdf",
@@ -972,6 +1102,14 @@
       "bytes": 350755,
       "sha256": "1bcb99a2c022b7c5709cbcd39231860661dcfe2a2a30ecc972f7582c1a9c93f4",
       "status": "available"
+    },
+    {
+      "path": "硬件/芯片数据手册/CH32V208芯片手册.pdf",
+      "role": "raw-source",
+      "kind": "pdf",
+      "bytes": 802446,
+      "sha256": "7a587419a1bbe6f0f6b16e59aa75c4a5b6b310fdae6fc94eb24aeef1454fc6c1",
+      "status": "needs-review"
     },
     {
       "path": "硬件/芯片数据手册/CH334DS芯片手册.PDF",
@@ -2031,6 +2169,14 @@
       "bytes": 1654492,
       "sha256": "9663d52536092277ea95116d691455c1e71618f9be24d446634478881752a4a1",
       "status": "available"
+    },
+    {
+      "path": "硬件/芯片数据手册/TLV767 芯片手册.pdf",
+      "role": "raw-source",
+      "kind": "pdf",
+      "bytes": 4811385,
+      "sha256": "34cb02e03432038f75703afd045beb4e381f36833d7a053be9c2b0009deb792f",
+      "status": "needs-review"
     },
     {
       "path": "硬件/芯片数据手册/TMI7301芯片手册.pdf",
