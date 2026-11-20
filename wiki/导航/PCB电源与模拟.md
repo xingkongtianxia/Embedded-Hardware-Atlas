@@ -2,7 +2,7 @@
 title: PCB电源与模拟目录
 type: synthesis
 status: needs-review
-updated: 2026-11-07
+updated: 2026-11-20
 sources: [硬件/PCB/模拟与采集模块.md, 硬件/PCB/电源模块.md, 硬件/PCB/隔离开关电源设计.md, 硬件/原理/芯片手册/电源管理.md]
 tags: [嵌入式, 导航]
 ---
@@ -88,3 +88,8 @@ tags: [嵌入式, 导航]
 
 - [[wiki/PCB/电机驱动回流与功率布局|电机驱动回流与功率布局]] · `needs-review`
 - [[wiki/PCB/电机驱动散热与Kelvin采样|电机驱动散热与Kelvin采样]] · `needs-review`
+
+## 电源布局与 ADC 噪声
+
+- [[wiki/PCB/开关电源布局与磁件耦合|开关电源布局与磁件耦合]] · `needs-review`
+- [[wiki/PCB/电源抗扰与ADC噪声预算|电源抗扰与ADC噪声预算]] · `needs-review`

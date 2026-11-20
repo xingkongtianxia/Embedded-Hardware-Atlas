@@ -2500,6 +2500,60 @@
       "bytes": 1039959,
       "sha256": "38617522c0dece772c1ee422d5f24739283fe45632ff792778806c24e6e810c8",
       "status": "available"
+    },
+    {
+      "path": "硬件/原始备份/PCB设计秘籍.md",
+      "role": "backup-source",
+      "kind": "md",
+      "bytes": 155144,
+      "sha256": "774e437de244439155ae3dc565592aa7b8685b575ecb4a322d547e4edc4f77ee",
+      "status": "needs-review",
+      "note": "ADI智库合辑备份；96处插图引用当前缺少附件，逐篇URL、发布日期及图表均待核。原件只读。"
+    },
+    {
+      "path": "硬件/PCB/PCB接地与差分采集布局.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 2903,
+      "sha256": "0917280759589f34b4d010a1c89abe9fe653bd9b86e2e89c6b5156275497244a",
+      "status": "needs-review",
+      "note": "由PCB设计秘籍按主题整理；来源缺图，具体器件/测试条件需按当前资料核验。"
+    },
+    {
+      "path": "硬件/PCB/开关电源布局与磁件耦合.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 2911,
+      "sha256": "4f9da784c5ead24b585b5bffb51380eea12f256993d92e739a7d6564e0fe79d9",
+      "status": "needs-review",
+      "note": "由PCB设计秘籍按主题整理；来源缺图，具体器件/测试条件需按当前资料核验。"
+    },
+    {
+      "path": "硬件/PCB/PCB热设计与温度测量.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 2861,
+      "sha256": "a2e9d9a726fbddf26492b2237980d87a0b58b627254707ca1ea6dd463d66b713",
+      "status": "needs-review",
+      "note": "由PCB设计秘籍按主题整理；来源缺图，具体器件/测试条件需按当前资料核验。"
+    },
+    {
+      "path": "硬件/PCB/电源抗扰与ADC噪声预算.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 2737,
+      "sha256": "bb009dd61995fa65f606689521b09d178344668137f5c2830f3a91416035a107",
+      "status": "needs-review",
+      "note": "由PCB设计秘籍按主题整理；来源缺图，具体器件/测试条件需按当前资料核验。"
+    },
+    {
+      "path": "硬件/PCB/封装返修与装联验证.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 1922,
+      "sha256": "4c559fd382fb0012cba83aeee0985b858ad744ff063c6792d471ed55655a3c99",
+      "status": "needs-review",
+      "note": "由PCB设计秘籍按主题整理；来源缺图，具体器件/测试条件需按当前资料核验。"
     }
   ],
   "retired_items": [

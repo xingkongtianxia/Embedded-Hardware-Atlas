@@ -2,7 +2,7 @@
 title: PCB方法与综合目录
 type: synthesis
 status: needs-review
-updated: 2026-11-18
+updated: 2026-11-20
 sources: [硬件/PCB/PCB约束与放行.md, 硬件/PCB/PCB通用工程方法.md, 硬件/PCB/主控与数字逻辑模块.md, 硬件/PCB/射频设计.md, 硬件/PCB/电源模块.md, 硬件/PCB/车载双路快充原理图审查-2026-10-21.md, 硬件/PCB/轮趣无刷四驱PCB设计审查.md, 硬件/PCB/隔离开关电源设计.md, 硬件/PCB/高速PCB规范的适用边界.md, 硬件/PCB/高速接口新增资料.md, 硬件/原理/EMC.md, 硬件/原理/PI.md, 硬件/原理/SI.md, 硬件/原理/模电.md, 硬件/原理/电源设计.md, 硬件/原理/芯片手册/主控MCU.md, 硬件/原理/芯片手册/传感器.md, 硬件/原理/芯片手册/功率开关与驱动.md, 硬件/原理/芯片手册/电源管理.md, 硬件/原理/芯片手册/蓝牙与无线.md]
 tags: [嵌入式, 导航]
 ---
@@ -100,3 +100,8 @@ tags: [嵌入式, 导航]
 ## 2026-11-18 增量入口
 
 - [[wiki/综合/电源经验的控制与热设计边界|电源经验的控制与热设计边界]] · needs-review
+
+## 热设计与装联
+
+- [[wiki/PCB/PCB热设计与温度测量|PCB热设计与温度测量]] · `needs-review`
+- [[wiki/PCB/封装返修与装联验证|封装返修与装联验证]] · `needs-review`

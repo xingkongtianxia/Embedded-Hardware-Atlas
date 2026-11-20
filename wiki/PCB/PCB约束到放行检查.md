@@ -2,8 +2,8 @@
 title: PCB约束到放行检查
 type: pcb-method
 status: needs-review
-updated: 2026-10-23
-sources: [硬件/PCB/PCB约束与放行.md, 硬件/PCB/PCB通用工程方法.md]
+updated: 2026-11-20
+sources: [硬件/PCB/PCB约束与放行.md, 硬件/PCB/PCB通用工程方法.md, 硬件/PCB/封装返修与装联验证.md]
 tags: [PCB, 工程流程, SI, PI, DFM, DFT]
 ---
 
@@ -39,3 +39,7 @@ tags: [PCB, 工程流程, SI, PI, DFM, DFT]
 ## 来源复核提醒（2026-10-23）
 
 本页来源链涉及历史原件哈希不一致。正文知识保留，但来源链尚未完成内容复核，暂标`needs-review`；本轮未改写原件。详见[[journal/health-check-2026-10-23|体检报告]]的历史哈希差异，不因重新登记当前哈希而自动恢复`reviewed`。
+
+## 返修和装联放行
+
+对LFCSP/PBGA返修，先核对封装、MSL、板材和邻近器件热限值，并记录实际温度曲线、焊盘状态、对位和检验方式；通用作业边界见[[wiki/PCB/封装返修与装联验证|封装返修与装联验证]]。原始经验笔记中的单一温度与停留时间不能直接作为制造配方。
