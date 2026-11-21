@@ -3,7 +3,7 @@ title: PCB 连接器、保护与 EMC 模块
 type: pcb-module
 status: needs-review
 updated: 2026-11-15
-sources: [硬件/PCB/连接器保护与EMC模块.md]
+sources: [硬件/PCB/连接器保护与EMC模块.md, 硬件/PCB/连接器保护与EMC模块-01.md, 硬件/PCB/连接器保护与EMC模块-02.md, 硬件/PCB/连接器保护与EMC模块-03.md, 硬件/PCB/连接器保护与EMC模块-04.md]
 tags: [嵌入式硬件, PCB]
 ---
 

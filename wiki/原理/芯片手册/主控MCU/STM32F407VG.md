@@ -4,7 +4,7 @@ type: datasheet
 status: needs-review
 updated: 2026-09-25
 sources: [硬件/原理/芯片手册/主控MCU.md]
-tags: [芯片手册, MCU, STM32F407VG, Cortex-M4, LQFP100]
+tags: [嵌入式硬件, 芯片手册, STM32F407VG, MCU, Cortex-M4, LQFP100]
 ---
 
 # STM32F407VG

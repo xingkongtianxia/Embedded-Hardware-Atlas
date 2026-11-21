@@ -3,7 +3,7 @@ title: PCB 通用工程方法
 type: pcb-method
 status: needs-review
 updated: 2026-10-23
-sources: [硬件/PCB/PCB通用工程方法.md, 硬件/PCB/PCB约束与放行.md]
+sources: [硬件/PCB/PCB通用工程方法.md, 硬件/PCB/PCB约束与放行.md, 硬件/PCB/PCB通用工程方法-01.md, 硬件/PCB/PCB通用工程方法-02.md, 硬件/PCB/PCB通用工程方法-03.md]
 tags: [嵌入式硬件, PCB]
 ---
 
@@ -30,6 +30,7 @@ tags: [嵌入式硬件, PCB]
 - [[wiki/综合/硬件设计审查框架|硬件设计审查框架]]
 - [[wiki/PCB/模块化布局|PCB 模块化布局]]
 - [[wiki/PCB/高速接口模块|高速接口模块]]
+- [[wiki/导航/PCB方法与综合|PCB 方法与综合导航]]
 - [[AGENTS|规则手册]]
 
 ## 2026-10-16 约束与放行闭环

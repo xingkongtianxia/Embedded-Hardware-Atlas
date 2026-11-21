@@ -3,8 +3,8 @@ title: BJT
 type: principle
 status: needs-review
 updated: 2026-11-18
-sources: [硬件/原理/模电.md, 硬件/原理/半导体工作区与选型勘误.md]
-tags: [嵌入式硬件, Wiki子主题]
+sources: [硬件/原理/模电.md, 硬件/原理/半导体工作区与选型勘误.md, 硬件/原理/模电-01.md, 硬件/原理/模电-02.md, 硬件/原理/模电-03.md, 硬件/原理/模电-04.md, 硬件/原理/模电-05.md]
+tags: [嵌入式硬件, 模电]
 ---
 
 # BJT

@@ -3,8 +3,8 @@ title: VL53L1X
 type: datasheet
 status: needs-review
 updated: 2026-10-09
-sources: [硬件/原理/芯片手册/传感器.md]
-tags: [芯片手册, 传感器, ToF, I2C, VL53L1X]
+sources: [硬件/原理/芯片手册/传感器.md, 硬件/原理/芯片手册/传感器-01.md, 硬件/原理/芯片手册/传感器-02.md]
+tags: [嵌入式硬件, 芯片手册, VL53L1X, 传感器, ToF, I2C]
 ---
 
 # VL53L1X

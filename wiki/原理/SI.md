@@ -1,14 +1,14 @@
 ---
-title: SI
+title: SI信号完整性
 type: principle
 status: needs-review
 updated: 2026-11-08
-sources: [硬件/原理/SI.md]
+sources: [硬件/原理/SI.md, 硬件/原理/SI-01.md, 硬件/原理/SI-02.md, 硬件/原理/SI-03.md, 硬件/原理/SI-04.md, 硬件/原理/SI-05.md]
 tags: [嵌入式硬件, 原理]
 ---
 
 
-# SI（信号完整性）
+# SI 信号完整性
 
 本页是“SI（信号完整性）”的主题总览。详细知识按章节拆分为独立子页；先从下方目录定位，再按需阅读，避免一次加载整个主题。
 

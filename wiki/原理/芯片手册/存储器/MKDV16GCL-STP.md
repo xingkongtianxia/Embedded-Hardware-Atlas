@@ -4,7 +4,7 @@ type: datasheet
 status: needs-review
 updated: 2026-09-18
 sources: [硬件/原理/芯片手册/存储器.md]
-tags: [芯片手册, SD NAND, MKDV16GCL-STP, 宏旺, SDIO, SPI, LGA-8, 贴片SD卡]
+tags: [嵌入式硬件, 芯片手册, MKDV16GCL-STP, SD NAND, 宏旺, SDIO]
 ---
 
 # MKDV16GCL-STP

@@ -9,6 +9,7 @@ from collections import Counter, defaultdict
 from urllib.parse import unquote
 import argparse
 import csv
+import datetime
 import hashlib
 import json
 import posixpath
@@ -24,6 +25,13 @@ WIKI_TYPES = {'principle', 'datasheet', 'pcb-module', 'pcb-method', 'concept',
 SOURCE_TYPES = {'principle-source', 'datasheet-source', 'pcb-source', 'pcb-method'}
 STATUSES = {'seed', 'reviewed', 'needs-review'}
 REQUIRED = {'title', 'type', 'status', 'updated', 'sources', 'tags'}
+GENERIC_TAGS = {'Wiki子主题', 'Wiki条目', '新增资料', '待核验'}
+DOMAIN_TAGS = {'嵌入式硬件'}
+FORBIDDEN_TAGS = GENERIC_TAGS - {'嵌入式硬件'}
+WIKI_LINE_LIMIT = 200
+CURATED_LINE_LIMIT = 400
+MAX_TAGS = 6
+ATTACH_BASELINE = 'journal/attachments-baseline.json'
 
 
 def private(path):
@@ -35,6 +43,34 @@ def private(path):
 
 def git(*args):
     return subprocess.check_output(['git', '-C', str(ROOT), *args])
+
+
+def other_knowledge_roots():
+    import os
+    scopes = [Path.home() / 'Documents', Path.home() / 'Desktop']
+    if os.name == 'nt' and len(ROOT.parents) > 1:
+        scopes.append(ROOT.parents[1])
+    seen = set(); matches = set()
+    for scope in scopes:
+        try:
+            scope = scope.resolve()
+        except OSError:
+            continue
+        if scope in seen or not scope.is_dir():
+            continue
+        seen.add(scope)
+        def walk_error(_):
+            return None
+        for base, dirs, files in os.walk(scope, onerror=walk_error, followlinks=False):
+            current = Path(base)
+            depth = len(current.relative_to(scope).parts)
+            dirs[:] = [name for name in dirs if not (current / name).is_symlink()]
+            if current.resolve() != ROOT.resolve() and 'index.md' in files and (current / 'wiki').is_dir():
+                matches.add(str(current))
+                dirs[:] = []
+            elif depth >= 2:
+                dirs[:] = []
+    return sorted(matches)
 
 
 def fields(text):
@@ -59,6 +95,8 @@ def main():
     args = parser.parse_args()
     indexed = set(git('ls-files', '-z').decode('utf-8').strip('\0').split('\0'))
     errors, warnings = [], []
+    for duplicate_root in other_knowledge_roots():
+        errors.append(['duplicate-knowledge-root', duplicate_root])
     for path in sorted(indexed):
         if private(path):
             errors.append(['private-tracked', path])
@@ -101,6 +139,16 @@ def main():
     def text(path):
         return data(path).decode('utf-8-sig')
 
+    source_manifest = json.loads(text('硬件/整理清单.json'))
+    structural_source_dates = {}
+    for item in source_manifest.get('items', []):
+        path = item.get('path', '')
+        expected = item.get('structural_only_sha256', '')
+        semantic_date = item.get('content_updated', '')
+        if (path in paths and expected and re.fullmatch(r'\d{4}-\d{2}-\d{2}', semantic_date)
+                and hashlib.sha256(data(path)).hexdigest() == expected):
+            structural_source_dates[path] = semantic_date
+
     basenames = defaultdict(list)
     for p in paths:
         basenames[PurePosixPath(p).stem].append(p)
@@ -122,6 +170,9 @@ def main():
     curated = sorted(p for p in paths if p.startswith(('硬件/原理/', '硬件/PCB/'))
                      and p.endswith('.md'))
     models = sorted(p for p in paths if p.startswith('思维模型库/') and p.endswith('.md'))
+    titles = defaultdict(list)
+    stale_reviewed = []
+    source_change_dates = {}
     inbound = Counter(); content_inbound = Counter(); outlinks = {}; size = []
     tags = Counter(); statuses = Counter(); source_dependencies = defaultdict(list)
     for path in pages + curated + models:
@@ -145,6 +196,15 @@ def main():
             errors.append(['list-format', path, str(exc)]); continue
         tags.update(page_tags)
         if path in pages:
+            titles[fm['title']].append(path)
+            if len(page_tags) > MAX_TAGS:
+                errors.append(['too-many-tags', path, len(page_tags)])
+            if not (set(page_tags) - GENERIC_TAGS - DOMAIN_TAGS):
+                errors.append(['no-topic-tag', path])
+            forbidden = sorted(set(page_tags) & FORBIDDEN_TAGS)
+            if forbidden:
+                errors.append(['generic-tags', path, forbidden])
+        if path in pages:
             statuses[status] += 1
             if not sources:
                 errors.append(['empty-wiki-sources', path])
@@ -157,6 +217,35 @@ def main():
                 errors.append(['wiki-source-layer', path, source])
             elif target:
                 source_dependencies[target].append(path)
+                if path in pages and status == 'reviewed' and re.fullmatch(r'\d{4}-\d{2}-\d{2}', fm['updated']):
+                    if target not in source_change_dates:
+                        if target in structural_source_dates:
+                            source_date = structural_source_dates[target]
+                        else:
+                            diff_command = ['git', '-C', str(ROOT), 'diff', '--quiet']
+                            if args.staged:
+                                diff_command.append('--cached')
+                            diff_command.extend(['HEAD', '--', target])
+                            changed_in_worktree = subprocess.run(
+                                diff_command,
+                                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode != 0
+                            if changed_in_worktree:
+                                source_date = datetime.date.today().isoformat()
+                            else:
+                                committed = subprocess.run(
+                                    ['git', '-C', str(ROOT), 'log', '-1', '--format=%cs', '--', target],
+                                    capture_output=True, text=True, encoding='utf-8').stdout.strip()
+                                if committed:
+                                    source_date = committed
+                                else:
+                                    try:
+                                        source_date = datetime.date.fromtimestamp((ROOT / target).stat().st_mtime).isoformat()
+                                    except (FileNotFoundError, OSError):
+                                        source_date = ''
+                        source_change_dates[target] = source_date
+                    source_date = source_change_dates[target]
+                    if source_date > fm['updated']:
+                        stale_reviewed.append([path, fm['updated'], target, source_date])
         cleaned = re.sub(r'^```.*?^```[^\n]*', '', body, flags=re.M | re.S)
         targets = set()
         for link in re.findall(r'\[\[([^\]\n]+)\]\]', cleaned):
@@ -169,11 +258,25 @@ def main():
                     inbound[target] += 1
                     if not path.startswith('wiki/导航/') and path not in {'wiki/知识网络.md', 'wiki/概览.md', 'wiki/来源映射.md'}:
                         content_inbound[target] += 1
+        if path.startswith('wiki/导航/'):
+            for link, annotated_status in re.findall(
+                    r'\[\[([^\]\n]+)\]\]\s*·\s*`(seed|reviewed|needs-review)`', cleaned):
+                target = resolve(link, str(PurePosixPath(path).parent))
+                if target in pages and fields(text(target)).get('status') != annotated_status:
+                    errors.append(['navigation-status-mismatch', path, link, annotated_status])
         outlinks[path] = targets
         if len(targets) < 2:
             errors.append(['too-few-links', path, len(targets)])
-        if len(body.splitlines()) > 200:
-            size.append([path, len(body.splitlines())])
+        line_count = len(body.splitlines())
+        if path in pages and line_count > WIKI_LINE_LIMIT:
+            errors.append(['wiki-too-long', path, line_count])
+        elif path in curated and line_count > CURATED_LINE_LIMIT:
+            errors.append(['curated-too-long', path, line_count])
+        if path in pages and line_count > WIKI_LINE_LIMIT - 20:
+            size.append([path, line_count])
+
+    for finding in stale_reviewed:
+        errors.append(['stale-reviewed', *finding])
 
     for root_page in ['index.md', 'README.md']:
         if root_page not in paths:
@@ -198,18 +301,39 @@ def main():
         if not inbound[path]: errors.append(['orphan', path])
         if path not in reached: errors.append(['not-reachable-from-index', path])
 
-    manifest = json.loads(text('硬件/整理清单.json')); roles = Counter(); hashes = defaultdict(list)
+    for title, owners in sorted(titles.items()):
+        if len(owners) > 1:
+            errors.append(['duplicate-title', title, sorted(owners)])
+    for path in pages + curated:
+        stem = PurePosixPath(path).stem
+        if re.search(r'-\d+-续$', stem):
+            base = path[: -len('-续.md')] + '.md'
+            if base in paths:
+                errors.append(['continuation-title', path, base])
+
+    manifest = source_manifest; roles = Counter(); hashes = defaultdict(list)
     if manifest.get('tool_version') != 2:
         errors.append(['manifest-version', manifest.get('tool_version')])
     for item in manifest['items']:
         path = item['path']; roles[item['role']] += 1
+        if PurePosixPath(path).is_absolute() or '..' in PurePosixPath(path).parts:
+            errors.append(['manifest-path-not-relative', path]); continue
         if private(path) or path not in paths:
             errors.append(['manifest-path', path]); continue
         blob = data(path); digest = hashlib.sha256(blob).hexdigest()
         if len(blob) != item['bytes'] or digest != item['sha256']:
             errors.append(['manifest-integrity', path])
-        if item['role'] != 'curated-source': hashes[digest].append(path)
+        if item['role'] != 'curated-source':
+            hashes[digest].append(path)
+            if item.get('duplicate_of'):
+                alias = item['duplicate_of']
+                if alias not in paths:
+                    errors.append(['duplicate-of-missing', path, alias])
+                elif alias in paths and hashlib.sha256(data(alias)).hexdigest() != digest:
+                    errors.append(['duplicate-of-hash-mismatch', path, alias])
     duplicates = [v for v in hashes.values() if len(v) > 1]
+    for group in duplicates:
+        errors.append(['duplicate-raw-present', sorted(group)])
     manifested = {x['path'] for x in manifest['items']}
     for path in curated + [p for p in paths if p.startswith('硬件/芯片数据手册/')]:
         if path not in manifested: errors.append(['unregistered-source', path])
@@ -237,29 +361,46 @@ def main():
                 directory_exists = any(p.startswith(folder.rstrip('/') + '/') for p in paths)
                 if not directory_exists and resolve(target.strip('<>'), str(PurePosixPath(path).parent)) is None:
                     markdown_links.append([path, target])
-    for path, count in Counter(x[0] for x in missing_attachments).items():
-        warnings.append(['missing-attachments', path, count])
+    baseline_path = ROOT / ATTACH_BASELINE
+    baseline = {}
+    if ATTACH_BASELINE in paths:
+        baseline = json.loads(text(ATTACH_BASELINE)).get('originals', {})
+    else:
+        warnings.append(['attachment-baseline-missing', ATTACH_BASELINE])
+    attachment_counts = Counter(x[0] for x in missing_attachments)
+    for path, count in sorted(attachment_counts.items()):
+        allowed = baseline.get(path, {}).get('count', 0)
+        if count > allowed:
+            errors.append(['missing-attachments-new', path, count, allowed])
+        else:
+            warnings.append(['missing-attachments', path, count])
     for finding in markdown_links:
         errors.append(['markdown-link-missing', *finding])
     for item in manifest.get('retired_items', []):
         warnings.append(['retired-source', item['former_path']])
     for item in manifest['items']:
-        if item.get('previous_sha256'): warnings.append(['historical-hash-drift', item['path']])
+        structural_hash = item.get('structural_only_sha256')
+        structure_is_unchanged = (structural_hash and item['path'] in paths
+                                  and hashlib.sha256(data(item['path'])).hexdigest() == structural_hash)
+        if item.get('previous_sha256') and not structure_is_unchanged:
+            warnings.append(['historical-hash-drift', item['path']])
     result = dict(mode='staged' if args.staged else 'working-tree', wiki_pages=len(pages),
         curated_pages=len(curated), model_pages=len(models), wiki_statuses=dict(statuses),
         valid_links=sum(map(len, outlinks.values())), reachable_wiki_pages=sum(p in reached for p in pages),
         private_tracked=sum(private(p) for p in indexed), manifest_items=len(manifest['items']),
         manifest_roles=dict(roles), identical_raw_groups=duplicates, over_200_lines=size,
         navigation_only_inbound=[p for p in pages if not content_inbound[p]],
+        other_knowledge_roots=other_knowledge_roots(),
         missing_attachments=missing_attachments,
+        stale_reviewed=stale_reviewed,
         tags=dict(tags), errors=errors, warnings=warnings)
     if args.json:
         args.json.parent.mkdir(parents=True, exist_ok=True)
         args.json.write_text(json.dumps(result, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
-    compact = {k:v for k,v in result.items() if k not in {'errors','warnings','tags','navigation_only_inbound','identical_raw_groups','over_200_lines','missing_attachments'}}
-    compact.update(errors=len(errors), warnings=len(warnings), over_200_lines=len(size),
+    compact = {k:v for k,v in result.items() if k not in {'errors','warnings','tags','navigation_only_inbound','identical_raw_groups','near_wiki_limit','missing_attachments','stale_reviewed'}}
+    compact.update(errors=len(errors), warnings=len(warnings), near_wiki_limit=len(size),
                    navigation_only_inbound=len(result['navigation_only_inbound']), duplicate_raw_groups=len(duplicates),
-                   missing_attachment_references=len(missing_attachments))
+                   missing_attachment_references=len(missing_attachments), stale_reviewed_pages=len(stale_reviewed))
     print(json.dumps(compact, ensure_ascii=False, indent=2))
     for error in errors[:30]: print('ERROR:', json.dumps(error, ensure_ascii=False))
     if batch:

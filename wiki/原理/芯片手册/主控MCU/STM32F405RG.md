@@ -1,8 +1,8 @@
 ---
 title: STM32F405RG
 type: datasheet
-status: reviewed
-updated: 2026-08-11
+status: needs-review
+updated: 2026-11-21
 sources: [硬件/原理/芯片手册/主控MCU.md]
 tags: [嵌入式硬件, MCU, STM32F405RG, Cortex-M4, LQFP64]
 ---
@@ -51,3 +51,6 @@ STM32F405RG 是最高 168 MHz 的 Cortex-M4 MCU，带单精度 FPU、DSP 和 MPU
 - [[wiki/原理/数电|数电]]
 - [[wiki/PCB/主控与数字逻辑模块|主控与数字逻辑模块]]
 - [[wiki/PCB/时钟复位与启动模块|时钟、复位与启动模块]]
+
+## 来源变更记录（2026-11-21）
+来源 `硬件/原理/芯片手册/主控MCU.md` 的 Git 内容变更日期为 2026-11-18，晚于原页面更新时间 2026-08-11；本轮退回待复核，未将日期更新视为事实核验。

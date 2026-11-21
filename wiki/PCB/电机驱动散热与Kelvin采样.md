@@ -4,7 +4,7 @@ type: pcb-module
 status: needs-review
 updated: 2026-11-07
 sources: [硬件/PCB/电机驱动布局与热设计.md]
-tags: [电机驱动, 热设计, Kelvin, 电流采样, 待核验]
+tags: [嵌入式硬件, 电机驱动, 热设计, Kelvin, 电流采样]
 ---
 
 # 电机驱动散热与Kelvin采样

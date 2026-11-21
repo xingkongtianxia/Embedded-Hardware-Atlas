@@ -3,7 +3,7 @@ title: EMC
 type: principle
 status: needs-review
 updated: 2026-10-23
-sources: [硬件/原理/EMC.md]
+sources: [硬件/原理/EMC.md, 硬件/原理/EMC-01.md, 硬件/原理/EMC-02.md, 硬件/原理/EMC-03.md, 硬件/原理/EMC-04.md, 硬件/原理/EMC-05.md]
 tags: [嵌入式硬件, 原理]
 ---
 

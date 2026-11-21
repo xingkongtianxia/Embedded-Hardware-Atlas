@@ -1,14 +1,14 @@
 ---
-title: PI
+title: PI电源完整性
 type: principle
 status: reviewed
 updated: 2026-11-18
-sources: [硬件/原理/PI.md]
+sources: [硬件/原理/PI.md, 硬件/原理/PI-01.md, 硬件/原理/PI-02.md, 硬件/原理/PI-03.md, 硬件/原理/PI-04.md, 硬件/原理/PI-05.md]
 tags: [嵌入式硬件, 原理]
 ---
 
 
-# PI（电源完整性）
+# PI 电源完整性
 
 本页是“PI（电源完整性）”的主题总览。详细知识按章节拆分为独立子页；先从下方目录定位，再按需阅读，避免一次加载整个主题。
 

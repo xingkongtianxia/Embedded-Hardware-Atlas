@@ -3,8 +3,8 @@ title: 高速 ADC PCB 布局（AN-1142）
 type: pcb-module
 status: needs-review
 updated: 2026-11-20
-sources: [硬件/PCB/模拟与采集模块.md, 硬件/PCB/PCB接地与差分采集布局.md, 硬件/PCB/电源抗扰与ADC噪声预算.md]
-tags: [嵌入式硬件, ADC, 高速, EPAD, 层电容, 去耦, 分离接地]
+sources: [硬件/PCB/模拟与采集模块.md, 硬件/PCB/PCB接地与差分采集布局.md, 硬件/PCB/电源抗扰与ADC噪声预算.md, 硬件/PCB/模拟与采集模块-01.md, 硬件/PCB/模拟与采集模块-02.md, 硬件/PCB/模拟与采集模块-03.md, 硬件/PCB/模拟与采集模块-04.md]
+tags: [嵌入式硬件, ADC, 高速, EPAD, 层电容, 去耦]
 ---
 
 # 高速 ADC PCB 布局（AN-1142）

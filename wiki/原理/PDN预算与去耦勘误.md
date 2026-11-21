@@ -4,7 +4,7 @@ type: principle
 status: needs-review
 updated: 2026-11-18
 sources: [硬件/原理/PDN预算与去耦勘误.md]
-tags: [PI, PDN, 去耦]
+tags: [嵌入式硬件, PI, PDN, 去耦]
 ---
 
 # PDN预算与去耦勘误

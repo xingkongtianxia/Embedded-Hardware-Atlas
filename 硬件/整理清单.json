@@ -1,9 +1,27 @@
 {
-  "generated_at": "2026-11-18",
+  "generated_at": "2026-11-21",
   "tool_version": 2,
   "root_policy": "paths are relative to this sole knowledge-base root",
   "errors": 0,
   "items": [
+    {
+      "path": "硬件/PCB/PCB接地与差分采集布局.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 2903,
+      "sha256": "0917280759589f34b4d010a1c89abe9fe653bd9b86e2e89c6b5156275497244a",
+      "status": "needs-review",
+      "note": "由PCB设计秘籍按主题整理；来源缺图，具体器件/测试条件需按当前资料核验。"
+    },
+    {
+      "path": "硬件/PCB/PCB热设计与温度测量.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 2861,
+      "sha256": "a2e9d9a726fbddf26492b2237980d87a0b58b627254707ca1ea6dd463d66b713",
+      "status": "needs-review",
+      "note": "由PCB设计秘籍按主题整理；来源缺图，具体器件/测试条件需按当前资料核验。"
+    },
     {
       "path": "硬件/PCB/PCB约束与放行.md",
       "role": "curated-source",
@@ -13,20 +31,133 @@
       "status": "needs-review"
     },
     {
+      "path": "硬件/PCB/PCB通用工程方法-01.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 21483,
+      "sha256": "644f08a16b46ee25f534e1cce278eedf98a5c064b50f2335abcefadc203c9f6b",
+      "status": "needs-review",
+      "structural_only_sha256": "644f08a16b46ee25f534e1cce278eedf98a5c064b50f2335abcefadc203c9f6b",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/PCB通用工程方法.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/PCB/PCB通用工程方法-02.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 19069,
+      "sha256": "b52180b04e86a4878e1965d44d29308b15bfbc635f915367329a848a030d3c16",
+      "status": "needs-review",
+      "structural_only_sha256": "b52180b04e86a4878e1965d44d29308b15bfbc635f915367329a848a030d3c16",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/PCB通用工程方法.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/PCB/PCB通用工程方法-03.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 20462,
+      "sha256": "ea506991c9b60df6b4aa28e9682d497602fdbf8ff7eb60531ce209463f685858",
+      "status": "needs-review",
+      "structural_only_sha256": "ea506991c9b60df6b4aa28e9682d497602fdbf8ff7eb60531ce209463f685858",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/PCB通用工程方法.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
       "path": "硬件/PCB/PCB通用工程方法.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 59086,
-      "sha256": "0737622d61606ac0287cecfe96d3c1a27e5a36fa34d0a5a87b2c3b5dbf7c5751",
-      "status": "needs-review"
+      "bytes": 943,
+      "sha256": "7819723bb8ebd7efcc5e1e2f324a4f5c857ba5b970b36542d417df09e02bb96f",
+      "status": "needs-review",
+      "structural_only_sha256": "7819723bb8ebd7efcc5e1e2f324a4f5c857ba5b970b36542d417df09e02bb96f",
+      "content_updated": "2026-11-08",
+      "note": "2026-11-21 结构拆分；原知识条目转移至分卷，事实未改写。",
+      "pre_split_git_head_sha256": "0737622d61606ac0287cecfe96d3c1a27e5a36fa34d0a5a87b2c3b5dbf7c5751"
+    },
+    {
+      "path": "硬件/PCB/主控与数字逻辑模块-01.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 14778,
+      "sha256": "99373569cd2ee8294498565a2722af2c2e7750f017532436746249751ba090ed",
+      "status": "needs-review",
+      "structural_only_sha256": "99373569cd2ee8294498565a2722af2c2e7750f017532436746249751ba090ed",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/主控与数字逻辑模块.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/PCB/主控与数字逻辑模块-02.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 12456,
+      "sha256": "06049e8436865a238cab90c7ef629e09c97e363e669b812c669e806d85af5894",
+      "status": "needs-review",
+      "structural_only_sha256": "06049e8436865a238cab90c7ef629e09c97e363e669b812c669e806d85af5894",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/主控与数字逻辑模块.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/PCB/主控与数字逻辑模块-03.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 12672,
+      "sha256": "ba5391477a3ee192ad3e87ff84a11605acd1c07f8f0dc15094c3f8c487ebdc46",
+      "status": "needs-review",
+      "structural_only_sha256": "ba5391477a3ee192ad3e87ff84a11605acd1c07f8f0dc15094c3f8c487ebdc46",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/主控与数字逻辑模块.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/PCB/主控与数字逻辑模块-04.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 13821,
+      "sha256": "cf9f9fd25ae27584775e06687fb7358ef6f6f360a6533b47ae231a107cd3b2e3",
+      "status": "needs-review",
+      "structural_only_sha256": "cf9f9fd25ae27584775e06687fb7358ef6f6f360a6533b47ae231a107cd3b2e3",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/主控与数字逻辑模块.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/PCB/主控与数字逻辑模块-05.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 5719,
+      "sha256": "831ece26339dc0884b6e63db8a28c4e8c14423802679eab129fa2d95594bf8ce",
+      "status": "needs-review",
+      "structural_only_sha256": "831ece26339dc0884b6e63db8a28c4e8c14423802679eab129fa2d95594bf8ce",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/主控与数字逻辑模块.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
     },
     {
       "path": "硬件/PCB/主控与数字逻辑模块.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 56508,
-      "sha256": "4bbe15ac7e88b069a3c632a3e7a2737c6fc6dc4d8164de2e9c562e441a2c7354",
-      "status": "needs-review"
+      "bytes": 995,
+      "sha256": "1511207832a6950dd7efb7f18e2635857120669926d48a4a0809fe0a8278dff4",
+      "status": "needs-review",
+      "structural_only_sha256": "1511207832a6950dd7efb7f18e2635857120669926d48a4a0809fe0a8278dff4",
+      "content_updated": "2026-11-08",
+      "note": "2026-11-21 结构拆分；原知识条目转移至分卷，事实未改写。",
+      "pre_split_git_head_sha256": "4bbe15ac7e88b069a3c632a3e7a2737c6fc6dc4d8164de2e9c562e441a2c7354"
+    },
+    {
+      "path": "硬件/PCB/封装返修与装联验证.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 1922,
+      "sha256": "4c559fd382fb0012cba83aeee0985b858ad744ff063c6792d471ed55655a3c99",
+      "status": "needs-review",
+      "note": "由PCB设计秘籍按主题整理；来源缺图，具体器件/测试条件需按当前资料核验。"
     },
     {
       "path": "硬件/PCB/射频设计.md",
@@ -37,20 +168,133 @@
       "status": "needs-review"
     },
     {
+      "path": "硬件/PCB/开关电源布局与磁件耦合.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 2911,
+      "sha256": "4f9da784c5ead24b585b5bffb51380eea12f256993d92e739a7d6564e0fe79d9",
+      "status": "needs-review",
+      "note": "由PCB设计秘籍按主题整理；来源缺图，具体器件/测试条件需按当前资料核验。"
+    },
+    {
+      "path": "硬件/PCB/时钟复位与启动模块-01.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 17613,
+      "sha256": "e93d80e506ed7f370ac88e6cab5daba404e04c2ab88aee498436eee62eb0875b",
+      "status": "needs-review",
+      "structural_only_sha256": "e93d80e506ed7f370ac88e6cab5daba404e04c2ab88aee498436eee62eb0875b",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/时钟复位与启动模块.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/PCB/时钟复位与启动模块-02.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 12393,
+      "sha256": "244dbf909b2df337f9189021af33895ce6fa7597b20c4113fd19a9ea02941b50",
+      "status": "needs-review",
+      "structural_only_sha256": "244dbf909b2df337f9189021af33895ce6fa7597b20c4113fd19a9ea02941b50",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/时钟复位与启动模块.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/PCB/时钟复位与启动模块-03.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 16357,
+      "sha256": "d08ce7dff1838f7be35ba11f9a1f208ce1c1ef434f0e2382d8fe37b7dc25f21e",
+      "status": "needs-review",
+      "structural_only_sha256": "d08ce7dff1838f7be35ba11f9a1f208ce1c1ef434f0e2382d8fe37b7dc25f21e",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/时钟复位与启动模块.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/PCB/时钟复位与启动模块-04.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 14982,
+      "sha256": "85bf1c15766ce49394d4f68bb342b46653704500c0a62978ecbd8d226b9afe31",
+      "status": "needs-review",
+      "structural_only_sha256": "85bf1c15766ce49394d4f68bb342b46653704500c0a62978ecbd8d226b9afe31",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/时钟复位与启动模块.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
       "path": "硬件/PCB/时钟复位与启动模块.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 58534,
-      "sha256": "c999083ed904ff7d816ade6448fd51c386921b17cf3cf57e8d156c4d773db8de",
-      "status": "needs-review"
+      "bytes": 1090,
+      "sha256": "ca1e4e17cfa7bfe25c08a480484345b61575a664062e99bb39b660e576cbe170",
+      "status": "needs-review",
+      "structural_only_sha256": "ca1e4e17cfa7bfe25c08a480484345b61575a664062e99bb39b660e576cbe170",
+      "content_updated": "2026-11-08",
+      "note": "2026-11-21 结构拆分；原知识条目转移至分卷，事实未改写。",
+      "pre_split_git_head_sha256": "c999083ed904ff7d816ade6448fd51c386921b17cf3cf57e8d156c4d773db8de"
+    },
+    {
+      "path": "硬件/PCB/模拟与采集模块-01.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 16826,
+      "sha256": "a65b2616d4cfb0eb201ae09ba2ceefc3caa93e3dfe75d301a99cfa08ef53d967",
+      "status": "needs-review",
+      "structural_only_sha256": "a65b2616d4cfb0eb201ae09ba2ceefc3caa93e3dfe75d301a99cfa08ef53d967",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/模拟与采集模块.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/PCB/模拟与采集模块-02.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 15353,
+      "sha256": "eb9cb69d8b3b6bf0935db97d4632f6659f340962a467c4bfcb0a525f35dacd3d",
+      "status": "needs-review",
+      "structural_only_sha256": "eb9cb69d8b3b6bf0935db97d4632f6659f340962a467c4bfcb0a525f35dacd3d",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/模拟与采集模块.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/PCB/模拟与采集模块-03.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 17106,
+      "sha256": "554ec27a743a85c545ccbc9032cf399848675bbcce0750baa8da2960786d74f0",
+      "status": "needs-review",
+      "structural_only_sha256": "554ec27a743a85c545ccbc9032cf399848675bbcce0750baa8da2960786d74f0",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/模拟与采集模块.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/PCB/模拟与采集模块-04.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 13429,
+      "sha256": "b895d8aa272e1b48df4f0504edbf72d42ab74ec08c8e4a801a80e4035f95e5fd",
+      "status": "needs-review",
+      "structural_only_sha256": "b895d8aa272e1b48df4f0504edbf72d42ab74ec08c8e4a801a80e4035f95e5fd",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/模拟与采集模块.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
     },
     {
       "path": "硬件/PCB/模拟与采集模块.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 59540,
-      "sha256": "6d5570bf43831a95461c7422856bc5a209b016b503fb0c1e43f3a67212846124",
-      "status": "needs-review"
+      "bytes": 1168,
+      "sha256": "a6e65a839142c95b3868493a9f9d9f7a1abc29e6c22c36da6516f8c4b5841fe2",
+      "status": "needs-review",
+      "structural_only_sha256": "a6e65a839142c95b3868493a9f9d9f7a1abc29e6c22c36da6516f8c4b5841fe2",
+      "content_updated": "2026-11-08",
+      "note": "2026-11-21 结构拆分；原知识条目转移至分卷，事实未改写。",
+      "pre_split_git_head_sha256": "6d5570bf43831a95461c7422856bc5a209b016b503fb0c1e43f3a67212846124"
     },
     {
       "path": "硬件/PCB/烧录链路审查与证据边界.md",
@@ -69,12 +313,73 @@
       "status": "needs-review"
     },
     {
+      "path": "硬件/PCB/电源抗扰与ADC噪声预算.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 2737,
+      "sha256": "bb009dd61995fa65f606689521b09d178344668137f5c2830f3a91416035a107",
+      "status": "needs-review",
+      "note": "由PCB设计秘籍按主题整理；来源缺图，具体器件/测试条件需按当前资料核验。"
+    },
+    {
+      "path": "硬件/PCB/电源模块-01.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 16053,
+      "sha256": "d129c4e119089103f4af3354cb3bf2fa22080ff5974aa233b6b8cae79d667798",
+      "status": "needs-review",
+      "structural_only_sha256": "d129c4e119089103f4af3354cb3bf2fa22080ff5974aa233b6b8cae79d667798",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/电源模块.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/PCB/电源模块-02.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 12464,
+      "sha256": "9fb41c66ab041ae889789b031ff5f25d2638f0bc4c6d1c4ffebe23487f6e6625",
+      "status": "needs-review",
+      "structural_only_sha256": "9fb41c66ab041ae889789b031ff5f25d2638f0bc4c6d1c4ffebe23487f6e6625",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/电源模块.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/PCB/电源模块-03.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 17100,
+      "sha256": "78732e9565825d1ad2dc9d7588511b2e7e886bf38335ae0aaa44aec29da7134f",
+      "status": "needs-review",
+      "structural_only_sha256": "78732e9565825d1ad2dc9d7588511b2e7e886bf38335ae0aaa44aec29da7134f",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/电源模块.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/PCB/电源模块-04.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 17802,
+      "sha256": "36131a0ea1176165e026ab3f3d8f87e955e66fc7ce0d9429eb74f99d05196d5e",
+      "status": "needs-review",
+      "structural_only_sha256": "36131a0ea1176165e026ab3f3d8f87e955e66fc7ce0d9429eb74f99d05196d5e",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/电源模块.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
       "path": "硬件/PCB/电源模块.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 60710,
-      "sha256": "375941c7e8f6f6ac2788e3228ed6139c4f18981b1a3495f92ebd1d0fa912cf0e",
-      "status": "needs-review"
+      "bytes": 964,
+      "sha256": "7e6a4460bc0e420163b18f676e084ab977fc9ab0e9982e06c884cdacf1842436",
+      "status": "needs-review",
+      "structural_only_sha256": "7e6a4460bc0e420163b18f676e084ab977fc9ab0e9982e06c884cdacf1842436",
+      "content_updated": "2026-11-08",
+      "note": "2026-11-21 结构拆分；原知识条目转移至分卷，事实未改写。",
+      "pre_split_git_head_sha256": "375941c7e8f6f6ac2788e3228ed6139c4f18981b1a3495f92ebd1d0fa912cf0e"
     },
     {
       "path": "硬件/PCB/经验规则与验证边界勘误.md",
@@ -101,12 +406,64 @@
       "status": "needs-review"
     },
     {
+      "path": "硬件/PCB/连接器保护与EMC模块-01.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 16969,
+      "sha256": "78acea19784e1d3fec195f542ed024b7e6a7b5d23aca8d294cf907a351087000",
+      "status": "needs-review",
+      "structural_only_sha256": "78acea19784e1d3fec195f542ed024b7e6a7b5d23aca8d294cf907a351087000",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/连接器保护与EMC模块.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/PCB/连接器保护与EMC模块-02.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 12164,
+      "sha256": "c6f3dcde0d4f161f4e33d2ca220d6062b642e03118d7795ea435b0953b5662d4",
+      "status": "needs-review",
+      "structural_only_sha256": "c6f3dcde0d4f161f4e33d2ca220d6062b642e03118d7795ea435b0953b5662d4",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/连接器保护与EMC模块.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/PCB/连接器保护与EMC模块-03.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 16016,
+      "sha256": "5f8a0b318ef83bfbc94d3f55891eff0728881186cd1339065d9bf238c56d48f0",
+      "status": "needs-review",
+      "structural_only_sha256": "5f8a0b318ef83bfbc94d3f55891eff0728881186cd1339065d9bf238c56d48f0",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/连接器保护与EMC模块.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/PCB/连接器保护与EMC模块-04.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 14081,
+      "sha256": "686338d7fb869ca357f639baa2dadeaa89365d1baba60675e8d53691d2650a54",
+      "status": "needs-review",
+      "structural_only_sha256": "686338d7fb869ca357f639baa2dadeaa89365d1baba60675e8d53691d2650a54",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/连接器保护与EMC模块.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
       "path": "硬件/PCB/连接器保护与EMC模块.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 57103,
-      "sha256": "46f313791737e4b1aae365ae655893e71d6cfefb1ff9ca39e87af5fdba9f3571",
-      "status": "needs-review"
+      "bytes": 870,
+      "sha256": "23f0a1780db2bec7ee38bddfbfac452eedf2c152bcc65a40ab61ab570c9f8961",
+      "status": "needs-review",
+      "structural_only_sha256": "23f0a1780db2bec7ee38bddfbfac452eedf2c152bcc65a40ab61ab570c9f8961",
+      "content_updated": "2026-11-08",
+      "note": "2026-11-21 结构拆分；原知识条目转移至分卷，事实未改写。",
+      "pre_split_git_head_sha256": "46f313791737e4b1aae365ae655893e71d6cfefb1ff9ca39e87af5fdba9f3571"
     },
     {
       "path": "硬件/PCB/隔离开关电源设计.md",
@@ -133,12 +490,64 @@
       "status": "needs-review"
     },
     {
+      "path": "硬件/PCB/高速接口模块-01.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 15926,
+      "sha256": "d0e1a9e281978e2c2903fc43dc7e4e1f3ec72f391f42cd1a83a0e7e7d32a2823",
+      "status": "needs-review",
+      "structural_only_sha256": "d0e1a9e281978e2c2903fc43dc7e4e1f3ec72f391f42cd1a83a0e7e7d32a2823",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/高速接口模块.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/PCB/高速接口模块-02.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 12442,
+      "sha256": "4ae2a96b6befd216d352b85883c89ec10f4cf9cda922bb92e91d84ede8e0e1e2",
+      "status": "needs-review",
+      "structural_only_sha256": "4ae2a96b6befd216d352b85883c89ec10f4cf9cda922bb92e91d84ede8e0e1e2",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/高速接口模块.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/PCB/高速接口模块-03.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 16838,
+      "sha256": "1b1b9fce4d995b0271f06716eb42d43bb46829a0436cc2129bc62741abdfd2cd",
+      "status": "needs-review",
+      "structural_only_sha256": "1b1b9fce4d995b0271f06716eb42d43bb46829a0436cc2129bc62741abdfd2cd",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/高速接口模块.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/PCB/高速接口模块-04.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 14611,
+      "sha256": "5e290aebd3bcd42b77c113a0ef8def54fa6316eeb7c27ea95fa4e3bac1fa106a",
+      "status": "needs-review",
+      "structural_only_sha256": "5e290aebd3bcd42b77c113a0ef8def54fa6316eeb7c27ea95fa4e3bac1fa106a",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/PCB/高速接口模块.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
       "path": "硬件/PCB/高速接口模块.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 57489,
-      "sha256": "8d2198b5175b5385a9ff4a1611c2ef081fb99c08936284e4baf62a590beecbb7",
-      "status": "needs-review"
+      "bytes": 869,
+      "sha256": "ebc4f3d60a55f29e2daaabc928407603ecd560addf31e19657c4009091104192",
+      "status": "needs-review",
+      "structural_only_sha256": "ebc4f3d60a55f29e2daaabc928407603ecd560addf31e19657c4009091104192",
+      "content_updated": "2026-11-08",
+      "note": "2026-11-21 结构拆分；原知识条目转移至分卷，事实未改写。",
+      "pre_split_git_head_sha256": "8d2198b5175b5385a9ff4a1611c2ef081fb99c08936284e4baf62a590beecbb7"
     },
     {
       "path": "硬件/原始备份/01_提高篇全集-高速信号的设计.md",
@@ -289,6 +698,15 @@
       "bytes": 67850,
       "sha256": "06e5e7b0ffaf3f01609f6a1e998f69e46ad66e758920430bfc2aa174664ce1f3",
       "status": "available"
+    },
+    {
+      "path": "硬件/原始备份/PCB设计秘籍.md",
+      "role": "backup-source",
+      "kind": "md",
+      "bytes": 155144,
+      "sha256": "774e437de244439155ae3dc565592aa7b8685b575ecb4a322d547e4edc4f77ee",
+      "status": "needs-review",
+      "note": "ADI智库合辑备份；96处插图引用当前缺少附件，逐篇URL、发布日期及图表均待核。原件只读。"
     },
     {
       "path": "硬件/原始备份/Protection devices.pdf",
@@ -615,12 +1033,76 @@
       "status": "available"
     },
     {
+      "path": "硬件/原理/EMC-01.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 15124,
+      "sha256": "bcf5548dd7028e25fe1b5191249e716698cfcd3543f1a028a55a45283bdbf6d3",
+      "status": "needs-review",
+      "structural_only_sha256": "bcf5548dd7028e25fe1b5191249e716698cfcd3543f1a028a55a45283bdbf6d3",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/原理/EMC.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/EMC-02.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 12744,
+      "sha256": "7a0335d178bc5e885a43a04fd7d8406653df7a586801977a60f80d6b94928e60",
+      "status": "needs-review",
+      "structural_only_sha256": "7a0335d178bc5e885a43a04fd7d8406653df7a586801977a60f80d6b94928e60",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/原理/EMC.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/EMC-03.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 15452,
+      "sha256": "caed300fa8c91078db27dbc4306d651f2b565404746edcfc13e68831103198ca",
+      "status": "needs-review",
+      "structural_only_sha256": "caed300fa8c91078db27dbc4306d651f2b565404746edcfc13e68831103198ca",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/原理/EMC.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/EMC-04.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 12777,
+      "sha256": "2bb3644267bae0890ba9ac3be3ef45779c9b244eca2d0e39c25eb7665ca5dc8c",
+      "status": "needs-review",
+      "structural_only_sha256": "2bb3644267bae0890ba9ac3be3ef45779c9b244eca2d0e39c25eb7665ca5dc8c",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/原理/EMC.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/EMC-05.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 9349,
+      "sha256": "afbc9a58a07d5b113981586364ffdbd78503ed4d2832573961db92b29a3b8ce0",
+      "status": "needs-review",
+      "structural_only_sha256": "afbc9a58a07d5b113981586364ffdbd78503ed4d2832573961db92b29a3b8ce0",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/原理/EMC.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
       "path": "硬件/原理/EMC.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 61742,
-      "sha256": "7ac8cfe01d1c2d481777e3a5bf87cd1f8a22138306c288453811de56d69e4f95",
-      "status": "needs-review"
+      "bytes": 1000,
+      "sha256": "d650622ad88e77b13626fd36c0604434a21696f6a798f9fb5fb9894ffc331557",
+      "status": "needs-review",
+      "structural_only_sha256": "d650622ad88e77b13626fd36c0604434a21696f6a798f9fb5fb9894ffc331557",
+      "content_updated": "2026-11-08",
+      "note": "2026-11-21 结构拆分；原知识条目转移至分卷，事实未改写。",
+      "pre_split_git_head_sha256": "7ac8cfe01d1c2d481777e3a5bf87cd1f8a22138306c288453811de56d69e4f95"
     },
     {
       "path": "硬件/原理/PDN预算与去耦勘误.md",
@@ -631,20 +1113,148 @@
       "status": "needs-review"
     },
     {
+      "path": "硬件/原理/PI-01.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 15516,
+      "sha256": "eed38d7e2ee3dc96b56ea7d3c4af4cd1b9e09c36d5e28e9294d59092e28783b4",
+      "status": "needs-review",
+      "structural_only_sha256": "eed38d7e2ee3dc96b56ea7d3c4af4cd1b9e09c36d5e28e9294d59092e28783b4",
+      "content_updated": "2026-10-23",
+      "split_from": "硬件/原理/PI.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/PI-02.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 12636,
+      "sha256": "c85f2b50e097728608f23a10bdc303f94335d9ea0d0af8759c15eff4edf16b96",
+      "status": "needs-review",
+      "structural_only_sha256": "c85f2b50e097728608f23a10bdc303f94335d9ea0d0af8759c15eff4edf16b96",
+      "content_updated": "2026-10-23",
+      "split_from": "硬件/原理/PI.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/PI-03.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 13406,
+      "sha256": "926f397dca6986741ab13b3fa2424eeebf300373447932fad4068480c2ecee83",
+      "status": "needs-review",
+      "structural_only_sha256": "926f397dca6986741ab13b3fa2424eeebf300373447932fad4068480c2ecee83",
+      "content_updated": "2026-10-23",
+      "split_from": "硬件/原理/PI.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/PI-04.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 15806,
+      "sha256": "14e73770aede4880e7d920c236abd5ef1081527f3dbf0c3ce2ed1fdf7324394f",
+      "status": "needs-review",
+      "structural_only_sha256": "14e73770aede4880e7d920c236abd5ef1081527f3dbf0c3ce2ed1fdf7324394f",
+      "content_updated": "2026-10-23",
+      "split_from": "硬件/原理/PI.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/PI-05.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 809,
+      "sha256": "43782ed413156413ed94a20f4063e6a957e6335f5c67c49ce98f4156b2bee423",
+      "status": "needs-review",
+      "structural_only_sha256": "43782ed413156413ed94a20f4063e6a957e6335f5c67c49ce98f4156b2bee423",
+      "content_updated": "2026-10-23",
+      "split_from": "硬件/原理/PI.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
       "path": "硬件/原理/PI.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 55240,
-      "sha256": "20b78e96742b1d4cc8f8149c759f90c1c0127e03156fa5002c5ca6cc100bd748",
-      "status": "curated"
+      "bytes": 903,
+      "sha256": "324b3b8deec80329087de1b7a9785f9a21535e13bba9e86f13b750b1d221c710",
+      "status": "needs-review",
+      "structural_only_sha256": "324b3b8deec80329087de1b7a9785f9a21535e13bba9e86f13b750b1d221c710",
+      "content_updated": "2026-10-23",
+      "note": "2026-11-21 结构拆分；原知识条目转移至分卷，事实未改写。",
+      "pre_split_git_head_sha256": "20b78e96742b1d4cc8f8149c759f90c1c0127e03156fa5002c5ca6cc100bd748"
+    },
+    {
+      "path": "硬件/原理/SI-01.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 14867,
+      "sha256": "d49f38157dbb96d2c919f541db5aa6aa316e87a7aca12c10fb8fecd8eb8a3152",
+      "status": "needs-review",
+      "structural_only_sha256": "d49f38157dbb96d2c919f541db5aa6aa316e87a7aca12c10fb8fecd8eb8a3152",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/原理/SI.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/SI-02.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 12032,
+      "sha256": "516fd424f6267124f71637bcac1b2683003575cda182ba692440f7b9d0e4e84d",
+      "status": "needs-review",
+      "structural_only_sha256": "516fd424f6267124f71637bcac1b2683003575cda182ba692440f7b9d0e4e84d",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/原理/SI.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/SI-03.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 16146,
+      "sha256": "161dfc7f65674ddb083c3ef7458733b2a359f31c6e4d145542407a2f56ee406c",
+      "status": "needs-review",
+      "structural_only_sha256": "161dfc7f65674ddb083c3ef7458733b2a359f31c6e4d145542407a2f56ee406c",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/原理/SI.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/SI-04.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 12309,
+      "sha256": "7bba58b5dd3b6613174718a47d92590a689b30aff3abececc2ec714e8252d730",
+      "status": "needs-review",
+      "structural_only_sha256": "7bba58b5dd3b6613174718a47d92590a689b30aff3abececc2ec714e8252d730",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/原理/SI.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/SI-05.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 7418,
+      "sha256": "41a10752b4d3250e7caaa6e95c8dc79e689fe3b93b82b3f38221675ce3e3fe09",
+      "status": "needs-review",
+      "structural_only_sha256": "41a10752b4d3250e7caaa6e95c8dc79e689fe3b93b82b3f38221675ce3e3fe09",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/原理/SI.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
     },
     {
       "path": "硬件/原理/SI.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 59314,
-      "sha256": "7d394e9c59c83c7f5b08dd56b8e48758e96d260fd3aa18a89cedc688f3966c81",
-      "status": "needs-review"
+      "bytes": 1036,
+      "sha256": "ef2c3327bdcdedd75d563f1d6e0577b85ab6af08b2c56369bc54979433cc8a0a",
+      "status": "needs-review",
+      "structural_only_sha256": "ef2c3327bdcdedd75d563f1d6e0577b85ab6af08b2c56369bc54979433cc8a0a",
+      "content_updated": "2026-11-08",
+      "note": "2026-11-21 结构拆分；原知识条目转移至分卷，事实未改写。",
+      "pre_split_git_head_sha256": "7d394e9c59c83c7f5b08dd56b8e48758e96d260fd3aa18a89cedc688f3966c81"
     },
     {
       "path": "硬件/原理/保护隔离与射频器件选型.md",
@@ -671,13 +1281,64 @@
       "status": "needs-review"
     },
     {
+      "path": "硬件/原理/叠层与阻抗-01.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 15519,
+      "sha256": "235e2b2cc4d42fd440d944ee3fb74dc821a6ded356e95cb3a564a70e56e7eebb",
+      "status": "needs-review",
+      "structural_only_sha256": "235e2b2cc4d42fd440d944ee3fb74dc821a6ded356e95cb3a564a70e56e7eebb",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/原理/叠层与阻抗.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/叠层与阻抗-02.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 9363,
+      "sha256": "88b1ee4857ad2353b02597bd7d1435da5916894c655e08ab5b5c30dc13333402",
+      "status": "needs-review",
+      "structural_only_sha256": "88b1ee4857ad2353b02597bd7d1435da5916894c655e08ab5b5c30dc13333402",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/原理/叠层与阻抗.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/叠层与阻抗-03.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 16221,
+      "sha256": "8f4fb7714f65d6541a51e3e154aefafb18580f7736b85737a2546b5b91992b69",
+      "status": "needs-review",
+      "structural_only_sha256": "8f4fb7714f65d6541a51e3e154aefafb18580f7736b85737a2546b5b91992b69",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/原理/叠层与阻抗.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/叠层与阻抗-04.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 17904,
+      "sha256": "d520ff0d99fe01670363254b0f0b5b3feda8b201fe8df203dc11a0205357c6a2",
+      "status": "needs-review",
+      "structural_only_sha256": "d520ff0d99fe01670363254b0f0b5b3feda8b201fe8df203dc11a0205357c6a2",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/原理/叠层与阻抗.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
       "path": "硬件/原理/叠层与阻抗.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 56070,
-      "sha256": "d46d56fa5fd16adeec1accf78c2e4bc6551e4d228170f20551c4ecbffaa11da3",
+      "bytes": 1050,
+      "sha256": "5a0e519890f3d08f313a0a9f8fd399ed98788c37187ba95b797898c2d8bc817f",
       "status": "needs-review",
-      "note": "2026-11-07：用户既有表格空白排版调整，经Git差分核对未改知识内容；更新当前哈希。"
+      "note": "2026-11-21 结构拆分；原知识条目转移至分卷，事实未改写。",
+      "structural_only_sha256": "5a0e519890f3d08f313a0a9f8fd399ed98788c37187ba95b797898c2d8bc817f",
+      "content_updated": "2026-11-08",
+      "pre_split_git_head_sha256": "d46d56fa5fd16adeec1accf78c2e4bc6551e4d228170f20551c4ecbffaa11da3"
     },
     {
       "path": "硬件/原理/基础公式与算例勘误.md",
@@ -704,12 +1365,64 @@
       "status": "needs-review"
     },
     {
+      "path": "硬件/原理/数电-01.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 14992,
+      "sha256": "e9386aa2739129f502307ec0bc3a5306b5f0cfc5ebc3839fc629a5e94ddfb073",
+      "status": "needs-review",
+      "structural_only_sha256": "e9386aa2739129f502307ec0bc3a5306b5f0cfc5ebc3839fc629a5e94ddfb073",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/原理/数电.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/数电-02.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 12522,
+      "sha256": "a837eadb13d25045a60d718f997999f6d8a0cc724a89bdc2a771ecdff7dd40a1",
+      "status": "needs-review",
+      "structural_only_sha256": "a837eadb13d25045a60d718f997999f6d8a0cc724a89bdc2a771ecdff7dd40a1",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/原理/数电.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/数电-03.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 13817,
+      "sha256": "2a91119a9cdcb6b4dff76080a2a89163da3781545f0addde64dc0080dde96f05",
+      "status": "needs-review",
+      "structural_only_sha256": "2a91119a9cdcb6b4dff76080a2a89163da3781545f0addde64dc0080dde96f05",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/原理/数电.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/数电-04.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 13708,
+      "sha256": "8edb251933d47d39e5d301ff5ad3ae69094daf80aa66bb3786b23c8e6f128831",
+      "status": "needs-review",
+      "structural_only_sha256": "8edb251933d47d39e5d301ff5ad3ae69094daf80aa66bb3786b23c8e6f128831",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/原理/数电.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
       "path": "硬件/原理/数电.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 52738,
-      "sha256": "1715bdd91f6bd07bc4ab3bffeb12a03f86fd7ebb423a83619461a3081a72619f",
-      "status": "needs-review"
+      "bytes": 793,
+      "sha256": "a64db10c2186bef05943b6e31879bcfa228dc712536566e3d0f38826ed520d56",
+      "status": "needs-review",
+      "structural_only_sha256": "a64db10c2186bef05943b6e31879bcfa228dc712536566e3d0f38826ed520d56",
+      "content_updated": "2026-11-08",
+      "note": "2026-11-21 结构拆分；原知识条目转移至分卷，事实未改写。",
+      "pre_split_git_head_sha256": "1715bdd91f6bd07bc4ab3bffeb12a03f86fd7ebb423a83619461a3081a72619f"
     },
     {
       "path": "硬件/原理/无源元件选型与勘误.md",
@@ -720,20 +1433,136 @@
       "status": "needs-review"
     },
     {
+      "path": "硬件/原理/模电-01.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 16043,
+      "sha256": "693f4e38716087f7a5daa3c7b85e7e7abd6db03c9007a333a50fbf49ec18861f",
+      "status": "needs-review",
+      "structural_only_sha256": "693f4e38716087f7a5daa3c7b85e7e7abd6db03c9007a333a50fbf49ec18861f",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/原理/模电.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/模电-02.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 12798,
+      "sha256": "77cd942445b36d6a50c26ebcc088198760d5d702be6afaed957298418657605f",
+      "status": "needs-review",
+      "structural_only_sha256": "77cd942445b36d6a50c26ebcc088198760d5d702be6afaed957298418657605f",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/原理/模电.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/模电-03.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 15536,
+      "sha256": "b39308a7903e0f8ca1cd2949ffc307cbdb0be4485573c49d608b139aaaac7216",
+      "status": "needs-review",
+      "structural_only_sha256": "b39308a7903e0f8ca1cd2949ffc307cbdb0be4485573c49d608b139aaaac7216",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/原理/模电.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/模电-04.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 16928,
+      "sha256": "da356402beb04389d4c9facaa493ebebed85b89883f62e68f38d2430c328010e",
+      "status": "needs-review",
+      "structural_only_sha256": "da356402beb04389d4c9facaa493ebebed85b89883f62e68f38d2430c328010e",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/原理/模电.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/模电-05.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 5054,
+      "sha256": "e93df00447b5b8820cca34326c1b9dd5eb8be31db7d66a17316058b0765c9c6f",
+      "status": "needs-review",
+      "structural_only_sha256": "e93df00447b5b8820cca34326c1b9dd5eb8be31db7d66a17316058b0765c9c6f",
+      "content_updated": "2026-11-08",
+      "split_from": "硬件/原理/模电.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
       "path": "硬件/原理/模电.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 63241,
-      "sha256": "f1cf4061bf400c85f6f97d3cf359fd364204ae4d2dff57daefb6dd85095b63b9",
-      "status": "needs-review"
+      "bytes": 876,
+      "sha256": "9fd70c002a23b1ffc89c0cd297ee6358862c78aefedaddef0e9718f580667a78",
+      "status": "needs-review",
+      "structural_only_sha256": "9fd70c002a23b1ffc89c0cd297ee6358862c78aefedaddef0e9718f580667a78",
+      "content_updated": "2026-11-08",
+      "note": "2026-11-21 结构拆分；原知识条目转移至分卷，事实未改写。",
+      "pre_split_git_head_sha256": "f1cf4061bf400c85f6f97d3cf359fd364204ae4d2dff57daefb6dd85095b63b9"
+    },
+    {
+      "path": "硬件/原理/电源设计-01.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 17411,
+      "sha256": "f753b159c3f2113e373a6d8e79a9ee8d8c7f00514b5718e97d87c406c5ec8eef",
+      "status": "needs-review",
+      "structural_only_sha256": "f753b159c3f2113e373a6d8e79a9ee8d8c7f00514b5718e97d87c406c5ec8eef",
+      "content_updated": "2026-10-23",
+      "split_from": "硬件/原理/电源设计.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/电源设计-02.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 10611,
+      "sha256": "6e860e7ae670f78e5e45f4372eebacf113459f1ffcc442bf0ede34469dd735e7",
+      "status": "needs-review",
+      "structural_only_sha256": "6e860e7ae670f78e5e45f4372eebacf113459f1ffcc442bf0ede34469dd735e7",
+      "content_updated": "2026-10-23",
+      "split_from": "硬件/原理/电源设计.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/电源设计-03.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 16723,
+      "sha256": "af927157aa2fa3f437804220dc405994689ed0dee2bdf5d0edecd96e0f440480",
+      "status": "needs-review",
+      "structural_only_sha256": "af927157aa2fa3f437804220dc405994689ed0dee2bdf5d0edecd96e0f440480",
+      "content_updated": "2026-10-23",
+      "split_from": "硬件/原理/电源设计.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/电源设计-04.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 11412,
+      "sha256": "9c3b1788f121c488537ea58f112bc6d4f713cb8f621656c14318aaccf78ae79a",
+      "status": "needs-review",
+      "structural_only_sha256": "9c3b1788f121c488537ea58f112bc6d4f713cb8f621656c14318aaccf78ae79a",
+      "content_updated": "2026-10-23",
+      "split_from": "硬件/原理/电源设计.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
     },
     {
       "path": "硬件/原理/电源设计.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 53554,
-      "sha256": "80001f1a9fd470141c0f80f5ab1d4c0530d76a355fe08ad2cf28fd2b821e84af",
-      "status": "curated"
+      "bytes": 919,
+      "sha256": "ebea3d2e5d805b28c6127502b6fa4c187d2fbdf7ee524b3cfbb20118ea3f1569",
+      "status": "needs-review",
+      "structural_only_sha256": "ebea3d2e5d805b28c6127502b6fa4c187d2fbdf7ee524b3cfbb20118ea3f1569",
+      "content_updated": "2026-10-23",
+      "note": "2026-11-21 结构拆分；原知识条目转移至分卷，事实未改写。",
+      "pre_split_git_head_sha256": "80001f1a9fd470141c0f80f5ab1d4c0530d76a355fe08ad2cf28fd2b821e84af"
     },
     {
       "path": "硬件/原理/线性稳压与电源测量补充.md",
@@ -763,17 +1592,46 @@
       "path": "硬件/原理/芯片手册/二极管与保护器件.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 13835,
-      "sha256": "3dfaa4dda9a3d4b5209f5c1303439528d037c0fc338ec241b7ad982dbb66eb9d",
-      "status": "needs-review"
+      "bytes": 13837,
+      "sha256": "183294cdeabe83fec8173b15c9b85109a6121d1b7cded2c9f2f6589bdb07a191",
+      "status": "needs-review",
+      "note": "2026-11-21：删除重复原件并改写文件名引用，正文内容未变；引用路径已按现存唯一副本更新。"
+    },
+    {
+      "path": "硬件/原理/芯片手册/传感器-01.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 18715,
+      "sha256": "c6661dc54ccbd0e616e5d046c40a675d3b375cf26401743d9a8ed027738cd7df",
+      "status": "needs-review",
+      "structural_only_sha256": "c6661dc54ccbd0e616e5d046c40a675d3b375cf26401743d9a8ed027738cd7df",
+      "content_updated": "2026-10-23",
+      "split_from": "硬件/原理/芯片手册/传感器.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/芯片手册/传感器-02.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 15530,
+      "sha256": "00cbb37617af7ece96a242643df8d9a6455399b56c5d07880e538f8a4c558558",
+      "status": "needs-review",
+      "structural_only_sha256": "00cbb37617af7ece96a242643df8d9a6455399b56c5d07880e538f8a4c558558",
+      "content_updated": "2026-10-23",
+      "split_from": "硬件/原理/芯片手册/传感器.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
     },
     {
       "path": "硬件/原理/芯片手册/传感器.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 32812,
-      "sha256": "e31b670edc59aeb6e29fec2ae10efba4664f4e33c7aef72c6070df4aee703eec",
-      "status": "needs-review"
+      "bytes": 1153,
+      "sha256": "37ce954ba8f503fb2856cd5485f1f9fda1ce942e8d53c4d4f5a05f9582c1ee6d",
+      "status": "needs-review",
+      "structural_only_sha256": "37ce954ba8f503fb2856cd5485f1f9fda1ce942e8d53c4d4f5a05f9582c1ee6d",
+      "content_updated": "2026-10-23",
+      "note": "2026-11-21 结构拆分；原知识条目转移至分卷，事实未改写。",
+      "pre_split_git_head_sha256": "e31b670edc59aeb6e29fec2ae10efba4664f4e33c7aef72c6070df4aee703eec"
     },
     {
       "path": "硬件/原理/芯片手册/功率开关与驱动.md",
@@ -832,12 +1690,52 @@
       "status": "reviewed"
     },
     {
+      "path": "硬件/原理/芯片手册/电源管理-01.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 25277,
+      "sha256": "c52633eaa2bd6ed3b3ecb92a72be56a871e2dc8e81dde29373ba6463436dbf0a",
+      "status": "needs-review",
+      "structural_only_sha256": "c52633eaa2bd6ed3b3ecb92a72be56a871e2dc8e81dde29373ba6463436dbf0a",
+      "content_updated": "2026-11-18",
+      "split_from": "硬件/原理/芯片手册/电源管理.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/芯片手册/电源管理-02.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 32157,
+      "sha256": "0aad1f2ccdf85bd3dfcdba3a0a66f1282547ee9ec0d25218787f72aa58989ffc",
+      "status": "needs-review",
+      "structural_only_sha256": "0aad1f2ccdf85bd3dfcdba3a0a66f1282547ee9ec0d25218787f72aa58989ffc",
+      "content_updated": "2026-11-18",
+      "split_from": "硬件/原理/芯片手册/电源管理.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
+      "path": "硬件/原理/芯片手册/电源管理-03.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 30956,
+      "sha256": "bce1643fc0bc9e030d4ba0c7204d5d9ee38b9d0f8cece95be1933760eb05163d",
+      "status": "needs-review",
+      "structural_only_sha256": "bce1643fc0bc9e030d4ba0c7204d5d9ee38b9d0f8cece95be1933760eb05163d",
+      "content_updated": "2026-11-18",
+      "split_from": "硬件/原理/芯片手册/电源管理.md",
+      "note": "2026-11-21 从汇总稿按现有标题拆分；原文内容逐段保留。"
+    },
+    {
       "path": "硬件/原理/芯片手册/电源管理.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 79177,
-      "sha256": "28b632eef8c2a5b5b0fb0799b3d101378fdee24c79268359c664790d3f9f9c00",
-      "status": "needs-review"
+      "bytes": 4563,
+      "sha256": "218ec32ea1b22403c1b1603b8d3ab8937c8b0d263b2e0d6fd0c87fe32775d6d0",
+      "status": "needs-review",
+      "note": "2026-11-21 结构拆分；原知识条目转移至分卷，事实未改写。",
+      "structural_only_sha256": "218ec32ea1b22403c1b1603b8d3ab8937c8b0d263b2e0d6fd0c87fe32775d6d0",
+      "content_updated": "2026-11-18",
+      "pre_split_git_head_sha256": "28b632eef8c2a5b5b0fb0799b3d101378fdee24c79268359c664790d3f9f9c00"
     },
     {
       "path": "硬件/原理/芯片手册/蓝牙与无线.md",
@@ -1184,15 +2082,6 @@
       "status": "available"
     },
     {
-      "path": "硬件/芯片数据手册/CJMCU-3901芯片手册.pdf",
-      "role": "raw-source",
-      "kind": "pdf",
-      "bytes": 1514647,
-      "sha256": "80a9a362beb61dd2bdc052ed2fd94e55bed95b7979ab7e21feff72e0975ed408",
-      "status": "available",
-      "duplicate_of": "硬件/芯片数据手册/CJMCU-3901 芯片手册.pdf"
-    },
-    {
       "path": "硬件/芯片数据手册/DPS310芯片手册.pdf",
       "role": "raw-source",
       "kind": "pdf",
@@ -1399,7 +2288,7 @@
       "bytes": 1142045,
       "sha256": "5a6c1b7b71633986bec05439335844a91769e46f9d90c2602d0f7c1a559ae016",
       "status": "available",
-      "duplicate_of": "硬件/芯片数据手册/ICM-20948芯片手册.pdf"
+      "note": "ICM-20948芯片手册.pdf（型号写法差异）"
     },
     {
       "path": "硬件/芯片数据手册/ICM42688芯片手册.pdf",
@@ -1408,7 +2297,7 @@
       "bytes": 1801780,
       "sha256": "55ec8597ef1561310a0bf8013e2f6ab7d0b6fdd899b23a10801bacd02b84e2fd",
       "status": "available",
-      "duplicate_of": "硬件/芯片数据手册/ICM-42688芯片手册.pdf"
+      "note": "ICM-42688-P芯片手册（型号写法差异）"
     },
     {
       "path": "硬件/芯片数据手册/INA199芯片手册.pdf",
@@ -1633,7 +2522,7 @@
       "bytes": 974795,
       "sha256": "69ac8c29ffd1a986770c0d65a1b7cf946bf704c1ae05d3a030e3e2f59e2df052",
       "status": "available",
-      "duplicate_of": "硬件/芯片数据手册/MKDV16GCL-STP芯片手册.pdf"
+      "note": "MKDV16GCL-STP芯片手册（型号写法差异）"
     },
     {
       "path": "硬件/芯片数据手册/ML307C-GC芯片手册.pdf",
@@ -1666,7 +2555,7 @@
       "bytes": 814603,
       "sha256": "6afb495474de03a1fa4ac16cb591ae0189e25b4f8cbf3fe644a42bb9405f7151",
       "status": "available",
-      "duplicate_of": "硬件/芯片数据手册/MPU-6500芯片手册.pdf"
+      "note": "MPU-6500芯片手册（型号写法差异）"
     },
     {
       "path": "硬件/芯片数据手册/MT3608B芯片手册.pdf",
@@ -1683,15 +2572,6 @@
       "bytes": 3238403,
       "sha256": "20122f81d3e37edff622af6592ea3ce2f32ebd11549ab4b2937d868440aeb895",
       "status": "available"
-    },
-    {
-      "path": "硬件/芯片数据手册/MT41J128M16JT芯片手册.pdf",
-      "role": "raw-source",
-      "kind": "pdf",
-      "bytes": 3238403,
-      "sha256": "20122f81d3e37edff622af6592ea3ce2f32ebd11549ab4b2937d868440aeb895",
-      "status": "available",
-      "duplicate_of": "硬件/芯片数据手册/MT41J128M16JT-125芯片手册.pdf"
     },
     {
       "path": "硬件/芯片数据手册/MT9201芯片手册.pdf",
@@ -1926,15 +2806,6 @@
       "status": "available"
     },
     {
-      "path": "硬件/芯片数据手册/SIQ-02FVS3芯片手册.pdf",
-      "role": "raw-source",
-      "kind": "pdf",
-      "bytes": 189705,
-      "sha256": "188bffefff88403ebc592f8a4e141bab3d8e1072ef563d01c9be833f9d17b471",
-      "status": "available",
-      "duplicate_of": "硬件/芯片数据手册/02FVS3芯片手册.pdf"
-    },
-    {
       "path": "硬件/芯片数据手册/SL27517芯片手册.pdf",
       "role": "raw-source",
       "kind": "pdf",
@@ -1965,15 +2836,6 @@
       "bytes": 807823,
       "sha256": "f219a8efe2d679935742ed69fe194d632afe5a5ea7e59af6f9d901e24781adac",
       "status": "available"
-    },
-    {
-      "path": "硬件/芯片数据手册/SMF5.0A芯片手册.pdf",
-      "role": "raw-source",
-      "kind": "pdf",
-      "bytes": 807823,
-      "sha256": "f219a8efe2d679935742ed69fe194d632afe5a5ea7e59af6f9d901e24781adac",
-      "status": "available",
-      "duplicate_of": "硬件/芯片数据手册/SMF18A芯片手册.pdf"
     },
     {
       "path": "硬件/芯片数据手册/SN74AHC244芯片手册.pdf",
@@ -2024,15 +2886,6 @@
       "status": "available"
     },
     {
-      "path": "硬件/芯片数据手册/SPX1117M3芯片手册.pdf",
-      "role": "raw-source",
-      "kind": "pdf",
-      "bytes": 2060418,
-      "sha256": "99a2622548ffd09e632b9bc933367bac585028f87e8118be8d0db1711dbc5247",
-      "status": "available",
-      "duplicate_of": "硬件/芯片数据手册/SPX1117M3-L-5-0芯片手册.pdf"
-    },
-    {
       "path": "硬件/芯片数据手册/SPX1117芯片手册.pdf",
       "role": "raw-source",
       "kind": "pdf",
@@ -2081,15 +2934,6 @@
       "status": "available"
     },
     {
-      "path": "硬件/芯片数据手册/STM32F407VG芯片手册.pdf",
-      "role": "raw-source",
-      "kind": "pdf",
-      "bytes": 3045302,
-      "sha256": "23db03cb96fa5594d2adebe27c08b932433cbda4f25f7f513d4c88faba923cdc",
-      "status": "available",
-      "duplicate_of": "硬件/芯片数据手册/STM32F405RG芯片手册.pdf"
-    },
-    {
       "path": "硬件/芯片数据手册/SX1280芯片手册.pdf",
       "role": "raw-source",
       "kind": "pdf",
@@ -2128,15 +2972,6 @@
       "bytes": 1052257,
       "sha256": "337629d344cdcb835c77fe904b8314c875be0f93f7aa3a6019e4832745834373",
       "status": "available"
-    },
-    {
-      "path": "硬件/芯片数据手册/Se2525PA芯片手册.pdf",
-      "role": "raw-source",
-      "kind": "pdf",
-      "bytes": 291560,
-      "sha256": "3236a5ff9a30a2a7067775d4b8e55f0d9138a55b21282354a968649672dbbdf6",
-      "status": "available",
-      "duplicate_of": "硬件/芯片数据手册/SE5004L芯片手册.pdf"
     },
     {
       "path": "硬件/芯片数据手册/TC264芯片手册.pdf",
@@ -2323,15 +3158,6 @@
       "status": "available"
     },
     {
-      "path": "硬件/芯片数据手册/TX7550芯片手册.pdf",
-      "role": "raw-source",
-      "kind": "pdf",
-      "bytes": 838824,
-      "sha256": "aa797b48af0b4c39dc2d90b8cba22751acb1290843a9b3aa9b5ceb13feb18157",
-      "status": "available",
-      "duplicate_of": "硬件/芯片数据手册/TX7550-M芯片手册.pdf"
-    },
-    {
       "path": "硬件/芯片数据手册/TXS0102DCUR芯片手册.pdf",
       "role": "raw-source",
       "kind": "pdf",
@@ -2354,15 +3180,6 @@
       "bytes": 575521,
       "sha256": "bc30154f310cd631043214ed52571daefe04270587ec55072d49a23bd18b9068",
       "status": "available"
-    },
-    {
-      "path": "硬件/芯片数据手册/USBLC6芯片手册.pdf",
-      "role": "raw-source",
-      "kind": "pdf",
-      "bytes": 575521,
-      "sha256": "bc30154f310cd631043214ed52571daefe04270587ec55072d49a23bd18b9068",
-      "status": "available",
-      "duplicate_of": "硬件/芯片数据手册/USBLC6-2芯片手册.pdf"
     },
     {
       "path": "硬件/芯片数据手册/VCNL4040芯片手册.pdf",
@@ -2419,15 +3236,6 @@
       "bytes": 1893745,
       "sha256": "7b826b808084ccd986bcc22904c00a07a508ef42fb93d079fe7150a4c4f1a63d",
       "status": "needs-review"
-    },
-    {
-      "path": "硬件/芯片数据手册/WIRELESS-BWIPX芯片手册.pdf",
-      "role": "raw-source",
-      "kind": "pdf",
-      "bytes": 1010868,
-      "sha256": "4752212c19cd4bd177062ca6a0481e62a6e2d4ccd0c94cd68f0a3195345fce52",
-      "status": "available",
-      "duplicate_of": "硬件/芯片数据手册/BWIPX芯片手册.pdf"
     },
     {
       "path": "硬件/芯片数据手册/WS2812B芯片手册.pdf",
@@ -2500,60 +3308,6 @@
       "bytes": 1039959,
       "sha256": "38617522c0dece772c1ee422d5f24739283fe45632ff792778806c24e6e810c8",
       "status": "available"
-    },
-    {
-      "path": "硬件/原始备份/PCB设计秘籍.md",
-      "role": "backup-source",
-      "kind": "md",
-      "bytes": 155144,
-      "sha256": "774e437de244439155ae3dc565592aa7b8685b575ecb4a322d547e4edc4f77ee",
-      "status": "needs-review",
-      "note": "ADI智库合辑备份；96处插图引用当前缺少附件，逐篇URL、发布日期及图表均待核。原件只读。"
-    },
-    {
-      "path": "硬件/PCB/PCB接地与差分采集布局.md",
-      "role": "curated-source",
-      "kind": "md",
-      "bytes": 2903,
-      "sha256": "0917280759589f34b4d010a1c89abe9fe653bd9b86e2e89c6b5156275497244a",
-      "status": "needs-review",
-      "note": "由PCB设计秘籍按主题整理；来源缺图，具体器件/测试条件需按当前资料核验。"
-    },
-    {
-      "path": "硬件/PCB/开关电源布局与磁件耦合.md",
-      "role": "curated-source",
-      "kind": "md",
-      "bytes": 2911,
-      "sha256": "4f9da784c5ead24b585b5bffb51380eea12f256993d92e739a7d6564e0fe79d9",
-      "status": "needs-review",
-      "note": "由PCB设计秘籍按主题整理；来源缺图，具体器件/测试条件需按当前资料核验。"
-    },
-    {
-      "path": "硬件/PCB/PCB热设计与温度测量.md",
-      "role": "curated-source",
-      "kind": "md",
-      "bytes": 2861,
-      "sha256": "a2e9d9a726fbddf26492b2237980d87a0b58b627254707ca1ea6dd463d66b713",
-      "status": "needs-review",
-      "note": "由PCB设计秘籍按主题整理；来源缺图，具体器件/测试条件需按当前资料核验。"
-    },
-    {
-      "path": "硬件/PCB/电源抗扰与ADC噪声预算.md",
-      "role": "curated-source",
-      "kind": "md",
-      "bytes": 2737,
-      "sha256": "bb009dd61995fa65f606689521b09d178344668137f5c2830f3a91416035a107",
-      "status": "needs-review",
-      "note": "由PCB设计秘籍按主题整理；来源缺图，具体器件/测试条件需按当前资料核验。"
-    },
-    {
-      "path": "硬件/PCB/封装返修与装联验证.md",
-      "role": "curated-source",
-      "kind": "md",
-      "bytes": 1922,
-      "sha256": "4c559fd382fb0012cba83aeee0985b858ad744ff063c6792d471ed55655a3c99",
-      "status": "needs-review",
-      "note": "由PCB设计秘籍按主题整理；来源缺图，具体器件/测试条件需按当前资料核验。"
     }
   ],
   "retired_items": [

@@ -4,7 +4,7 @@ type: datasheet
 status: needs-review
 updated: 2026-09-18
 sources: [硬件/原理/芯片手册/存储器.md]
-tags: [芯片手册, DRAM, LPDDR4, K4F8E304HB-MGCJ, Samsung, 三星, 200-FBGA]
+tags: [嵌入式硬件, 芯片手册, K4F8E304HB-MGCJ, DRAM, LPDDR4, Samsung]
 ---
 
 # K4F8E304HB-MGCJ

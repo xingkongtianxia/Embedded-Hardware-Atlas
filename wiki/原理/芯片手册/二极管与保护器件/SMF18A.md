@@ -1,8 +1,8 @@
 ---
 title: SMF18A
 type: datasheet
-status: reviewed
-updated: 2026-08-23
+status: needs-review
+updated: 2026-11-21
 sources: [硬件/原理/芯片手册/二极管与保护器件.md]
 tags: [嵌入式硬件, TVS, SMF18A, EMC, 保护]
 ---
@@ -22,3 +22,6 @@ SMF18A 是单向 18 V TVS，SOD-123FL 封装，200 W（10/1000 μs）峰值脉�
 - [[wiki/原理/芯片手册/二极管与保护器件/SMDJ40CA|SMDJ40CA]]
 - [[wiki/PCB/连接器保护与EMC模块|连接器、保护与 EMC 模块]]
 - [[wiki/原理/EMC|EMC]]
+
+## 来源变更记录（2026-11-21）
+来源 `硬件/原理/芯片手册/二极管与保护器件.md` 的 Git 内容变更日期为 2026-11-21，晚于原页面更新时间 2026-08-23；本轮退回待复核，未将日期更新视为事实核验。

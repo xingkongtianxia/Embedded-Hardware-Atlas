@@ -4,7 +4,7 @@ type: datasheet
 status: needs-review
 updated: 2026-09-18
 sources: [硬件/原理/芯片手册/蓝牙与无线.md]
-tags: [芯片手册, 天线, IPEX, BWIPX-1-001E, 蝙蝠无线, RF连接器, U.FL]
+tags: [嵌入式硬件, 芯片手册, BWIPX-1-001E, 天线, IPEX, 蝙蝠无线]
 ---
 
 # BWIPX-1-001E

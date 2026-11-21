@@ -4,7 +4,7 @@ type: principle
 status: needs-review
 updated: 2026-11-18
 sources: [硬件/原理/线性稳压与电源测量补充.md]
-tags: [LDO, 稳定性, 勘误]
+tags: [嵌入式硬件, LDO, 稳定性, 勘误]
 ---
 
 # LDO稳定性与压差勘误

@@ -4,7 +4,7 @@ type: datasheet
 status: needs-review
 updated: 2026-09-18
 sources: [硬件/原理/芯片手册/蓝牙与无线.md]
-tags: [芯片手册, WiFi模块, TL8189FQA, RTL8189FTV, SDIO, Trolink, 创凌智联, 802.11n]
+tags: [嵌入式硬件, 芯片手册, TL8189FQA, WiFi模块, RTL8189FTV, SDIO]
 ---
 
 # TL8189FQA

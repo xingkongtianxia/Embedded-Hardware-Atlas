@@ -3,8 +3,8 @@ title: DW01A
 type: datasheet
 status: needs-review
 updated: 2026-09-19
-sources: [硬件/原理/芯片手册/电源管理.md]
-tags: [芯片手册, 锂电池保护, DW01A, 富满电子, 过充, 过放, 过流, SOT23-6]
+sources: [硬件/原理/芯片手册/电源管理.md, 硬件/原理/芯片手册/电源管理-01.md, 硬件/原理/芯片手册/电源管理-02.md, 硬件/原理/芯片手册/电源管理-03.md]
+tags: [嵌入式硬件, 芯片手册, DW01A, 锂电池保护, 富满电子, 过充]
 ---
 
 # DW01A

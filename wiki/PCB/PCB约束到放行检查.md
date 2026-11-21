@@ -3,8 +3,8 @@ title: PCB约束到放行检查
 type: pcb-method
 status: needs-review
 updated: 2026-11-20
-sources: [硬件/PCB/PCB约束与放行.md, 硬件/PCB/PCB通用工程方法.md, 硬件/PCB/封装返修与装联验证.md]
-tags: [PCB, 工程流程, SI, PI, DFM, DFT]
+sources: [硬件/PCB/PCB约束与放行.md, 硬件/PCB/PCB通用工程方法.md, 硬件/PCB/封装返修与装联验证.md, 硬件/PCB/PCB通用工程方法-01.md, 硬件/PCB/PCB通用工程方法-02.md, 硬件/PCB/PCB通用工程方法-03.md]
+tags: [嵌入式硬件, PCB, 工程流程, SI, PI, DFM]
 ---
 
 # PCB约束到放行检查

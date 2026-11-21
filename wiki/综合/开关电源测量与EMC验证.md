@@ -4,7 +4,7 @@ type: synthesis
 status: needs-review
 updated: 2026-11-18
 sources: [硬件/原理/开关电源拓扑与验证.md, 硬件/PCB/电机驱动布局与热设计.md]
-tags: [电源, 测量, EMC, 验证, 待核验]
+tags: [嵌入式硬件, 电源, 测量, EMC, 验证]
 ---
 
 # 开关电源测量与EMC验证

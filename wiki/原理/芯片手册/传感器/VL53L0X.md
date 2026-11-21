@@ -3,8 +3,8 @@ title: VL53L0X
 type: datasheet
 status: needs-review
 updated: 2026-10-09
-sources: [硬件/原理/芯片手册/传感器.md]
-tags: [芯片手册, ToF, 激光测距, VL53L0X, ST, 飞行时间, I2C, LGA12]
+sources: [硬件/原理/芯片手册/传感器.md, 硬件/原理/芯片手册/传感器-01.md, 硬件/原理/芯片手册/传感器-02.md]
+tags: [嵌入式硬件, 芯片手册, VL53L0X, ToF, 激光测距, ST]
 ---
 
 # VL53L0X

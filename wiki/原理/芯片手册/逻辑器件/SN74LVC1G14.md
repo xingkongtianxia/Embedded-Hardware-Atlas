@@ -4,7 +4,7 @@ type: datasheet
 status: needs-review
 updated: 2026-09-18
 sources: [硬件/原理/芯片手册/逻辑器件.md]
-tags: [芯片手册, 逻辑器件, 施密特触发, 反相器, SN74LVC1G14, TI, LVC]
+tags: [嵌入式硬件, 芯片手册, SN74LVC1G14, 逻辑器件, 施密特触发, 反相器]
 ---
 
 # SN74LVC1G14

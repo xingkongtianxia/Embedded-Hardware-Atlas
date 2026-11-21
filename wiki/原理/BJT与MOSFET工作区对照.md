@@ -4,7 +4,7 @@ type: comparison
 status: needs-review
 updated: 2026-11-18
 sources: [硬件/原理/半导体工作区与选型勘误.md]
-tags: [BJT, MOSFET, 工作区]
+tags: [嵌入式硬件, BJT, MOSFET, 工作区]
 ---
 
 # BJT与MOSFET工作区对照

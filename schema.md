@@ -122,3 +122,51 @@ tags: [外来资料, 待核验]
 声学不新增目录：来源条目和笔记放现有 `external/`，知识入口放 `wiki/综合/`。来源条目继续用 `external-resource`，派生笔记用 `concept` 或 `synthesis`，`status: needs-review`；`sources` 填实际 `external/` 来源登记页，正文逐节说明出处和推导边界。所有笔记至少两个有效双链，登记在 `external/index.md`，由根索引和知识网络可达。原始附件/既有获取记录只读，派生笔记可更新。
 
 整理清单 v2 继续只收用户公开原件和分类稿；外来资源不混入该清单，通过来源登记中的URL、日期和响应哈希追溯。HTTP响应哈希不是本地附件哈希，必须标明口径，不暗示已有原文归档。
+
+## 2026-11-21 清单与体检字段
+
+### 整理清单 v2 字段约束
+
+| 字段 | 约束 |
+|---|---|
+| `role` | `raw-source` / `backup-source` / `curated-source` 三选一 |
+| `bytes`、`sha256` | 必须与当前文件一致；漂移时保留 `previous_sha256` 与 `needs-review` |
+| `duplicate_of` | 可选。必须指向现存同哈希文件；目标不存在即为错误 |
+| `note` | 可选。缺附件、文件名与正文不符、用户排版变更等必须写明 |
+| `status` | `available` / `needs-review`；只与字节一致性有关，不代表事实核验通过 |
+| `previous_sha256` | 可选。文件内容变化时保留变化前哈希 |
+| `pre_split_git_head_sha256` | 可选。记录拆分前 HEAD blob 以便追溯；不是内容漂移或复核标记 |
+| `structural_only_sha256`、`content_updated` | 可选。仅为语义不变的章节重组建立基线；当前哈希须匹配，否则检查器按 Git 日期判定时效 |
+
+### 体检脚本必须覆盖的检查
+
+以下检查为硬性要求，`scripts/check_kb.py` 缺失任一项即视为脚本不完整：
+
+| 检查 | 级别 |
+|---|---|
+| frontmatter 六字段、类型/状态枚举、日期格式 | 错误 |
+| `sources` 目标存在且落在允许层 | 错误 |
+| Wiki 双链、Markdown 链接、索引可达、孤儿页 | 错误 |
+| 每页有效出链 ≥ 2 | 错误 |
+| `duplicate_of` 悬空 | 错误 |
+| 同哈希重复原件未登记或未清理 | 错误 |
+| 新增缺附件引用（不在基线内） | 错误 |
+| 已登记缺附件引用 | 告警 |
+| 来源晚于页面 `updated` 的 `reviewed` 页 | 错误 |
+| 重复 `title`、目录状态与目标不符、`-N`/`-N-续` 同标题 | 错误 |
+| 超 200 行 Wiki 页、超 400 行分类稿 | 错误 |
+| 标签缺失主题标签、超过 6 个、使用禁用泛标签 | 错误 |
+| 私人路径进入 Git 索引、公开页链接私人记录 | 错误 |
+
+### 附件缺口基线
+
+`journal/attachments-baseline.json` 记录已登记缺图：键为原始文件相对路径，值为 `{count, reason, since}`。体检时以该文件为基线，只有新增缺图才报错；基线内缺图汇总为单条告警，并在体检报告中列出前若干项。
+
+## 2026-11-21 来源语义、标题与状态标注
+
+- 来源时效按 Git 最后内容提交日期判断；暂存/工作树与 `HEAD` 不同时按当天处理，未跟踪来源回退至文件修改时间。
+- 纯结构拆分可登记 `structural_only_sha256` 与 `content_updated`。检查器只在当前 SHA 与结构哈希完全一致时采用内容日期；正文改变后自动回到 Git 日期门禁。
+- `pre_split_git_head_sha256` 仅用于回溯拆分前的 Git blob，不能代替 `previous_sha256`；只有实际内容漂移才保留 `previous_sha256`。
+- `reviewed` 页的来源日期晚于页面 `updated` 是错误；只改时间戳或状态不能代替内容核验。
+- Wiki `title` 全库唯一。导航条目中显示的 `seed` / `reviewed` / `needs-review` 必须与目标 frontmatter 一致。
+- 第二套知识库扫描检查 `Documents`、`Desktop` 及唯一根目录所在盘二级目录；发现第二个同时含 `index.md` 与 `wiki/` 的目录时阻止通过检查。

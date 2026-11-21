@@ -3,8 +3,8 @@ title: PMW3901MB
 type: datasheet
 status: needs-review
 updated: 2026-10-09
-sources: [硬件/原理/芯片手册/传感器.md]
-tags: [芯片手册, 光流, 光学导航, PMW3901MB, PixArt, 飞控, SPI, COB]
+sources: [硬件/原理/芯片手册/传感器.md, 硬件/原理/芯片手册/传感器-01.md, 硬件/原理/芯片手册/传感器-02.md]
+tags: [嵌入式硬件, 芯片手册, PMW3901MB, 光流, 光学导航, PixArt]
 ---
 
 # PMW3901MB

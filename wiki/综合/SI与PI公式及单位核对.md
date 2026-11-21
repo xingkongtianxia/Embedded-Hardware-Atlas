@@ -4,7 +4,7 @@ type: synthesis
 status: needs-review
 updated: 2026-11-08
 sources: [硬件/原理/基础公式与算例勘误.md, 硬件/PCB/经验规则与验证边界勘误.md]
-tags: [勘误, SI, PI, 阻抗, 单位, 验证]
+tags: [嵌入式硬件, 勘误, SI, PI, 阻抗, 单位]
 ---
 
 # SI与PI公式及单位核对

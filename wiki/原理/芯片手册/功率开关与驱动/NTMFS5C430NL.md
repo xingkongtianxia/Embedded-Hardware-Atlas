@@ -1,8 +1,8 @@
 ---
 title: NTMFS5C430NL
 type: datasheet
-status: reviewed
-updated: 2026-08-23
+status: needs-review
+updated: 2026-11-21
 sources: [硬件/原理/芯片手册/功率开关与驱动.md]
 tags: [嵌入式硬件, MOSFET, NTMFS5C430NL, 功率器件]
 ---
@@ -22,3 +22,6 @@ NTMFS5C430NL 是 40 V 单 N 沟道功率 MOSFET，5 x 6 mm 小型封装。数据
 - [[wiki/原理/芯片手册/功率开关与驱动/FD6288Q|FD6288Q]]
 - [[wiki/原理/芯片手册/二极管与保护器件/SMDJ40CA|SMDJ40CA]]
 - [[wiki/PCB/电源模块|电源模块]]
+
+## 来源变更记录（2026-11-21）
+来源 `硬件/原理/芯片手册/功率开关与驱动.md` 的 Git 内容变更日期为 2026-11-15，晚于原页面更新时间 2026-08-23；本轮退回待复核，未将日期更新视为事实核验。

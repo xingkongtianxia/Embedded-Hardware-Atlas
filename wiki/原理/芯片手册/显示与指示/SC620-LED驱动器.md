@@ -4,7 +4,7 @@ type: datasheet
 status: needs-review
 updated: 2026-10-21
 sources: [硬件/原理/芯片手册/显示与指示.md]
-tags: [芯片手册, 待核验]
+tags: [嵌入式硬件, 芯片手册, SC620-LED驱动器]
 ---
 
 # SC620-LED驱动器

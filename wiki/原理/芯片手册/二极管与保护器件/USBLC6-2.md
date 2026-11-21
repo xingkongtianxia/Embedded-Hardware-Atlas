@@ -4,7 +4,7 @@ type: datasheet
 status: needs-review
 updated: 2026-09-22
 sources: [硬件/原理/芯片手册/二极管与保护器件.md]
-tags: [芯片手册, ESD, USB, USBLC6-2, 高速接口保护, ST]
+tags: [嵌入式硬件, 芯片手册, USBLC6-2, ESD, USB, 高速接口保护]
 ---
 
 # USBLC6-2
