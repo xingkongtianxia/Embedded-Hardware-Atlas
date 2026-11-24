@@ -4,7 +4,7 @@ type: external-resource
 status: needs-review
 updated: 2026-11-07
 sources: []
-tags: [外来资料, 声学, 频响, 指向性, 待核验]
+tags: [外来资料, 声学, 频响, 指向性]
 ---
 
 # 扬声器自由场与指向性：Klippel NFS

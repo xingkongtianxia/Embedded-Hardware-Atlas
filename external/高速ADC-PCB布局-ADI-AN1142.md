@@ -4,7 +4,7 @@ type: external-resource
 status: needs-review
 updated: 2026-09-13
 sources: []
-tags: [外来资料, 高速PCB, ADC, 回流, 待核验]
+tags: [外来资料, 高速PCB, ADC, 回流]
 ---
 
 # ADI AN-1142 高速 ADC PCB 布局布线技巧

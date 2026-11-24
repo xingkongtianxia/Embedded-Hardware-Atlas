@@ -23,6 +23,7 @@ PRIVATE = ('硬件/私人备份/', 'journal/daily/', 'journal/planning/',
 WIKI_TYPES = {'principle', 'datasheet', 'pcb-module', 'pcb-method', 'concept',
               'comparison', 'synthesis', 'source-map'}
 SOURCE_TYPES = {'principle-source', 'datasheet-source', 'pcb-source', 'pcb-method'}
+EXTERNAL_TYPES = {'external-resource', 'concept', 'synthesis', 'source-map'}
 STATUSES = {'seed', 'reviewed', 'needs-review'}
 REQUIRED = {'title', 'type', 'status', 'updated', 'sources', 'tags'}
 GENERIC_TAGS = {'Wiki子主题', 'Wiki条目', '新增资料', '待核验'}
@@ -31,10 +32,47 @@ FORBIDDEN_TAGS = GENERIC_TAGS - {'嵌入式硬件'}
 WIKI_LINE_LIMIT = 200
 CURATED_LINE_LIMIT = 400
 MAX_TAGS = 6
+LARGE_FILE_WARN_BYTES = 10 * 1024 * 1024
 ATTACH_BASELINE = 'journal/attachments-baseline.json'
 ATTACHMENT_WARNING = re.compile(r'图缺失|缺图|图片缺失|附件缺失|仅文本可用')
 ATTACHMENT_LINK = re.compile(r'!\[\[([^\]\n]+)\]\]|!\[[^\]\n]*\]\(([^)\n]+)\)')
 PRIORITY_TOPICS = re.compile(r'锂电|电池保护|充电|高压|市电|电源路径|反接|浪涌|隔离|ESD|上电|启动|复位', re.I)
+EPHEMERAL_CNKI_URL = re.compile(r'https?://kns\.cnki\.net/[^\s)]*\?[^\s)]*\bv=')
+
+
+def configure_stdio():
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, 'reconfigure'):
+            try:
+                stream.reconfigure(encoding='utf-8', errors='replace')
+            except OSError:
+                pass
+
+
+def validate_external_page(path, body):
+    page_errors = []
+    fm = fields(body)
+    if not REQUIRED.issubset(fm):
+        page_errors.append(['external-frontmatter', path, sorted(REQUIRED - fm.keys())])
+        return page_errors
+    typ, status = fm['type'], fm['status']
+    if typ not in EXTERNAL_TYPES or status not in STATUSES:
+        page_errors.append(['external-enum', path, typ, status])
+    if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', fm['updated']):
+        page_errors.append(['external-updated-date', path])
+    try:
+        page_tags = values(fm['tags'])
+    except ValueError as exc:
+        page_errors.append(['external-list-format', path, str(exc)])
+        page_tags = []
+    if len(page_tags) > MAX_TAGS:
+        page_errors.append(['external-too-many-tags', path, len(page_tags)])
+    forbidden = sorted(set(page_tags) & FORBIDDEN_TAGS)
+    if forbidden:
+        page_errors.append(['external-generic-tags', path, forbidden])
+    if EPHEMERAL_CNKI_URL.search(visible_markdown(body)):
+        page_errors.append(['external-ephemeral-url', path])
+    return page_errors
 
 
 def private(path):
@@ -126,6 +164,7 @@ def find_missing_attachments(path, body, baseline, resolve_target):
 
 
 def main():
+    configure_stdio()
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--staged', action='store_true')
     parser.add_argument('--json', type=Path)
@@ -138,6 +177,10 @@ def main():
     for path in sorted(indexed):
         if private(path):
             errors.append(['private-tracked', path])
+        if path.startswith('硬件/_整理工作区/'):
+            warnings.append(['workspace-scratch-tracked', path])
+        if re.fullmatch(r'\.obsidian/plugins/[^/]+/(?:data\.json|obsidian_askpass\.sh)', path):
+            warnings.append(['obsidian-plugin-state-tracked', path])
     if args.staged:
         paths = indexed
     else:
@@ -210,12 +253,16 @@ def main():
     curated = sorted(p for p in paths if p.startswith(('硬件/原理/', '硬件/PCB/'))
                      and p.endswith('.md'))
     models = sorted(p for p in paths if p.startswith('思维模型库/') and p.endswith('.md'))
+    externals = sorted(p for p in paths if p.startswith('external/') and p.endswith('.md')
+                       and PurePosixPath(p).name != 'README.md')
     titles = defaultdict(list)
     stale_reviewed = []
     source_change_dates = {}
-    inbound = Counter(); content_inbound = Counter(); outlinks = {}; size = []
+    inbound = Counter(); content_inbound = Counter(); outlinks = {}; near_size = []; over_size = []
     tags = Counter(); statuses = Counter(); source_dependencies = defaultdict(list)
     review_queue = []
+    for path in externals:
+        errors.extend(validate_external_page(path, text(path)))
     for path in pages + curated + models:
         body = text(path); fm = fields(body)
         if not REQUIRED.issubset(fm):
@@ -237,6 +284,8 @@ def main():
             errors.append(['list-format', path, str(exc)]); continue
         tags.update(page_tags)
         if path in pages:
+            if ' ' in PurePosixPath(path).name:
+                errors.append(['wiki-filename-space', path])
             titles[fm['title']].append(path)
             if len(page_tags) > MAX_TAGS:
                 errors.append(['too-many-tags', path, len(page_tags)])
@@ -318,10 +367,11 @@ def main():
         line_count = len(body.splitlines())
         if path in pages and line_count > WIKI_LINE_LIMIT:
             errors.append(['wiki-too-long', path, line_count])
+            over_size.append([path, line_count])
         elif path in curated and line_count > CURATED_LINE_LIMIT:
             errors.append(['curated-too-long', path, line_count])
-        if path in pages and line_count > WIKI_LINE_LIMIT - 20:
-            size.append([path, line_count])
+        if path in pages and WIKI_LINE_LIMIT - 20 < line_count <= WIKI_LINE_LIMIT:
+            near_size.append([path, line_count])
 
     for finding in stale_reviewed:
         errors.append(['stale-reviewed', *finding])
@@ -369,6 +419,8 @@ def main():
         if private(path) or path not in paths:
             errors.append(['manifest-path', path]); continue
         blob = data(path); digest = hashlib.sha256(blob).hexdigest()
+        if len(blob) > LARGE_FILE_WARN_BYTES:
+            warnings.append(['large-tracked-file', path, len(blob)])
         if len(blob) != item['bytes'] or digest != item['sha256']:
             errors.append(['manifest-integrity', path])
         if item['role'] != 'curated-source':
@@ -433,7 +485,8 @@ def main():
         curated_pages=len(curated), model_pages=len(models), wiki_statuses=dict(statuses),
         valid_links=sum(map(len, outlinks.values())), reachable_wiki_pages=sum(p in reached for p in pages),
         private_tracked=sum(private(p) for p in indexed), manifest_items=len(manifest['items']),
-        manifest_roles=dict(roles), identical_raw_groups=duplicates, over_200_lines=size,
+        manifest_roles=dict(roles), identical_raw_groups=duplicates,
+        over_200_lines=over_size, near_200_lines=near_size,
         navigation_only_inbound=[p for p in pages if not content_inbound[p]],
         other_knowledge_roots=other_knowledge_roots(),
         missing_attachments=missing_attachments,
@@ -449,7 +502,7 @@ def main():
         write_csv(args.audit_dir / 'review_queue.csv', ('priority', 'path', 'status', 'updated', 'sources', 'reason'),
                   sorted(review_queue))
     compact = {k:v for k,v in result.items() if k not in {'errors','warnings','tags','navigation_only_inbound','identical_raw_groups','near_wiki_limit','missing_attachments','stale_reviewed'}}
-    compact.update(errors=len(errors), warnings=len(warnings), near_wiki_limit=len(size),
+    compact.update(errors=len(errors), warnings=len(warnings), near_wiki_limit=len(near_size),
                    navigation_only_inbound=len(result['navigation_only_inbound']), duplicate_raw_groups=len(duplicates),
                    missing_attachment_references=len(missing_attachments), stale_reviewed_pages=len(stale_reviewed))
     print(json.dumps(compact, ensure_ascii=False, indent=2))

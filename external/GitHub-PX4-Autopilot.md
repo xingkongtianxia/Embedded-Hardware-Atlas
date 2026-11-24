@@ -4,7 +4,7 @@ type: external-resource
 status: needs-review
 updated: 2026-09-26
 sources: []
-tags: [外来资料, GitHub, 无人机, 飞控, STM32, 待核验]
+tags: [外来资料, GitHub, 无人机, 飞控, STM32]
 ---
 
 # GitHub PX4 Autopilot

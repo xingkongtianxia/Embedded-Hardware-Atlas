@@ -40,5 +40,39 @@ class AttachmentAuditTests(unittest.TestCase):
         self.assertFalse(check_kb.has_missing_attachment_notice('附件测试过程未执行。'))
 
 
+class ExternalValidationTests(unittest.TestCase):
+    def test_valid_external_page_passes(self):
+        body = (
+            '---\n'
+            'title: 示例外来资料\n'
+            'type: external-resource\n'
+            'status: needs-review\n'
+            'updated: 2026-11-24\n'
+            'sources: []\n'
+            'tags: [外来资料, 电源, 选型]\n'
+            '---\n\n'
+            '# 示例外来资料\n'
+        )
+        self.assertEqual(check_kb.validate_external_page('external/demo.md', body), [])
+
+    def test_rejects_forbidden_tags_too_many_tags_and_ephemeral_cnki_url(self):
+        body = (
+            '---\n'
+            'title: 违规外来资料\n'
+            'type: external-resource\n'
+            'status: needs-review\n'
+            'updated: 2026-11-24\n'
+            'sources: []\n'
+            'tags: [外来资料, A, B, C, D, E, 待核验]\n'
+            '---\n\n'
+            '- https://kns.cnki.net/kcms2/article/abstract?v=abcdef&uniplatform=NZKPT\n'
+        )
+        errors = check_kb.validate_external_page('external/bad.md', body)
+        kinds = [e[0] for e in errors]
+        self.assertIn('external-too-many-tags', kinds)
+        self.assertIn('external-generic-tags', kinds)
+        self.assertIn('external-ephemeral-url', kinds)
+
+
 if __name__ == '__main__':
     unittest.main()

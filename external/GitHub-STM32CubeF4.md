@@ -4,7 +4,7 @@ type: external-resource
 status: needs-review
 updated: 2026-09-26
 sources: []
-tags: [外来资料, GitHub, STM32F4, HAL, LL, 待核验]
+tags: [外来资料, GitHub, STM32F4, HAL, LL]
 ---
 
 # GitHub STMicroelectronics STM32CubeF4

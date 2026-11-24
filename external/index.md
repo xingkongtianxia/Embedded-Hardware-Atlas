@@ -4,7 +4,7 @@ type: source-map
 status: needs-review
 updated: 2026-11-07
 sources: []
-tags: [外来资料, 导航, 待核验, 毕设, 声学]
+tags: [外来资料, 导航, 毕设, 声学]
 ---
 
 # 外来资源分类目录

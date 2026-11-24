@@ -4,7 +4,7 @@ type: external-resource
 status: needs-review
 updated: 2026-09-26
 sources: []
-tags: [外来资料, GitHub, RP2040, RP2350, SDK, 待核验]
+tags: [外来资料, GitHub, RP2040, RP2350, SDK]
 ---
 
 # GitHub Raspberry Pi pico-sdk

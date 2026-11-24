@@ -4,7 +4,7 @@ type: concept
 status: needs-review
 updated: 2026-11-07
 sources: [external/扬声器自由场与指向性-Klippel-NFS.md, external/脉冲响应与时间窗-REW.md, external/扬声器测量与校准-REW.md]
-tags: [外来笔记, 声学, 频响, 指向性, 房间声学, EQ, 待核验]
+tags: [外来笔记, 声学, 频响, 指向性, 房间声学, EQ]
 ---
 
 # 扬声器频响：指向性、房间与EQ边界

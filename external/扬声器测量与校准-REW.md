@@ -4,7 +4,7 @@ type: external-resource
 status: needs-review
 updated: 2026-11-07
 sources: []
-tags: [外来资料, 声学, 频响, REW, 校准, 待核验]
+tags: [外来资料, 声学, 频响, REW, 校准]
 ---
 
 # 扬声器测量与校准：REW

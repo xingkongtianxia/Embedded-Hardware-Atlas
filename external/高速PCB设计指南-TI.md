@@ -4,7 +4,7 @@ type: external-resource
 status: needs-review
 updated: 2026-09-13
 sources: []
-tags: [外来资料, 高速PCB, SI, 电源完整性, 待核验]
+tags: [外来资料, 高速PCB, SI, 电源完整性]
 ---
 
 # TI 高速 PCB 布局指南

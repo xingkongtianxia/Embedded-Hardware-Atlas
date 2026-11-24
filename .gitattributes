@@ -13,3 +13,6 @@
 "硬件/PCB/**" text eol=lf
 /.githooks/* text eol=lf
 /scripts/*.py text eol=lf
+# EDA project archives and compressed assets are binary.
+*.epro2 binary
+*.zip binary

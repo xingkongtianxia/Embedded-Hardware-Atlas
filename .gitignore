@@ -51,3 +51,9 @@ __pycache__/
 /.dsh-vision-router/
 /.easyeda/
 /.tools/
+# 第三方插件运行配置与凭据辅助脚本（仅本地保存，避免误提交 API Key 或本机路径）
+.obsidian/plugins/*/data.json
+.obsidian/plugins/*/obsidian_askpass.sh
+
+# 整理工作区临时中间产物（非正式知识库来源）
+/硬件/_整理工作区/

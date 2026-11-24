@@ -4,7 +4,7 @@ type: external-resource
 status: needs-review
 updated: 2026-09-26
 sources: []
-tags: [外来资料, GitHub, FOC, BLDC, 电机控制, 待核验]
+tags: [外来资料, GitHub, FOC, BLDC, 电机控制]
 ---
 
 # GitHub SimpleFOC Arduino-FOC
