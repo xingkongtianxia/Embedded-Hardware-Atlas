@@ -1,6 +1,6 @@
 """Validate the current public knowledge base without reading private directories.
 
-Run: python scripts/check_kb.py [--staged] [--json report.json]
+Run: python scripts/check_kb.py [--staged] [--json report.json] [--audit-dir audit]
 Only Python's standard library is required. --staged verifies index blobs,
 including hashes, so working-tree contents cannot hide a bad staged commit.
 """
@@ -32,6 +32,9 @@ WIKI_LINE_LIMIT = 200
 CURATED_LINE_LIMIT = 400
 MAX_TAGS = 6
 ATTACH_BASELINE = 'journal/attachments-baseline.json'
+ATTACHMENT_WARNING = re.compile(r'图缺失|缺图|图片缺失|附件缺失|仅文本可用')
+ATTACHMENT_LINK = re.compile(r'!\[\[([^\]\n]+)\]\]|!\[[^\]\n]*\]\(([^)\n]+)\)')
+PRIORITY_TOPICS = re.compile(r'锂电|电池保护|充电|高压|市电|电源路径|反接|浪涌|隔离|ESD|上电|启动|复位', re.I)
 
 
 def private(path):
@@ -88,10 +91,45 @@ def values(value):
             skipinitialspace=True)) if x.strip()]
 
 
+def write_csv(path, columns, rows):
+    with path.open('w', encoding='utf-8-sig', newline='') as stream:
+        writer = csv.writer(stream, lineterminator='\n')
+        writer.writerow(columns)
+        writer.writerows(rows)
+
+
+def visible_markdown(text):
+    text = re.sub(r'^```.*?^```[^\n]*',
+                  lambda match: '\n' * match.group().count('\n'),
+                  text, flags=re.M | re.S)
+    return re.sub(r'`[^`\n]+`', '', text)
+
+
+def has_missing_attachment_notice(body):
+    return bool(ATTACHMENT_WARNING.search(body))
+
+
+def find_missing_attachments(path, body, baseline, resolve_target):
+    visible = visible_markdown(body)
+    findings = []
+    for image in ATTACHMENT_LINK.finditer(visible):
+        wiki_image, markdown_image = image.groups()
+        target = (wiki_image or markdown_image).strip('<>')
+        if re.match(r'^[a-zA-Z][a-zA-Z0-9+.-]*:', target):
+            continue
+        if resolve_target(target) is not None:
+            continue
+        line = visible.count('\n', 0, image.start()) + 1
+        reason = baseline.get(path, {}).get('reason', '未登记，需确认')
+        findings.append([path, line, target, reason])
+    return findings
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--staged', action='store_true')
     parser.add_argument('--json', type=Path)
+    parser.add_argument('--audit-dir', type=Path, help='write attachment and review queue CSVs')
     args = parser.parse_args()
     indexed = set(git('ls-files', '-z').decode('utf-8').strip('\0').split('\0'))
     errors, warnings = [], []
@@ -140,6 +178,8 @@ def main():
         return data(path).decode('utf-8-sig')
 
     source_manifest = json.loads(text('硬件/整理清单.json'))
+    attachment_baseline = (json.loads(text(ATTACH_BASELINE)).get('originals', {})
+                           if ATTACH_BASELINE in paths else {})
     structural_source_dates = {}
     for item in source_manifest.get('items', []):
         path = item.get('path', '')
@@ -175,6 +215,7 @@ def main():
     source_change_dates = {}
     inbound = Counter(); content_inbound = Counter(); outlinks = {}; size = []
     tags = Counter(); statuses = Counter(); source_dependencies = defaultdict(list)
+    review_queue = []
     for path in pages + curated + models:
         body = text(path); fm = fields(body)
         if not REQUIRED.issubset(fm):
@@ -208,8 +249,15 @@ def main():
             statuses[status] += 1
             if not sources:
                 errors.append(['empty-wiki-sources', path])
+            if args.audit_dir and status == 'needs-review':
+                priority_topic = PRIORITY_TOPICS.search(' '.join([path, fm['title'], *page_tags]))
+                priority = 'P1' if priority_topic else 'P2'
+                reason = priority_topic.group() if priority_topic else '常规来源核验'
+                review_queue.append([priority, path, status, fm['updated'], ' | '.join(sources), reason])
         for source in sources:
             target = resolve(source, str(PurePosixPath(path).parent))
+            if path in curated and target in attachment_baseline and not has_missing_attachment_notice(body):
+                errors.append(['missing-attachment-notice', path, target])
             if target is None:
                 # Unavailable historical evidence remains explicit, not a valid source.
                 warnings.append(['unavailable-source', path, source]) if path in curated else errors.append(['source-missing', path, source])
@@ -339,20 +387,21 @@ def main():
         if path not in manifested: errors.append(['unregistered-source', path])
     # Public pages cannot link to private records, even if they still exist locally.
     leaks = re.compile(r'(?:\[\[|\]\()(?:(?:\./)*)(?:log(?:\.md)?(?:[|#\])])|journal/(?:daily|planning)/|硬件/私人备份/|工作日志/|规划库/)')
-    missing_attachments = []; markdown_links = []
+    missing_attachments = []; attachment_locations = []; markdown_links = []
     for path in sorted(paths):
         if path.endswith('.md') and not path.startswith(('硬件/原始备份/', 'Imported/')):
             if leaks.search(text(path)): errors.append(['private-navigation', path])
         if not path.endswith('.md') or path.startswith(('Imported/', 'Excalidraw/')):
             continue
-        body = re.sub(r'^```.*?^```[^\n]*', '', text(path), flags=re.M | re.S)
-        body = re.sub(r'`[^`\n]+`', '', body)
-        for wiki_image, md_image in re.findall(r'!\[\[([^\]\n]+)\]\]|!\[[^\]\n]*\]\(([^)\n]+)\)', body):
-            target = (wiki_image or md_image).strip('<>')
-            if re.match(r'^[a-zA-Z][a-zA-Z0-9+.-]*:', target):
-                continue
-            if resolve(target, str(PurePosixPath(path).parent)) is None:
-                missing_attachments.append([path, target])
+        original_body = text(path)
+        body = visible_markdown(original_body)
+        page_findings = find_missing_attachments(
+            path, original_body, attachment_baseline,
+            lambda target: resolve(target, str(PurePosixPath(path).parent)))
+        for source, line, target, reason in page_findings:
+            missing_attachments.append([source, target])
+            if args.audit_dir:
+                attachment_locations.append([source, line, target, reason])
         if not path.startswith('硬件/原始备份/'):
             for target in re.findall(r'(?<!!)\[[^\]\n]*\]\(([^)\n]+)\)', body):
                 if not target or target.startswith('#') or re.match(r'^[a-zA-Z][a-zA-Z0-9+.-]*:', target):
@@ -361,15 +410,11 @@ def main():
                 directory_exists = any(p.startswith(folder.rstrip('/') + '/') for p in paths)
                 if not directory_exists and resolve(target.strip('<>'), str(PurePosixPath(path).parent)) is None:
                     markdown_links.append([path, target])
-    baseline_path = ROOT / ATTACH_BASELINE
-    baseline = {}
-    if ATTACH_BASELINE in paths:
-        baseline = json.loads(text(ATTACH_BASELINE)).get('originals', {})
-    else:
+    if ATTACH_BASELINE not in paths:
         warnings.append(['attachment-baseline-missing', ATTACH_BASELINE])
     attachment_counts = Counter(x[0] for x in missing_attachments)
     for path, count in sorted(attachment_counts.items()):
-        allowed = baseline.get(path, {}).get('count', 0)
+        allowed = attachment_baseline.get(path, {}).get('count', 0)
         if count > allowed:
             errors.append(['missing-attachments-new', path, count, allowed])
         else:
@@ -397,6 +442,12 @@ def main():
     if args.json:
         args.json.parent.mkdir(parents=True, exist_ok=True)
         args.json.write_text(json.dumps(result, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+    if args.audit_dir and not errors:
+        args.audit_dir.mkdir(parents=True, exist_ok=True)
+        write_csv(args.audit_dir / 'missing_attachments.csv', ('source', 'line', 'target', 'reason'),
+                  attachment_locations)
+        write_csv(args.audit_dir / 'review_queue.csv', ('priority', 'path', 'status', 'updated', 'sources', 'reason'),
+                  sorted(review_queue))
     compact = {k:v for k,v in result.items() if k not in {'errors','warnings','tags','navigation_only_inbound','identical_raw_groups','near_wiki_limit','missing_attachments','stale_reviewed'}}
     compact.update(errors=len(errors), warnings=len(warnings), near_wiki_limit=len(size),
                    navigation_only_inbound=len(result['navigation_only_inbound']), duplicate_raw_groups=len(duplicates),

@@ -170,3 +170,9 @@ tags: [外来资料, 待核验]
 - `reviewed` 页的来源日期晚于页面 `updated` 是错误；只改时间戳或状态不能代替内容核验。
 - Wiki `title` 全库唯一。导航条目中显示的 `seed` / `reviewed` / `needs-review` 必须与目标 frontmatter 一致。
 - 第二套知识库扫描检查 `Documents`、`Desktop` 及唯一根目录所在盘二级目录；发现第二个同时含 `index.md` 与 `wiki/` 的目录时阻止通过检查。
+
+## 2026-11-21 公开整改记录模式
+
+`audit/auto_fix_todo.md` 记录已完成、外部证据待补及对应验收条件；`audit/missing_attachments.csv` 固定字段 `source,line,target,reason`；`audit/review_queue.csv` 固定字段 `priority,path,status,updated,sources,reason`。这些是从公开来源生成的维护视图，不是新的事实来源。
+
+缺图分类稿的正文必须显式包含缺图限制。外链检查输出源页、行号、URL、检查时间、HTTP 状态与结果分类，不自动改动归档 URL。带认证或临时参数的 URL 仅登记为需人工访问，不发送到外部检查器。仅获取状态的检查不会改变原有资料的可信度。

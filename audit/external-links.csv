@@ -1,0 +1,25 @@
+﻿source,line,url,status,result
+external/GitHub-PX4-Autopilot.md,14,https://github.com/PX4/PX4-Autopilot,200,ok
+external/GitHub-STM32CubeF4.md,14,https://github.com/STMicroelectronics/STM32CubeF4,200,ok
+external/GitHub-raspberrypi-pico-sdk.md,14,https://github.com/raspberrypi/pico-sdk,200,ok
+external/GitHub-SimpleFOC-Arduino-FOC.md,14,https://github.com/simplefoc/Arduino-FOC,200,ok
+README.md,280,https://github.com/xingkongtianxia,200,ok
+README.md,109,https://github.com/xingkongtianxia/Embedded-Hardware-Atlas.git,200,ok
+README.md,114,https://obsidian.md,200,ok
+external/高速ADC-PCB布局-ADI-AN1142.md,12,https://www.analog.com/media/en/technical-documentation/application-notes/an-1142.pdf,200,ok
+external/ESD协会器件ESD敏感度与系统抗扰边界.md,12,https://www.esda.org/esd-overview/esd-fundamentals/part-5-device-sensitivity-and-testing/,200,ok
+external/高速PCB设计指南-Intel.md,12,https://www.intel.com/content/www/us/en/docs/programmable/683796/current/high-speed-board-design.html,403,access_restricted
+external/扬声器自由场与指向性-Klippel-NFS.md,14,https://www.klippel.de/products/rd-system/modules/nfs-near-field-scanner.html,200,ok
+external/扬声器测量与校准-REW.md,14,https://www.roomeqwizard.com/help/help_en-GB/html/calfiles.html,200,ok
+external/脉冲响应与时间窗-REW.md,14,https://www.roomeqwizard.com/help/help_en-GB/html/graph_impulse.html,200,ok
+external/扬声器测量与校准-REW.md,14,https://www.roomeqwizard.com/help/help_en-GB/html/makingmeasurements.html,200,ok
+README.md,279,https://www.semiee.com/,200,ok
+external/半导小芯-芯片查询工具.md,14,https://www.semiee.com/,200,ok
+external/高速PCB设计指南-TI.md,12,https://www.ti.com/lit/an/szza009/szza009.pdf,200,ok
+,,,,skipped references: 6
+external/第一批优先下载文献-详情页直链.md,11,kns.cnki.net,,query-bearing or access-controlled URL omitted
+external/第一批优先下载文献-详情页直链.md,16,kns.cnki.net,,query-bearing or access-controlled URL omitted
+external/第一批优先下载文献-详情页直链.md,21,kns.cnki.net,,query-bearing or access-controlled URL omitted
+external/第一批优先下载文献-详情页直链.md,26,kns.cnki.net,,query-bearing or access-controlled URL omitted
+external/第一批优先下载文献-详情页直链.md,31,kns.cnki.net,,query-bearing or access-controlled URL omitted
+external/第一批优先下载文献-详情页直链.md,36,kns.cnki.net,,query-bearing or access-controlled URL omitted
