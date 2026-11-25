@@ -1,4 +1,6 @@
 import importlib.util
+import json
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -41,6 +43,10 @@ class AttachmentAuditTests(unittest.TestCase):
 
 
 class ExternalValidationTests(unittest.TestCase):
+    def test_repository_template_passes_external_validator(self):
+        template = (Path(__file__).parents[1] / 'external' / '资源条目模板.md').read_text(encoding='utf-8')
+        self.assertEqual(check_kb.validate_external_page('external/资源条目模板.md', template), [])
+
     def test_valid_external_page_passes(self):
         body = (
             '---\n'
@@ -72,6 +78,23 @@ class ExternalValidationTests(unittest.TestCase):
         self.assertIn('external-too-many-tags', kinds)
         self.assertIn('external-generic-tags', kinds)
         self.assertIn('external-ephemeral-url', kinds)
+
+
+class LocalRootConfigTests(unittest.TestCase):
+    def test_matches_current_repository_root(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / '.kb.local.json').write_text(
+                json.dumps({'root': str(root.resolve())}), encoding='utf-8')
+            self.assertEqual(check_kb.validate_local_root_config(root), [])
+
+    def test_rejects_a_different_repository_root(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / '.kb.local.json').write_text(
+                json.dumps({'root': str(root / 'other')}), encoding='utf-8')
+            errors = check_kb.validate_local_root_config(root)
+            self.assertEqual(errors[0][0], 'local-root-mismatch')
 
 
 if __name__ == '__main__':

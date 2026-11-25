@@ -4,28 +4,34 @@
 
 ```text
 嵌入式/
-|- AGENTS.md                  # 规则手册
-|- rules.md / schema.md       # 硬规则与数据模式
-|- index.md / log.md          # 内容目录与时间线
+|- AGENTS.md                  # 完整维护规则
+|- rules.md / schema.md       # 规则摘要与字段/检查契约
+|- index.md                   # 唯一内容入口
 |- 硬件/
 |  |- 原始备份/               # 用户原件，只读
-|  |- 私人备份/               # 私人所有、仅本地；不公开、不提取为公开知识
+|  |- 私人备份/               # 私人资料，仅本地
 |  |- 原理/                   # 分类有效来源
 |  `- PCB/                    # 分类有效来源
-|- external/                  # 外来资料，只读归档
+|- external/                  # AI 获取的外来资源及派生笔记
 |  `- index.md / 资源条目模板.md
-|- wiki/                      # AI 维护的维基层
-|  |- 原理/
-|  |- PCB/
-|  |- 综合/                   # 跨主题设计决策与比较
-|  `- 来源映射.md
-|- 思维模型库/                 # 元方法层（与 wiki/ 平行的通用思维方法论）
+|- wiki/                      # AI 维护的知识层
+|- 思维模型库/                 # 通用方法层，与 wiki/ 平行
 `- journal/
    |- daily/YYYY-MM-DD.md
    `- planning/current_plan.md
 ```
 
-## 私人资料发布边界
+## 本机根配置
+
+`.kb.local.json` 是被 `.gitignore` 排除的本机配置，格式如下。检查器从自身位置解析仓库根目录，并要求 `root` 与之相同；知识页面和脚本不得写入本机绝对路径。
+
+```json
+{
+  "root": "<当前 Git 仓库根目录的绝对路径>"
+}
+```
+
+## 私人资料边界
 
 `硬件/私人备份/` 不属于公开来源层，必须由根 `.gitignore` 排除。不得登记其文件明细、哈希或内容到公开清单、来源映射、索引及知识页；不得复制到可发布目录规避忽略规则。只有用户另行明确授权后才能读取其内容，发布仍需用户明确授权。
 
@@ -37,12 +43,18 @@
 | `datasheet` | `wiki/原理/芯片手册/` | 器件事实、应用条件、限制与项目确认项。 |
 | `pcb-module` | `wiki/PCB/` | 按功能模块归纳布局、布线、测试和失效模式。 |
 | `pcb-method` | `wiki/PCB/` | 跨模块工程方法、DFM、DFT、发布流程。 |
+| `comparison` | `wiki/综合/` | 对多个器件、方案或条件进行有来源的比较。 |
 | `synthesis` | `wiki/综合/` | 连接多个主题的决策框架、比较、排障路径。 |
-| `source-map` | `wiki/` | 分类稿与维基页的追溯关系。 |
-| `meta-method` | `思维模型库/` | 通用思维方法论（第一性原理、5W2H、MECE 等）；与 `wiki/` 平行，`sources` 通常为空，正文按"是什么/何时用/怎么用/示例/误区/我的规则"组织。 |
-| `external-resource` | `external/` | AI 主动获取的外来资源登记；不直接替代分类有效来源。 |
+| `source-map` | `wiki/` | 分类稿与 Wiki 页的追溯关系。 |
+| `meta-method` | `思维模型库/` | 通用思维方法；不作为硬件来源，正文使用固定六段结构。 |
+| `external-resource` | `external/` | AI 获取的外来来源登记；不直接替代分类有效来源。 |
+| `concept` | `external/` | 基于外来来源形成的概念笔记，须逐节注明出处。 |
+
+外来派生笔记可使用 `concept` 或 `synthesis`；其 `sources` 指向实际外来来源登记页，并保持 `needs-review`，直到结论得到分类有效来源复核。
 
 ## Frontmatter
+
+每个正式页面必须包含以下六个字段。`sources` 使用相对根目录路径；标签最多 6 个，并用于领域、主题或检索，不得使用禁用泛标签。
 
 ```yaml
 ---
@@ -55,124 +67,83 @@ tags: [嵌入式, 主题]
 ---
 ```
 
-`meta-method` 类型的页面示例（用于 `思维模型库/`）：
+允许的 Wiki `type` 为 `principle`、`datasheet`、`pcb-module`、`pcb-method`、`concept`、`comparison`、`synthesis`、`source-map`；`思维模型库/` 使用 `meta-method`，外来资源登记使用 `external-resource`。状态为 `seed`、`reviewed` 或 `needs-review`；分类来源另可使用 `curated`。Wiki 的 `sources` 只指向 `硬件/原理/`、`硬件/PCB/` 或已登记的 `external/` 来源。外来来源主导的硬件结论标为 `needs-review`。
 
-```yaml
----
-title: 第一性原理
-type: meta-method
-status: seed
-updated: 2026-09-05
-sources: []
-tags: [思维, 元方法, 分层=元思维层]
----
-```
+`meta-method` 页面的 `sources` 通常为空；其正文包含“是什么、何时使用、怎么用、示例、常见误区、我的案例与规则”，并包含输入、输出、组合模型和触发词。
 
-`sources` 用相对根目录路径。现阶段 Wiki 正文只可引用 `硬件/原理/` 或 `硬件/PCB/`；外来资料参与结论时，页面需把状态设为 `needs-review` 并写出获取信息和核验需求。`meta-method` 页面是元方法论，不引用硬件原始资料，其 `sources` 字段通常为空，状态以 `seed` 起步并随个人案例积累升至 `reviewed`。AI 访问顺序为判定问题/资料层、选择模型、按需读取、区分事实与推断、输出验证动作、决定沉淀并更新索引日志。`Imported/` 是用户导入资料，不属于 `external/`。
+## 外来资源条目
 
-模型页正文除六个固定段外，统一包含 `输入`、`输出`、`组合模型`、`触发词`，用于 AI 选择方法和检查产出完整性。
-
-`external-resource` 条目示例：
+模板必须保持下列 frontmatter 字段、状态枚举、标签规则与检查器一致：
 
 ```yaml
 ---
 title: 资源名称
 type: external-resource
-status: needs-review
+status: seed
 updated: YYYY-MM-DD
 sources: []
-tags: [外来资料, 待核验]
+tags: [外来资料, 来源登记]
 ---
 ```
 
-正文必须包含：原始 URL、获取日期、作者/机构、官方性、用途、可靠性判断、版本/发布日期、许可/访问限制、文件哈希（如有）、可引用边界、待核验项和相关 Wiki 页面。
+条目正文记录原始 URL、获取日期、作者/机构、官方性、用途、可靠性判断、版本/发布日期、许可/访问限制、可引用边界、相关 Wiki 页面和待核验项。可选本地文件路径使用根相对路径；SHA-256 必须说明对应本地文件还是 HTTP 响应。`待核验` 用状态或正文表达，不作为标签。
 
-## 日志格式
-
-`log.md` 只追加：
-
-```markdown
-## [YYYY-MM-DD] ingest | 简短摘要
-- 变更内容、影响页面、来源和验证结果。
-```
-
-`journal/daily/YYYY-MM-DD.md` 固定为“工作日志”和“下一步计划”两节；后者覆盖更新，不堆积历史版本。
-
-
-## 2026-10-23 私人部分与发布门禁
-
-- 唯一正式知识库始终为 `D:\ai知识库\嵌入式`，维护临时文件不构成第二套知识库。
-- `硬件/私人备份/`、`journal/daily/`（工作日志）、`journal/planning/`（规划库）与根 `log.md` 均为私人部分：仅本地保存，不提交、推送、复制或提取到公开知识页、导航和清单。撤下已跟踪文件时仅使用 `git rm --cached`，保留本地原件。
-- 本次知识维护授权允许追加本地维护记录；不授权将既有私人日志内容转写为公开报告。公开体检报告仅记录知识结构、完整性、来源问题与验证结果，存于 `journal/health-check-*.md`。
-- `.gitignore` 是持续排除规则；提交前还须运行 `python scripts/check_kb.py` 检查 Git 索引，禁止强制添加私人文件。`log.md`、每日工作日志和规划库均不得出现在公开内容链接中。历史已发布提交不会因忽略规则自动消失；未经单独授权不重写远端历史。
-
-## 2026-10-23 来源生命周期与清单口径
-
-- `硬件/芯片数据手册/` 为现存只读原始 PDF 来源层，和 `硬件/原始备份/` 同属用户原件；不要求为 PDF 重复制造备份。不恢复用户主动删除的原件或图片，不移动、不改写现存原件。
-- Wiki 的 `sources` 仍只指向分类有效来源或符合门禁的 `external/`；分类稿的 `sources` 可指向上述现存原件。旧备份被撤下但原件仍在时，按 SHA-256 定位现存路径；同哈希别名不重复建知识页。
-- 整理清单 v2 的 `items` 只登记现存来源（`raw-source` / `backup-source`）及分类稿（`curated-source`），路径相对唯一根目录；`retired_items` 保留完全缺失来源的旧路径与旧哈希，不能计入当前可用来源。
-- 来源发生内容漂移时保留 `previous_sha256` 与 `needs-review`，登记当前哈希只证明当前字节一致，不代表事实内容通过核验。分类稿和受影响 Wiki 必须显式标记待复核。
-- 分类稿可使用 `principle-source`、`datasheet-source`、`pcb-source` 与 `curated` 状态；这些取值不用于 Wiki。Wiki 使用既有类型与 `seed / reviewed / needs-review`。标签按主题和检索用途使用，不将器件型号误报为未知标签。
-
-
-`思维模型库/README.md`为既有模型导航页，使用`synthesis`；其中其余模型页保持`meta-method`。双链最低要求对正式知识页和分类稿执行。
-
-## 2026-11-07 外来笔记模式
-
-声学不新增目录：来源条目和笔记放现有 `external/`，知识入口放 `wiki/综合/`。来源条目继续用 `external-resource`，派生笔记用 `concept` 或 `synthesis`，`status: needs-review`；`sources` 填实际 `external/` 来源登记页，正文逐节说明出处和推导边界。所有笔记至少两个有效双链，登记在 `external/index.md`，由根索引和知识网络可达。原始附件/既有获取记录只读，派生笔记可更新。
-
-整理清单 v2 继续只收用户公开原件和分类稿；外来资源不混入该清单，通过来源登记中的URL、日期和响应哈希追溯。HTTP响应哈希不是本地附件哈希，必须标明口径，不暗示已有原文归档。
-
-## 2026-11-21 清单与体检字段
-
-### 整理清单 v2 字段约束
+## 整理清单 v2
 
 | 字段 | 约束 |
 |---|---|
-| `role` | `raw-source` / `backup-source` / `curated-source` 三选一 |
-| `bytes`、`sha256` | 必须与当前文件一致；漂移时保留 `previous_sha256` 与 `needs-review` |
-| `duplicate_of` | 可选。必须指向现存同哈希文件；目标不存在即为错误 |
-| `note` | 可选。缺附件、文件名与正文不符、用户排版变更等必须写明 |
-| `status` | `available` / `needs-review`；只与字节一致性有关，不代表事实核验通过 |
-| `previous_sha256` | 可选。文件内容变化时保留变化前哈希 |
-| `pre_split_git_head_sha256` | 可选。记录拆分前 HEAD blob 以便追溯；不是内容漂移或复核标记 |
-| `structural_only_sha256`、`content_updated` | 可选。仅为语义不变的章节重组建立基线；当前哈希须匹配，否则检查器按 Git 日期判定时效 |
+| `role` | `raw-source` / `backup-source` / `curated-source` 三选一。 |
+| `bytes`、`sha256` | 必须与当前文件一致；内容漂移时保留 `previous_sha256`。 |
+| `duplicate_of` | 可选，必须指向现存且同哈希文件。 |
+| `note` | 可选；缺附件、文件名与正文不符、用户排版变更等写明原因。 |
+| `status` | `available` / `needs-review`；只说明字节一致性，不代表事实已核验。 |
+| `previous_sha256` | 可选，记录内容变化前的哈希。 |
+| `pre_split_git_head_sha256` | 可选，记录拆分前 HEAD blob，仅用于追溯。 |
+| `structural_only_sha256`、`content_updated` | 可选；证明纯结构拆分未改正文，当前 SHA 必须匹配。 |
 
-### 体检脚本必须覆盖的检查
+`items` 只登记现存来源和分类稿，路径相对知识库根目录；`retired_items` 保存完全缺失来源的旧路径与哈希，不计入当前可用来源。用户原件和分类稿进入整理清单，外来资源使用独立来源登记。
 
-以下检查为硬性要求，`scripts/check_kb.py` 缺失任一项即视为脚本不完整：
+## 健康检查契约
+
+`scripts/check_kb.py` 必须检查以下项目。新增缺附件报错；已登记缺附件作为告警保留。
 
 | 检查 | 级别 |
 |---|---|
 | frontmatter 六字段、类型/状态枚举、日期格式 | 错误 |
-| `sources` 目标存在且落在允许层 | 错误 |
+| `sources` 目标存在且位于允许来源层 | 错误 |
 | Wiki 双链、Markdown 链接、索引可达、孤儿页 | 错误 |
-| 每页有效出链 ≥ 2 | 错误 |
-| `duplicate_of` 悬空 | 错误 |
+| 每页有效出链不少于 2 | 错误 |
+| `duplicate_of` 悬空或哈希不符 | 错误 |
 | 同哈希重复原件未登记或未清理 | 错误 |
-| 新增缺附件引用（不在基线内） | 错误 |
-| 已登记缺附件引用 | 告警 |
-| 来源晚于页面 `updated` 的 `reviewed` 页 | 错误 |
-| 重复 `title`、目录状态与目标不符、`-N`/`-N-续` 同标题 | 错误 |
-| 超 200 行 Wiki 页、超 400 行分类稿 | 错误 |
-| 标签缺失主题标签、超过 6 个、使用禁用泛标签 | 错误 |
-| 私人路径进入 Git 索引、公开页链接私人记录 | 错误 |
+| 新增缺附件引用未登记 | 错误 |
+| `reviewed` 页面引用了更新的来源 | 错误 |
+| 重复标题、目录状态与目标不符 | 错误 |
+| Wiki 超 200 行、分类稿超 400 行 | 错误 |
+| 标签缺少主题/检索标签、超过 6 个或含禁用泛标签 | 错误 |
+| 私人路径进入 Git 索引或出现在公开链接中 | 错误 |
+| `.kb.local.json` 缺失或配置根目录与当前仓库不同 | 错误 |
+| 已登记缺附件引用、退役来源及未决历史差异 | 告警 |
 
-### 附件缺口基线
+## 附件缺口基线
 
-`journal/attachments-baseline.json` 记录已登记缺图：键为原始文件相对路径，值为 `{count, reason, since}`。体检时以该文件为基线，只有新增缺图才报错；基线内缺图汇总为单条告警，并在体检报告中列出前若干项。
+`journal/attachments-baseline.json` 记录已登记缺图。键为原始文件相对路径，值为 `{count, reason, since}`。体检仅将超出基线的缺图报错；基线内缺图保留告警并记录来源、行号、引用目标和原因。
 
-## 2026-11-21 来源语义、标题与状态标注
+## 审计输出
 
-- 来源时效按 Git 最后内容提交日期判断；暂存/工作树与 `HEAD` 不同时按当天处理，未跟踪来源回退至文件修改时间。
-- 纯结构拆分可登记 `structural_only_sha256` 与 `content_updated`。检查器只在当前 SHA 与结构哈希完全一致时采用内容日期；正文改变后自动回到 Git 日期门禁。
-- `pre_split_git_head_sha256` 仅用于回溯拆分前的 Git blob，不能代替 `previous_sha256`；只有实际内容漂移才保留 `previous_sha256`。
-- `reviewed` 页的来源日期晚于页面 `updated` 是错误；只改时间戳或状态不能代替内容核验。
-- Wiki `title` 全库唯一。导航条目中显示的 `seed` / `reviewed` / `needs-review` 必须与目标 frontmatter 一致。
-- 第二套知识库扫描检查 `Documents`、`Desktop` 及唯一根目录所在盘二级目录；发现第二个同时含 `index.md` 与 `wiki/` 的目录时阻止通过检查。
+- `audit/auto_fix_todo.md`：整改项、证据和验收条件。
+- `audit/missing_attachments.csv`：字段 `source,line,target,reason`。
+- `audit/review_queue.csv`：字段 `priority,path,status,updated,sources,reason`。
+- `audit/external-links.csv`：来源页、行号、URL、检查时间、HTTP 状态和结果类别。
 
-## 2026-11-21 公开整改记录模式
+审计文件是基于已登记来源生成的维护视图，不构成新的事实来源。带认证或临时会话参数的 URL 不发送到外链检查器；网络检查只报告状态，不自动改写来源。
 
-`audit/auto_fix_todo.md` 记录已完成、外部证据待补及对应验收条件；`audit/missing_attachments.csv` 固定字段 `source,line,target,reason`；`audit/review_queue.csv` 固定字段 `priority,path,status,updated,sources,reason`。这些是从公开来源生成的维护视图，不是新的事实来源。
+## 维护记录格式
 
-缺图分类稿的正文必须显式包含缺图限制。外链检查输出源页、行号、URL、检查时间、HTTP 状态与结果分类，不自动改动归档 URL。带认证或临时参数的 URL 仅登记为需人工访问，不发送到外部检查器。仅获取状态的检查不会改变原有资料的可信度。
+知识库维护记录只追加：
+
+```markdown
+## [YYYY-MM-DD] action | 简短摘要
+- 变更内容、影响页面、来源和验证结果。
+```
+
+每日记录 `journal/daily/YYYY-MM-DD.md` 固定包含“工作日志”和“下一步计划”两节；下一步计划覆盖更新，不堆积历史版本。

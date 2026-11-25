@@ -114,6 +114,25 @@ def other_knowledge_roots():
     return sorted(matches)
 
 
+def validate_local_root_config(root=ROOT):
+    config_path = root / '.kb.local.json'
+    if not config_path.is_file():
+        return [['local-root-config-missing', '.kb.local.json']]
+    try:
+        config = json.loads(config_path.read_text(encoding='utf-8'))
+    except (OSError, json.JSONDecodeError):
+        return [['local-root-config-invalid', '.kb.local.json']]
+    configured_root = config.get('root') if isinstance(config, dict) else None
+    if not isinstance(configured_root, str) or not configured_root.strip():
+        return [['local-root-config-invalid', '.kb.local.json', 'root']]
+    configured_path = Path(configured_root).expanduser()
+    if not configured_path.is_absolute():
+        return [['local-root-config-not-absolute', '.kb.local.json', 'root']]
+    if configured_path.resolve() != root.resolve():
+        return [['local-root-mismatch', str(configured_path.resolve()), str(root.resolve())]]
+    return []
+
+
 def fields(text):
     match = re.match(r'\A---\r?\n(.*?)\r?\n---(?:\r?\n|$)', text, re.S)
     if not match:
@@ -172,6 +191,7 @@ def main():
     args = parser.parse_args()
     indexed = set(git('ls-files', '-z').decode('utf-8').strip('\0').split('\0'))
     errors, warnings = [], []
+    errors.extend(validate_local_root_config())
     for duplicate_root in other_knowledge_roots():
         errors.append(['duplicate-knowledge-root', duplicate_root])
     for path in sorted(indexed):
