@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24",
+  "generated_at": "2026-11-25",
   "tool_version": 2,
   "root_policy": "paths are relative to this sole knowledge-base root",
   "errors": 0,
@@ -866,6 +866,15 @@
       "note": "2026-11-18排版变化复核；当前哈希登记不清除历史漂移和事实核验要求"
     },
     {
+      "path": "硬件/原始备份/开关电源设计(第3版)  文字版.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "bytes": 89337943,
+      "sha256": "e72db3a6caa03cc920e387380433e1d61d0121f8fefc5f828f15c458408850b8",
+      "status": "needs-review",
+      "note": "《开关电源设计（第三版）》原始PDF，540页；与三卷Markdown书名/章节范围抽查对应。扫描OCR存在识别错误，作为图表和章节追溯来源，不表示全书事实已核验。三卷现有492个图像引用均已解析，无需由本PDF回填。"
+    },
+    {
       "path": "硬件/原始备份/接地、分割与叠层——模数混合PCB设计五套视频整合详解总结 2026-09-09.md",
       "role": "backup-source",
       "kind": "md",
@@ -1379,8 +1388,8 @@
       "path": "硬件/原理/开关电源拓扑与验证.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 10417,
-      "sha256": "9d4a5e1474a92e635537b9087725e7d92583ef074ea7e30161faf81f5192ae04",
+      "bytes": 10930,
+      "sha256": "73edddda39a8629b05ce93d63bd37824ff1645e154332f79d6c4f39e75d24a18",
       "status": "needs-review"
     },
     {
