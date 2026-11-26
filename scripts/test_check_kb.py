@@ -36,10 +36,38 @@ class AttachmentAuditTests(unittest.TestCase):
 
         self.assertEqual(findings, [['new.md', 1, 'unknown.png', '未登记，需确认']])
 
+    def test_finds_html_images_inside_tables(self):
+        body = '# Table\n<table><tr><td><img src="images/a.jpg"></td>' \
+               "<td><img width='80' src='images/b.png'></td></tr></table>\n"
+        findings = check_kb.find_missing_attachments('raw.md', body, {}, lambda _: None)
+        self.assertEqual([row[2] for row in findings], ['images/a.jpg', 'images/b.png'])
+        self.assertEqual([row[1] for row in findings], [2, 2])
+
+    def test_ignores_hidden_attachment_comments(self):
+        body = '<!--\n![](old.png)\n-->\n%% ![[hidden.png]] %%\n![[visible.png]]\n'
+        findings = check_kb.find_missing_attachments('raw.md', body, {}, lambda _: None)
+        self.assertEqual(findings, [['raw.md', 5, 'visible.png', '未登记，需确认']])
+
     def test_notice_is_specific_to_missing_attachments(self):
         self.assertTrue(check_kb.has_missing_attachment_notice('来源插图缺失，仅文本可用。'))
         self.assertFalse(check_kb.has_missing_attachment_notice('高速PCB设计资料中的边界说明。'))
         self.assertFalse(check_kb.has_missing_attachment_notice('附件测试过程未执行。'))
+
+    def test_pending_originals_remain_visible_and_registered(self):
+        body = '**原图待补：** `first.png`\n<span class="missing-original">second.png</span>\n'
+        errors, warnings = check_kb.validate_pending_originals('raw.md', body, 2)
+        self.assertEqual(errors, [])
+        self.assertEqual(warnings, [['pending-original-images', 'raw.md', 2]])
+
+    def test_pending_originals_cannot_be_silently_removed_or_added(self):
+        for body, registered in [('', 1), ('**原图待补：** `unknown.png`', 0)]:
+            errors, warnings = check_kb.validate_pending_originals('raw.md', body, registered)
+            self.assertEqual(errors[0][0], 'pending-original-count')
+            self.assertEqual(warnings, [])
+
+    def test_pending_original_examples_and_hidden_comments_are_ignored(self):
+        body = '<!-- **原图待补：** `hidden.png` -->\n```md\n**原图待补：** `example.png`\n```\n'
+        self.assertEqual(check_kb.pending_original_count(body), 0)
 
 
 class ExternalValidationTests(unittest.TestCase):

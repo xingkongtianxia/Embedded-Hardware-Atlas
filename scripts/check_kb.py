@@ -7,6 +7,7 @@ including hashes, so working-tree contents cannot hide a bad staged commit.
 from pathlib import Path, PurePosixPath
 from collections import Counter, defaultdict
 from urllib.parse import unquote
+from html import unescape
 import argparse
 import csv
 import datetime
@@ -35,7 +36,11 @@ MAX_TAGS = 6
 LARGE_FILE_WARN_BYTES = 10 * 1024 * 1024
 ATTACH_BASELINE = 'journal/attachments-baseline.json'
 ATTACHMENT_WARNING = re.compile(r'图缺失|缺图|图片缺失|附件缺失|仅文本可用')
-ATTACHMENT_LINK = re.compile(r'!\[\[([^\]\n]+)\]\]|!\[[^\]\n]*\]\(([^)\n]+)\)')
+ATTACHMENT_LINK = re.compile(
+    r'!\[\[([^\]\n]+)\]\]|!\[[^\]\n]*\]\(([^)\n]+)\)'
+    r'|<img\b[^>]*?\ssrc\s*=\s*["\']([^"\']+)["\'][^>]*>', re.I)
+PENDING_ORIGINAL = re.compile(
+    r'\*\*原图待补：\*\*|<span\b[^>]*\bclass\s*=\s*["\']missing-original["\']', re.I)
 PRIORITY_TOPICS = re.compile(r'锂电|电池保护|充电|高压|市电|电源路径|反接|浪涌|隔离|ESD|上电|启动|复位', re.I)
 EPHEMERAL_CNKI_URL = re.compile(r'https?://kns\.cnki\.net/[^\s)]*\?[^\s)]*\bv=')
 
@@ -156,6 +161,9 @@ def write_csv(path, columns, rows):
 
 
 def visible_markdown(text):
+    text = re.sub(r'<!--.*?-->|%%.*?%%',
+                  lambda match: '\n' * match.group().count('\n'),
+                  text, flags=re.S)
     text = re.sub(r'^```.*?^```[^\n]*',
                   lambda match: '\n' * match.group().count('\n'),
                   text, flags=re.M | re.S)
@@ -166,12 +174,23 @@ def has_missing_attachment_notice(body):
     return bool(ATTACHMENT_WARNING.search(body))
 
 
+def pending_original_count(body):
+    """Count visible, explicit gaps without treating code examples as missing images."""
+    return len(PENDING_ORIGINAL.findall(visible_markdown(body)))
+
+
+def validate_pending_originals(path, body, registered_count):
+    count = pending_original_count(body)
+    if count != registered_count:
+        return [['pending-original-count', path, count, registered_count]], []
+    return [], ([['pending-original-images', path, count]] if count else [])
+
+
 def find_missing_attachments(path, body, baseline, resolve_target):
     visible = visible_markdown(body)
     findings = []
     for image in ATTACHMENT_LINK.finditer(visible):
-        wiki_image, markdown_image = image.groups()
-        target = (wiki_image or markdown_image).strip('<>')
+        target = unescape(next(value for value in image.groups() if value).strip('<>'))
         if re.match(r'^[a-zA-Z][a-zA-Z0-9+.-]*:', target):
             continue
         if resolve_target(target) is not None:
@@ -241,8 +260,9 @@ def main():
         return data(path).decode('utf-8-sig')
 
     source_manifest = json.loads(text('硬件/整理清单.json'))
-    attachment_baseline = (json.loads(text(ATTACH_BASELINE)).get('originals', {})
-                           if ATTACH_BASELINE in paths else {})
+    attachment_record = json.loads(text(ATTACH_BASELINE)) if ATTACH_BASELINE in paths else {}
+    attachment_baseline = attachment_record.get('originals', {})
+    pending_originals = attachment_record.get('pending_originals', {})
     structural_source_dates = {}
     for item in source_manifest.get('items', []):
         path = item.get('path', '')
@@ -463,10 +483,14 @@ def main():
     for path in sorted(paths):
         if path.endswith('.md') and not path.startswith(('硬件/原始备份/', 'Imported/')):
             if leaks.search(text(path)): errors.append(['private-navigation', path])
-        if not path.endswith('.md') or path.startswith(('Imported/', 'Excalidraw/')):
+        if not path.endswith('.md') or path.startswith('Excalidraw/'):
             continue
         original_body = text(path)
         body = visible_markdown(original_body)
+        pending_errors, pending_warnings = validate_pending_originals(
+            path, original_body, pending_originals.get(path, {}).get('count', 0))
+        errors.extend(pending_errors)
+        warnings.extend(pending_warnings)
         page_findings = find_missing_attachments(
             path, original_body, attachment_baseline,
             lambda target: resolve(target, str(PurePosixPath(path).parent)))
@@ -474,7 +498,7 @@ def main():
             missing_attachments.append([source, target])
             if args.audit_dir:
                 attachment_locations.append([source, line, target, reason])
-        if not path.startswith('硬件/原始备份/'):
+        if not path.startswith(('硬件/原始备份/', 'Imported/')):
             for target in re.findall(r'(?<!!)\[[^\]\n]*\]\(([^)\n]+)\)', body):
                 if not target or target.startswith('#') or re.match(r'^[a-zA-Z][a-zA-Z0-9+.-]*:', target):
                     continue
@@ -484,6 +508,11 @@ def main():
                     markdown_links.append([path, target])
     if ATTACH_BASELINE not in paths:
         warnings.append(['attachment-baseline-missing', ATTACH_BASELINE])
+    for path, record in pending_originals.items():
+        if path not in paths:
+            errors.append(['pending-original-source-missing', path])
+        if not record.get('reason') or not isinstance(record.get('count'), int) or record['count'] < 1:
+            errors.append(['pending-original-registration', path])
     attachment_counts = Counter(x[0] for x in missing_attachments)
     for path, count in sorted(attachment_counts.items()):
         allowed = attachment_baseline.get(path, {}).get('count', 0)
@@ -510,6 +539,7 @@ def main():
         navigation_only_inbound=[p for p in pages if not content_inbound[p]],
         other_knowledge_roots=other_knowledge_roots(),
         missing_attachments=missing_attachments,
+        pending_original_images=sum(record.get('count', 0) for record in pending_originals.values()),
         stale_reviewed=stale_reviewed,
         tags=dict(tags), errors=errors, warnings=warnings)
     if args.json:

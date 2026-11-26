@@ -115,7 +115,7 @@ tags: [外来资料, 来源登记]
 | 每页有效出链不少于 2 | 错误 |
 | `duplicate_of` 悬空或哈希不符 | 错误 |
 | 同哈希重复原件未登记或未清理 | 错误 |
-| 新增缺附件引用未登记 | 错误 |
+| 新增缺附件引用未登记（含 Markdown、Obsidian 嵌入及 HTML `img`） | 错误 |
 | `reviewed` 页面引用了更新的来源 | 错误 |
 | 重复标题、目录状态与目标不符 | 错误 |
 | Wiki 超 200 行、分类稿超 400 行 | 错误 |
@@ -127,6 +127,10 @@ tags: [外来资料, 来源登记]
 ## 附件缺口基线
 
 `journal/attachments-baseline.json` 记录已登记缺图。键为原始文件相对路径，值为 `{count, reason, since}`。体检仅将超出基线的缺图报错；基线内缺图保留告警并记录来源、行号、引用目标和原因。
+
+`originals` 只允许尚存的失效嵌入；修复后移入 `resolved` 保存旧数量与本次处置，不扩大豁免。原图尚未取得而以可见“原图待补”替代坏嵌入时，必须逐处保留原目标文件名，并在 `pending_originals` 登记 `{count, reason, since}`、在 `audit/图片修复明细.csv` 保留旧位置。检查器比对可见标记数量，缺失或未登记均报错；登记的原图缺口继续作为 `pending-original-images` 告警及 `pending_original_images` 总量输出。零失效链接不表示原图已全部找回。
+
+附件扫描覆盖公开Markdown（含 `Imported/`），跳过私人目录、工具数据和Excalidraw绘图专用块；代码示例与隐藏注释中的图像语法不视为正文嵌入。
 
 ## 审计输出
 

@@ -1,3 +1,5 @@
+> 原始图像附件未提供；89 处缺图位置以“原图待补”保留原目标文件名，完整登记见 [[audit/图片修复明细.csv|图片修复明细]]。本文仅文本可用，依赖电路图、布局图和曲线的结论仍须原件复核。
+
 ## 高速PCB设计规范
 
 TEACHER LECTURE TEMPLATE 
@@ -269,7 +271,7 @@ Df越小越好，介质损耗就越少。
 
 <table><tr><td>控制</td><td>屏蔽</td><td>阻抗类型</td><td>要求值</td><td>阻抗要求</td><td>盖油</td><td>H1</td><td>Er1</td><td>H2</td><td>Er2</td></tr><tr><td>TOP</td><td>GND02</td><td>单端</td><td>6.9</td><td>50+/-10%</td><td>是</td><td>4.5</td><td>4.25</td><td></td><td></td></tr><tr><td>TOP</td><td>GND02</td><td>差分</td><td>4.8/6.9</td><td>100+/-10%</td><td>是</td><td>4.5</td><td>4.25</td><td></td><td></td></tr><tr><td>TOP</td><td>GND02</td><td>差分</td><td>6.2/7</td><td>90+/-10%</td><td>是</td><td>4.5</td><td>4.25</td><td></td><td></td></tr><tr><td>ART10</td><td>GND09/GND11</td><td>差分</td><td>4.5/6</td><td>100+/-10%</td><td></td><td>5.91</td><td>3.95</td><td>7.91</td><td>4.07</td></tr><tr><td>ART10</td><td>GND09/GND11</td><td>单端</td><td>5.9</td><td>50+/-10%</td><td></td><td>5.91</td><td>3.95</td><td>7.91</td><td>4.07</td></tr><tr><td>BOTTOM</td><td>GND11</td><td>差分</td><td>4.8/6.9</td><td>100+/-10%</td><td>是</td><td>4.5</td><td>4.25</td><td></td><td></td></tr><tr><td>BOTTOM</td><td>GND11</td><td>单端</td><td>6.9</td><td>50+/-10%</td><td>是</td><td>4.5</td><td>4.25</td><td></td><td></td></tr><tr><td>BOTTOM</td><td>GND11</td><td>差分</td><td>6.2/7</td><td>90+/-10%</td><td>是</td><td>4.5</td><td>4.25</td><td></td><td></td></tr><tr><td>ART03</td><td>GND02/GND04</td><td>单端</td><td>5.9</td><td>50+/-10%</td><td></td><td>5.91</td><td>3.95</td><td>7.91</td><td>4.07</td></tr><tr><td>ART03</td><td>GND02/GND04</td><td>差分</td><td>4.5/6</td><td>100+/-10%</td><td></td><td>5.91</td><td>3.95</td><td>7.91</td><td>4.07</td></tr><tr><td>ART05</td><td>GND04/PWR06</td><td>单端</td><td>5.9</td><td>50+/-10%</td><td></td><td>5.91</td><td>3.95</td><td>7.79</td><td>4.07</td></tr><tr><td>ART05</td><td>GND04/PWR06</td><td>差分</td><td>4.5/6</td><td>100+/-10%</td><td></td><td>5.91</td><td>3.95</td><td>7.79</td><td>4.07</td></tr><tr><td>ART08</td><td>GND07/GND09</td><td>差分</td><td>4.5/6</td><td>100+/-10%</td><td></td><td>5.91</td><td>3.95</td><td>7.79</td><td>4.07</td></tr><tr><td>ART08</td><td>GND07/GND09</td><td>单端</td><td>5.9</td><td>50+/-10%</td><td></td><td>5.91</td><td>3.95</td><td>7.79</td><td>4.07</td></tr></table>
 
-![](images/6527f16166431d6c7b3a500eca66ad23a55e1888cca727948f8c486275f58176.jpg)
+**原图待补：** `images/6527f16166431d6c7b3a500eca66ad23a55e1888cca727948f8c486275f58176.jpg`（原附件未提供；须按原件复核）。
 
 
 36.31 
@@ -299,7 +301,7 @@ Df越小越好，介质损耗就越少。
 
 背钻孔到导体内层≥6.5mil；外层≥4.5mil； 
 
-![](images/e45784189ead0f80fe922017d01465c49035df269363c6fadc281d7eab190b03.jpg)
+**原图待补：** `images/e45784189ead0f80fe922017d01465c49035df269363c6fadc281d7eab190b03.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 高速PCB模块化布局
@@ -308,7 +310,7 @@ Df越小越好，介质损耗就越少。
 
 PCB中常用的晶体封装有：2管脚的插件封装和SMD封装、4管脚的SMD封装和4管脚的插针封装。常见封装如下图： 
 
-![](images/bf843a7ea4fc4026c7292279457876235c9e2709da5269ca980e6e66b76136ee.jpg)
+**原图待补：** `images/bf843a7ea4fc4026c7292279457876235c9e2709da5269ca980e6e66b76136ee.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 2
@@ -317,32 +319,32 @@ PCB中常用的晶体封装有：2管脚的插件封装和SMD封装、4管脚的
 
 基本的电路设计如下图 
 
-![](images/78680d9161d8b648fc10df7db2f56e67de2dda5b7a9f11086cc31afc8ea891e6.jpg)
+**原图待补：** `images/78680d9161d8b648fc10df7db2f56e67de2dda5b7a9f11086cc31afc8ea891e6.jpg`（原附件未提供；须按原件复核）。
 
 
 晶体电路布局时，两个电容靠近晶体放置，布局效果图如下： 
 
-![](images/2ad9c681ba50be078f704f43252be1153b43c5e220490884216560110772da19.jpg)
+**原图待补：** `images/2ad9c681ba50be078f704f43252be1153b43c5e220490884216560110772da19.jpg`（原附件未提供；须按原件复核）。
 
 
 3 
 
 布线时，晶体的一对线要走成类差分的形式，线尽量短、且要加粗并进行包地处理，或者直接铺铜处理。如下图： 
 
-![](images/f1b3c303ebed15c91c310c6a5fe78d27041dcda205d331a248c7409b11aeb096.jpg)
+**原图待补：** `images/f1b3c303ebed15c91c310c6a5fe78d27041dcda205d331a248c7409b11aeb096.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/092edaa79b62a92b2e0bacb7f0d6d86cbe14636588f8fcebc40e499e4c1dec23.jpg)
+**原图待补：** `images/092edaa79b62a92b2e0bacb7f0d6d86cbe14636588f8fcebc40e499e4c1dec23.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 3
 
 上述的是最基本和最常见的晶体电路设计，也有一些变形设计，如加串阻、测试点等，如下图，设计思路还是一致的： 
 
-![](images/9fe4eec1e5fdca94678aca4e42a6c9e8d89f25925d0d4f261ec0773e289cbf94.jpg)
+**原图待补：** `images/9fe4eec1e5fdca94678aca4e42a6c9e8d89f25925d0d4f261ec0773e289cbf94.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/406ef70f29c21075836dcb96da47f79e08464c2dcee8ece3f60437cfd13abd96.jpg)
+**原图待补：** `images/406ef70f29c21075836dcb96da47f79e08464c2dcee8ece3f60437cfd13abd96.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 3
@@ -379,10 +381,10 @@ PCB中常用的晶体封装有：2管脚的插件封装和SMD封装、4管脚的
 
 布局布线效果如右图: 
 
-![](images/828c7e10de632c3997c24ffb67be47d2694ec5754029c6e44b12ccf0ab92ca4e.jpg)
+**原图待补：** `images/828c7e10de632c3997c24ffb67be47d2694ec5754029c6e44b12ccf0ab92ca4e.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/622fc0e031b0ae5b8c75f36cca09447b08cefa7574930f309aa7ee3757631bcb.jpg)
+**原图待补：** `images/622fc0e031b0ae5b8c75f36cca09447b08cefa7574930f309aa7ee3757631bcb.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 3
@@ -418,7 +420,7 @@ PCB中常用的晶体封装有：2管脚的插件封装和SMD封装、4管脚的
 如右图，  
 滤波电容按箭头方向：先大后小摆放 
 
-![](images/09f1e581219190825b66d3ba63c0d62d29269100e6f4dda2e981f9f573b88f2b.jpg)
+**原图待补：** `images/09f1e581219190825b66d3ba63c0d62d29269100e6f4dda2e981f9f573b88f2b.jpg`（原附件未提供；须按原件复核）。
 
 
 
@@ -449,15 +451,15 @@ IC电源管脚的去耦电容的容值通常都会比较小，如O.1UF、0.01UF�
 
 芯片就近引脚放置，就近打VIA 
 
-![](images/d40ca7579d23a16b9abfb29c8c44bb526aabe60875cf3b5947ac85ec0c2ff558.jpg)
+**原图待补：** `images/d40ca7579d23a16b9abfb29c8c44bb526aabe60875cf3b5947ac85ec0c2ff558.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/5617290973d17814cb2ddbfeedfe21310dc64f9ddc9828c840580267fe2909cf.jpg)
+**原图待补：** `images/5617290973d17814cb2ddbfeedfe21310dc64f9ddc9828c840580267fe2909cf.jpg`（原附件未提供；须按原件复核）。
 
 
 BGA封装尽量多的放在BGA肚子下面: 
 
-![](images/34cf556455348ac8ec3f60d29f5ccc97d37f617d915c227b98856d81e706c4b5.jpg)
+**原图待补：** `images/34cf556455348ac8ec3f60d29f5ccc97d37f617d915c227b98856d81e706c4b5.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 3 储能电容
@@ -468,10 +470,10 @@ BGA封装尽量多的放在BGA肚子下面:
 
 引线尽量短，引线要加粗 
 
-![](images/fd12a533432e8a8badd7edd27e57b01ed3653c59c540d144f79b31c78dbc3c68.jpg)
+**原图待补：** `images/fd12a533432e8a8badd7edd27e57b01ed3653c59c540d144f79b31c78dbc3c68.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/17aa5cc748cc0e068fcddf93dfcc91dade8e49b877369d59eb40971be38c9f0d.jpg)
+**原图待补：** `images/17aa5cc748cc0e068fcddf93dfcc91dade8e49b877369d59eb40971be38c9f0d.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 常用存储器设计
@@ -480,7 +482,7 @@ BGA封装尽量多的放在BGA肚子下面:
 
 ## 说教法
 
-![](images/a07fd3f727a5439a7b15fe4fa0e9fc6490a60147021e2d86c4f284eb0511d7ce.jpg)
+**原图待补：** `images/a07fd3f727a5439a7b15fe4fa0e9fc6490a60147021e2d86c4f284eb0511d7ce.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 4
@@ -497,16 +499,16 @@ BGA封装尽量多的放在BGA肚子下面:
 
 Flash样式 
 
-![](images/23d67277082c916b75b1d7e7370a0509ec73258654994f751b6f56abafb8bd90.jpg)
+**原图待补：** `images/23d67277082c916b75b1d7e7370a0509ec73258654994f751b6f56abafb8bd90.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/dd507d467c045895c04d929404b70e26cd61f55f7e1861da4d4c070e689d1412.jpg)
+**原图待补：** `images/dd507d467c045895c04d929404b70e26cd61f55f7e1861da4d4c070e689d1412.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/1495cac4f156b037001dc2f9cfdaa3dfa9475edad317c768d2aec413fcce2928.jpg)
+**原图待补：** `images/1495cac4f156b037001dc2f9cfdaa3dfa9475edad317c768d2aec413fcce2928.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/775b27bd82c27d7b8e4245a224d977dc4869a4f5008afd5302227e53d48eb5ec.jpg)
+**原图待补：** `images/775b27bd82c27d7b8e4245a224d977dc4869a4f5008afd5302227e53d48eb5ec.jpg`（原附件未提供；须按原件复核）。
 
 
 <table><tr><td>信号名。</td><td>功能描述</td></tr><tr><td>CLK</td><td>时钟。</td></tr><tr><td>CKE</td><td>时钟使能。</td></tr><tr><td>CS#</td><td>片选。</td></tr><tr><td>WE#</td><td>读写。</td></tr><tr><td>RAS#</td><td>列选。</td></tr><tr><td>CAS#</td><td>行选。</td></tr><tr><td>DQM</td><td>数据掩码。</td></tr><tr><td>BAO, BA1.</td><td>Bank 选择。</td></tr><tr><td>A0-A11.</td><td>地址。</td></tr><tr><td>DQO-DQ15.</td><td>数据(输出)。</td></tr><tr><td>VDDQ.</td><td>DQ 电源。</td></tr><tr><td>VSSQ.</td><td>DQ 地。</td></tr><tr><td>VDD.</td><td>电源。</td></tr><tr><td>VSS.</td><td>地。</td></tr></table>
@@ -517,7 +519,7 @@ Flash样式
 
 1, SDRAM到CPU推荐的中心间距无排阻连接时: 900—1000mil;有排阻连接时: 1000—1300mil。 
 
-![](images/ce0732336cd26f78cff3d3a9c0daa5b297ae40d492a028695b85fd6750fd0fb8.jpg)
+**原图待补：** `images/ce0732336cd26f78cff3d3a9c0daa5b297ae40d492a028695b85fd6750fd0fb8.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 两片SDRAM布局原则：
@@ -526,12 +528,12 @@ Flash样式
 
 1. 空间足够时，与CPU同层 
 
-![](images/b2a363f11f60be1fbbdc8372a6b5afda27da0eba5da9912955624de5cee264c4.jpg)
+**原图待补：** `images/b2a363f11f60be1fbbdc8372a6b5afda27da0eba5da9912955624de5cee264c4.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 2，顶底对贴
 
-![](images/f3014c5ac60e24713c5478edec0ddcd1c9b0433a38b462fe01eacecaa8e874cb.jpg)
+**原图待补：** `images/f3014c5ac60e24713c5478edec0ddcd1c9b0433a38b462fe01eacecaa8e874cb.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 4 SDRAM布线规范：
@@ -550,14 +552,14 @@ e.所有信号线不能跨分割，且保持完整的参考平面；
 
 f. 两片以上的SDRAM布线拓扑优选远端分支，T点的过孔打在两片SDRAM之间；次选菊花链。 
 
-![](images/acc5b001ad03dcf0fe9886bb45aaf26745bfa537984069335eb582d754fd339f.jpg)
+**原图待补：** `images/acc5b001ad03dcf0fe9886bb45aaf26745bfa537984069335eb582d754fd339f.jpg`（原附件未提供；须按原件复核）。
 
 
 
 远端分支
 
 
-![](images/9ac560648ed7e8896c2807b03240b5e63d92b275eefb86d887fffe3450f9b156.jpg)
+**原图待补：** `images/9ac560648ed7e8896c2807b03240b5e63d92b275eefb86d887fffe3450f9b156.jpg`（原附件未提供；须按原件复核）。
 
 
 
@@ -572,7 +574,7 @@ SDRAM数据的读写都要靠适中的同步，而时钟的同步分为外同步
 
 二，内同步：是指时钟和数据同时在两个芯片间传输，不需要外部时钟源来给SDRAM提供时钟，目前应用比较多。框图如右， 
 
-![](images/a43da5207daa9d1827f591d10c08041c0ce7675f2898e86c5c0f6cb9b21936ee.jpg)
+**原图待补：** `images/a43da5207daa9d1827f591d10c08041c0ce7675f2898e86c5c0f6cb9b21936ee.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 4 SDRAM等长要求：
@@ -591,14 +593,14 @@ SDRAM数据的读写都要靠适中的同步，而时钟的同步分为外同步
 
 2. 地址线长度误差范围控制±100mil; 
 
-![](images/c466bb80bd190482b1fb4839637c4ba8f50f60e5f3a0a0f51bfe2ed8ad6295ec.jpg)
+**原图待补：** `images/c466bb80bd190482b1fb4839637c4ba8f50f60e5f3a0a0f51bfe2ed8ad6295ec.jpg`（原附件未提供；须按原件复核）。
 
 
 
 顶底对连后再与CPU互连
 
 
-![](images/c8ad88bb691d85789763378ea93af7ff652a9b42a938daa30a923f932555e6d2.jpg)
+**原图待补：** `images/c8ad88bb691d85789763378ea93af7ff652a9b42a938daa30a923f932555e6d2.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 4 SDRAM等长要求：
@@ -617,14 +619,14 @@ SDRAM数据的读写都要靠适中的同步，而时钟的同步分为外同步
 
 2. 地址线长度误差范围控制±100mil; 
 
-![](images/e2c94c9005a2df18974b068a825c47ae8ac92fcef1645df7c49fe3777156603d.jpg)
+**原图待补：** `images/e2c94c9005a2df18974b068a825c47ae8ac92fcef1645df7c49fe3777156603d.jpg`（原附件未提供；须按原件复核）。
 
 
 
 顶底对连后再与CPU互连
 
 
-![](images/fdef783ec1c230582bf51002d46325e102dc32a8596a22b0578a87e64d6fff83.jpg)
+**原图待补：** `images/fdef783ec1c230582bf51002d46325e102dc32a8596a22b0578a87e64d6fff83.jpg`（原附件未提供；须按原件复核）。
 
 
 ## DDR工作原理：
@@ -641,7 +643,7 @@ SDRAM数据的读写都要靠适中的同步，而时钟的同步分为外同步
 
 <table><tr><td>管脚数</td><td>信号名</td><td>功能描述</td></tr><tr><td>2</td><td>CK, CK=</td><td>全周时钟输入。</td></tr><tr><td>1</td><td>CKE</td><td>时钟使能信号输入。</td></tr><tr><td>1</td><td>CS#</td><td>片选信号输入。</td></tr><tr><td>3</td><td>RAS#, CAS#, WE=</td><td>命令信号输入。</td></tr><tr><td>2</td><td>LDM, UDM</td><td>数据mask信号输入。</td></tr><tr><td>13*</td><td>A&lt;0.12&gt;</td><td>地址信号输入。</td></tr><tr><td>2</td><td>BA0, BAI</td><td>BANK选择信号输入。</td></tr><tr><td>16*</td><td>DQ&lt;0.15&gt;</td><td>数据信号输入/输出。</td></tr><tr><td>2</td><td>LDQS, UDQS</td><td>数据暂存信号输入/输出。</td></tr><tr><td>5+</td><td>NC</td><td>空引脚。</td></tr><tr><td>2</td><td>DNU</td><td>不使用引脚。</td></tr><tr><td>5</td><td>VDDQ</td><td>DQ电源电压(25V)。</td></tr><tr><td>5</td><td>VSSQ</td><td>DQ地。</td></tr><tr><td>3</td><td>VDD</td><td>器件电源电压(25V)。</td></tr><tr><td>3</td><td>VSS</td><td>器件地。</td></tr><tr><td>1</td><td>VREF</td><td>SSTL 2参考电压。</td></tr></table>
 
-![](images/994f70a668b01441c86349c1fdd7dd28433b259bf3a8a39c0ec6cc37836d9d47.jpg)
+**原图待补：** `images/994f70a668b01441c86349c1fdd7dd28433b259bf3a8a39c0ec6cc37836d9d47.jpg`（原附件未提供；须按原件复核）。
 
 
 ## DDR布局原则：
@@ -650,31 +652,31 @@ SDRAM数据的读写都要靠适中的同步，而时钟的同步分为外同步
 
 一, 数据线串接电阻一般放在DDR与控制器中间, 并联电阻靠近串接电阻放置, 可放于其背面, 具体位置可由仿真决定; 
 
-![](images/1630a2aec3e7a85455144e7e59143fe02ad50a0c9af388f6d715b50095f71a40.jpg)
+**原图待补：** `images/1630a2aec3e7a85455144e7e59143fe02ad50a0c9af388f6d715b50095f71a40.jpg`（原附件未提供；须按原件复核）。
 
 
 二，DM信号是数据线的掩码，一般都是点到点的单向传输，要求串接电阻放在控制器端，并联电阻放在DDR端； 
 
-![](images/b662335f3d84cbf0a950d9c1b2fc6c2b7ed9b7c4a348d0c24a51a77a5d68359e.jpg)
+**原图待补：** `images/b662335f3d84cbf0a950d9c1b2fc6c2b7ed9b7c4a348d0c24a51a77a5d68359e.jpg`（原附件未提供；须按原件复核）。
 
 
 ## DDR布局原则：
 
 三，地址线、控制线、时钟线是单向传输，且一般都是点到多点的拓扑结构。要求串联电阻靠近控制器端，多个DDR间使用远端分支，分支尽量短且等长，并联电阻放在DDR端第一个T点处，长度不超过500mil；走菊花链拓扑的，并联电阻放在最后一个DDR后面，长度不超过500mil。 
 
-![](images/fbae811b081fcb5d420ec0d3e824cc8b50672bbbcd47f87f130a0f7e13bd0f67.jpg)
+**原图待补：** `images/fbae811b081fcb5d420ec0d3e824cc8b50672bbbcd47f87f130a0f7e13bd0f67.jpg`（原附件未提供；须按原件复核）。
 
 
 四, 差分时钟信号是单向传输, 串接电阻靠近控制器端, 点到点的终端匹配电阻尽量靠近DDR, 或放在DDR之后; 点到多点, 地址线可以使用T型拓扑结构, 终端匹配电阻放在第一个T点处; 。 
 
-![](images/03eb561a4509408fe754b4330e9f235dc6702e60924656e5d9f9d6cdbff97398.jpg)
+**原图待补：** `images/03eb561a4509408fe754b4330e9f235dc6702e60924656e5d9f9d6cdbff97398.jpg`（原附件未提供；须按原件复核）。
 
 
 ## DDR布局原则：
 
 五，Vref电源的退耦电容必须靠近DDR和CPU管脚。 
 
-![](images/847f8106669ccfc667d5fd2628ed4803f8aeb5afb60f5753d601197f7ae9555e.jpg)
+**原图待补：** `images/847f8106669ccfc667d5fd2628ed4803f8aeb5afb60f5753d601197f7ae9555e.jpg`（原附件未提供；须按原件复核）。
 
 
 六，VTT电压用在信号线上拉电阻上，电流大，电压低，需要表面铺铜连接，宽度大于150mil，每四个上拉电阻或者一个排阻至少对应一个高频退耦电容，且要均匀放置，同时附近应当均匀放置几个bulk电容，至少末端应有一个bulk电容（如：4.7uF、100-220uF），若VTT走内层，高频退耦电容数目应更多。 
@@ -689,10 +691,10 @@ SDRAM数据的读写都要靠适中的同步，而时钟的同步分为外同步
 
 三，DDR×4和DDR×8时，一般两两正反对贴，同层放置时将导致远端分支过长； 
 
-![](images/c48053d394ceaa4a36b75b6ee35b66559e37eddc126880fa271ee1bf05cff1b3.jpg)
+**原图待补：** `images/c48053d394ceaa4a36b75b6ee35b66559e37eddc126880fa271ee1bf05cff1b3.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/0298e1df0ae7d0734a1f0ce05197f203b719ecec1bb544750502a9cdaf826a7d.jpg)
+**原图待补：** `images/0298e1df0ae7d0734a1f0ce05197f203b719ecec1bb544750502a9cdaf826a7d.jpg`（原附件未提供；须按原件复核）。
 
 
 ## DDR 布线基本要求:
@@ -747,17 +749,17 @@ SDRAM数据的读写都要靠适中的同步，而时钟的同步分为外同步
 
 ## 2颗 DDR 布局线示例:
 
-![](images/c26e7628a6458cd600060325c69d9c00f152946b78d3af9595dd25d643725393.jpg)
+**原图待补：** `images/c26e7628a6458cd600060325c69d9c00f152946b78d3af9595dd25d643725393.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 4 颗 DDR 正反叠 布局线示例:
 
-![](images/3b6527ac2b64fefafa13c04737d89d35dad729088d20731d2f714cd6d3f8fdc4.jpg)
+**原图待补：** `images/3b6527ac2b64fefafa13c04737d89d35dad729088d20731d2f714cd6d3f8fdc4.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 4颗 DDR同面布局线示例：
 
-![](images/1869a80dd7d3f30550b978ea27d798f978bcd7ab8bbd96916de8af4fd77378f2.jpg)
+**原图待补：** `images/1869a80dd7d3f30550b978ea27d798f978bcd7ab8bbd96916de8af4fd77378f2.jpg`（原附件未提供；须按原件复核）。
 
 
 ## DDR2:
@@ -846,10 +848,10 @@ Read and Write leveling
 
 地址线布局布线优先选用FLY-BY，过孔到管脚距离尽量短，长度在150MIL以内。 
 
-![](images/6d3b41b0ce1d74c624e9d6f69588e3d2f75092ac5f1f26fe84a358e80b125eef.jpg)
+**原图待补：** `images/6d3b41b0ce1d74c624e9d6f69588e3d2f75092ac5f1f26fe84a358e80b125eef.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/c957c069eb6ac6d6b1001802936374bbabd49a3405bde63eda201da69888e91c.jpg)
+**原图待补：** `images/c957c069eb6ac6d6b1001802936374bbabd49a3405bde63eda201da69888e91c.jpg`（原附件未提供；须按原件复核）。
 
 
 ## DDR 3布线要求:
@@ -923,17 +925,17 @@ DDR4布局布线要求基本同DDR3:
 
 ②TXD/RXD走线须加粗至10mil左右，尽量不要同层平行走线，若必须同层，要求间距至少5W以上。 
 
-![](images/8d4f5194bdbb6d8bd0814df87e05693102e4200ff04c1ac9120bc8ebdd5195da.jpg)
+**原图待补：** `images/8d4f5194bdbb6d8bd0814df87e05693102e4200ff04c1ac9120bc8ebdd5195da.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 5
 
 ## 管脚定义:
 
-![](images/e0d3ce5d2eda45cccb4f138af382ac5c6828c968713690278df98d932a1aa782.jpg)
+**原图待补：** `images/e0d3ce5d2eda45cccb4f138af382ac5c6828c968713690278df98d932a1aa782.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/2f8bee1385343f166137d11eb3f4e68d9925623f70797a34a0607431731525a3.jpg)
+**原图待补：** `images/2f8bee1385343f166137d11eb3f4e68d9925623f70797a34a0607431731525a3.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 5
@@ -948,7 +950,7 @@ DDR4布局布线要求基本同DDR3:
 
 (4)/SS-从器件使能信号，由主器件控制。 
 
-![](images/884aaf430fdc6798b7c6dcea4637c8c1cf3e24f9b9ab9713064968cc3048dd0c.jpg)
+**原图待补：** `images/884aaf430fdc6798b7c6dcea4637c8c1cf3e24f9b9ab9713064968cc3048dd0c.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 5
@@ -957,12 +959,12 @@ DDR4布局布线要求基本同DDR3:
 
 标准的JTAG接口是4线：TMS、TCK、TDI、TDO,分别为测试模式选择、测试时钟、测试数据输入和测试数据输出 
 
-![](images/39f5f8eea1e4a9310ede7e225c11ac895332862b454d5ec1b71e650a18883c6c.jpg)
+**原图待补：** `images/39f5f8eea1e4a9310ede7e225c11ac895332862b454d5ec1b71e650a18883c6c.jpg`（原附件未提供；须按原件复核）。
 
 
 ## EJTAG
 
-![](images/da24c8e9f527a9cd82281b6c3913e0cf0f850dd7aeb9d189d38fbf64e148a216.jpg)
+**原图待补：** `images/da24c8e9f527a9cd82281b6c3913e0cf0f850dd7aeb9d189d38fbf64e148a216.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 5
@@ -977,14 +979,14 @@ PCI V2.1是33Mhz的32 bit总线标准，PCI V2.2是66Mhz的64 bit总线标准。
 
 <table><tr><td>Section</td><td>Group</td><td>Signals</td><td>Description</td></tr><tr><td rowspan="4">Section 15.2</td><td>Address/Data</td><td>AD[31:0]</td><td>PCI Address/Data</td></tr><tr><td>Control</td><td>C/BE#[3:0]</td><td>Bus Command and Byte Enables</td></tr><tr><td>Control</td><td>DEVSEL#</td><td>Device Select</td></tr><tr><td>Control</td><td>FRAME#</td><td>Cycle Frame</td></tr></table>
 
-![](images/2defdbb6d7f9d7b1fdfed781e03a4e908126a2c6a9842bdd24fddd024a5e464b.jpg)
+**原图待补：** `images/2defdbb6d7f9d7b1fdfed781e03a4e908126a2c6a9842bdd24fddd024a5e464b.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 5
 
 CPCI插座一般都是压接器件，布局时需注意其它器件离插座的间距：Top-3mm;Bottom -5mm时钟信号控制在2500+/-100miI,其他信号<=2500mi。插座位置要严格按照CPCI标准规范进行摆放。 
 
-![](images/0e14f312fe635cc9cb77015682e4d2ccf68aa63c8cb0f76d8665caf39b511b3a.jpg)
+**原图待补：** `images/0e14f312fe635cc9cb77015682e4d2ccf68aa63c8cb0f76d8665caf39b511b3a.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 5
@@ -1007,10 +1009,10 @@ Layout注意事项:
 
 ## 5
 
-![](images/2b5ed39adfd532029e758babb835287128f3d4fce14c3ff3cabbdfabb76a39c9.jpg)
+**原图待补：** `images/2b5ed39adfd532029e758babb835287128f3d4fce14c3ff3cabbdfabb76a39c9.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/4df22eb7839cea02d964798ff34761dd0e40e9a0102cc7f90efdee8475427b11.jpg)
+**原图待补：** `images/4df22eb7839cea02d964798ff34761dd0e40e9a0102cc7f90efdee8475427b11.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 5
@@ -1021,13 +1023,13 @@ SATA接口
 
 SATA/SATA II/SATAII相对应速率：1.5Gbps/3.0Gbps/6.0Gbps 
 
-![](images/fb2e75ab53701445fd68f55e3ab4531f01ec44551078f42335073e273311eec1.jpg)
+**原图待补：** `images/fb2e75ab53701445fd68f55e3ab4531f01ec44551078f42335073e273311eec1.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/1af631cc1e884149c27b1b4c07b8ee5bb795add9a124d759bfa2a544e3701e64.jpg)
+**原图待补：** `images/1af631cc1e884149c27b1b4c07b8ee5bb795add9a124d759bfa2a544e3701e64.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/a327954f19b25bf704309ee48394cdbe69a3492def90bc1e82743a6a01a18682.jpg)
+**原图待补：** `images/a327954f19b25bf704309ee48394cdbe69a3492def90bc1e82743a6a01a18682.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 5
@@ -1058,23 +1060,23 @@ SATA/SATA II/SATAII相对应速率：1.5Gbps/3.0Gbps/6.0Gbps
 
 RJ-45插头, 俗称"水晶头",专业术语为RJ-45连接器(RJ-45是一种网络接口规范, 类似的还有RJ-11接口,就是我们平常所用的“电话接口”,用来连接电话线)。实物示意图: 
 
-![](images/3e6bd88ce5e6237b828611465771f4fb4c4cb27c9861d692976c9c6c4fa8b79c.jpg)
+**原图待补：** `images/3e6bd88ce5e6237b828611465771f4fb4c4cb27c9861d692976c9c6c4fa8b79c.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/5966062db717232e75374c0deb54273f83db5399d7306eedac9d4539c25b2311.jpg)
+**原图待补：** `images/5966062db717232e75374c0deb54273f83db5399d7306eedac9d4539c25b2311.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/a987120b2f0bf07bd2640a2e45fc808300811d1a1470ff56918024628e3e4f93.jpg)
+**原图待补：** `images/a987120b2f0bf07bd2640a2e45fc808300811d1a1470ff56918024628e3e4f93.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/dacd3aea9b495966fce2481b883c650d0c431329ec5d9bf0440c15bf80ae927c.jpg)
+**原图待补：** `images/dacd3aea9b495966fce2481b883c650d0c431329ec5d9bf0440c15bf80ae927c.jpg`（原附件未提供；须按原件复核）。
 
 
 
 (a) RJ45 DTE 类型引脚定义
 
 
-![](images/81e57092cb343cc47e8b34353ffbae3bbd7ffe7dc64f1e663360d7bed14ab0f0.jpg)
+**原图待补：** `images/81e57092cb343cc47e8b34353ffbae3bbd7ffe7dc64f1e663360d7bed14ab0f0.jpg`（原附件未提供；须按原件复核）。
 
 
 
@@ -1085,7 +1087,7 @@ RJ-45插头, 俗称"水晶头",专业术语为RJ-45连接器(RJ-45是一种网�
 RJ45 引脚定义
 
 
-![](images/a58ea94079a34dcc64ec58cf9fdc25eda4d955504f479c03623f2ca60202c969.jpg)
+**原图待补：** `images/a58ea94079a34dcc64ec58cf9fdc25eda4d955504f479c03623f2ca60202c969.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 5
@@ -1112,14 +1114,14 @@ RJ45 引脚定义
 
 ## USB为通用序列汇流排的简称
 
-<table><tr><td></td><td>Logo</td><td>速度</td><td>傳輸</td><td>電源供應</td><td>纜線長度</td></tr><tr><td>USB1.1</td><td><img src="images/dce19ca9886af25d12ca54c69334c59dafc6eeda1cf3ef7953d2309dd87a3fbc.jpg"/></td><td>Low-speed (1.5 Mbps) Full-speed (12 Mbps)</td><td>兩線差分傳輸</td><td>5V/500mA</td><td>5M</td></tr><tr><td>USB2.0</td><td><img src="images/e77fc5339d0ec5284ac1d1611cf9a9b0185076ba6e53ca3f30e5cafc5b9594ff.jpg"/></td><td>Low-Speed (1.5 Mbps) Full-Speed (12 Mbps) High-Speed (480 Mbps)</td><td>兩線差分傳輸</td><td>5V/500mA</td><td>5M</td></tr><tr><td>USB3.0</td><td><img src="images/3113a2c7599b150a1a221cc1833d942cda33bdbe18d13ed9d34d47598bfd9f49.jpg"/></td><td>Low-Speed (1.5 Mbps) Full-Speed (12 Mbps) High-Speed (480 Mbps) Super-Speed (5.0 Gbps)</td><td>四線差分傳輸</td><td>5V/900mA</td><td>5M</td></tr></table>
+<table><tr><td></td><td>Logo</td><td>速度</td><td>傳輸</td><td>電源供應</td><td>纜線長度</td></tr><tr><td>USB1.1</td><td><span class="missing-original">原图待补：<code>images/dce19ca9886af25d12ca54c69334c59dafc6eeda1cf3ef7953d2309dd87a3fbc.jpg</code>（原附件未提供）</span></td><td>Low-speed (1.5 Mbps) Full-speed (12 Mbps)</td><td>兩線差分傳輸</td><td>5V/500mA</td><td>5M</td></tr><tr><td>USB2.0</td><td><span class="missing-original">原图待补：<code>images/e77fc5339d0ec5284ac1d1611cf9a9b0185076ba6e53ca3f30e5cafc5b9594ff.jpg</code>（原附件未提供）</span></td><td>Low-Speed (1.5 Mbps) Full-Speed (12 Mbps) High-Speed (480 Mbps)</td><td>兩線差分傳輸</td><td>5V/500mA</td><td>5M</td></tr><tr><td>USB3.0</td><td><span class="missing-original">原图待补：<code>images/3113a2c7599b150a1a221cc1833d942cda33bdbe18d13ed9d34d47598bfd9f49.jpg</code>（原附件未提供）</span></td><td>Low-Speed (1.5 Mbps) Full-Speed (12 Mbps) High-Speed (480 Mbps) Super-Speed (5.0 Gbps)</td><td>四線差分傳輸</td><td>5V/900mA</td><td>5M</td></tr></table>
 
 <table><tr><td>Pin Number</td><td>Signal Name</td><td>Description</td></tr><tr><td>1</td><td>VBUS</td><td>Power</td></tr><tr><td>2</td><td>D-</td><td rowspan="2">USB 2.0 differential pair</td></tr><tr><td>3</td><td>D+</td></tr><tr><td>4</td><td>GND</td><td>Ground for power return</td></tr><tr><td>5</td><td>StdA_SSRX-</td><td rowspan="2">SuperSpeed receiver differential pair</td></tr><tr><td>6</td><td>StdA_SSRX+</td></tr><tr><td>7</td><td>GND_DRAIN</td><td>Ground for signal return</td></tr><tr><td>8</td><td>StdA_SSTX-</td><td rowspan="2">SuperSpeed transmitter differential pair</td></tr><tr><td>9</td><td>StdA_SSTX+</td></tr><tr><td>Shell</td><td>Shield</td><td>Connector metal shell</td></tr></table>
 
-![](images/79bd1b82fb7819ef8c57d3a29401543d13d5bb4a6e4fff45c807c97da4f1ace4.jpg)
+**原图待补：** `images/79bd1b82fb7819ef8c57d3a29401543d13d5bb4a6e4fff45c807c97da4f1ace4.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/a29a705cc18bbff6c545e1f90f220c089d269e72005c7f9204e9ab2e337f43f4.jpg)
+**原图待补：** `images/a29a705cc18bbff6c545e1f90f220c089d269e72005c7f9204e9ab2e337f43f4.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 5
@@ -1142,7 +1144,7 @@ RJ45 引脚定义
 
 7,USB1.1&USB2.0电流约为500mA,电源管脚走线宽度>=30mil;USB3.0电流约为900mA>=50mil. 
 
-![](images/67b06662068bd4819634315884894edc52030385ea2bffc61f4731904092cd8d.jpg)
+**原图待补：** `images/67b06662068bd4819634315884894edc52030385ea2bffc61f4731904092cd8d.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 5
@@ -1155,15 +1157,15 @@ HDMI接口可以提供高达5Gbps的数据传输带宽，可以传送无压缩�
 
 <table><tr><td>PIN</td><td>Signal Assignment</td></tr><tr><td>2</td><td>TMDS Data2 Shield</td></tr><tr><td>4</td><td>TMDS Data1+</td></tr><tr><td>6</td><td>TMDS Data1-</td></tr><tr><td>8</td><td>TMDS Data0 Shield</td></tr><tr><td>10</td><td>TMDS Clock+</td></tr><tr><td>12</td><td>TMDS Clock-</td></tr><tr><td>14</td><td>Reserved (N.C. on device)</td></tr><tr><td>16</td><td>SDA</td></tr><tr><td>18</td><td>+5V Power</td></tr></table>
 
-![](images/45fa4e2a1a97f97ed8f4f40a49bdf00937536476ff283fed0d05210cbc8029b3.jpg)
+**原图待补：** `images/45fa4e2a1a97f97ed8f4f40a49bdf00937536476ff283fed0d05210cbc8029b3.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 5
 
-![](images/af1c665f38480a0a06b3a10b94aabde62c9253268036f500b3e01a1f235a2d38.jpg)
+**原图待补：** `images/af1c665f38480a0a06b3a10b94aabde62c9253268036f500b3e01a1f235a2d38.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/3751b163c2d49c955310ef727ac85828d22fe45cb2a139a8faddffb8671cc70a.jpg)
+**原图待补：** `images/3751b163c2d49c955310ef727ac85828d22fe45cb2a139a8faddffb8671cc70a.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 5
@@ -1192,23 +1194,23 @@ HDMI接口可以提供高达5Gbps的数据传输带宽，可以传送无压缩�
 
 RF 射频端子--TV 接口：RF 射频端子是最早在电视机上出现的，原意为无线电射频（Radio Frequency） 
 
-![](images/513d45406148552052122f06d84713936738169e9ff2f14f9900c9c8af2808b5.jpg)
+**原图待补：** `images/513d45406148552052122f06d84713936738169e9ff2f14f9900c9c8af2808b5.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/89bf5cc4251364d4f1c48524cce484ca5a3f54ece1ae1a9830c424e32bf37711.jpg)
+**原图待补：** `images/89bf5cc4251364d4f1c48524cce484ca5a3f54ece1ae1a9830c424e32bf37711.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/12d7eba818409b942aea9b72fa8ca161dfbcdc27ebeb18e0192d63a9eeb9f3c0.jpg)
+**原图待补：** `images/12d7eba818409b942aea9b72fa8ca161dfbcdc27ebeb18e0192d63a9eeb9f3c0.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 5
 
 ## 光模块接口
 
-![](images/afc5d63fbed089717da2f5b870731e429c9bfb3a1018eadd8e72db5b76342a7d.jpg)
+**原图待补：** `images/afc5d63fbed089717da2f5b870731e429c9bfb3a1018eadd8e72db5b76342a7d.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/4f2f37f3476ddfb35e89b51cbd2c0a00450de40741e17722894c0707577a8b2f.jpg)
+**原图待补：** `images/4f2f37f3476ddfb35e89b51cbd2c0a00450de40741e17722894c0707577a8b2f.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 5
@@ -1223,10 +1225,10 @@ RF 射频端子--TV 接口：RF 射频端子是最早在电视机上出现的，
 
 4,差分布线尽量不打VIA,打VIA必须在铁槽之外，不可靠接口太近。 
 
-![](images/c7de14caaad8cbdd1f11095b388875abdac048fb3832c80d65343aa212a8be21.jpg)
+**原图待补：** `images/c7de14caaad8cbdd1f11095b388875abdac048fb3832c80d65343aa212a8be21.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/7a3816f1017abd5fb3060559670ddcdfbd3457a5641be9aeaadb7f18a8424b9f.jpg)
+**原图待补：** `images/7a3816f1017abd5fb3060559670ddcdfbd3457a5641be9aeaadb7f18a8424b9f.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 5
@@ -1235,10 +1237,10 @@ RF 射频端子--TV 接口：RF 射频端子是最早在电视机上出现的，
 
 隔离用，使得输入和输出完全分开（两排管脚之间挖空处理） 
 
-![](images/229b44ac0200b7fa6e6486501c15aca02990f8481c172460c86fa3ba97e5555a.jpg)
+**原图待补：** `images/229b44ac0200b7fa6e6486501c15aca02990f8481c172460c86fa3ba97e5555a.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/7fc69b8aee2902193e83e5b5cfe63f68fa1b696d908c982c5a4f7ed42c49900e.jpg)
+**原图待补：** `images/7fc69b8aee2902193e83e5b5cfe63f68fa1b696d908c982c5a4f7ed42c49900e.jpg`（原附件未提供；须按原件复核）。
 
 
 
@@ -1267,10 +1269,10 @@ RF 射频端子--TV 接口：RF 射频端子是最早在电视机上出现的，
 
 ## SD CARD
 
-![](images/a849aadeb84a4e7864ec1c825ed63dda23bfe8da9c5097e1cb25ce20bb7eb975.jpg)
+**原图待补：** `images/a849aadeb84a4e7864ec1c825ed63dda23bfe8da9c5097e1cb25ce20bb7eb975.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/ce53de20b42ea5f5a32495c98d2379a36cfc19d05a201bab30942e542c9a7fef.jpg)
+**原图待补：** `images/ce53de20b42ea5f5a32495c98d2379a36cfc19d05a201bab30942e542c9a7fef.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 5
@@ -1283,21 +1285,21 @@ RF 射频端子--TV 接口：RF 射频端子是最早在电视机上出现的，
 
 3, SIM卡属于经常热插拔器件，必须要有ESD防护措施 
 
-![](images/04e1c8ab8e3eec9076d18c008e7344d2e148e720e0ce603a70852e2c176c437c.jpg)
+**原图待补：** `images/04e1c8ab8e3eec9076d18c008e7344d2e148e720e0ce603a70852e2c176c437c.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/c2534a54738aef051e44b9abf546267f504a2dda2b893718061574068fbf6bce.jpg)
+**原图待补：** `images/c2534a54738aef051e44b9abf546267f504a2dda2b893718061574068fbf6bce.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/37b421a7e3ae5e6ea8aebc1ccca8ce05b4184c22982e009e775b3246338c1705.jpg)
+**原图待补：** `images/37b421a7e3ae5e6ea8aebc1ccca8ce05b4184c22982e009e775b3246338c1705.jpg`（原附件未提供；须按原件复核）。
 
 
-![](images/a2fbab05d3ea471436483d79fe68f4ad44bf202608e1bfc520f06fca01902dbe.jpg)
+**原图待补：** `images/a2fbab05d3ea471436483d79fe68f4ad44bf202608e1bfc520f06fca01902dbe.jpg`（原附件未提供；须按原件复核）。
 
 
 ## 5
 
-![](images/57554d20c25505b4863dc879cf6e5d85461554e3cd496c1237d583121f7e39a3.jpg)
+**原图待补：** `images/57554d20c25505b4863dc879cf6e5d85461554e3cd496c1237d583121f7e39a3.jpg`（原附件未提供；须按原件复核）。
 
 
 LCD总线 

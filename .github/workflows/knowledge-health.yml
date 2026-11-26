@@ -12,6 +12,9 @@ jobs:
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
           python-version: '3.12'
+      - name: Configure the checkout as the local knowledge root
+        run: |
+          python -c 'import json; from pathlib import Path; Path(".kb.local.json").write_text(json.dumps({"root": str(Path.cwd())}), encoding="utf-8")'
       - run: python scripts/check_kb.py
       - name: Run focused audit regression tests
         run: python -B -m unittest scripts.test_check_kb scripts.test_external_links scripts.test_check_public_secrets -v

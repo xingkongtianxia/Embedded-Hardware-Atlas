@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25",
+  "generated_at": "2026-11-26",
   "tool_version": 2,
   "root_policy": "paths are relative to this sole knowledge-base root",
   "errors": 0,
@@ -8,19 +8,27 @@
       "path": "硬件/PCB/PCB接地与差分采集布局.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 3031,
-      "sha256": "faa77213978c2be5becca03d7b9b62ac8b7e88785d8a484c9d8ec832e3905926",
+      "bytes": 3342,
+      "sha256": "10c7067f90499fed61d46b4c49069def29b4912ec29ce7650930a95bdcfd4fd0",
       "status": "needs-review",
-      "note": "由PCB设计秘籍按主题整理；来源缺图，具体器件/测试条件需按当前资料核验。"
+      "note": "由PCB设计秘籍按主题整理；来源缺图，具体器件/测试条件需按当前资料核验。 2026-11-26图片处置现状见audit/图片修复报告.md；上述缺图描述为修复前记录。",
+      "previous_sha256": "faa77213978c2be5becca03d7b9b62ac8b7e88785d8a484c9d8ec832e3905926",
+      "image_repair_previous_sha256": "faa77213978c2be5becca03d7b9b62ac8b7e88785d8a484c9d8ec832e3905926",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
     },
     {
       "path": "硬件/PCB/PCB热设计与温度测量.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 2861,
-      "sha256": "a2e9d9a726fbddf26492b2237980d87a0b58b627254707ca1ea6dd463d66b713",
+      "bytes": 3131,
+      "sha256": "12d032395c2570855b49c1679d127f45ab31e513a81b353450e1615ffa992868",
       "status": "needs-review",
-      "note": "由PCB设计秘籍按主题整理；来源缺图，具体器件/测试条件需按当前资料核验。"
+      "note": "由PCB设计秘籍按主题整理；来源缺图，具体器件/测试条件需按当前资料核验。 2026-11-26图片处置现状见audit/图片修复报告.md；上述缺图描述为修复前记录。",
+      "previous_sha256": "a2e9d9a726fbddf26492b2237980d87a0b58b627254707ca1ea6dd463d66b713",
+      "image_repair_previous_sha256": "a2e9d9a726fbddf26492b2237980d87a0b58b627254707ca1ea6dd463d66b713",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
     },
     {
       "path": "硬件/PCB/PCB约束与放行.md",
@@ -154,10 +162,14 @@
       "path": "硬件/PCB/封装返修与装联验证.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 1922,
-      "sha256": "4c559fd382fb0012cba83aeee0985b858ad744ff063c6792d471ed55655a3c99",
+      "bytes": 2219,
+      "sha256": "c3a6304065cb4269e2f1c92606d15a434f8da5d9c95cb6ab698d3a3246060b3c",
       "status": "needs-review",
-      "note": "由PCB设计秘籍按主题整理；来源缺图，具体器件/测试条件需按当前资料核验。"
+      "note": "由PCB设计秘籍按主题整理；来源缺图，具体器件/测试条件需按当前资料核验。 2026-11-26图片处置现状见audit/图片修复报告.md；上述缺图描述为修复前记录。",
+      "previous_sha256": "4c559fd382fb0012cba83aeee0985b858ad744ff063c6792d471ed55655a3c99",
+      "image_repair_previous_sha256": "4c559fd382fb0012cba83aeee0985b858ad744ff063c6792d471ed55655a3c99",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
     },
     {
       "path": "硬件/PCB/射频设计.md",
@@ -171,10 +183,14 @@
       "path": "硬件/PCB/开关电源布局与磁件耦合.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 3030,
-      "sha256": "45ec9a8e6caa220653eb760bafcef89ab20da703513ad40b8a4a69348531b745",
+      "bytes": 3294,
+      "sha256": "0adee8a7a3933a5564c0f463f81307401e06496e44acc33048cd8ff9baee0b2b",
       "status": "needs-review",
-      "note": "由PCB设计秘籍按主题整理；来源缺图，具体器件/测试条件需按当前资料核验。"
+      "note": "由PCB设计秘籍按主题整理；来源缺图，具体器件/测试条件需按当前资料核验。 2026-11-26图片处置现状见audit/图片修复报告.md；上述缺图描述为修复前记录。",
+      "previous_sha256": "45ec9a8e6caa220653eb760bafcef89ab20da703513ad40b8a4a69348531b745",
+      "image_repair_previous_sha256": "45ec9a8e6caa220653eb760bafcef89ab20da703513ad40b8a4a69348531b745",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
     },
     {
       "path": "硬件/PCB/时钟复位与启动模块-01.md",
@@ -316,10 +332,14 @@
       "path": "硬件/PCB/电源抗扰与ADC噪声预算.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 2853,
-      "sha256": "7f480a67cecbb3cfe3793f5e6cb18e378f13e0f73a71dd4b486db35b18db6bff",
+      "bytes": 3114,
+      "sha256": "29f2ff7a02229ccbde524a617cbf6a2b4b11ea6e09c2e99b414e1fbd5f9a1139",
       "status": "needs-review",
-      "note": "由PCB设计秘籍按主题整理；来源缺图，具体器件/测试条件需按当前资料核验。"
+      "note": "由PCB设计秘籍按主题整理；来源缺图，具体器件/测试条件需按当前资料核验。 2026-11-26图片处置现状见audit/图片修复报告.md；上述缺图描述为修复前记录。",
+      "previous_sha256": "7f480a67cecbb3cfe3793f5e6cb18e378f13e0f73a71dd4b486db35b18db6bff",
+      "image_repair_previous_sha256": "7f480a67cecbb3cfe3793f5e6cb18e378f13e0f73a71dd4b486db35b18db6bff",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
     },
     {
       "path": "硬件/PCB/电源模块-01.md",
@@ -385,9 +405,13 @@
       "path": "硬件/PCB/经验规则与验证边界勘误.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 6577,
-      "sha256": "3f1c6f40f6fb69742363aa5ec3ea01d445f02ef7b5e8f279fb7e57a0f8088a1c",
-      "status": "needs-review"
+      "bytes": 6852,
+      "sha256": "24ed2a95fd32b7000b4fe75494751a8cc599107216b26ed4162fac083e1a1f6a",
+      "status": "needs-review",
+      "previous_sha256": "3f1c6f40f6fb69742363aa5ec3ea01d445f02ef7b5e8f279fb7e57a0f8088a1c",
+      "image_repair_previous_sha256": "3f1c6f40f6fb69742363aa5ec3ea01d445f02ef7b5e8f279fb7e57a0f8088a1c",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
     },
     {
       "path": "硬件/PCB/车载双路快充原理图审查-2026-10-21.md",
@@ -477,17 +501,25 @@
       "path": "硬件/PCB/高速PCB规范的适用边界.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 2753,
-      "sha256": "a813043c74e4866f995c807c7d8f7dc5821b0e0368d6525799e83e46a8e086fb",
-      "status": "needs-review"
+      "bytes": 3100,
+      "sha256": "4b21495f95a14cc540a5c9ff4751fb62aa92438759951e03ec55d759b02f7083",
+      "status": "needs-review",
+      "previous_sha256": "a813043c74e4866f995c807c7d8f7dc5821b0e0368d6525799e83e46a8e086fb",
+      "image_repair_previous_sha256": "a813043c74e4866f995c807c7d8f7dc5821b0e0368d6525799e83e46a8e086fb",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
     },
     {
       "path": "硬件/PCB/高速接口新增资料.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 2520,
-      "sha256": "e508f3f4a940751ba86134e66e987a5a53e2455a9eb5cd6eedd646f304c6d1d8",
-      "status": "needs-review"
+      "bytes": 2809,
+      "sha256": "4d630c8a502c2151b9f8d3ecfe62eaa68e2bdf5e889ebf5c1e26ee45cc58c4a3",
+      "status": "needs-review",
+      "previous_sha256": "e508f3f4a940751ba86134e66e987a5a53e2455a9eb5cd6eedd646f304c6d1d8",
+      "image_repair_previous_sha256": "e508f3f4a940751ba86134e66e987a5a53e2455a9eb5cd6eedd646f304c6d1d8",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
     },
     {
       "path": "硬件/PCB/高速接口模块-01.md",
@@ -677,11 +709,14 @@
       "path": "硬件/原始备份/JHP11-PCB模块化设计要点解析教案.md（单独Markdown文件）.md",
       "role": "backup-source",
       "kind": "md",
-      "bytes": 45045,
-      "sha256": "30d9dbb334e2ff9305171634d334ff90174419bf9e368de9897d21f5c60d2b42",
+      "bytes": 47347,
+      "sha256": "3ffcd8cd5b02e8ab58c513748a2f6cd4828c4b88eb104b9062cab08901dd8b3b",
       "status": "needs-review",
       "previous_sha256": "4628f4f596972c3a44d00a77f206a8bda10c0836bca1365f6a706e17fd15798c",
-      "note": "旧清单与当前原件哈希不一致；当前哈希仅登记现状，未追认内容正确；本轮未改写原件。"
+      "note": "旧清单与当前原件哈希不一致；当前哈希仅登记现状，未追认内容正确；本轮未改写原件。",
+      "image_repair_previous_sha256": "30d9dbb334e2ff9305171634d334ff90174419bf9e368de9897d21f5c60d2b42",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
     },
     {
       "path": "硬件/原始备份/KAIST信号完整性课程完整笔记.md",
@@ -703,10 +738,23 @@
       "path": "硬件/原始备份/PCB设计秘籍.md",
       "role": "backup-source",
       "kind": "md",
-      "bytes": 155144,
-      "sha256": "774e437de244439155ae3dc565592aa7b8685b575ecb4a322d547e4edc4f77ee",
+      "bytes": 157504,
+      "sha256": "82307593eec088e480f79f5e908c2c6ece9feecac014b1df6b1459db5c351781",
       "status": "needs-review",
-      "note": "ADI智库合辑备份；96处插图引用当前缺少附件，逐篇URL、发布日期及图表均待核。原件只读。"
+      "note": "ADI智库合辑备份；96处插图引用当前缺少附件，逐篇URL、发布日期及图表均待核。原件只读。",
+      "previous_sha256": "774e437de244439155ae3dc565592aa7b8685b575ecb4a322d547e4edc4f77ee",
+      "image_repair_previous_sha256": "774e437de244439155ae3dc565592aa7b8685b575ecb4a322d547e4edc4f77ee",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
+    },
+    {
+      "path": "硬件/原始备份/PCB设计秘籍.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "status": "needs-review",
+      "note": "用户补充的对应原版PDF；用于完整页面回补，图像可访问不代表技术核验完成。",
+      "sha256": "70ecf1ec67cab09139c53a769158a48467921c00a25d63f120aa99e01ee80d75",
+      "bytes": 9042736
     },
     {
       "path": "硬件/原始备份/Protection devices.pdf",
@@ -752,17 +800,44 @@
       "path": "硬件/原始备份/三极管.md",
       "role": "backup-source",
       "kind": "md",
-      "bytes": 66572,
-      "sha256": "aa8c2e3779a1aa91a15fcc041dd78be4a13122d4d82167fd444f013dc701136a",
-      "status": "needs-review"
+      "bytes": 67098,
+      "sha256": "7b79d85c47dfd21b986001172e5551852794b4c3038426fb43ba84a5d46a7b31",
+      "status": "needs-review",
+      "previous_sha256": "aa8c2e3779a1aa91a15fcc041dd78be4a13122d4d82167fd444f013dc701136a",
+      "image_repair_previous_sha256": "aa8c2e3779a1aa91a15fcc041dd78be4a13122d4d82167fd444f013dc701136a",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
+    },
+    {
+      "path": "硬件/原始备份/三极管篇.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "status": "needs-review",
+      "note": "用户补充的对应原版PDF；用于完整页面回补，图像可访问不代表技术核验完成。",
+      "sha256": "202cceb055976267be5775b11cba77bbe86effaa8fc10cbf1b36fd5e8246b0f1",
+      "bytes": 5145575
     },
     {
       "path": "硬件/原始备份/二极管.md",
       "role": "backup-source",
       "kind": "md",
-      "bytes": 37260,
-      "sha256": "956d3eac502b484ec81537e59f97e96ed1d1adf7e2683472b741cb2da5f177e0",
-      "status": "needs-review"
+      "bytes": 37780,
+      "sha256": "d08c369b1d47c7f222cde384e439d6f2ea605acf8d8119a57d18c705cb2eb7b9",
+      "previous_sha256": "956d3eac502b484ec81537e59f97e96ed1d1adf7e2683472b741cb2da5f177e0",
+      "status": "needs-review",
+      "note": "按用户要求移除确认不存在的缺图引用；原附件未在知识库或 Git 历史找到。 2026-11-26图片处置现状见audit/图片修复报告.md；上述缺图描述为修复前记录。",
+      "image_repair_previous_sha256": "05432ee11bbfd93db2cb276f173385cd0a41b090d0d8b8c4a3dc61ce7b1aa615",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
+    },
+    {
+      "path": "硬件/原始备份/二极管篇.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "status": "needs-review",
+      "note": "用户补充的对应原版PDF；用于完整页面回补，图像可访问不代表技术核验完成。",
+      "sha256": "29400c4a1f873992e8adc26c2bde125ce9e5b7d83dd9dc85b1822dc32d0d4eb7",
+      "bytes": 2780505
     },
     {
       "path": "硬件/原始备份/保护器件选型.pdf",
@@ -792,9 +867,22 @@
       "path": "硬件/原始备份/场效应管.md",
       "role": "backup-source",
       "kind": "md",
-      "bytes": 46919,
-      "sha256": "09fe014af648c88db340f49465fd26b7c6ad0048860a50f60c05e2de45335881",
-      "status": "needs-review"
+      "bytes": 46056,
+      "sha256": "e2409c82a23588ebe282a0f53bdf57c8d321e3a7d8b690059de510af11463f13",
+      "status": "needs-review",
+      "previous_sha256": "09fe014af648c88db340f49465fd26b7c6ad0048860a50f60c05e2de45335881",
+      "image_repair_previous_sha256": "09fe014af648c88db340f49465fd26b7c6ad0048860a50f60c05e2de45335881",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
+    },
+    {
+      "path": "硬件/原始备份/场效应管篇.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "status": "needs-review",
+      "note": "用户补充的对应原版PDF；用于完整页面回补，图像可访问不代表技术核验完成。",
+      "sha256": "d102896c5dc5bfba1ce947000fb589ab375d52d2e7536bdc5d3d7c484482463b",
+      "bytes": 6054388
     },
     {
       "path": "硬件/原始备份/增强型产品选型指南.pdf",
@@ -904,17 +992,43 @@
       "path": "硬件/原始备份/电容.md",
       "role": "backup-source",
       "kind": "md",
-      "bytes": 48260,
-      "sha256": "3998df0c9ca3603b6316d892ba1a88d68e843f933f07da081fad630a7de7df56",
-      "status": "needs-review"
+      "bytes": 48821,
+      "sha256": "b93578fbf0e0a533396ab507e36394cce28a6368a73ca310cfd4f001260b46d3",
+      "status": "needs-review",
+      "previous_sha256": "3998df0c9ca3603b6316d892ba1a88d68e843f933f07da081fad630a7de7df56",
+      "image_repair_previous_sha256": "3998df0c9ca3603b6316d892ba1a88d68e843f933f07da081fad630a7de7df56",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
+    },
+    {
+      "path": "硬件/原始备份/电容篇.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "status": "needs-review",
+      "note": "用户补充的对应原版PDF；用于完整页面回补，图像可访问不代表技术核验完成。",
+      "sha256": "331639070a2b24edf3db12c7f1aeff4956816afc80564de183f3f743e0e42239",
+      "bytes": 2316299
     },
     {
       "path": "硬件/原始备份/电感.md",
       "role": "backup-source",
       "kind": "md",
-      "bytes": 66616,
-      "sha256": "0533f7c8711f9fbdf9edc164b5fff8dcbd3f79f9078ef191bdc9ed09d7e5cca5",
-      "status": "needs-review"
+      "bytes": 64569,
+      "sha256": "075c3be73c6d3ac8903dc6c6ae16f4f4704bf667c4f38629c6cd08d29bb62f26",
+      "status": "needs-review",
+      "previous_sha256": "0533f7c8711f9fbdf9edc164b5fff8dcbd3f79f9078ef191bdc9ed09d7e5cca5",
+      "image_repair_previous_sha256": "0533f7c8711f9fbdf9edc164b5fff8dcbd3f79f9078ef191bdc9ed09d7e5cca5",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
+    },
+    {
+      "path": "硬件/原始备份/电感篇.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "status": "needs-review",
+      "note": "用户补充的对应原版PDF；用于完整页面回补，图像可访问不代表技术核验完成。",
+      "sha256": "014c4d3bde931acd02acd1a98f5ece8b0bc337c36bf42860f8e6aae0cde6e55f",
+      "bytes": 3380201
     },
     {
       "path": "硬件/原始备份/电机驱动PCB布局指南_知识库总结.md",
@@ -944,17 +1058,34 @@
       "path": "硬件/原始备份/电源.md",
       "role": "backup-source",
       "kind": "md",
-      "bytes": 183988,
-      "sha256": "f05ef6417a289577799be59bfd250542709e2abf92694e4a6b36f38a2d9a9de2",
-      "status": "needs-review"
+      "bytes": 183787,
+      "sha256": "66012b86d5239b5bf44b3efc27d9dcd27971c33456a261bb59e1b626f7a9b901",
+      "status": "needs-review",
+      "previous_sha256": "f05ef6417a289577799be59bfd250542709e2abf92694e4a6b36f38a2d9a9de2",
+      "image_repair_previous_sha256": "f05ef6417a289577799be59bfd250542709e2abf92694e4a6b36f38a2d9a9de2",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
     },
     {
       "path": "硬件/原始备份/电源完整性.md",
       "role": "backup-source",
       "kind": "md",
-      "bytes": 49601,
-      "sha256": "e296c225ab2b525e52db862dbb214b2e2445fbed15aa1ddd9142d6136b51a188",
-      "status": "needs-review"
+      "bytes": 49685,
+      "sha256": "6e3f3f8d2b23f77a9bc32031cf0f8eed0e7bfad2831a35f38f3efbeba29241b8",
+      "status": "needs-review",
+      "previous_sha256": "e296c225ab2b525e52db862dbb214b2e2445fbed15aa1ddd9142d6136b51a188",
+      "image_repair_previous_sha256": "e296c225ab2b525e52db862dbb214b2e2445fbed15aa1ddd9142d6136b51a188",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
+    },
+    {
+      "path": "硬件/原始备份/电源完整性.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "status": "needs-review",
+      "note": "用户补充的对应原版PDF；用于完整页面回补，图像可访问不代表技术核验完成。",
+      "sha256": "27435c98902df49a123182254ed6f1006b1e2e778e4a6a93b8114db1344175a2",
+      "bytes": 289401
     },
     {
       "path": "硬件/原始备份/电源管理指南.pdf",
@@ -965,12 +1096,25 @@
       "status": "needs-review"
     },
     {
+      "path": "硬件/原始备份/电源篇.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "status": "needs-review",
+      "note": "用户补充的对应原版PDF；用于完整页面回补，图像可访问不代表技术核验完成。",
+      "sha256": "0b708c3e584b88e3a23283f8f0f6ba321c313784ffb001e49f5d48a5105722d4",
+      "bytes": 8647586
+    },
+    {
       "path": "硬件/原始备份/电源设计经验.md",
       "role": "backup-source",
       "kind": "md",
-      "bytes": 213167,
-      "sha256": "56cf6d0d0255f8e6306fc6588ef9f8882c2b7a2dd581957aedeccf52b58abad5",
-      "status": "needs-review"
+      "bytes": 214617,
+      "sha256": "57b43d226f1edb220346f143a611ca7c7562be9aae9c45fc8d84303c616369e2",
+      "status": "needs-review",
+      "previous_sha256": "56cf6d0d0255f8e6306fc6588ef9f8882c2b7a2dd581957aedeccf52b58abad5",
+      "image_repair_previous_sha256": "56cf6d0d0255f8e6306fc6588ef9f8882c2b7a2dd581957aedeccf52b58abad5",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
     },
     {
       "path": "硬件/原始备份/电源设计经验.pdf",
@@ -992,9 +1136,22 @@
       "path": "硬件/原始备份/电阻.md",
       "role": "backup-source",
       "kind": "md",
-      "bytes": 31785,
-      "sha256": "2acf5100ba19188c7e6f91448cffa210042742b82ccc011174301ca4910da242",
-      "status": "needs-review"
+      "bytes": 33153,
+      "sha256": "09e996510e4ec8aa5566bc6a5b171339590fb351942df62047bac812575652ed",
+      "status": "needs-review",
+      "previous_sha256": "2acf5100ba19188c7e6f91448cffa210042742b82ccc011174301ca4910da242",
+      "image_repair_previous_sha256": "2acf5100ba19188c7e6f91448cffa210042742b82ccc011174301ca4910da242",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
+    },
+    {
+      "path": "硬件/原始备份/电阻篇.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "status": "needs-review",
+      "note": "用户补充的对应原版PDF；用于完整页面回补，图像可访问不代表技术核验完成。",
+      "sha256": "5096d56551c1c2a6339f8c5e2a6c2dc2c49f36112e3067a266b580abe04de9da",
+      "bytes": 1276750
     },
     {
       "path": "硬件/原始备份/硬件工程师入门教程_电子工程师_零基础_全免费_2024全新课程_中文字幕_B站 点赞 收藏NO.1｜全集总结 2026-08-06.md",
@@ -1016,25 +1173,55 @@
       "path": "硬件/原始备份/线性稳压器的基础知识.md",
       "role": "backup-source",
       "kind": "md",
-      "bytes": 30462,
-      "sha256": "a1cfe9c8b453cc286675efa44aefce5d8a8372640ee76b75b634a2d5f67b7aee",
-      "status": "needs-review"
+      "bytes": 31745,
+      "sha256": "e318ebca03a602cbeef1e64457d5cd08d99872be8fd11bd5970e9e6070aa047e",
+      "status": "needs-review",
+      "previous_sha256": "a1cfe9c8b453cc286675efa44aefce5d8a8372640ee76b75b634a2d5f67b7aee",
+      "image_repair_previous_sha256": "a1cfe9c8b453cc286675efa44aefce5d8a8372640ee76b75b634a2d5f67b7aee",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
     },
     {
       "path": "硬件/原始备份/运放.md",
       "role": "backup-source",
       "kind": "md",
-      "bytes": 42354,
-      "sha256": "6930ed79e4e13a32e0f977c3d15cfb85c4f03770faafe692e2202ed226dfb447",
-      "status": "needs-review"
+      "bytes": 42679,
+      "sha256": "b7cc3fbb8ec18f94d34ad9707f6cf2df73fc01fca9a60eb2ec6c3b0a97f4eea1",
+      "status": "needs-review",
+      "previous_sha256": "6930ed79e4e13a32e0f977c3d15cfb85c4f03770faafe692e2202ed226dfb447",
+      "image_repair_previous_sha256": "6930ed79e4e13a32e0f977c3d15cfb85c4f03770faafe692e2202ed226dfb447",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
+    },
+    {
+      "path": "硬件/原始备份/运放应用.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "status": "needs-review",
+      "note": "用户补充的对应原版PDF；用于完整页面回补，图像可访问不代表技术核验完成。",
+      "sha256": "56e0ff73a6ecb905f8eecbf7665ac79aed1d79761715547f1065da2f4c26f57a",
+      "bytes": 1159044
+    },
+    {
+      "path": "硬件/原始备份/运放篇.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "status": "needs-review",
+      "note": "用户补充的对应原版PDF；用于完整页面回补，图像可访问不代表技术核验完成。",
+      "sha256": "4463f3a599edd4ae2c58fec0b0360601dd39e03bb03e06d24e7671084dbaafcc",
+      "bytes": 2695018
     },
     {
       "path": "硬件/原始备份/运算放大器经典应用.md",
       "role": "backup-source",
       "kind": "md",
-      "bytes": 31454,
-      "sha256": "d9b932079743ed2d269dacafeb0f29f446ded8ed1fdf7bae0e53a243c39b4547",
-      "status": "needs-review"
+      "bytes": 34929,
+      "sha256": "7c6005c5dd0a4250f6f925dbf8ee752159b8ca3b53497af29b83587208719e99",
+      "status": "needs-review",
+      "previous_sha256": "d9b932079743ed2d269dacafeb0f29f446ded8ed1fdf7bae0e53a243c39b4547",
+      "image_repair_previous_sha256": "d9b932079743ed2d269dacafeb0f29f446ded8ed1fdf7bae0e53a243c39b4547",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
     },
     {
       "path": "硬件/原始备份/隔离器与固态继电器选型.pdf",
@@ -1064,9 +1251,13 @@
       "path": "硬件/原始备份/高速PCB设计.md",
       "role": "backup-source",
       "kind": "md",
-      "bytes": 68526,
-      "sha256": "f0e3b2b035beb964f4e2bdd3c3b8a1dcb7a40725691ad51a72f47e1ab824c4e8",
-      "status": "available"
+      "bytes": 74607,
+      "sha256": "b22947bf3aada5096846b27a63776326499cd5b3f18de22b3fa6c7b083e1d123",
+      "status": "available",
+      "previous_sha256": "f0e3b2b035beb964f4e2bdd3c3b8a1dcb7a40725691ad51a72f47e1ab824c4e8",
+      "image_repair_previous_sha256": "f0e3b2b035beb964f4e2bdd3c3b8a1dcb7a40725691ad51a72f47e1ab824c4e8",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
     },
     {
       "path": "硬件/原理/EMC-01.md",
@@ -1144,9 +1335,13 @@
       "path": "硬件/原理/PDN预算与去耦勘误.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 3366,
-      "sha256": "15332001e793d746c61fafd5a645253cff1019c2e674ba969cb94a4121042730",
-      "status": "needs-review"
+      "bytes": 3656,
+      "sha256": "5b630bd54402dd670eff6bf0bef0800c0916af18d3e63602594377d6d2d3d3e2",
+      "status": "needs-review",
+      "previous_sha256": "15332001e793d746c61fafd5a645253cff1019c2e674ba969cb94a4121042730",
+      "image_repair_previous_sha256": "15332001e793d746c61fafd5a645253cff1019c2e674ba969cb94a4121042730",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
     },
     {
       "path": "硬件/原理/PI-01.md",
@@ -1312,9 +1507,13 @@
       "path": "硬件/原理/半导体工作区与选型勘误.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 3885,
-      "sha256": "08a6eb84c9eebaed52f43e08805eb7a36159e16690c9bd4425594e0a733c67de",
-      "status": "needs-review"
+      "bytes": 4183,
+      "sha256": "db1f2b026baa4369c4cb3837133c4374c0ac2eff47947459d8fdcc6819dde37a",
+      "status": "needs-review",
+      "previous_sha256": "08a6eb84c9eebaed52f43e08805eb7a36159e16690c9bd4425594e0a733c67de",
+      "image_repair_previous_sha256": "08a6eb84c9eebaed52f43e08805eb7a36159e16690c9bd4425594e0a733c67de",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
     },
     {
       "path": "硬件/原理/叠层与阻抗-01.md",
@@ -1388,9 +1587,13 @@
       "path": "硬件/原理/开关电源拓扑与验证.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 10930,
-      "sha256": "73edddda39a8629b05ce93d63bd37824ff1645e154332f79d6c4f39e75d24a18",
-      "status": "needs-review"
+      "bytes": 11247,
+      "sha256": "210bf29be636c9becf25673793536fe253c8ba527a35f880d21fb26950974ec2",
+      "status": "needs-review",
+      "previous_sha256": "73edddda39a8629b05ce93d63bd37824ff1645e154332f79d6c4f39e75d24a18",
+      "image_repair_previous_sha256": "73edddda39a8629b05ce93d63bd37824ff1645e154332f79d6c4f39e75d24a18",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
     },
     {
       "path": "硬件/原理/放大器失调校正.md",
@@ -1464,9 +1667,13 @@
       "path": "硬件/原理/无源元件选型与勘误.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 4440,
-      "sha256": "65e0d017e2bda45bf2b34a50d5837c6886849621868fd6c678a20d9443949def",
-      "status": "needs-review"
+      "bytes": 4738,
+      "sha256": "e86c16e0c28cad610f5e9f948c83e3ebcf1728e1233b14c303d5a68b757f2174",
+      "status": "needs-review",
+      "previous_sha256": "65e0d017e2bda45bf2b34a50d5837c6886849621868fd6c678a20d9443949def",
+      "image_repair_previous_sha256": "65e0d017e2bda45bf2b34a50d5837c6886849621868fd6c678a20d9443949def",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
     },
     {
       "path": "硬件/原理/模电-01.md",
@@ -1604,9 +1811,13 @@
       "path": "硬件/原理/线性稳压与电源测量补充.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 5803,
-      "sha256": "68456e4c1c30484e0ffec7c009e39a8cdc86473c82f8c61fb9d1fadbecdda071",
-      "status": "needs-review"
+      "bytes": 6083,
+      "sha256": "ba1d9c80c8832544693bafe34b4ac673f06c341eb682612d627d1e18838827d0",
+      "status": "needs-review",
+      "previous_sha256": "68456e4c1c30484e0ffec7c009e39a8cdc86473c82f8c61fb9d1fadbecdda071",
+      "image_repair_previous_sha256": "68456e4c1c30484e0ffec7c009e39a8cdc86473c82f8c61fb9d1fadbecdda071",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
     },
     {
       "path": "硬件/原理/芯片手册/2026-09-04新增芯片手册.md",
@@ -1793,9 +2004,13 @@
       "path": "硬件/原理/运放应用公式与边界.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 3620,
-      "sha256": "88559e5d74b8ca2f4ad8444dc0d8ed9302988b9f4f26e06871ecddb79828dea5",
-      "status": "needs-review"
+      "bytes": 3920,
+      "sha256": "ec01eb443ed260857ff3c4a5af9005df756d5029c8306a4b9562b3d252fca7c0",
+      "status": "needs-review",
+      "previous_sha256": "88559e5d74b8ca2f4ad8444dc0d8ed9302988b9f4f26e06871ecddb79828dea5",
+      "image_repair_previous_sha256": "88559e5d74b8ca2f4ad8444dc0d8ed9302988b9f4f26e06871ecddb79828dea5",
+      "image_repair_date": "2026-11-26",
+      "image_repair_evidence": "audit/图片修复明细.csv"
     },
     {
       "path": "硬件/芯片数据手册/02FVS3芯片手册.pdf",

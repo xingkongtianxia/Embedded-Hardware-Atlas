@@ -2,7 +2,7 @@
 title: BJT与MOSFET工作区对照
 type: comparison
 status: needs-review
-updated: 2026-11-18
+updated: 2026-11-26
 sources: [硬件/原理/半导体工作区与选型勘误.md]
 tags: [嵌入式硬件, BJT, MOSFET, 工作区]
 ---
@@ -30,6 +30,6 @@ BJT集电结是C-B。发射极接地、Rb接VCC的NPN偏置应`Ib≈(VCC−VBE)/
 
 ## 验证与待核验
 
-先确认完整型号、制造商、封装/引脚视图，核对推荐条件、极限、SOA及热。缺图电路及原件型号推荐表继续待复核。
+先确认完整型号、制造商、封装/引脚视图，核对推荐条件、极限、SOA及热。回补图像中的具体电路及原件型号推荐表继续待复核。
 
 相关[[wiki/原理/模电/02-BJT|BJT基础]]、[[wiki/原理/模电/03-MOSFET|MOSFET基础]]、[[wiki/原理/模电/01-半导体与二极管|二极管]]、[[wiki/综合/保护隔离与射频选型边界|保护器件边界]]。
