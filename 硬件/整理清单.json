@@ -1,9 +1,49 @@
 {
-  "generated_at": "2026-11-27",
+  "generated_at": "2026-11-28",
   "tool_version": 2,
   "root_policy": "paths are relative to this sole knowledge-base root",
   "errors": 0,
   "items": [
+    {
+      "path": "硬件/PCB/112G板材与制造约束.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 3144,
+      "sha256": "5533f6b06148b27732a26cc9b15a028d876dc4e83177ca01f7aae8c1d335fda1",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/PCB/112G系统方案与链路预算.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 3206,
+      "sha256": "c4672d538d0e822b38132c512ff78366d09d871e700b31c7f75eed24c7bb70b1",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/PCB/112G连接器线缆与液冷.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 3452,
+      "sha256": "be762c92c68ae3efa78a4749a1a5c3eb097204eeb7ba2d1202218e633e0e8d88",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/PCB/112G通道建模与仿真.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 3199,
+      "sha256": "fd00e15d978ca000aeaaa4ca6a068bdfcda4b5b562a95ec333e4364015d82bc3",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/PCB/112G链路测试与放行.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 3122,
+      "sha256": "9820133da9890459f3f86d5ef4ae8dee03e11e697d0049421baf99de2f114984",
+      "status": "needs-review"
+    },
     {
       "path": "硬件/PCB/PCB接地与差分采集布局.md",
       "role": "curated-source",
@@ -679,6 +719,24 @@
       "note": "旧清单与当前原件哈希不一致；当前哈希仅登记现状，未追认内容正确；本轮未改写原件。"
     },
     {
+      "path": "硬件/原始备份/112G高速互连白皮书.md",
+      "role": "backup-source",
+      "kind": "md",
+      "bytes": 139073,
+      "sha256": "baf85f96e65d7249642a2960a65ecb0f730d538d254c44c7d3103ce2d8de5425",
+      "status": "needs-review",
+      "note": "ODCC-2022-03006，2022-09；原件字节保持不变；MD图像以对应PDF完整页回补，非原裁图，见audit/112G白皮书图像回补明细.csv。"
+    },
+    {
+      "path": "硬件/原始备份/112G高速互连白皮书.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "bytes": 9735551,
+      "sha256": "68b521ecb7cc8e5f8c9ee32b1c7289345ee18c563ccc18a72d76064d03808987",
+      "status": "needs-review",
+      "note": "ODCC-2022-03006，2022-09；原件字节保持不变；MD图像以对应PDF完整页回补，非原裁图，见audit/112G白皮书图像回补明细.csv。"
+    },
+    {
       "path": "硬件/原始备份/11_【Altium Academy】高速电路设计 2026.md",
       "role": "backup-source",
       "kind": "md",
@@ -859,6 +917,15 @@
       "bytes": 1336262,
       "sha256": "6ec29f380a575120fa5e02dd472be5708c774f649f1e5f4d664756b8491868ec",
       "status": "needs-review"
+    },
+    {
+      "path": "硬件/原始备份/信号完整性与电源完整性分析.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "bytes": 81172616,
+      "sha256": "96fea9d57210831069d1fbea2e306f566d1de5e92b5e19ab3d12d5f71c84c1fa",
+      "status": "needs-review",
+      "note": "200页不完整扫描文件，无文本层；仅核对身份、目录和末页，未全文OCR，缺第9章余文及后续章节。"
     },
     {
       "path": "硬件/原始备份/光耦合器选型.pdf",
@@ -1295,6 +1362,14 @@
       "note": "库内现有91页原版PDF；2026-11-27用于89处缺图的完整页回补；讲师或机构未记录，图片可访问不代表技术核验完成。"
     },
     {
+      "path": "硬件/原理/112G信号与均衡.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 3155,
+      "sha256": "270a4da7a05dfde473df68b947382204847a77215ebb249da5232cbefe69846e",
+      "status": "needs-review"
+    },
+    {
       "path": "硬件/原理/EMC-01.md",
       "role": "curated-source",
       "kind": "md",
@@ -1528,6 +1603,14 @@
       "kind": "md",
       "bytes": 3798,
       "sha256": "0e8da2f3db8706644362593d3c9ac8a02bde02128cd44f6eb5ee7ae044db4adb",
+      "status": "needs-review"
+    },
+    {
+      "path": "硬件/原理/信号与电源完整性扫描资料导读.md",
+      "role": "curated-source",
+      "kind": "md",
+      "bytes": 1839,
+      "sha256": "36e9903b0caf30b107a06db3729e86b8a8ae11f904df95e799f8c740e8161f22",
       "status": "needs-review"
     },
     {
