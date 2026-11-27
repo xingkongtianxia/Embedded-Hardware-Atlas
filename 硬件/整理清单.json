@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26",
+  "generated_at": "2026-11-27",
   "tool_version": 2,
   "root_policy": "paths are relative to this sole knowledge-base root",
   "errors": 0,
@@ -501,13 +501,26 @@
       "path": "硬件/PCB/高速PCB规范的适用边界.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 3100,
-      "sha256": "4b21495f95a14cc540a5c9ff4751fb62aa92438759951e03ec55d759b02f7083",
+      "bytes": 3202,
+      "sha256": "fd8e1d42b9e322b9f71b112957da13ea26c0973b7273c8a4e68ec9d0d9f19f25",
       "status": "needs-review",
       "previous_sha256": "a813043c74e4866f995c807c7d8f7dc5821b0e0368d6525799e83e46a8e086fb",
-      "image_repair_previous_sha256": "a813043c74e4866f995c807c7d8f7dc5821b0e0368d6525799e83e46a8e086fb",
-      "image_repair_date": "2026-11-26",
-      "image_repair_evidence": "audit/图片修复明细.csv"
+      "image_repair_previous_sha256": "4b21495f95a14cc540a5c9ff4751fb62aa92438759951e03ec55d759b02f7083",
+      "image_repair_date": "2026-11-27",
+      "image_repair_evidence": "audit/图片修复明细.csv",
+      "image_repair_history": [
+        {
+          "date": "2026-11-26",
+          "previous_sha256": "a813043c74e4866f995c807c7d8f7dc5821b0e0368d6525799e83e46a8e086fb",
+          "sha256": "4b21495f95a14cc540a5c9ff4751fb62aa92438759951e03ec55d759b02f7083"
+        },
+        {
+          "date": "2026-11-27",
+          "previous_sha256": "4b21495f95a14cc540a5c9ff4751fb62aa92438759951e03ec55d759b02f7083",
+          "sha256": "fd8e1d42b9e322b9f71b112957da13ea26c0973b7273c8a4e68ec9d0d9f19f25",
+          "evidence": "audit/图片修复明细.csv"
+        }
+      ]
     },
     {
       "path": "硬件/PCB/高速接口新增资料.md",
@@ -1251,13 +1264,35 @@
       "path": "硬件/原始备份/高速PCB设计.md",
       "role": "backup-source",
       "kind": "md",
-      "bytes": 74607,
-      "sha256": "b22947bf3aada5096846b27a63776326499cd5b3f18de22b3fa6c7b083e1d123",
+      "bytes": 76701,
+      "sha256": "34da4ee93238c09b20948f1eaf1060e17f0fbef8d7adfa1a4af4cd4797de1cf3",
       "status": "available",
       "previous_sha256": "f0e3b2b035beb964f4e2bdd3c3b8a1dcb7a40725691ad51a72f47e1ab824c4e8",
-      "image_repair_previous_sha256": "f0e3b2b035beb964f4e2bdd3c3b8a1dcb7a40725691ad51a72f47e1ab824c4e8",
-      "image_repair_date": "2026-11-26",
-      "image_repair_evidence": "audit/图片修复明细.csv"
+      "image_repair_previous_sha256": "b22947bf3aada5096846b27a63776326499cd5b3f18de22b3fa6c7b083e1d123",
+      "image_repair_date": "2026-11-27",
+      "image_repair_evidence": "audit/图片修复明细.csv",
+      "image_repair_history": [
+        {
+          "date": "2026-11-26",
+          "previous_sha256": "f0e3b2b035beb964f4e2bdd3c3b8a1dcb7a40725691ad51a72f47e1ab824c4e8",
+          "sha256": "b22947bf3aada5096846b27a63776326499cd5b3f18de22b3fa6c7b083e1d123"
+        },
+        {
+          "date": "2026-11-27",
+          "previous_sha256": "b22947bf3aada5096846b27a63776326499cd5b3f18de22b3fa6c7b083e1d123",
+          "sha256": "34da4ee93238c09b20948f1eaf1060e17f0fbef8d7adfa1a4af4cd4797de1cf3",
+          "evidence": "audit/图片修复明细.csv"
+        }
+      ]
+    },
+    {
+      "path": "硬件/原始备份/高速PCB设计规范.pdf",
+      "role": "backup-source",
+      "kind": "pdf",
+      "bytes": 5307306,
+      "sha256": "07745fdf685dbdff8d35fc6cfde15081aff46242c549db771f5864b1f8cbe47e",
+      "status": "needs-review",
+      "note": "库内现有91页原版PDF；2026-11-27用于89处缺图的完整页回补；讲师或机构未记录，图片可访问不代表技术核验完成。"
     },
     {
       "path": "硬件/原理/EMC-01.md",

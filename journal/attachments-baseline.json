@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26",
+  "generated_at": "2026-11-27",
   "root_policy": "paths relative to the sole knowledge-base root",
   "originals": {},
   "resolved": {
@@ -147,11 +147,15 @@
       "count": 86,
       "reason": "导入时仅保存正文，未带出粘贴图片",
       "since": "2026-11-21",
-      "resolved_at": "2026-11-26",
+      "resolved_at": "2026-11-27",
       "audited_references": 89,
-      "restored_references": 0,
-      "pending_originals": 89,
-      "evidence": "audit/图片修复明细.csv"
+      "restored_references": 89,
+      "pending_originals": 0,
+      "evidence": "audit/图片修复明细.csv",
+      "original_pdf": "硬件/原始备份/高速PCB设计规范.pdf",
+      "pdf_sha256": "07745fdf685dbdff8d35fc6cfde15081aff46242c549db771f5864b1f8cbe47e",
+      "image_assets": 48,
+      "resolution": "原版完整页回补，重复位置为页码链接"
     }
   },
   "pending_originals": {
@@ -159,12 +163,6 @@
       "count": 2,
       "since": "2026-11-26",
       "reason": "JHP11原教案及2张原附件未提供",
-      "evidence": "audit/图片待补清单.csv"
-    },
-    "硬件/原始备份/高速PCB设计.md": {
-      "count": 89,
-      "since": "2026-11-26",
-      "reason": "高速PCB设计规范原版及89张导出附件未提供",
       "evidence": "audit/图片待补清单.csv"
     }
   }
