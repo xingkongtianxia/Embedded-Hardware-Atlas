@@ -2,7 +2,7 @@
 title: GitHub PX4 Autopilot
 type: external-resource
 status: needs-review
-updated: 2026-09-26
+updated: 2026-11-28
 sources: []
 tags: [外来资料, GitHub, 无人机, 飞控, STM32]
 ---
@@ -43,3 +43,14 @@ tags: [外来资料, GitHub, 无人机, 飞控, STM32]
 - [ ] 许可证和第三方依赖清单满足项目发布要求
 - [ ] 仿真结果已通过实机台架和失效保护测试
 
+
+## 2026-11-28 版本定位与阅读增量
+
+- 仓库：`PX4/PX4-Autopilot`；本轮API读取默认分支 `main`，取得commit `91e37e39cb1b8ef7ac6ed0928b9fee53468be9e1`；当时未归档。
+- 固定入口：[README](https://github.com/PX4/PX4-Autopilot/blob/91e37e39cb1b8ef7ac6ed0928b9fee53468be9e1/README.md)；[提交](https://github.com/PX4/PX4-Autopilot/commit/91e37e39cb1b8ef7ac6ed0928b9fee53468be9e1)。
+- 元数据许可标识：`BSD-3-Clause`，仍须逐组件核对。旧获取记录与Star数量保留为2026-09-26历史快照，不用作当前质量或活跃性证明。
+- 本轮获取：仓库元数据、commit和该版本README正文；前三个原始下载超时处通过公开API取得正文，未克隆、编译、运行或连接目标板。
+
+先读README的About、Why PX4与开发文档入口，再选择一个传感器到控制输出的场景。README描述uORB发布订阅；本轮没有沿源码验证具体消息链，不能由架构说明推断本机飞行安全。
+
+使用 [[external/GitHub检索与版本化阅读]] 记录文件、Issue/PR、环境与验证范围；回到 [[external/开放学习与外部查证导航]] 比较本地条件。具体硬件结论及原待核验项不因本轮登记而关闭。

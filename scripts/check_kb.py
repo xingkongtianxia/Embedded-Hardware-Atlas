@@ -33,8 +33,9 @@ FORBIDDEN_TAGS = GENERIC_TAGS - {'嵌入式硬件'}
 WIKI_LINE_LIMIT = 200
 CURATED_LINE_LIMIT = 400
 MAX_TAGS = 6
-LARGE_FILE_WARN_BYTES = 10 * 1024 * 1024
+LARGE_FILE_WARN_BYTES = 30 * 1024 * 1024
 ATTACH_BASELINE = 'journal/attachments-baseline.json'
+HASH_REVIEWS = 'audit/historical-hash-reviews.json'
 ATTACHMENT_WARNING = re.compile(r'图缺失|缺图|图片缺失|附件缺失|仅文本可用')
 ATTACHMENT_LINK = re.compile(
     r'!\[\[([^\]\n]+)\]\]|!\[[^\]\n]*\]\(([^)\n]+)\)'
@@ -201,6 +202,139 @@ def find_missing_attachments(path, body, baseline, resolve_target):
     return findings
 
 
+def public_review_evidence(path, root=ROOT, index_modes=None):
+    """Reject aliases into private files; staged evidence must be a regular blob."""
+    if index_modes is not None:
+        return index_modes.get(path) in {'100644', '100755'}
+    root = root.resolve()
+    target = root / path
+    try:
+        for component in (target, *target.parents):
+            if component == root:
+                break
+            if component.is_symlink() or getattr(component, 'is_junction', lambda: False)():
+                return False
+        resolved = target.resolve(strict=True)
+        relative = resolved.relative_to(root).as_posix()
+        return (resolved.is_file() and not private(relative)
+                and relative.startswith(('audit/', 'journal/health-check-')))
+    except (OSError, ValueError, RuntimeError):
+        return False
+
+
+def validate_review_evidence(evidence, paths, read_file, evidence_is_safe, cache):
+    errors, valid = [], True
+    if not isinstance(evidence, list) or not evidence:
+        return [['review-evidence-format']], False
+    for proof in evidence:
+        target = proof.get('path') if isinstance(proof, dict) else None
+        digest = proof.get('sha256') if isinstance(proof, dict) else None
+        if (not isinstance(target, str) or '\\' in target
+                or posixpath.normpath(target) != target or '..' in PurePosixPath(target).parts
+                or not target.startswith(('audit/', 'journal/health-check-'))
+                or target == HASH_REVIEWS or private(target)
+                or not isinstance(digest, str) or not re.fullmatch(r'[0-9a-f]{64}', digest)):
+            errors.append(['review-evidence-format']); valid = False; continue
+        if target not in paths:
+            valid = False; continue
+        if not evidence_is_safe(target):
+            errors.append(['review-evidence-alias', target]); valid = False; continue
+        if target not in cache:
+            cache[target] = hashlib.sha256(read_file(target)).hexdigest()
+        if cache[target] != digest:
+            valid = False
+    return errors, valid
+
+
+def validate_historical_hash_reviews(record, manifest, actual_hashes, paths, read_file,
+                                    evidence_is_safe=public_review_evidence):
+    """Recognize only byte-bound, evidenced reviews; stale reviews never waive drift."""
+    if record is None:
+        return [], {}, []
+    if not isinstance(record, dict) or record.get('version') != 1 or not isinstance(record.get('reviews'), list):
+        return [['hash-review-format', HASH_REVIEWS]], {}, []
+    errors, approved, stale = [], {}, []
+    item_counts = Counter(item['path'] for item in manifest['items'])
+    items = {item['path']: item for item in manifest['items'] if item_counts[item['path']] == 1}
+    for path, count in item_counts.items():
+        if count > 1:
+            errors.append(['manifest-duplicate-path', path])
+    seen, evidence_hashes = set(), {}
+    for review in record['reviews']:
+        if not isinstance(review, dict):
+            errors.append(['hash-review-format', HASH_REVIEWS]); continue
+        path = review.get('path')
+        if not isinstance(path, str) or path not in items or path in seen:
+            if isinstance(path, str):
+                approved.pop(path, None)
+            errors.append(['hash-review-target', str(path)]); continue
+        seen.add(path)
+        item = items[path]
+        if not item.get('previous_sha256'):
+            errors.append(['hash-review-missing-previous', path]); continue
+        old, current = review.get('previous_sha256'), review.get('sha256')
+        date = review.get('reviewed_on', '')
+        evidence = review.get('evidence')
+        try:
+            valid_date = (isinstance(date, str) and bool(re.fullmatch(r'\d{4}-\d{2}-\d{2}', date))
+                          and bool(datetime.date.fromisoformat(date)))
+        except ValueError:
+            valid_date = False
+        valid_hashes = all(isinstance(value, str) and re.fullmatch(r'[0-9a-f]{64}', value)
+                           for value in (old, current))
+        if (not valid_hashes or not valid_date or review.get('scope') != 'byte-change-only'
+                or not isinstance(review.get('reason'), str) or not review['reason'].strip()
+                or not isinstance(evidence, list) or not evidence):
+            errors.append(['hash-review-format', path]); continue
+        proof_errors, evidence_ok = validate_review_evidence(
+            evidence, paths, read_file, evidence_is_safe, evidence_hashes)
+        errors.extend([[problem[0], path, *problem[1:]] for problem in proof_errors])
+        if (path not in paths or old != item.get('previous_sha256') or current != item.get('sha256')
+                or current != actual_hashes.get(path) or not evidence_ok):
+            stale.append(path); continue
+        approved[path] = {'path': path, 'previous_sha256': old, 'sha256': current,
+                          'reviewed_on': date, 'scope': 'byte-change-only'}
+    return errors, approved, stale
+
+
+def validate_retired_dispositions(record, manifest, paths, read_file,
+                                  evidence_is_safe=public_review_evidence):
+    """Archive confirmed deletion intent without asserting equivalent replacement content."""
+    if record is None:
+        return [], {}, []
+    if not isinstance(record, dict) or not isinstance(record.get('retired_dispositions', []), list):
+        return [['retired-review-format', HASH_REVIEWS]], {}, []
+    counts = Counter(item['former_path'] for item in manifest.get('retired_items', []))
+    items = {item['former_path']: item for item in manifest.get('retired_items', [])
+             if counts[item['former_path']] == 1}
+    errors, approved, stale, seen, cache = [], {}, [], set(), {}
+    for review in record.get('retired_dispositions', []):
+        path = review.get('former_path') if isinstance(review, dict) else None
+        if not isinstance(path, str) or path not in items or path in seen:
+            if isinstance(path, str):
+                approved.pop(path, None)
+            errors.append(['retired-review-target', str(path)]); continue
+        seen.add(path)
+        digest, date = review.get('sha256'), review.get('reviewed_on', '')
+        try:
+            valid_date = bool(re.fullmatch(r'\d{4}-\d{2}-\d{2}', date)) and bool(datetime.date.fromisoformat(date))
+        except (ValueError, TypeError):
+            valid_date = False
+        if (not isinstance(digest, str) or not re.fullmatch(r'[0-9a-f]{64}', digest)
+                or not valid_date or review.get('scope') != 'intentional-retirement-only'
+                or review.get('decision') != 'user-confirmed-retirement'
+                or not isinstance(review.get('reason'), str) or not review['reason'].strip()):
+            errors.append(['retired-review-format', path]); continue
+        proof_errors, evidence_ok = validate_review_evidence(
+            review.get('evidence'), paths, read_file, evidence_is_safe, cache)
+        errors.extend([[problem[0], path, *problem[1:]] for problem in proof_errors])
+        if path in paths or digest != items[path]['sha256'] or not evidence_ok:
+            stale.append(path); continue
+        approved[path] = {'former_path': path, 'sha256': digest, 'reviewed_on': date,
+                          'scope': 'intentional-retirement-only'}
+    return errors, approved, stale
+
+
 def main():
     configure_stdio()
     parser = argparse.ArgumentParser(description=__doc__)
@@ -220,8 +354,19 @@ def main():
             warnings.append(['workspace-scratch-tracked', path])
         if re.fullmatch(r'\.obsidian/plugins/[^/]+/(?:data\.json|obsidian_askpass\.sh)', path):
             warnings.append(['obsidian-plugin-state-tracked', path])
+    index_modes = None
     if args.staged:
-        paths = indexed
+        index_modes = {}
+        for entry in git('ls-files', '--stage', '-z').decode('utf-8').strip('\0').split('\0'):
+            if not entry:
+                continue
+            metadata, path = entry.split('\t', 1)
+            mode, _, stage = metadata.split()
+            index_modes[path] = mode if stage == '0' else 'unmerged'
+        for path, mode in index_modes.items():
+            if mode not in {'100644', '100755'}:
+                errors.append(['public-index-alias', path, mode])
+        paths = {path for path in indexed if index_modes.get(path) in {'100644', '100755'}}
     else:
         paths = set()
         # Explicitly prune private directories before enumeration or reads.
@@ -231,9 +376,17 @@ def main():
             dirs[:] = [d for d in dirs if d not in {'.git', '.obsidian', '.claude',
                 '.claudian', '.dsh-vision-router', '.easyeda', '.tools'}
                 and not private(('' if parent == '.' else parent + '/') + d + '/')]
+            for name in list(dirs):
+                target = Path(base) / name
+                if target.is_symlink() or getattr(target, 'is_junction', lambda: False)():
+                    errors.append(['public-path-alias', target.relative_to(ROOT).as_posix()])
+                    dirs.remove(name)
             for name in files:
                 path = (Path(base) / name).relative_to(ROOT).as_posix()
                 if not private(path):
+                    target = Path(base) / name
+                    if target.is_symlink() or getattr(target, 'is_junction', lambda: False)():
+                        errors.append(['public-path-alias', path]); continue
                     paths.add(path)
 
     batch = subprocess.Popen(['git', '-C', str(ROOT), 'cat-file', '--batch'],
@@ -449,7 +602,7 @@ def main():
             if base in paths:
                 errors.append(['continuation-title', path, base])
 
-    manifest = source_manifest; roles = Counter(); hashes = defaultdict(list)
+    manifest = source_manifest; roles = Counter(); hashes = defaultdict(list); actual_hashes = {}
     if manifest.get('tool_version') != 2:
         errors.append(['manifest-version', manifest.get('tool_version')])
     for item in manifest['items']:
@@ -459,6 +612,7 @@ def main():
         if private(path) or path not in paths:
             errors.append(['manifest-path', path]); continue
         blob = data(path); digest = hashlib.sha256(blob).hexdigest()
+        actual_hashes[path] = digest
         if len(blob) > LARGE_FILE_WARN_BYTES:
             warnings.append(['large-tracked-file', path, len(blob)])
         if len(blob) != item['bytes'] or digest != item['sha256']:
@@ -524,11 +678,24 @@ def main():
         errors.append(['markdown-link-missing', *finding])
     for item in manifest.get('retired_items', []):
         warnings.append(['retired-source', item['former_path']])
+    review_record = None
+    if HASH_REVIEWS in paths:
+        if not public_review_evidence(HASH_REVIEWS, index_modes=index_modes):
+            errors.append(['hash-review-evidence-alias', HASH_REVIEWS])
+        else:
+            try:
+                review_record = json.loads(text(HASH_REVIEWS))
+            except (json.JSONDecodeError, UnicodeError):
+                errors.append(['hash-review-format', HASH_REVIEWS])
+    review_errors, resolved_hashes, stale_hash_reviews = validate_historical_hash_reviews(
+        review_record, manifest, actual_hashes, paths, data,
+        evidence_is_safe=lambda target: public_review_evidence(target, index_modes=index_modes))
+    errors.extend(review_errors)
     for item in manifest['items']:
         structural_hash = item.get('structural_only_sha256')
         structure_is_unchanged = (structural_hash and item['path'] in paths
                                   and hashlib.sha256(data(item['path'])).hexdigest() == structural_hash)
-        if item.get('previous_sha256') and not structure_is_unchanged:
+        if item.get('previous_sha256') and not structure_is_unchanged and item['path'] not in resolved_hashes:
             warnings.append(['historical-hash-drift', item['path']])
     result = dict(mode='staged' if args.staged else 'working-tree', wiki_pages=len(pages),
         curated_pages=len(curated), model_pages=len(models), wiki_statuses=dict(statuses),
@@ -541,6 +708,8 @@ def main():
         missing_attachments=missing_attachments,
         pending_original_images=sum(record.get('count', 0) for record in pending_originals.values()),
         stale_reviewed=stale_reviewed,
+        resolved_historical_hashes=sorted(resolved_hashes.values(), key=lambda item: item['path']),
+        stale_historical_hash_reviews=sorted(stale_hash_reviews),
         tags=dict(tags), errors=errors, warnings=warnings)
     if args.json:
         args.json.parent.mkdir(parents=True, exist_ok=True)
@@ -551,8 +720,10 @@ def main():
                   attachment_locations)
         write_csv(args.audit_dir / 'review_queue.csv', ('priority', 'path', 'status', 'updated', 'sources', 'reason'),
                   sorted(review_queue))
-    compact = {k:v for k,v in result.items() if k not in {'errors','warnings','tags','navigation_only_inbound','identical_raw_groups','near_wiki_limit','missing_attachments','stale_reviewed'}}
+    compact = {k:v for k,v in result.items() if k not in {'errors','warnings','tags','navigation_only_inbound','identical_raw_groups','near_wiki_limit','missing_attachments','stale_reviewed','resolved_historical_hashes','stale_historical_hash_reviews'}}
     compact.update(errors=len(errors), warnings=len(warnings), near_wiki_limit=len(near_size),
+                   resolved_historical_hash_count=len(resolved_hashes),
+                   stale_historical_hash_review_count=len(stale_hash_reviews),
                    navigation_only_inbound=len(result['navigation_only_inbound']), duplicate_raw_groups=len(duplicates),
                    missing_attachment_references=len(missing_attachments), stale_reviewed_pages=len(stale_reviewed))
     print(json.dumps(compact, ensure_ascii=False, indent=2))

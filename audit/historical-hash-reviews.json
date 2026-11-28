@@ -1,0 +1,1390 @@
+{
+  "version": 1,
+  "reviewed_on": "2026-11-28",
+  "scope": "仅解释指定版本之间的历史字节变化，不提升技术核验状态。",
+  "reviews": [
+    {
+      "path": "硬件/PCB/PCB接地与差分采集布局.md",
+      "previous_sha256": "faa77213978c2be5becca03d7b9b62ac8b7e88785d8a484c9d8ec832e3905926",
+      "sha256": "10c7067f90499fed61d46b4c49069def29b4912ec29ce7650930a95bdcfd4fd0",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "逐份阅读精确旧SHA-256命中的Git版本到当前文件的完整diff：变化仅为图片可用性、回补说明、审计链接与updated日期；技术公式、数值与设计结论保持不变。",
+      "evidence": [
+        {
+          "path": "audit/图片修复报告.md",
+          "lines": [
+            11,
+            40
+          ],
+          "purpose": "逐份修复数量与不提升技术状态的边界",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "audit/图片修复明细.csv",
+          "source_records": [
+            {
+              "path": "硬件/原始备份/PCB设计秘籍.md",
+              "rows": 96,
+              "actions": {
+                "source-pages": 96
+              },
+              "evidence_csv_lines": [
+                2,
+                97
+              ]
+            }
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "lines": [
+            9,
+            27
+          ],
+          "purpose": "13份PDF回补及分类稿/Wiki同步验收",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        }
+      ],
+      "previous_git_ref": "fcbd2f41ff0235dd73079916bf70be1339ea465e:硬件/PCB/PCB接地与差分采集布局.md",
+      "previous_git_blob": "a14d5fb62085e96618b4966abbd60a55b8b52d1a",
+      "role": "curated-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/PCB/PCB热设计与温度测量.md",
+      "previous_sha256": "a2e9d9a726fbddf26492b2237980d87a0b58b627254707ca1ea6dd463d66b713",
+      "sha256": "12d032395c2570855b49c1679d127f45ab31e513a81b353450e1615ffa992868",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "逐份阅读精确旧SHA-256命中的Git版本到当前文件的完整diff：变化仅为图片可用性、回补说明、审计链接与updated日期；技术公式、数值与设计结论保持不变。",
+      "evidence": [
+        {
+          "path": "audit/图片修复报告.md",
+          "lines": [
+            11,
+            40
+          ],
+          "purpose": "逐份修复数量与不提升技术状态的边界",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "audit/图片修复明细.csv",
+          "source_records": [
+            {
+              "path": "硬件/原始备份/PCB设计秘籍.md",
+              "rows": 96,
+              "actions": {
+                "source-pages": 96
+              },
+              "evidence_csv_lines": [
+                2,
+                97
+              ]
+            }
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "lines": [
+            9,
+            27
+          ],
+          "purpose": "13份PDF回补及分类稿/Wiki同步验收",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        }
+      ],
+      "previous_git_ref": "abcc16f7abebd92e46a9f42240658e618e651c6b:硬件/PCB/PCB热设计与温度测量.md",
+      "previous_git_blob": "53702083936d1493e43fe913e30d45e14d769372",
+      "role": "curated-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/PCB/封装返修与装联验证.md",
+      "previous_sha256": "4c559fd382fb0012cba83aeee0985b858ad744ff063c6792d471ed55655a3c99",
+      "sha256": "c3a6304065cb4269e2f1c92606d15a434f8da5d9c95cb6ab698d3a3246060b3c",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "逐份阅读精确旧SHA-256命中的Git版本到当前文件的完整diff：变化仅为图片可用性、回补说明、审计链接与updated日期；技术公式、数值与设计结论保持不变。",
+      "evidence": [
+        {
+          "path": "audit/图片修复报告.md",
+          "lines": [
+            11,
+            40
+          ],
+          "purpose": "逐份修复数量与不提升技术状态的边界",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "audit/图片修复明细.csv",
+          "source_records": [
+            {
+              "path": "硬件/原始备份/PCB设计秘籍.md",
+              "rows": 96,
+              "actions": {
+                "source-pages": 96
+              },
+              "evidence_csv_lines": [
+                2,
+                97
+              ]
+            }
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "lines": [
+            9,
+            27
+          ],
+          "purpose": "13份PDF回补及分类稿/Wiki同步验收",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        }
+      ],
+      "previous_git_ref": "abcc16f7abebd92e46a9f42240658e618e651c6b:硬件/PCB/封装返修与装联验证.md",
+      "previous_git_blob": "c4b8538abf623f2b48c9c8e6132f925d4a700439",
+      "role": "curated-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/PCB/开关电源布局与磁件耦合.md",
+      "previous_sha256": "45ec9a8e6caa220653eb760bafcef89ab20da703513ad40b8a4a69348531b745",
+      "sha256": "0adee8a7a3933a5564c0f463f81307401e06496e44acc33048cd8ff9baee0b2b",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "逐份阅读精确旧SHA-256命中的Git版本到当前文件的完整diff：变化仅为图片可用性、回补说明、审计链接与updated日期；技术公式、数值与设计结论保持不变。",
+      "evidence": [
+        {
+          "path": "audit/图片修复报告.md",
+          "lines": [
+            11,
+            40
+          ],
+          "purpose": "逐份修复数量与不提升技术状态的边界",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "audit/图片修复明细.csv",
+          "source_records": [
+            {
+              "path": "硬件/原始备份/PCB设计秘籍.md",
+              "rows": 96,
+              "actions": {
+                "source-pages": 96
+              },
+              "evidence_csv_lines": [
+                2,
+                97
+              ]
+            }
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "lines": [
+            9,
+            27
+          ],
+          "purpose": "13份PDF回补及分类稿/Wiki同步验收",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        }
+      ],
+      "previous_git_ref": "fcbd2f41ff0235dd73079916bf70be1339ea465e:硬件/PCB/开关电源布局与磁件耦合.md",
+      "previous_git_blob": "9883d811e347279f3446a5ea4d0e50866c777bcc",
+      "role": "curated-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/PCB/电源抗扰与ADC噪声预算.md",
+      "previous_sha256": "7f480a67cecbb3cfe3793f5e6cb18e378f13e0f73a71dd4b486db35b18db6bff",
+      "sha256": "29f2ff7a02229ccbde524a617cbf6a2b4b11ea6e09c2e99b414e1fbd5f9a1139",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "逐份阅读精确旧SHA-256命中的Git版本到当前文件的完整diff：变化仅为图片可用性、回补说明、审计链接与updated日期；技术公式、数值与设计结论保持不变。",
+      "evidence": [
+        {
+          "path": "audit/图片修复报告.md",
+          "lines": [
+            11,
+            40
+          ],
+          "purpose": "逐份修复数量与不提升技术状态的边界",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "audit/图片修复明细.csv",
+          "source_records": [
+            {
+              "path": "硬件/原始备份/PCB设计秘籍.md",
+              "rows": 96,
+              "actions": {
+                "source-pages": 96
+              },
+              "evidence_csv_lines": [
+                2,
+                97
+              ]
+            }
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "lines": [
+            9,
+            27
+          ],
+          "purpose": "13份PDF回补及分类稿/Wiki同步验收",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        }
+      ],
+      "previous_git_ref": "fcbd2f41ff0235dd73079916bf70be1339ea465e:硬件/PCB/电源抗扰与ADC噪声预算.md",
+      "previous_git_blob": "2dc7cee44c070fdf409d8a40984f6abbf8ffbc0c",
+      "role": "curated-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/PCB/经验规则与验证边界勘误.md",
+      "previous_sha256": "3f1c6f40f6fb69742363aa5ec3ea01d445f02ef7b5e8f279fb7e57a0f8088a1c",
+      "sha256": "24ed2a95fd32b7000b4fe75494751a8cc599107216b26ed4162fac083e1a1f6a",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "逐份阅读精确旧SHA-256命中的Git版本到当前文件的完整diff：变化仅为图片可用性、回补说明、审计链接与updated日期；技术公式、数值与设计结论保持不变。另移除tags中的禁用泛标签“待核验”，符合现行schema，status仍为needs-review。",
+      "evidence": [
+        {
+          "path": "audit/图片修复报告.md",
+          "lines": [
+            11,
+            40
+          ],
+          "purpose": "逐份修复数量与不提升技术状态的边界",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "audit/图片修复明细.csv",
+          "source_records": [
+            {
+              "path": "硬件/原始备份/JHP11-PCB模块化设计要点解析教案.md（单独Markdown文件）.md",
+              "rows": 54,
+              "actions": {
+                "pending-original": 2,
+                "git-image-restored": 52
+              },
+              "evidence_csv_lines": [
+                916,
+                969
+              ]
+            }
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "lines": [
+            9,
+            27
+          ],
+          "purpose": "13份PDF回补及分类稿/Wiki同步验收",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        }
+      ],
+      "previous_git_ref": "fcbd2f41ff0235dd73079916bf70be1339ea465e:硬件/PCB/经验规则与验证边界勘误.md",
+      "previous_git_blob": "ffbd716d18d9e527640778c16f7c4bbbd5ee2a09",
+      "role": "curated-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/PCB/高速PCB规范的适用边界.md",
+      "previous_sha256": "a813043c74e4866f995c807c7d8f7dc5821b0e0368d6525799e83e46a8e086fb",
+      "sha256": "fd8e1d42b9e322b9f71b112957da13ea26c0973b7273c8a4e68ec9d0d9f19f25",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "逐份阅读精确旧SHA-256命中的Git版本到当前文件的完整diff：变化仅为图片可用性、回补说明、审计链接与updated日期；技术公式、数值与设计结论保持不变。已覆盖2026-11-26原图待补说明及2026-11-27原版91页PDF回补两步历史；中间哈希也在Git命中。",
+      "evidence": [
+        {
+          "path": "audit/图片修复报告.md",
+          "lines": [
+            11,
+            40
+          ],
+          "purpose": "逐份修复数量与不提升技术状态的边界",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "audit/图片修复明细.csv",
+          "source_records": [
+            {
+              "path": "硬件/原始备份/高速PCB设计.md",
+              "rows": 89,
+              "actions": {
+                "source-pages": 89
+              },
+              "evidence_csv_lines": [
+                970,
+                1058
+              ]
+            }
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "lines": [
+            9,
+            27
+          ],
+          "purpose": "13份PDF回补及分类稿/Wiki同步验收",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        },
+        {
+          "path": "journal/health-check-2026-11-27.md",
+          "lines": [
+            3,
+            19
+          ],
+          "purpose": "高速PCB两阶段回补链路",
+          "sha256": "a24dfae8f29b2c2552214fdcced49d0be3fec5240c694f5b37453fd3507d4b68"
+        }
+      ],
+      "previous_git_ref": "fcbd2f41ff0235dd73079916bf70be1339ea465e:硬件/PCB/高速PCB规范的适用边界.md",
+      "previous_git_blob": "45995295240ad856693daeda4ae03bba4fdc4c29",
+      "role": "curated-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/PCB/高速接口新增资料.md",
+      "previous_sha256": "e508f3f4a940751ba86134e66e987a5a53e2455a9eb5cd6eedd646f304c6d1d8",
+      "sha256": "4d630c8a502c2151b9f8d3ecfe62eaa68e2bdf5e889ebf5c1e26ee45cc58c4a3",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "逐份阅读精确旧SHA-256命中的Git版本到当前文件的完整diff：变化仅为图片可用性、回补说明、审计链接与updated日期；技术公式、数值与设计结论保持不变。",
+      "evidence": [
+        {
+          "path": "audit/图片修复报告.md",
+          "lines": [
+            11,
+            40
+          ],
+          "purpose": "逐份修复数量与不提升技术状态的边界",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "audit/图片修复明细.csv",
+          "source_records": [
+            {
+              "path": "硬件/原始备份/JHP11-PCB模块化设计要点解析教案.md（单独Markdown文件）.md",
+              "rows": 54,
+              "actions": {
+                "pending-original": 2,
+                "git-image-restored": 52
+              },
+              "evidence_csv_lines": [
+                916,
+                969
+              ]
+            }
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "lines": [
+            9,
+            27
+          ],
+          "purpose": "13份PDF回补及分类稿/Wiki同步验收",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        }
+      ],
+      "previous_git_ref": "fcbd2f41ff0235dd73079916bf70be1339ea465e:硬件/PCB/高速接口新增资料.md",
+      "previous_git_blob": "a1a61a09800472af58857fe08f03d5476208ab3f",
+      "role": "curated-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/原始备份/PCB设计秘籍.md",
+      "previous_sha256": "774e437de244439155ae3dc565592aa7b8685b575ecb4a322d547e4edc4f77ee",
+      "sha256": "82307593eec088e480f79f5e908c2c6ece9feecac014b1df6b1459db5c351781",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "与previous_sha256精确匹配的旧Git字节相比，变化仅限图片嵌入、对应PDF页码链接及明确的修复说明；保留HTML表格结构，非图片正文规范化后完全相同；图片变更有逐处CSV登记，资源字节与哈希全部匹配。",
+      "evidence": [
+        {
+          "path": "audit/图片修复明细.csv",
+          "lines": [
+            2,
+            97
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "audit/图片修复报告.md",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        }
+      ],
+      "previous_git_ref": "146be7356b9a109ced76e2dae7446181f394040d^:硬件/原始备份/PCB设计秘籍.md",
+      "previous_git_blob": "e5b47b38065b656839387b47a502b7e40bfcdee3",
+      "role": "backup-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/原始备份/三极管.md",
+      "previous_sha256": "aa8c2e3779a1aa91a15fcc041dd78be4a13122d4d82167fd444f013dc701136a",
+      "sha256": "7b79d85c47dfd21b986001172e5551852794b4c3038426fb43ba84a5d46a7b31",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "与previous_sha256精确匹配的旧Git字节相比，变化仅限图片嵌入、对应PDF页码链接及明确的修复说明；保留HTML表格结构，非图片正文规范化后完全相同；图片变更有逐处CSV登记，资源字节与哈希全部匹配。",
+      "evidence": [
+        {
+          "path": "audit/图片修复明细.csv",
+          "lines": [
+            98,
+            156
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "audit/图片修复报告.md",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        }
+      ],
+      "previous_git_ref": "146be7356b9a109ced76e2dae7446181f394040d^:硬件/原始备份/三极管.md",
+      "previous_git_blob": "9db23ae36049323b5c49b8e96be882d827050bb4",
+      "role": "backup-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/原始备份/二极管.md",
+      "previous_sha256": "956d3eac502b484ec81537e59f97e96ed1d1adf7e2683472b741cb2da5f177e0",
+      "sha256": "d08c369b1d47c7f222cde384e439d6f2ea605acf8d8119a57d18c705cb2eb7b9",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "与previous_sha256精确匹配的旧Git字节相比，变化仅限图片嵌入、对应PDF页码链接及明确的修复说明；保留HTML表格结构，非图片正文规范化后完全相同；图片变更有逐处CSV登记，资源字节与哈希全部匹配。 其中BZT52C5V1一处旧失效图片按用户要求撤下，独立记于2026-11-25报告91行；这是8个旧图片位置中唯一不在后续7条回补CSV内的目标，亦有当前注释留痕。",
+      "evidence": [
+        {
+          "path": "audit/图片修复明细.csv",
+          "lines": [
+            157,
+            163
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "audit/图片修复报告.md",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        },
+        {
+          "path": "journal/health-check-2026-11-25.md",
+          "lines": [
+            91
+          ],
+          "sha256": "e08aafb1be349f67f034f9f880d1a65521f943766586858f91408494b66dde87",
+          "previous_evidence_sha256": "99b66205d710240ec4baca3a05fef8fb8b294dc2e0433db6a6df70ae7b3031b2",
+          "evidence_byte_change": "CRLF→LF；逐字节比较确认除换行外完全一致，绑定原有Git版本，正文及第91行未改变。"
+        }
+      ],
+      "previous_git_ref": "146be7356b9a109ced76e2dae7446181f394040d^:硬件/原始备份/二极管.md",
+      "previous_git_blob": "27c1e5364631ecba1f41d8ac65650c40c6c205f5",
+      "role": "backup-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/原始备份/场效应管.md",
+      "previous_sha256": "09fe014af648c88db340f49465fd26b7c6ad0048860a50f60c05e2de45335881",
+      "sha256": "e2409c82a23588ebe282a0f53bdf57c8d321e3a7d8b690059de510af11463f13",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "与previous_sha256精确匹配的旧Git字节相比，变化仅限图片嵌入、对应PDF页码链接及明确的修复说明；保留HTML表格结构，非图片正文规范化后完全相同；图片变更有逐处CSV登记，资源字节与哈希全部匹配。",
+      "evidence": [
+        {
+          "path": "audit/图片修复明细.csv",
+          "lines": [
+            164,
+            229
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "audit/图片修复报告.md",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        }
+      ],
+      "previous_git_ref": "146be7356b9a109ced76e2dae7446181f394040d^:硬件/原始备份/场效应管.md",
+      "previous_git_blob": "2f219c594bc9c372e780666c6668357f12f8ca3b",
+      "role": "backup-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/原始备份/开关电源工程师训练营_知识点总结.md",
+      "previous_sha256": "ca04a6bad2cd15563597cbb0296e8439145491119a6bb821bf27aa99eca7b4e7",
+      "sha256": "fb94b69176195b348ea0f52543cb3f900d503c90e7f882c7e781909706672688",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "完整diff仅为四大基本变换类型表格中空白对齐及分隔线长度；逐单元格trim后与旧版完全一致，表外内容逐行相同。仅解除字节历史告警，不评定表中技术断言。",
+      "evidence": [
+        {
+          "path": "audit/historical_source_review.csv",
+          "lines": [
+            5
+          ],
+          "sha256": "4c0e14e9c8d871cf71234bdfea6d95f7c1da254501e8ec67bd3dad333326afa4"
+        }
+      ],
+      "previous_git_ref": "2d65b61d6f6f799027bb4c37c12b911d9d3366ba^:硬件/原始备份/开关电源工程师训练营_知识点总结.md",
+      "previous_git_blob": "6dc7f1057aedc5703e0fc7c28318b5008829681b",
+      "role": "backup-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/原始备份/电容.md",
+      "previous_sha256": "3998df0c9ca3603b6316d892ba1a88d68e843f933f07da081fad630a7de7df56",
+      "sha256": "b93578fbf0e0a533396ab507e36394cce28a6368a73ca310cfd4f001260b46d3",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "与previous_sha256精确匹配的旧Git字节相比，变化仅限图片嵌入、对应PDF页码链接及明确的修复说明；保留HTML表格结构，非图片正文规范化后完全相同；图片变更有逐处CSV登记，资源字节与哈希全部匹配。",
+      "evidence": [
+        {
+          "path": "audit/图片修复明细.csv",
+          "lines": [
+            230,
+            286
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "audit/图片修复报告.md",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        }
+      ],
+      "previous_git_ref": "146be7356b9a109ced76e2dae7446181f394040d^:硬件/原始备份/电容.md",
+      "previous_git_blob": "5865a9b1ead52d2db6cf8761fd018b6b1dc2d1d1",
+      "role": "backup-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/原始备份/电感.md",
+      "previous_sha256": "0533f7c8711f9fbdf9edc164b5fff8dcbd3f79f9078ef191bdc9ed09d7e5cca5",
+      "sha256": "075c3be73c6d3ac8903dc6c6ae16f4f4704bf667c4f38629c6cd08d29bb62f26",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "与previous_sha256精确匹配的旧Git字节相比，变化仅限图片嵌入、对应PDF页码链接及明确的修复说明；保留HTML表格结构，非图片正文规范化后完全相同；图片变更有逐处CSV登记，资源字节与哈希全部匹配。",
+      "evidence": [
+        {
+          "path": "audit/图片修复明细.csv",
+          "lines": [
+            287,
+            380
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "audit/图片修复报告.md",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        }
+      ],
+      "previous_git_ref": "146be7356b9a109ced76e2dae7446181f394040d^:硬件/原始备份/电感.md",
+      "previous_git_blob": "d7aa6fef36bef7a20d2ea6aa96bd023b10fc195a",
+      "role": "backup-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/原始备份/电源.md",
+      "previous_sha256": "f05ef6417a289577799be59bfd250542709e2abf92694e4a6b36f38a2d9a9de2",
+      "sha256": "66012b86d5239b5bf44b3efc27d9dcd27971c33456a261bb59e1b626f7a9b901",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "与previous_sha256精确匹配的旧Git字节相比，变化仅限图片嵌入、对应PDF页码链接及明确的修复说明；保留HTML表格结构，非图片正文规范化后完全相同；图片变更有逐处CSV登记，资源字节与哈希全部匹配。",
+      "evidence": [
+        {
+          "path": "audit/图片修复明细.csv",
+          "lines": [
+            403,
+            563
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "audit/图片修复报告.md",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        }
+      ],
+      "previous_git_ref": "146be7356b9a109ced76e2dae7446181f394040d^:硬件/原始备份/电源.md",
+      "previous_git_blob": "7163bf36774d57ba6f1f7f856a73fc9031bf2338",
+      "role": "backup-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/原始备份/电源完整性.md",
+      "previous_sha256": "e296c225ab2b525e52db862dbb214b2e2445fbed15aa1ddd9142d6136b51a188",
+      "sha256": "6e3f3f8d2b23f77a9bc32031cf0f8eed0e7bfad2831a35f38f3efbeba29241b8",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "与previous_sha256精确匹配的旧Git字节相比，变化仅限图片嵌入、对应PDF页码链接及明确的修复说明；保留HTML表格结构，非图片正文规范化后完全相同；图片变更有逐处CSV登记，资源字节与哈希全部匹配。",
+      "evidence": [
+        {
+          "path": "audit/图片修复明细.csv",
+          "lines": [
+            381,
+            402
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "audit/图片修复报告.md",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        }
+      ],
+      "previous_git_ref": "146be7356b9a109ced76e2dae7446181f394040d^:硬件/原始备份/电源完整性.md",
+      "previous_git_blob": "8d9edcf1bd121ded5cb143e2d254cc25527412c3",
+      "role": "backup-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/原始备份/电源设计经验.md",
+      "previous_sha256": "56cf6d0d0255f8e6306fc6588ef9f8882c2b7a2dd581957aedeccf52b58abad5",
+      "sha256": "57b43d226f1edb220346f143a611ca7c7562be9aae9c45fc8d84303c616369e2",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "与previous_sha256精确匹配的旧Git字节相比，变化仅限图片嵌入、对应PDF页码链接及明确的修复说明；保留HTML表格结构，非图片正文规范化后完全相同；图片变更有逐处CSV登记，资源字节与哈希全部匹配。",
+      "evidence": [
+        {
+          "path": "audit/图片修复明细.csv",
+          "lines": [
+            742,
+            871
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "audit/图片修复报告.md",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        }
+      ],
+      "previous_git_ref": "146be7356b9a109ced76e2dae7446181f394040d^:硬件/原始备份/电源设计经验.md",
+      "previous_git_blob": "46074e6d7c2ae78d59cafcba8e0a54e8dc15f1d1",
+      "role": "backup-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/原始备份/电阻.md",
+      "previous_sha256": "2acf5100ba19188c7e6f91448cffa210042742b82ccc011174301ca4910da242",
+      "sha256": "09e996510e4ec8aa5566bc6a5b171339590fb351942df62047bac812575652ed",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "与previous_sha256精确匹配的旧Git字节相比，变化仅限图片嵌入、对应PDF页码链接及明确的修复说明；保留HTML表格结构，非图片正文规范化后完全相同；图片变更有逐处CSV登记，资源字节与哈希全部匹配。",
+      "evidence": [
+        {
+          "path": "audit/图片修复明细.csv",
+          "lines": [
+            564,
+            612
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "audit/图片修复报告.md",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        }
+      ],
+      "previous_git_ref": "146be7356b9a109ced76e2dae7446181f394040d^:硬件/原始备份/电阻.md",
+      "previous_git_blob": "1e6b397cbc721cb151ae8b8a84ade3694aac4804",
+      "role": "backup-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/原始备份/线性稳压器的基础知识.md",
+      "previous_sha256": "a1cfe9c8b453cc286675efa44aefce5d8a8372640ee76b75b634a2d5f67b7aee",
+      "sha256": "e318ebca03a602cbeef1e64457d5cd08d99872be8fd11bd5970e9e6070aa047e",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "与previous_sha256精确匹配的旧Git字节相比，变化仅限图片嵌入、对应PDF页码链接及明确的修复说明；保留HTML表格结构，非图片正文规范化后完全相同；图片变更有逐处CSV登记，资源字节与哈希全部匹配。",
+      "evidence": [
+        {
+          "path": "audit/图片修复明细.csv",
+          "lines": [
+            872,
+            915
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "audit/图片修复报告.md",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        }
+      ],
+      "previous_git_ref": "146be7356b9a109ced76e2dae7446181f394040d^:硬件/原始备份/线性稳压器的基础知识.md",
+      "previous_git_blob": "835922759670ababa671ec6eb24fdc9c8425d676",
+      "role": "backup-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/原始备份/运放.md",
+      "previous_sha256": "6930ed79e4e13a32e0f977c3d15cfb85c4f03770faafe692e2202ed226dfb447",
+      "sha256": "b7cc3fbb8ec18f94d34ad9707f6cf2df73fc01fca9a60eb2ec6c3b0a97f4eea1",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "与previous_sha256精确匹配的旧Git字节相比，变化仅限图片嵌入、对应PDF页码链接及明确的修复说明；保留HTML表格结构，非图片正文规范化后完全相同；图片变更有逐处CSV登记，资源字节与哈希全部匹配。",
+      "evidence": [
+        {
+          "path": "audit/图片修复明细.csv",
+          "lines": [
+            718,
+            741
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "audit/图片修复报告.md",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        }
+      ],
+      "previous_git_ref": "146be7356b9a109ced76e2dae7446181f394040d^:硬件/原始备份/运放.md",
+      "previous_git_blob": "a99a78e1e4b5382cdff165d821852e727e4c1cd4",
+      "role": "backup-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/原始备份/运算放大器经典应用.md",
+      "previous_sha256": "d9b932079743ed2d269dacafeb0f29f446ded8ed1fdf7bae0e53a243c39b4547",
+      "sha256": "7c6005c5dd0a4250f6f925dbf8ee752159b8ca3b53497af29b83587208719e99",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "与previous_sha256精确匹配的旧Git字节相比，变化仅限图片嵌入、对应PDF页码链接及明确的修复说明；保留HTML表格结构，非图片正文规范化后完全相同；图片变更有逐处CSV登记，资源字节与哈希全部匹配。",
+      "evidence": [
+        {
+          "path": "audit/图片修复明细.csv",
+          "lines": [
+            613,
+            717
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "audit/图片修复报告.md",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        }
+      ],
+      "previous_git_ref": "146be7356b9a109ced76e2dae7446181f394040d^:硬件/原始备份/运算放大器经典应用.md",
+      "previous_git_blob": "3cd104a390c79620ae22f8850d2153bbdb935acb",
+      "role": "backup-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/原始备份/高速PCB设计.md",
+      "previous_sha256": "f0e3b2b035beb964f4e2bdd3c3b8a1dcb7a40725691ad51a72f47e1ab824c4e8",
+      "sha256": "34da4ee93238c09b20948f1eaf1060e17f0fbef8d7adfa1a4af4cd4797de1cf3",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "与previous_sha256精确匹配的旧Git字节相比，变化仅限图片嵌入、对应PDF页码链接及明确的修复说明；保留HTML表格结构，非图片正文规范化后完全相同；图片变更有逐处CSV登记，资源字节与哈希全部匹配。",
+      "evidence": [
+        {
+          "path": "audit/图片修复明细.csv",
+          "lines": [
+            970,
+            1058
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "audit/图片修复报告.md",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        },
+        {
+          "path": "journal/health-check-2026-11-27.md",
+          "lines": [
+            3,
+            6,
+            14
+          ],
+          "sha256": "a24dfae8f29b2c2552214fdcced49d0be3fec5240c694f5b37453fd3507d4b68"
+        }
+      ],
+      "previous_git_ref": "146be7356b9a109ced76e2dae7446181f394040d^:硬件/原始备份/高速PCB设计.md",
+      "previous_git_blob": "4250853bb7dd5c2ce69a1fd03a760c593d691877",
+      "role": "backup-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/原理/PDN预算与去耦勘误.md",
+      "previous_sha256": "15332001e793d746c61fafd5a645253cff1019c2e674ba969cb94a4121042730",
+      "sha256": "5b630bd54402dd670eff6bf0bef0800c0916af18d3e63602594377d6d2d3d3e2",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "逐份阅读精确旧SHA-256命中的Git版本到当前文件的完整diff：变化仅为图片可用性、回补说明、审计链接与updated日期；技术公式、数值与设计结论保持不变。",
+      "evidence": [
+        {
+          "path": "audit/图片修复报告.md",
+          "lines": [
+            11,
+            40
+          ],
+          "purpose": "逐份修复数量与不提升技术状态的边界",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "audit/图片修复明细.csv",
+          "source_records": [
+            {
+              "path": "硬件/原始备份/电源完整性.md",
+              "rows": 22,
+              "actions": {
+                "source-pages": 22
+              },
+              "evidence_csv_lines": [
+                381,
+                402
+              ]
+            }
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "lines": [
+            9,
+            27
+          ],
+          "purpose": "13份PDF回补及分类稿/Wiki同步验收",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        }
+      ],
+      "previous_git_ref": "fcbd2f41ff0235dd73079916bf70be1339ea465e:硬件/原理/PDN预算与去耦勘误.md",
+      "previous_git_blob": "be63c9235dc3e28eb1f9845232c08d1a9ae29d28",
+      "role": "curated-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/原理/半导体工作区与选型勘误.md",
+      "previous_sha256": "08a6eb84c9eebaed52f43e08805eb7a36159e16690c9bd4425594e0a733c67de",
+      "sha256": "db1f2b026baa4369c4cb3837133c4374c0ac2eff47947459d8fdcc6819dde37a",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "逐份阅读精确旧SHA-256命中的Git版本到当前文件的完整diff：变化仅为图片可用性、回补说明、审计链接与updated日期；技术公式、数值与设计结论保持不变。",
+      "evidence": [
+        {
+          "path": "audit/图片修复报告.md",
+          "lines": [
+            11,
+            40
+          ],
+          "purpose": "逐份修复数量与不提升技术状态的边界",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "audit/图片修复明细.csv",
+          "source_records": [
+            {
+              "path": "硬件/原始备份/二极管.md",
+              "rows": 7,
+              "actions": {
+                "source-pages": 7
+              },
+              "evidence_csv_lines": [
+                157,
+                163
+              ]
+            },
+            {
+              "path": "硬件/原始备份/三极管.md",
+              "rows": 59,
+              "actions": {
+                "source-pages": 59
+              },
+              "evidence_csv_lines": [
+                98,
+                156
+              ]
+            },
+            {
+              "path": "硬件/原始备份/场效应管.md",
+              "rows": 66,
+              "actions": {
+                "source-pages": 66
+              },
+              "evidence_csv_lines": [
+                164,
+                229
+              ]
+            }
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "lines": [
+            9,
+            27
+          ],
+          "purpose": "13份PDF回补及分类稿/Wiki同步验收",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        }
+      ],
+      "previous_git_ref": "2d65b61d6f6f799027bb4c37c12b911d9d3366ba:硬件/原理/半导体工作区与选型勘误.md",
+      "previous_git_blob": "f577288ddef37472fe928716ce99209b34b2e3dd",
+      "role": "curated-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/原理/开关电源拓扑与验证.md",
+      "previous_sha256": "73edddda39a8629b05ce93d63bd37824ff1645e154332f79d6c4f39e75d24a18",
+      "sha256": "210bf29be636c9becf25673793536fe253c8ba527a35f880d21fb26950974ec2",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "逐份阅读精确旧SHA-256命中的Git版本到当前文件的完整diff：变化仅为图片可用性、回补说明、审计链接与updated日期；技术公式、数值与设计结论保持不变。另移除tags中的禁用泛标签“待核验”，符合现行schema，status仍为needs-review。",
+      "evidence": [
+        {
+          "path": "audit/图片修复报告.md",
+          "lines": [
+            11,
+            40
+          ],
+          "purpose": "逐份修复数量与不提升技术状态的边界",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "audit/图片修复明细.csv",
+          "source_records": [
+            {
+              "path": "硬件/原始备份/电源.md",
+              "rows": 161,
+              "actions": {
+                "source-pages": 161
+              },
+              "evidence_csv_lines": [
+                403,
+                563
+              ]
+            }
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "lines": [
+            9,
+            27
+          ],
+          "purpose": "13份PDF回补及分类稿/Wiki同步验收",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        }
+      ],
+      "previous_git_ref": "4fbcfc66ef7d54a4e08871a7323f55a6de6f2656:硬件/原理/开关电源拓扑与验证.md",
+      "previous_git_blob": "881611f752a0e22effdf89f4bc11bbfbe1f0469c",
+      "role": "curated-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/原理/无源元件选型与勘误.md",
+      "previous_sha256": "65e0d017e2bda45bf2b34a50d5837c6886849621868fd6c678a20d9443949def",
+      "sha256": "e86c16e0c28cad610f5e9f948c83e3ebcf1728e1233b14c303d5a68b757f2174",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "逐份阅读精确旧SHA-256命中的Git版本到当前文件的完整diff：变化仅为图片可用性、回补说明、审计链接与updated日期；技术公式、数值与设计结论保持不变。",
+      "evidence": [
+        {
+          "path": "audit/图片修复报告.md",
+          "lines": [
+            11,
+            40
+          ],
+          "purpose": "逐份修复数量与不提升技术状态的边界",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "audit/图片修复明细.csv",
+          "source_records": [
+            {
+              "path": "硬件/原始备份/电阻.md",
+              "rows": 49,
+              "actions": {
+                "source-pages": 49
+              },
+              "evidence_csv_lines": [
+                564,
+                612
+              ]
+            },
+            {
+              "path": "硬件/原始备份/电容.md",
+              "rows": 57,
+              "actions": {
+                "source-pages": 57
+              },
+              "evidence_csv_lines": [
+                230,
+                286
+              ]
+            },
+            {
+              "path": "硬件/原始备份/电感.md",
+              "rows": 94,
+              "actions": {
+                "source-pages": 94
+              },
+              "evidence_csv_lines": [
+                287,
+                380
+              ]
+            }
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "lines": [
+            9,
+            27
+          ],
+          "purpose": "13份PDF回补及分类稿/Wiki同步验收",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        }
+      ],
+      "previous_git_ref": "fcbd2f41ff0235dd73079916bf70be1339ea465e:硬件/原理/无源元件选型与勘误.md",
+      "previous_git_blob": "abd69d2a184280fa88f3c88388ed1210962b4ee8",
+      "role": "curated-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/原理/线性稳压与电源测量补充.md",
+      "previous_sha256": "68456e4c1c30484e0ffec7c009e39a8cdc86473c82f8c61fb9d1fadbecdda071",
+      "sha256": "ba1d9c80c8832544693bafe34b4ac673f06c341eb682612d627d1e18838827d0",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "逐份阅读精确旧SHA-256命中的Git版本到当前文件的完整diff：变化仅为图片可用性、回补说明、审计链接与updated日期；技术公式、数值与设计结论保持不变。",
+      "evidence": [
+        {
+          "path": "audit/图片修复报告.md",
+          "lines": [
+            11,
+            40
+          ],
+          "purpose": "逐份修复数量与不提升技术状态的边界",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "audit/图片修复明细.csv",
+          "source_records": [
+            {
+              "path": "硬件/原始备份/线性稳压器的基础知识.md",
+              "rows": 44,
+              "actions": {
+                "source-pages": 44
+              },
+              "evidence_csv_lines": [
+                872,
+                915
+              ]
+            },
+            {
+              "path": "硬件/原始备份/电源设计经验.md",
+              "rows": 130,
+              "actions": {
+                "source-pages": 130
+              },
+              "evidence_csv_lines": [
+                742,
+                871
+              ]
+            }
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "lines": [
+            9,
+            27
+          ],
+          "purpose": "13份PDF回补及分类稿/Wiki同步验收",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        }
+      ],
+      "previous_git_ref": "2d65b61d6f6f799027bb4c37c12b911d9d3366ba:硬件/原理/线性稳压与电源测量补充.md",
+      "previous_git_blob": "e052a0f9664acbcd7377779933bf8ddd34c12bfd",
+      "role": "curated-source",
+      "technical_status_changed": false
+    },
+    {
+      "path": "硬件/原理/运放应用公式与边界.md",
+      "previous_sha256": "88559e5d74b8ca2f4ad8444dc0d8ed9302988b9f4f26e06871ecddb79828dea5",
+      "sha256": "ec01eb443ed260857ff3c4a5af9005df756d5029c8306a4b9562b3d252fca7c0",
+      "reviewed_on": "2026-11-28",
+      "scope": "byte-change-only",
+      "reason": "逐份阅读精确旧SHA-256命中的Git版本到当前文件的完整diff：变化仅为图片可用性、回补说明、审计链接与updated日期；技术公式、数值与设计结论保持不变。",
+      "evidence": [
+        {
+          "path": "audit/图片修复报告.md",
+          "lines": [
+            11,
+            40
+          ],
+          "purpose": "逐份修复数量与不提升技术状态的边界",
+          "sha256": "a41b4344c0cb14df8fa4acafa1d1d77d275da03581df030a8975ad7da5f8e04a"
+        },
+        {
+          "path": "audit/图片修复明细.csv",
+          "source_records": [
+            {
+              "path": "硬件/原始备份/运放.md",
+              "rows": 24,
+              "actions": {
+                "source-pages": 24
+              },
+              "evidence_csv_lines": [
+                718,
+                741
+              ]
+            },
+            {
+              "path": "硬件/原始备份/运算放大器经典应用.md",
+              "rows": 105,
+              "actions": {
+                "source-pages": 105
+              },
+              "evidence_csv_lines": [
+                613,
+                717
+              ]
+            }
+          ],
+          "sha256": "fee8892fe043a4bf05afc80f5e8b1024b797368837361f058fd8e5ae0cabe242"
+        },
+        {
+          "path": "journal/health-check-2026-11-26.md",
+          "lines": [
+            9,
+            27
+          ],
+          "purpose": "13份PDF回补及分类稿/Wiki同步验收",
+          "sha256": "d4210bfa9772c6a8d4fc66056a3d96ed31e4866eab097019f2a7cf63bcd8a394"
+        }
+      ],
+      "previous_git_ref": "2d65b61d6f6f799027bb4c37c12b911d9d3366ba:硬件/原理/运放应用公式与边界.md",
+      "previous_git_blob": "17cf572f602b294d994dedc15c7484a573ff8bfb",
+      "role": "curated-source",
+      "technical_status_changed": false
+    }
+  ],
+  "unresolved_history": [
+    {
+      "path": "硬件/原始备份/01_提高篇全集-高速信号的设计.md",
+      "previous_sha256": "587b0c62867a7002199b80f18f17371d997f3b865f671499ac7ab52c57f8727e",
+      "current_sha256": "d179bdfbbc5196bbc1d1a5279bf73ae40c5172c7756003a167d3647ef65b0f86",
+      "reason": "Git --all --follow 路径历史中未找到与 previous_sha256 相符的旧blob；不能从当前版本稳定或后续补图推断更早变更已解释。",
+      "required_evidence": "取得SHA-256与previous_sha256一致的可授权旧原件，或对替代证据进行明确范围的内容核验；不从私人备份寻找。"
+    },
+    {
+      "path": "硬件/原始备份/10_高速PCB设计多层板叠层与阻抗设计视频教程全集.md",
+      "previous_sha256": "e04c8418a3561615f99e7ef77d95a9173040eabfe5de0e2af37059f004f9eecd",
+      "current_sha256": "41999cdce9f0acce3e337f63c918f49d6b3d8be66ad4552e5d115510faa9576c",
+      "reason": "Git --all --follow 路径历史中未找到与 previous_sha256 相符的旧blob；不能从当前版本稳定或后续补图推断更早变更已解释。",
+      "required_evidence": "取得SHA-256与previous_sha256一致的可授权旧原件，或对替代证据进行明确范围的内容核验；不从私人备份寻找。"
+    },
+    {
+      "path": "硬件/原始备份/JHP11-PCB模块化设计要点解析教案.md（单独Markdown文件）.md",
+      "previous_sha256": "4628f4f596972c3a44d00a77f206a8bda10c0836bca1365f6a706e17fd15798c",
+      "current_sha256": "3ffcd8cd5b02e8ab58c513748a2f6cd4828c4b88eb104b9062cab08901dd8b3b",
+      "reason": "Git --all --follow 路径历史中未找到与 previous_sha256 相符的旧blob；不能从当前版本稳定或后续补图推断更早变更已解释。",
+      "required_evidence": "取得SHA-256与previous_sha256一致的可授权旧原件，或对替代证据进行明确范围的内容核验；不从私人备份寻找。"
+    },
+    {
+      "path": "硬件/原始备份/接地、分割与叠层——模数混合PCB设计五套视频整合详解总结 2026-09-09.md",
+      "previous_sha256": "d7c80ae8bdebf0ae8097c8049f57616a5eaf5b47133659e8dc04fec30f697f90",
+      "current_sha256": "c57bb253f773adc13f92c4225929c1e7b45c7825294ce255dbc9a54447349b07",
+      "reason": "Git --all --follow 路径历史中未找到与 previous_sha256 相符的旧blob；不能从当前版本稳定或后续补图推断更早变更已解释。",
+      "required_evidence": "取得SHA-256与previous_sha256一致的可授权旧原件，或对替代证据进行明确范围的内容核验；不从私人备份寻找。"
+    }
+  ],
+  "retired_recovery": [
+    {
+      "former_path": "硬件/原始备份/【Altium Academy】信号完整性 _ 2025 _ 吃透 SI 设计，搞定高速电路板｜全集总结 2026-08-06.md",
+      "expected_sha256": "c50c040c6483b7eccbdda6d3b34ae40b5656e376672eafb341e7ae37de0ca0aa",
+      "bytes": 93473,
+      "currently_exists": false,
+      "git_recovery_evidence": [],
+      "similar_current_files": [],
+      "decision": "retain-retired-warning",
+      "reason": "已查公开资料目录历史对象；未找到旧SHA256精确字节，继续等待可授权的对应原件。",
+      "publication_boundary": null
+    },
+    {
+      "former_path": "硬件/原始备份/芯片数据手册/1N5819W数据手册.pdf",
+      "expected_sha256": "e96a1ca665e65bedfc64c9803b8c6c9f072c8f664d4a4e9359b0696b2edc6aa0",
+      "bytes": 610701,
+      "currently_exists": false,
+      "git_recovery_evidence": [
+        {
+          "git_commit": "ca87aee7d3a76f53c21caa38be68ee1d5066a880",
+          "git_path": "硬件/原始备份/芯片数据手册/1N5819W数据手册.pdf",
+          "blob_oid": "4174b80e6d3f45644cbb8926c9fe45adaa7b7728",
+          "sha256": "e96a1ca665e65bedfc64c9803b8c6c9f072c8f664d4a4e9359b0696b2edc6aa0",
+          "bytes": 610701,
+          "exact_match": true
+        }
+      ],
+      "similar_current_files": [
+        {
+          "path": "硬件/芯片数据手册/1N5819WS芯片手册.pdf",
+          "sha256": "609a5bc2fcd5bbb36f47f802b11102f1e140eae519c74b067cb615b4d52d0a4f",
+          "same_sha256": false
+        }
+      ],
+      "decision": "retain-retired-warning",
+      "reason": "用户曾删除的原件不自动恢复；工作树仍缺旧版，保留版本核验边界。Git精确字节可查时应注明可回查，不再声称必须由用户提供。",
+      "publication_boundary": null
+    },
+    {
+      "former_path": "硬件/原始备份/芯片数据手册/tps5450-q1.pdf",
+      "expected_sha256": "54c3f25cadbdcce50e0865baccf10ba8227206dd2cbf055b4dd606f9f92e9ee3",
+      "bytes": 1758759,
+      "currently_exists": false,
+      "git_recovery_evidence": [
+        {
+          "git_commit": "ca87aee7d3a76f53c21caa38be68ee1d5066a880",
+          "git_path": "硬件/原始备份/芯片数据手册/tps5450-q1.pdf",
+          "blob_oid": "6b9d85c2c1404a4b295108c8ac3763600c0d1fea",
+          "sha256": "54c3f25cadbdcce50e0865baccf10ba8227206dd2cbf055b4dd606f9f92e9ee3",
+          "bytes": 1758759,
+          "exact_match": true
+        }
+      ],
+      "similar_current_files": [
+        {
+          "path": "硬件/芯片数据手册/TPS5450芯片手册.pdf",
+          "sha256": "775ed5c2486b755dc7393033ccba1e84ce75946036a45cb0868579b48d61b08a",
+          "same_sha256": false
+        }
+      ],
+      "decision": "retain-retired-warning",
+      "reason": "用户曾删除的原件不自动恢复；工作树仍缺旧版，保留版本核验边界。Git精确字节可查时应注明可回查，不再声称必须由用户提供。",
+      "publication_boundary": null
+    },
+    {
+      "former_path": "硬件/原始备份/芯片数据手册/RTC6705-DST-001-1420104058.pdf",
+      "expected_sha256": "34490ab447e3e13cad9a329cbfb16ace2bb8489a7aad1d31ae2e7fe0a738bbc2",
+      "bytes": 369640,
+      "currently_exists": false,
+      "git_recovery_evidence": [
+        {
+          "git_commit": "ca87aee7d3a76f53c21caa38be68ee1d5066a880",
+          "git_path": "硬件/原始备份/芯片数据手册/RTC6705-DST-001-1420104058.pdf",
+          "blob_oid": "e259d45d5d8365bac164ef0107082c33129ae9b8",
+          "sha256": "34490ab447e3e13cad9a329cbfb16ace2bb8489a7aad1d31ae2e7fe0a738bbc2",
+          "bytes": 369640,
+          "exact_match": true
+        }
+      ],
+      "similar_current_files": [
+        {
+          "path": "硬件/芯片数据手册/RTC6705芯片手册.pdf",
+          "sha256": "dfee6b78340b34bc5c229c5f6ad8e62349b0da8b40c65c967532e8889558a274",
+          "same_sha256": false
+        }
+      ],
+      "decision": "retain-retired-warning",
+      "reason": "用户曾删除的原件不自动恢复；工作树仍缺旧版，保留版本核验边界。Git精确字节可查时应注明可回查，不再声称必须由用户提供。",
+      "publication_boundary": "RTC6705旧/现有资料均有Confidential历史标记；本次不恢复、不再发布。"
+    },
+    {
+      "former_path": "硬件/芯片数据手册/HIP4082.pdf",
+      "expected_sha256": "c885d440e42c4e2c81cbdf6429f64932c5c7db9bcb6f7cb24d0e9a99d17e8103",
+      "bytes": 303961,
+      "currently_exists": false,
+      "git_recovery_evidence": [
+        {
+          "git_commit": "e50ada14fd5fa84c0aeba60233a238ef49e2b1fa",
+          "git_path": "硬件/芯片数据手册/HIP4082.pdf",
+          "blob_oid": "1a56bd29ec2ddc2c323a5a7fc0d83582bc4e71f8",
+          "sha256": "c885d440e42c4e2c81cbdf6429f64932c5c7db9bcb6f7cb24d0e9a99d17e8103",
+          "bytes": 303961,
+          "exact_match": true
+        }
+      ],
+      "similar_current_files": [
+        {
+          "path": "硬件/芯片数据手册/HIP4082芯片手册.pdf",
+          "sha256": "4f34134c5841155f73e698be0b3ac7265caa663e589f1e4bd3ea4af32ca9667e",
+          "same_sha256": false
+        }
+      ],
+      "decision": "retain-retired-warning",
+      "reason": "用户曾删除的原件不自动恢复；工作树仍缺旧版，保留版本核验边界。Git精确字节可查时应注明可回查，不再声称必须由用户提供。",
+      "publication_boundary": null
+    }
+  ],
+  "concurrent_source_wording_changes": [
+    {
+      "path": "硬件/原理/芯片手册/二极管与保护器件.md",
+      "previous_sha256": "f3f8bbdb86aaf758e1f99603215267b039054c3d4852d8e0c81c3e3e06782117",
+      "sha256": "44d632131c381648fde68a62dc7b42c66cc67dfc81ed476c97c20c8509018944",
+      "reason": "补充Git精确旧件取回依据；不恢复原件或重核技术参数。"
+    },
+    {
+      "path": "硬件/原理/芯片手册/功率开关与驱动.md",
+      "previous_sha256": "b88af9918fad3a463aa6ee165a0e128c10f9daccaf586944aa360362c007ba45",
+      "sha256": "b3775dd3a760400a6021e6ab67fd08b5110330d5da23dc2446ff13772092937f",
+      "reason": "补充Git精确旧件取回依据；不恢复原件或重核技术参数。"
+    }
+  ]
+}

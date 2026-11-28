@@ -812,7 +812,7 @@
       "bytes": 157504,
       "sha256": "82307593eec088e480f79f5e908c2c6ece9feecac014b1df6b1459db5c351781",
       "status": "needs-review",
-      "note": "ADI智库合辑备份；96处插图引用当前缺少附件，逐篇URL、发布日期及图表均待核。原件只读。",
+      "note": "ADI智库合辑备份；96处旧插图引用已于2026-11-26按对应PDF完整页回补，见audit/图片修复明细.csv；逐篇URL、发布日期及技术图表仍待核验，原件只读。",
       "previous_sha256": "774e437de244439155ae3dc565592aa7b8685b575ecb4a322d547e4edc4f77ee",
       "image_repair_previous_sha256": "774e437de244439155ae3dc565592aa7b8685b575ecb4a322d547e4edc4f77ee",
       "image_repair_date": "2026-11-26",
@@ -925,7 +925,7 @@
       "bytes": 81172616,
       "sha256": "96fea9d57210831069d1fbea2e306f566d1de5e92b5e19ab3d12d5f71c84c1fa",
       "status": "needs-review",
-      "note": "200页不完整扫描文件，无文本层；仅核对身份、目录和末页，未全文OCR，缺第9章余文及后续章节。"
+      "note": "原PDF已存在；2026-11-28复核为81,172,616字节、200页、无文本层，正文止于第9章首面；目录列第10–13章及附录，但当前文件没有这些正文。原哈希不变，未全文OCR，缺失原因未确认。"
     },
     {
       "path": "硬件/原始备份/光耦合器选型.pdf",
@@ -1609,8 +1609,8 @@
       "path": "硬件/原理/信号与电源完整性扫描资料导读.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 1839,
-      "sha256": "36e9903b0caf30b107a06db3729e86b8a8ae11f904df95e799f8c740e8161f22",
+      "bytes": 2843,
+      "sha256": "0cacee8d113166221714fff651f10757848ceb80dac85a8990161e14d97db8d3",
       "status": "needs-review"
     },
     {
@@ -1957,8 +1957,8 @@
       "path": "硬件/原理/芯片手册/二极管与保护器件.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 14058,
-      "sha256": "f3f8bbdb86aaf758e1f99603215267b039054c3d4852d8e0c81c3e3e06782117",
+      "bytes": 14264,
+      "sha256": "44d632131c381648fde68a62dc7b42c66cc67dfc81ed476c97c20c8509018944",
       "status": "needs-review",
       "note": "2026-11-21：删除重复原件并改写文件名引用，正文内容未变；引用路径已按现存唯一副本更新。"
     },
@@ -2002,8 +2002,8 @@
       "path": "硬件/原理/芯片手册/功率开关与驱动.md",
       "role": "curated-source",
       "kind": "md",
-      "bytes": 19594,
-      "sha256": "b88af9918fad3a463aa6ee165a0e128c10f9daccaf586944aa360362c007ba45",
+      "bytes": 19803,
+      "sha256": "b3775dd3a760400a6021e6ab67fd08b5110330d5da23dc2446ff13772092937f",
       "status": "needs-review"
     },
     {
@@ -3692,28 +3692,73 @@
       "sha256": "e96a1ca665e65bedfc64c9803b8c6c9f072c8f664d4a4e9359b0696b2edc6aa0",
       "bytes": 610701,
       "status": "unavailable",
-      "reason": "用户删除后无同哈希公开原件；不从私人部分搜索或恢复"
+      "reason": "用户删除后无同哈希公开原件；不从私人部分搜索或恢复",
+      "git_recovery": [
+        {
+          "git_commit": "ca87aee7d3a76f53c21caa38be68ee1d5066a880",
+          "git_path": "硬件/原始备份/芯片数据手册/1N5819W数据手册.pdf",
+          "blob_oid": "4174b80e6d3f45644cbb8926c9fe45adaa7b7728",
+          "sha256": "e96a1ca665e65bedfc64c9803b8c6c9f072c8f664d4a4e9359b0696b2edc6aa0",
+          "bytes": 610701,
+          "exact_match": true
+        }
+      ],
+      "recovery_note": "用户曾删除的原件不自动恢复；工作树仍缺旧版，保留版本核验边界。Git精确字节可查时应注明可回查，不再声称必须由用户提供。"
     },
     {
       "former_path": "硬件/原始备份/芯片数据手册/tps5450-q1.pdf",
       "sha256": "54c3f25cadbdcce50e0865baccf10ba8227206dd2cbf055b4dd606f9f92e9ee3",
       "bytes": 1758759,
       "status": "unavailable",
-      "reason": "用户删除后无同哈希公开原件；不从私人部分搜索或恢复"
+      "reason": "用户删除后无同哈希公开原件；不从私人部分搜索或恢复",
+      "git_recovery": [
+        {
+          "git_commit": "ca87aee7d3a76f53c21caa38be68ee1d5066a880",
+          "git_path": "硬件/原始备份/芯片数据手册/tps5450-q1.pdf",
+          "blob_oid": "6b9d85c2c1404a4b295108c8ac3763600c0d1fea",
+          "sha256": "54c3f25cadbdcce50e0865baccf10ba8227206dd2cbf055b4dd606f9f92e9ee3",
+          "bytes": 1758759,
+          "exact_match": true
+        }
+      ],
+      "recovery_note": "用户曾删除的原件不自动恢复；工作树仍缺旧版，保留版本核验边界。Git精确字节可查时应注明可回查，不再声称必须由用户提供。"
     },
     {
       "former_path": "硬件/原始备份/芯片数据手册/RTC6705-DST-001-1420104058.pdf",
       "sha256": "34490ab447e3e13cad9a329cbfb16ace2bb8489a7aad1d31ae2e7fe0a738bbc2",
       "bytes": 369640,
       "status": "unavailable",
-      "reason": "用户删除后无同哈希公开原件；不从私人部分搜索或恢复"
+      "reason": "用户删除后无同哈希公开原件；不从私人部分搜索或恢复",
+      "git_recovery": [
+        {
+          "git_commit": "ca87aee7d3a76f53c21caa38be68ee1d5066a880",
+          "git_path": "硬件/原始备份/芯片数据手册/RTC6705-DST-001-1420104058.pdf",
+          "blob_oid": "e259d45d5d8365bac164ef0107082c33129ae9b8",
+          "sha256": "34490ab447e3e13cad9a329cbfb16ace2bb8489a7aad1d31ae2e7fe0a738bbc2",
+          "bytes": 369640,
+          "exact_match": true
+        }
+      ],
+      "recovery_note": "用户曾删除的原件不自动恢复；工作树仍缺旧版，保留版本核验边界。Git精确字节可查时应注明可回查，不再声称必须由用户提供。",
+      "publication_boundary": "RTC6705旧/现有资料均有Confidential历史标记；本次不恢复、不再发布。"
     },
     {
       "former_path": "硬件/芯片数据手册/HIP4082.pdf",
       "sha256": "c885d440e42c4e2c81cbdf6429f64932c5c7db9bcb6f7cb24d0e9a99d17e8103",
       "bytes": 303961,
       "status": "unavailable",
-      "reason": "用户删除；现存公开原件无同SHA-256版本，不以同型号不同内容替代"
+      "reason": "用户删除；现存公开原件无同SHA-256版本，不以同型号不同内容替代",
+      "git_recovery": [
+        {
+          "git_commit": "e50ada14fd5fa84c0aeba60233a238ef49e2b1fa",
+          "git_path": "硬件/芯片数据手册/HIP4082.pdf",
+          "blob_oid": "1a56bd29ec2ddc2c323a5a7fc0d83582bc4e71f8",
+          "sha256": "c885d440e42c4e2c81cbdf6429f64932c5c7db9bcb6f7cb24d0e9a99d17e8103",
+          "bytes": 303961,
+          "exact_match": true
+        }
+      ],
+      "recovery_note": "用户曾删除的原件不自动恢复；工作树仍缺旧版，保留版本核验边界。Git精确字节可查时应注明可回查，不再声称必须由用户提供。"
     }
   ]
 }

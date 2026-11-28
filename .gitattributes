@@ -13,6 +13,11 @@
 "硬件/PCB/**" text eol=lf
 /.githooks/* text eol=lf
 /scripts/*.py text eol=lf
+# Hash-bound public evidence must have identical bytes in worktrees and Git.
+/journal/health-check-*.md text eol=lf
+/audit/*.md text eol=lf
+/audit/*.csv text eol=lf
+/audit/*.json text eol=lf
 # EDA project archives and compressed assets are binary.
 *.epro2 binary
 *.zip binary

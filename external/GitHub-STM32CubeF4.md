@@ -2,7 +2,7 @@
 title: GitHub STMicroelectronics STM32CubeF4
 type: external-resource
 status: needs-review
-updated: 2026-09-26
+updated: 2026-11-28
 sources: []
 tags: [外来资料, GitHub, STM32F4, HAL, LL]
 ---
@@ -43,3 +43,14 @@ tags: [外来资料, GitHub, STM32F4, HAL, LL]
 - [ ] 时钟、启动、DMA、中断优先级和调试接口已在目标板验证
 - [ ] 发布固件时已核对仓库内各组件许可证
 
+
+## 2026-11-28 版本定位与阅读增量
+
+- 仓库：`STMicroelectronics/STM32CubeF4`；本轮API读取默认分支 `master`，取得commit `94895b5f5f42522741f49d902ad9b8af32ded191`；当时未归档。
+- 固定入口：[README](https://github.com/STMicroelectronics/STM32CubeF4/blob/94895b5f5f42522741f49d902ad9b8af32ded191/README.md)；[提交](https://github.com/STMicroelectronics/STM32CubeF4/commit/94895b5f5f42522741f49d902ad9b8af32ded191)。
+- 元数据许可标识：`NOASSERTION`，仍须逐组件核对。旧获取记录与Star数量保留为2026-09-26历史快照，不用作当前质量或活跃性证明。
+- 本轮获取：仓库元数据、commit和该版本README正文；前三个原始下载超时处通过公开API取得正文，未克隆、编译、运行或连接目标板。
+
+先读README的Overview、How to use与Troubleshooting，再选实际板卡的Projects目录。README明确使用子模块，Download ZIP不自动带齐子模块；部分中间件/项目因许可不在公开仓库，不能将目录缺失直接判为下载损坏。
+
+使用 [[external/GitHub检索与版本化阅读]] 记录文件、Issue/PR、环境与验证范围；回到 [[external/开放学习与外部查证导航]] 比较本地条件。具体硬件结论及原待核验项不因本轮登记而关闭。

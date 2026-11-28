@@ -2,7 +2,7 @@
 title: GitHub Raspberry Pi pico-sdk
 type: external-resource
 status: needs-review
-updated: 2026-09-26
+updated: 2026-11-28
 sources: []
 tags: [外来资料, GitHub, RP2040, RP2350, SDK]
 ---
@@ -43,3 +43,14 @@ tags: [外来资料, GitHub, RP2040, RP2350, SDK]
 - [ ] PIO、USB、Flash/XIP 和时钟配置已在目标板实测
 - [ ] 引用 SDK 代码时已保留许可证和版本记录
 
+
+## 2026-11-28 版本定位与阅读增量
+
+- 仓库：`raspberrypi/pico-sdk`；本轮API读取默认分支 `master`，取得commit `079c6f39023649b154152db30f1d781e884879bc`；当时未归档。
+- 固定入口：[README](https://github.com/raspberrypi/pico-sdk/blob/079c6f39023649b154152db30f1d781e884879bc/README.md)；[提交](https://github.com/raspberrypi/pico-sdk/commit/079c6f39023649b154152db30f1d781e884879bc)。
+- 元数据许可标识：`BSD-3-Clause`，仍须逐组件核对。旧获取记录与Star数量保留为2026-09-26历史快照，不用作当前质量或活跃性证明。
+- 本轮获取：仓库元数据、commit和该版本README正文；前三个原始下载超时处通过公开API取得正文，未克隆、编译、运行或连接目标板。
+
+先读README的Quick-start与CMake示例，明确pico_sdk_init、构建目标和PICO_BOARD配置；随后按目标板选择例程。README中的main()示例不证明本板已完成冷启动。
+
+使用 [[external/GitHub检索与版本化阅读]] 记录文件、Issue/PR、环境与验证范围；回到 [[external/开放学习与外部查证导航]] 比较本地条件。具体硬件结论及原待核验项不因本轮登记而关闭。

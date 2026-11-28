@@ -2,7 +2,7 @@
 title: 外来资源索引
 type: source-map
 status: needs-review
-updated: 2026-11-07
+updated: 2026-11-28
 sources: []
 tags: [外来资料, 导航, 毕设, 声学]
 ---
@@ -11,7 +11,33 @@ tags: [外来资料, 导航, 毕设, 声学]
 
 本目录登记 AI 主动获取的补充资料。新增条目必须先完成来源身份、获取记录、用途和可靠性字段，再加入下表。
 
-唯一正式库为 `D:\ai知识库\嵌入式`；返回[[index|总索引]]与[[wiki/知识网络|知识网络]]。用户新增原件继续经分类稿接入Wiki，不混入本目录。
+唯一正式库为包含本页、根索引与Wiki的当前Git仓库；返回[[index|总索引]]与[[wiki/知识网络|知识网络]]。用户新增原件继续经分类稿接入Wiki，不混入本目录。
+
+## 开放学习入口
+
+- [[external/开放学习与外部查证导航]]：问题查证与探索学习两条路径，比较条件、寻找反例、验证并回写。
+- [[external/原厂资料与技术支持入口]]：参数、勘误与官方支持，核对准确对象和版本。
+- [[external/工程社区与CSDN检索入口]]：故障、实操、完整讨论与同源追溯。
+- [[external/开源硬件封装与计算工具入口]]：工程、封装、模型和计算的复用检查。
+- [[external/GitHub检索与版本化阅读]]：源码、Issue/PR、commit和验证层级，连接下方既有四个仓库。
+- [[external/网站推荐视频来源说明]]：视频身份、已辨画面与非完整转写边界。
+- [[external/开放学习方法与适用边界]]：按任务选择方法，区分方法走查、来源依据和实际验证。
+
+2026-11-28检查仅覆盖入口、四仓库元数据/README及一项PR说明；站内技术内容未整体核验。完整范围见 [[journal/health-check-2026-11-28-开放学习]]，不得以入口登记提升硬件技术状态。
+
+## 按用途发现入口（本轮定向访问）
+
+视频出处和未逐项核验范围见 [[external/网站推荐视频来源说明]]。下表记录公开HTTP请求时间为2026-11-28；状态只反映本次请求，不代表账号登录后的浏览体验或站内内容正确性。
+
+| 类别 | 入口 | 本轮访问观察 |
+|---|---|---|
+| 原厂主页 | [TI](https://www.ti.com/) / [ADI](https://www.analog.com/) / [ST](https://www.st.com/) / [Infineon](https://www.infineon.com/) / [MPS](https://www.monolithicpower.com/) / [Microchip](https://www.microchip.com/) | TI/ADI/Infineon/Microchip返回200并取得标题；MPS返回验证页；ST返回567 |
+| 原厂社区 | [TI E2E](https://e2e.ti.com/) / [ADI EngineerZone](https://ez.analog.com/cn) / [ST Community](https://community.st.com/) | 均返回200；E2E与EngineerZone另已读主页正文 |
+| 社区/CSDN | [电子发烧友](https://bbs.elecfans.com/) / [21ic](https://bbs.21ic.com/) / [EEWorld](https://www.eeworld.com.cn/) / [阿莫](https://www.amobbs.com/) / [野火](https://www.firebbs.cn/) / [安富莱](https://forum.anfulai.cn/) / [正点原子](https://www.openedv.com/) / [PCB联盟](https://www.pcbbar.com/) / [EDA365](https://www.eda365.com/) / [逆天PCB](https://www.ntpcb.com/) / [易特创芯](https://www.eetop.cn/) / [CSDN](https://www.csdn.net/) / [与非网](https://www.eefocus.com/) / [凡亿课堂](https://www.fanyedu.com/) | 除野火超时、易特创芯403外其余返回200；EEWorld本轮未提取到标题 |
+| 开源/封装/工具 | [OSHWHub](https://oshwhub.com/) / [Hackaday](https://hackaday.com/) / [CircuitMaker](https://circuitmaker.com/) / [IC封装网](https://www.iclib.com/) / [Ultra Librarian](https://www.ultralibrarian.com/) / [3D ContentCentral](https://www.3dcontentcentral.com/) / [CircuitLab](https://www.circuitlab.com/) / [OKAWA](https://sim.okawa-denshi.jp/en/) | 除OKAWA超时外均返回200；本轮未抽查每个模型或项目 |
+| 源码与固定版本 | [GitHub](https://github.com/) | 返回200；固定链接说明见 [[external/GitHub检索与版本化阅读]] |
+
+本轮请求结果与代码中记录的访问日期为客户端时间；MPS挑战页不当作实质主页内容。站点访问限制和无标题不是内容不存在的证据。
 
 ## 声学学习笔记
 
